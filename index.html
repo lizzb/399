@@ -112,7 +112,131 @@ p3 - LULZ. why dont we update the internal documentation while we're at it? ;)
                 
                 <hr class="col-md-12">
 
-                My goal in this study is to develop a mobile app that can both ease and enhance the experience of the Career Fair, specifically the SWE iDay career fair that happens at Northwestern every October.  I was interested in this because I have personally attended this twice and it always pretty chaotic.  I had hacked up a small scheduling tool for myself for my own purposes and just that experience gave myself more insight into what resources were lacking.  Additionally, I have been to career fairs at the Grace Hopper conference for the last two years and those conferences were supported by conference apps.  Additionally, I have been to the Google I/O conference, which was also supported by a conference app. So mobile event/conference apps have been really increasing in the past couple of years and is definitely an area of interest for me.  I got a chance to explore this in a small bit this summer at a hack-a-thon at Google, but that has just whetted my appetite to explore this in more depth.
+                <p>My goal in this study is to develop a mobile app that can both ease and enhance the experience of the Career Fair, specifically the SWE iDay career fair that happens at Northwestern every October.  I was interested in this because I have personally attended this twice and it always pretty chaotic.  I had hacked up a small scheduling tool for myself for my own purposes and just that experience gave myself more insight into what resources were lacking.  Additionally, I have been to career fairs at the Grace Hopper conference for the last two years and those conferences were supported by conference apps.  Additionally, I have been to the Google I/O conference, which was also supported by a conference app. So mobile event/conference apps have been really increasing in the past couple of years and is definitely an area of interest for me.  I got a chance to explore this in a small bit this summer at a hack-a-thon at Google, but that has just whetted my appetite to explore this in more depth.</p>
+
+
+Click the button to reveal the full, verbose version of my current status. I have attempted to summarize it in bullet points below (specifically the feature spec section), but have not yet made a more concise version of all points: <button class="btn btn-danger" data-target="#week3report-verbose"
+data-toggle="collapse" type="button">Reveal if you dare</button>
+
+<div class="collapse out" id="week3report-verbose">
+    <p>I think the ability to sort, search and filter companies by location and
+    by size of company is an important feature of a job fair. Currently, what
+    is provided is the name of the company, what majors they are seeking, full
+    time versus internship and depth of education (undergraduate degree versus
+    doctorate). Also what would be desired to be included is a categorization
+    of the industry of the company, the size of the company, locations they are
+    hiring for as well as miscellaneous information (such as a focus on
+    diversity).</p>
+
+    <p>I was curious whether Northwestern rewards long time participants at the
+    career fair for their support. So the possibility to have QR codes for the
+    employers to scan students would be useful. When you log in, you would
+    register with your student ID and you would have a QR code generated.
+    Perhaps the recruiters could use this information to see how many students
+    stopped by their booths. It would also be nice if it could convey student
+    information to the recruiter, although this might have invasion of privacy
+    issues that would need to be resolved. Perhaps a student signing a waiver
+    would be sufficient.</p>
+
+    <p>Pre-event engagement could definitely be improved. If you had a profile,
+    such as Career Cat or McCormick Connect as well as Linked In (not provided
+    by Northwestern), this could be accessed. For example, at the Tech Expo,
+    which was yesterday, we got emails encouraging us to attend, but with
+    pre-registration this notification could be more targeted. It would be
+    great if this feature could be within the app, perhaps reminding you to
+    update your resume on line. Although privacy issues would have to be
+    sorted, the students could choose which information they would want to be
+    made public, and the recruiters could sort by this information to make
+    their jobs easier as well. This might help the recruiters connect a bit
+    more. Many of these conference apps have built in contact lists so that you
+    can create messaging features to meet up with people for dinner for
+    example, but that might be overkill for career day as it is not long
+    enough.</p>
+
+    <p>At Grace Hopper you upload your resume in advance and sometimes booths
+    will contact you in advance with a reminder to ask that you visit. Pictures
+    also can be uploaded in advance. Uploading recruiter pictures is especially
+    helpful. For me, I have difficulty remembering names and faces, so having
+    pictures of the recruiters allowed me to remember my interaction with them.
+    Also, the ability to have a platform to take notes would be helpful,
+    especially if a recruiter told you something specific, as this minimizes
+    the distraction of pens and papers and allows you to focus on the brief
+    time available for the recruiter interaction.</p>
+
+    <p>It is reasonable now to assume that all student have mobile devices and
+    use them. On the company side, will they have the same computer horsepower
+    as students? I will have to assume yes here. This app could also facilitate
+    live tweets or periodic notifications of how much time is left until the
+    fair is over. Many times at career fairs there is not ready access to
+    clocks and the long lines lend themselves to keeping you off pace to
+    accomplish what you wanted.</p>
+
+    <p>An app can help you make a mental check list of what you need before and
+    after the career fair. It can prompt you for whether an hour in advance
+    whether you have your resume, are you wearing the proper attire (such as
+    closed toed shoes), which would be a nice touch. What would be desirable,
+    although I am not sure now how it could be incorporated into the app, is if
+    there were a way to identify what kind of student you were to the
+    recruiter. This would be like the electronic version of a colored ribbon or
+    name tag, so the recruiter could see students of the desired major in the
+    crowd, since each company knows what majors it is looking for (but this is
+    outside the scope of my app).</p>
+
+    <p>Slogging through our u.northwestern.edu email is tedious for devising a
+    schedule, so an alternate way of doing this and organizing your day and
+    creating a map for yourself would be desirable. If I were getting paid for
+    this app, it would focus on both sets of users, both recruiters and
+    students. However, as an unpaid project with limited scope, I would choose
+    to focus on the students, who with their more tech savvy bent in general,
+    are the more likely users anyway. Also, there are more students visiting
+    than there are recruiters or planners, so the numbers would dictate the
+    first pass of developing this application aim for the larger
+    population.</p>
+
+    <p>What I believe is out of scope is the planning experience for Ellen or
+    SWE members and how to import data easily for non-tech people. But I think
+    I may have a method for importing data from a previous project, so this
+    might be able to be added.</p>
+
+    <p>The app should also minimize internet usage. The app should not always
+    have to connect to the internet. In large settings like Grace Hopper,
+    massive internet use bogs down the system locally. For this app, that may
+    not be relevant as it is a much smaller event. The Northwestern network in
+    Norris can likely support the number of attendees at these types of
+    events.</p>
+
+    <p>What is also out of scope is metrics of attendance or ratings of
+    specific booths. Even though this is possible, and may have some
+    prototyping, I did not intend to produce the functionality to support this.
+    This would be the same for integration with Career Cat.</p>
+
+    <p>How else could this app improve the experience of the Career Fair in
+    ways are beyond a basic functionality. One way would be line length
+    checker. If you were about to head to Facebook, it might be nice if it were
+    full, to be able to go to a shorter line with another company, but the
+    mechanics for that might not be possible.</p>
+
+    <p>The app should have the ability to star your favorite companies. The app
+    should also have a default searching profile so that every time you go to a
+    list of companies you don’t continue to plug in the same search function.
+    Because the information is available on company names, the list will be
+    filterable, searchable and sortable. Each listing will open up into a page
+    featuring the company. It will have their logo for identification, a link
+    to the company website, either a recruiting link or a generic company link
+    would be possible. The ability to filter by job type and major will be part
+    of the app, but not the way that is currently done, which is an awkward
+    excel spreadsheet based format with every major listed followed by X’s,
+    which is visually difficult to use. Sorting alphabetically ascending and
+    descending and being able to actively sort by table location ascending and
+    descending would allow the student to optimize their time spent at the
+    event. Sorting by room would also be part of the app. Anything that is in
+    the paper handouts given to students would at least be covered in the
+    mobile app, as the goal is to make the paper handouts eventually obsolete.
+    The app will have to work on a number of devices, so I will have to check
+    emulators to make sure this is covered. Using QR codes will require use of
+    camera functionality, but that is pretty much standard in mobile
+    devices.</p>
+</div>
                 
                 <hr class="col-md-12">
               
@@ -288,129 +412,6 @@ p3 - LULZ. why dont we update the internal documentation while we're at it? ;)
 
             </div> <!-- /.row -->
 
-Below is a verbose version of what I have attempted to summarize in bullet
-points above: <button class="btn btn-danger" data-target="#week3report-verbose"
-data-toggle="collapse" type="button">Reveal if you dare</button>
-
-<div class="collapse out" id="week3report-verbose">
-    <p>I think the ability to sort, search and filter companies by location and
-    by size of company is an important feature of a job fair. Currently, what
-    is provided is the name of the company, what majors they are seeking, full
-    time versus internship and depth of education (undergraduate degree versus
-    doctorate). Also what would be desired to be included is a categorization
-    of the industry of the company, the size of the company, locations they are
-    hiring for as well as miscellaneous information (such as a focus on
-    diversity).</p>
-
-    <p>I was curious whether Northwestern rewards long time participants at the
-    career fair for their support. So the possibility to have QR codes for the
-    employers to scan students would be useful. When you log in, you would
-    register with your student ID and you would have a QR code generated.
-    Perhaps the recruiters could use this information to see how many students
-    stopped by their booths. It would also be nice if it could convey student
-    information to the recruiter, although this might have invasion of privacy
-    issues that would need to be resolved. Perhaps a student signing a waiver
-    would be sufficient.</p>
-
-    <p>Pre-event engagement could definitely be improved. If you had a profile,
-    such as Career Cat or McCormick Connect as well as Linked In (not provided
-    by Northwestern), this could be accessed. For example, at the Tech Expo,
-    which was yesterday, we got emails encouraging us to attend, but with
-    pre-registration this notification could be more targeted. It would be
-    great if this feature could be within the app, perhaps reminding you to
-    update your resume on line. Although privacy issues would have to be
-    sorted, the students could choose which information they would want to be
-    made public, and the recruiters could sort by this information to make
-    their jobs easier as well. This might help the recruiters connect a bit
-    more. Many of these conference apps have built in contact lists so that you
-    can create messaging features to meet up with people for dinner for
-    example, but that might be overkill for career day as it is not long
-    enough.</p>
-
-    <p>At Grace Hopper you upload your resume in advance and sometimes booths
-    will contact you in advance with a reminder to ask that you visit. Pictures
-    also can be uploaded in advance. Uploading recruiter pictures is especially
-    helpful. For me, I have difficulty remembering names and faces, so having
-    pictures of the recruiters allowed me to remember my interaction with them.
-    Also, the ability to have a platform to take notes would be helpful,
-    especially if a recruiter told you something specific, as this minimizes
-    the distraction of pens and papers and allows you to focus on the brief
-    time available for the recruiter interaction.</p>
-
-    <p>It is reasonable now to assume that all student have mobile devices and
-    use them. On the company side, will they have the same computer horsepower
-    as students? I will have to assume yes here. This app could also facilitate
-    live tweets or periodic notifications of how much time is left until the
-    fair is over. Many times at career fairs there is not ready access to
-    clocks and the long lines lend themselves to keeping you off pace to
-    accomplish what you wanted.</p>
-
-    <p>An app can help you make a mental check list of what you need before and
-    after the career fair. It can prompt you for whether an hour in advance
-    whether you have your resume, are you wearing the proper attire (such as
-    closed toed shoes), which would be a nice touch. What would be desirable,
-    although I am not sure now how it could be incorporated into the app, is if
-    there were a way to identify what kind of student you were to the
-    recruiter. This would be like the electronic version of a colored ribbon or
-    name tag, so the recruiter could see students of the desired major in the
-    crowd, since each company knows what majors it is looking for (but this is
-    outside the scope of my app).</p>
-
-    <p>Slogging through our u.northwestern.edu email is tedious for devising a
-    schedule, so an alternate way of doing this and organizing your day and
-    creating a map for yourself would be desirable. If I were getting paid for
-    this app, it would focus on both sets of users, both recruiters and
-    students. However, as an unpaid project with limited scope, I would choose
-    to focus on the students, who with their more tech savvy bent in general,
-    are the more likely users anyway. Also, there are more students visiting
-    than there are recruiters or planners, so the numbers would dictate the
-    first pass of developing this application aim for the larger
-    population.</p>
-
-    <p>What I believe is out of scope is the planning experience for Ellen or
-    SWE members and how to import data easily for non-tech people. But I think
-    I may have a method for importing data from a previous project, so this
-    might be able to be added.</p>
-
-    <p>The app should also minimize internet usage. The app should not always
-    have to connect to the internet. In large settings like Grace Hopper,
-    massive internet use bogs down the system locally. For this app, that may
-    not be relevant as it is a much smaller event. The Northwestern network in
-    Norris can likely support the number of attendees at these types of
-    events.</p>
-
-    <p>What is also out of scope is metrics of attendance or ratings of
-    specific booths. Even though this is possible, and may have some
-    prototyping, I did not intend to produce the functionality to support this.
-    This would be the same for integration with Career Cat.</p>
-
-    <p>How else could this app improve the experience of the Career Fair in
-    ways are beyond a basic functionality. One way would be line length
-    checker. If you were about to head to Facebook, it might be nice if it were
-    full, to be able to go to a shorter line with another company, but the
-    mechanics for that might not be possible.</p>
-
-    <p>The app should have the ability to star your favorite companies. The app
-    should also have a default searching profile so that every time you go to a
-    list of companies you don’t continue to plug in the same search function.
-    Because the information is available on company names, the list will be
-    filterable, searchable and sortable. Each listing will open up into a page
-    featuring the company. It will have their logo for identification, a link
-    to the company website, either a recruiting link or a generic company link
-    would be possible. The ability to filter by job type and major will be part
-    of the app, but not the way that is currently done, which is an awkward
-    excel spreadsheet based format with every major listed followed by X’s,
-    which is visually difficult to use. Sorting alphabetically ascending and
-    descending and being able to actively sort by table location ascending and
-    descending would allow the student to optimize their time spent at the
-    event. Sorting by room would also be part of the app. Anything that is in
-    the paper handouts given to students would at least be covered in the
-    mobile app, as the goal is to make the paper handouts eventually obsolete.
-    The app will have to work on a number of devices, so I will have to check
-    emulators to make sure this is covered. Using QR codes will require use of
-    camera functionality, but that is pretty much standard in mobile
-    devices.</p>
-</div>
                 
                 
           </div>  <!-- /.col-md-9 -->
