@@ -16,39 +16,137 @@
 </head>
 
 <body>
-    <div id="users">
-        <input class="search" placeholder="Search"><button class="sort"
-        data-sort="name">Sort by name</button>
+    <div id="companies">
+        <input class="search" />
+        <span class="sort" data-sort="name">Sort by name</span>
+        <span class="sort" data-sort="booth">Sort by booth</span>
+
+        <button id="filter-intern" onclick="filterBy('intern')"> intern filter idk </button>
+        
+        Filters
+        MS/PhD
+        Permanent
+        Co-op
+        Intern
+
+
+
+        <!--input class="search" placeholder="Search"><button class="sort"
+        data-sort="name">Sort by name</button-->
 
         <ul class="list">
             <li>
-                <h3 class="name">Jonny Stromberg</h3>
-                <p class="born">1986</p>
+                <h3 class="name">Alcatel-Lucent</h3>
+                <span class="room"> Louis (2) </span>
+                <p class="booth"> 7 </p>
+                <span class="intern"> true </span>
+                <span class="coop"> false</span>
+                <span class="fte"> </span>
+                <span class="ms-phd"> </span>
             </li>
 
             <li>
-                <h3 class="name">Jonas Arnklint</h3>
-                <p class="born">1985</p>
+                <h3 class="name"> Accenture </h3>
+                <span class="room"> Northwestern (2) </span>
+                <p class="booth"> 29 </p>
+                <span class="intern"> true </span>
+                <span class="coop"> </span>
+                <span class="fte"> true</span>
+                <span class="ms-phd"> </span>
             </li>
 
             <li>
-                <h3 class="name">Martina Elm</h3>
-                <p class="born">1986</p>
+                <h3 class="name"> Facebook </h3>
+                <span class="room"> Wildcat Room (1) </span>
+                <p class="booth"> 3 </p>
+                <span class="intern"> </span>
+                <span class="coop"> </span>
+                <span class="fte"> </span>
+                <span class="ms-phd"> </span>
             </li>
 
             <li>
-                <h3 class="name">Gustaf Lindqvist</h3>
-                <p class="born">1983</p>
+                <h3 class="name"> Northrop Grumman </h3>
+                <span class="room"> Big 10 (1) </span>
+                <p class="booth"> 1 </p>
+                <span class="intern"> true</span>
+                <span class="coop"> true </span>
+                <span class="fte">true  </span>
+                <span class="ms-phd"> true </span>
             </li>
         </ul>
 
     </div>
-<script>
-var options = {
-        valueNames: [ 'name', 'born' ]
-        };
 
-        var userList = new List('users', options);
+
+<script>
+
+var options = {
+    valueNames: [ 'name', 'room', 'booth', 'ms-phd', 'fte', 'coop', 'intern']
+};
+
+// Initial list
+var companyList = new List('companies', options);
+/*
+var idField = $('#id-field'),
+    nameField = $('#name-field'),
+    ageField = $('#age-field'),
+    cityField = $('#city-field'),
+    addBtn = $('#add-btn'),
+    editBtn = $('#edit-btn').hide(),
+    removeBtns = $('.remove-item-btn'),
+    editBtns = $('.edit-item-btn');
+*/
+
+filterFunc1 = function(item){ return item.someValue > 3 && item.someValue < 6 };
+filterFunc2 = function(item){ return item.someOtherValue === 'car' };
+filterFunc3 = function(item){ return item.someThing === 'white' || item.someThing === 'red' };
+
+var filters = [filterFunc1, filterFunc2, filterFunc3];
+
+LIST.filter(filters); //Finally filter the LIST with the array of multiple filters
+
+/*
+function filterBy(value)
+{
+    companies.filter(function(item) {
+        if (item.values().) return true;
+        else return false;
+    });
+    return false
+}*/
+/*
+$('#filter-intern').click(function() {
+    companies.filter(function(values) {
+        if (values.intern) return true;
+        else return false;
+    });
+    return false
+});
+/*
+       var color=$('#colour').val(), itemVal=$('#items').val();
+         /* not sure what you expect "item" to be, is index but used your same code* 
+        featureList.filter(function(item) {
+           /* not sure what XXX property is for items*
+            return item.values().colour == color && tem.values().XXXXX==itemVal; 
+
+        });
+        return false;
+    });*/
+
+/*
+function filterIntern
+    companies.filter(function(company) {
+        if(company.values().intern) {
+            return true;
+        } else
+        {
+            return false;
+        }
+
+
+    });*/
+
 </script>
     
 </body>
