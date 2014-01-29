@@ -35,7 +35,9 @@ input:focus {
   outline:none;
   border-color:#aaa;
 }
-.sort {
+
+
+.filter, .sort {
   padding:8px 30px;
   border-radius: 6px;
   border:none;
@@ -45,11 +47,11 @@ input:focus {
   background-color: #28a8e0;
   height:30px;
 }
-.sort:hover {
+.filter:hover, .sort:hover {
   text-decoration: none;
   background-color:#1b8aba;
 }
-.sort:focus {
+.filter:focus, .sort:focus {
   outline:none;
 }
 .sort:after {
@@ -60,8 +62,10 @@ input:focus {
   border-bottom: 5px solid transparent;
   content:"";
   position: relative;
-  top:-10px;
-  right:-5px;
+   /*top:-10px;
+  right:-5px;*/
+
+  left: -50px;
 }
 .sort.asc:after {
   width: 0;
@@ -71,9 +75,13 @@ input:focus {
   border-top: 5px solid #fff;
   content:"";
   position: relative;
-  top:13px;
-  right:-5px;
+  /*top:13px;
+  right:-5px;*/
+
+  left: -50px;
+
 }
+
 .sort.desc:after {
   width: 0;
   height: 0;
@@ -82,6 +90,25 @@ input:focus {
   border-bottom: 5px solid #fff;
   content:"";
   position: relative;
-  top:-10px;
-  right:-5px;
+  /*top:-10px;
+  right:-5px;*/
+
+/* oh boy this be hacky because i havent read the js oops */
+  left: -50px;
+  top: -20px;
+}
+/*
+span.sort {
+    height: 20px;
+    font-size: 11px;
+    border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}*/
+
+.booth {float: right;}
+.major {
+  padding:7px;
+  margin-bottom:10px;
 }
