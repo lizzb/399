@@ -140,12 +140,9 @@ need to figure out an excel trick to help me replace all "x" s with 1 and 0
 
 var companyList = new List('companies', options, values); // should be ... but options... defined in week4list.js
 
-//var originalList = companyList;
+var originalList = companyList;
 
-//var filteredList = companyList;
-
-//var filters = [filterFunc1, filterFunc2, filterFunc3];
-var activeFilters = [];
+var filteredList = companyList;
 
 
 /*
@@ -182,14 +179,12 @@ function displayCurrentFilter(valueName)
 
   //document.getElementById('currentsorting').innerHTML += "\n Currently sorted?";
   document.getElementById('currentsorting').innerHTML = "Total: " + length + " | Visible: " + visible + " | Matching: " + matching;
-
-    document.getElementById('currentfilter').innerHTML = activeFilters.toString();
-
 }
 
 
 
-
+//var filters = [filterFunc1, filterFunc2, filterFunc3];
+var activeFilters = [];
 
 function clearFilters()
 {
@@ -209,36 +204,20 @@ function removeFilter(valueName)
 
 function updateFilters()
 {
-    companyList.filter(); // refresh  // clear filters by filter();
-   
-    
-    var activefilterstring = "";
-    options.valueNames.forEach(function (valName) {
-        //console.log(valName);
-        // see if the corresponding checkbox for each filter value is checked
-        if( document.getElementById(valName) != null && 
-            document.getElementById(valName).checked == true )
-        {
-            //filtered list or companylist??
-            companyList.filter(function(item)
-                { return item.values()[valName] == true});
-            activefilterstring += valName + " + ";
-        }
 
-});
-    document.getElementById('currentfilter').innerHTML = activefilterstring;
+    
 }
 
 
 // value that was most recently changed
 function checkFilters(valueName)
 {
-    var filterOn = document.getElementById(valueName);
+    var filterOn = document.getElementById(valueName); //.checked;
     
+    //filterOn != null && filterOn == true)
     if(filterOn != null && filterOn.checked == true)
     {
-        activeFilters.push(valueName);
-        companyList.filter(function(item)
+        filteredList.filter(function(item)
             { return item.values()[valueName] == true});
         document.getElementById('currentfilter').innerHTML += " + " + valueName;
     }
@@ -246,11 +225,25 @@ function checkFilters(valueName)
 
     else
     {
-        updateFilters();
-        
-        }
-    
+        companyList.filter(); // refresh
+        //filteredList = originalList; // clear filter also by filter();
+        var activefilterstring = "";
+        options.valueNames.forEach(function (valName) {
+            //console.log(valName);
+            // see if the corresponding checkbox for each filter value is checked
+            if(document.getElementById(valName) != null && document.getElementById(valName).checked == true)
+            {
+                //filteredList.filter
+                // item.values()[valueName]
+                filteredList.filter(function(item){ return item.values()[valName] == true});
+                //filterBy(valName, true);
+                activefilterstring += valName + " + ";
+            }
+        });
+    document.getElementById('currentfilter').innerHTML = activefilterstring;
 
+
+    }
     companyList.update();
 
     displayCurrentFilter();
