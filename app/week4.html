@@ -16,6 +16,25 @@
 
     <script src="js/list.js"></script>
     <script src="./js/week4list.js"></script>
+    <script src="./js/iday.js"></script>
+
+    <script>
+
+    window.onload = function() { 
+// create filters for each value in option list
+ options.valueNames.forEach(function (valueName) {
+        
+        var filterHTML = "";
+        //<button class="filter major" onclick="filterBy('am')"> AM </button>
+        filterHTML += "<button class=\"filter major\" onclick=\"filterBy('";
+        filterHTML += "')> " + valueName + " ";
+        filterHTML += "</button>";
+        document.getElementById('majors').innerHTML += filterHTML;
+    });
+
+
+};
+</script>
 
 </head>
 
@@ -52,6 +71,7 @@ Current filter: <span id="currentfilter">none</span><br>
 
     <div id="majors"></div>
 
+    <!--
     <button class="filter major" onclick="filterBy('am')"> AM </button>
     <button class="filter major" onclick="filterBy('bme')"> BME </button>
     <button class="filter major" onclick="filterBy('chem')"> Chem </button>
@@ -67,7 +87,7 @@ Current filter: <span id="currentfilter">none</span><br>
     <button class="filter major" onclick="filterBy('noneng')"> Non-eng </button>
 
     <button class="filter" onclick="clearFilters()">Clear filters </button>
-
+    -->
     <!-- 
 
   am, bme, chem, civil, ce, cs, ee, enve, ie, made, matsci, mech, noneng,

@@ -48,6 +48,25 @@ var companyList = new List('companies', options, values);
 //var filters = [filterFunc1, filterFunc2, filterFunc3];
 var activeFilters = [];
 
+/*
+window.onload = function() { 
+// create filters for each value in option list
+ options.valueNames.forEach(function (valueName) {
+        
+        var filterHTML = "";
+        //<button class="filter major" onclick="filterBy('am')"> AM </button>
+        filterHTML += "<button class=\"filter major\" onclick=\"filterBy('";
+        filterHTML += "')> " + valueName + " ";
+        filterHTML += "</button>";
+        document.getElementById('majors').innerHTML += filterHTML;
+    });
+
+
+};*/
+
+
+
+
 
 /*
 object freeze??
