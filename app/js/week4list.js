@@ -20,7 +20,6 @@ var values = [
     "coop":"",
     "intern":"1",
     "description":"3M is a global innovation company that never stops inventing. Over the years, our innovations have improved daily life for hundreds of millions of people all over the world. We have made driving at night easier, made buildings safer, and made consumer electronics lighter, less energy-intensive and less harmful to the environment. We even helped put a man on the moon. Every day at 3M, one idea always leads to the next, igniting momentum to make progress possible around the world.",
-    "FIELD21":""
   },
   {
     "name":"Accenture",
@@ -43,7 +42,6 @@ var values = [
     "coop":"",
     "intern":"1",
     "description":"Accenture helps organizations assess how to maximize their performance and works with them to achieve their vision. We develop and implement technology to improve our clients� productivity and efficiency � and may run parts of their business. Ultimately, we enable our clients to become high-performance businesses and governments.",
-    "FIELD21":""
   },
   {
     "name":"Adage Technologies",
@@ -66,7 +64,6 @@ var values = [
     "coop":"1",
     "intern":"1",
     "description":"Adage Technologies, an award-winning Chicago web development firm, specializes in creating engaging custom websites, custom software and mobile solutions since its inception in 2001.",
-    "FIELD21":""
   },
   {
     "name":"Alcatel-Lucent",
@@ -89,7 +86,6 @@ var values = [
     "coop":"1",
     "intern":"1",
     "description":"Alcatel-Lucent is at the forefront of global communications. We provide products and innovations in IP and cloud networking, as well as ultra-broadband fixed and wireless access. We serve service providers and their customers, as well as enterprises and institutions throughout the world. Alcatel-Lucent's Bell Labs, one of the world�s foremost technology research institutes, is responsible for countless breakthroughs that have shaped the networking and communications industry. ",
-    "FIELD21":""
   },
   {
     "name":"Allstate Insurance",
@@ -112,7 +108,6 @@ var values = [
     "coop":"",
     "intern":"1",
     "description":"The Allstate Corporation is the largest publicly held personal lines property and casualty insurer in America. Allstate was founded in 1931 and became a publicly traded company in 1993. We are listed on the New York Stock Exchange under the trading symbol ALL. Allstate is widely known through the \"You're In Good Hands With Allstate �\" slogan. As of year-end 2012, Allstate had $126.9 billion in total assets. Allstate is reinventing protection and retirement to help approximately 16 million households insure what they have today and better prepare for tomorrow.",
-    "FIELD21":""
   },
   {
     "name":"Altec Inc.",
