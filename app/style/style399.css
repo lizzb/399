@@ -112,3 +112,27 @@ span.sort {
   padding:7px;
   margin-bottom:10px;
 }
+
+
+/*#floorplans*/
+
+.floorplan{
+  width: 320px;
+  /*width: 80%;
+  width: 200px;
+  height: 200px;
+  */
+}
+
+/*http://stackoverflow.com/questions/492809/when-to-use-img-vs-css-background-image*/
+/*
+#norrisFloor1{
+   background: url('../images/norris_floorplan/floorplan_web__first_2013.jpg') no-repeat transparent;
+   /*background-size: 200px*
+}
+
+#norrisFloor2{
+     background: url('../images/norris_floorplan/floorplan_web_second.png') no-repeat transparent;
+     background-width: 200px;
+}*/
+
