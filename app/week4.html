@@ -40,13 +40,13 @@ Current filter: <span id="currentfilter">none</span><br>
     <button class="filter jobtype" onclick="filterBy('coop')"> Filter coop </button> -->
 
     Filter by:
-    <input type="checkbox" class="filter jobtype" data-filter='intern' id='intern'value='intern' onchange="checkFilters(this.id)" /> Filter intern <br>
+    <input type="checkbox" class="filter jobtype" data-filter='intern' id='intern'value='intern' onchange="updateFilters()" /> Filter intern <br>
 
-    <input type="checkbox" class="filter jobtype" id='fte' value='fte' onchange="checkFilters(this.id)" /> Filter fulltime <br>
+    <input type="checkbox" class="filter jobtype" id='fte' value='fte' onchange="updateFilters()" /> Filter fulltime <br>
 
-    <input type="checkbox"  id='msphd' class="filter jobtype" value='msphd' onchange="checkFilters(this.id)" /> Filter ms phd <br>
+    <input type="checkbox"  id='msphd' class="filter jobtype" value='msphd' onchange="updateFilters()" /> Filter ms phd <br>
 
-    <input type="checkbox"  class="filter jobtype" value='coop' id='coop' onchange="checkFilters(this.id)" /> Filter coop <br>
+    <input type="checkbox"  class="filter jobtype" value='coop' id='coop' onchange="updateFilters()" /> Filter coop <br>
 
     <br><br>
 
@@ -70,23 +70,8 @@ Current filter: <span id="currentfilter">none</span><br>
 
   am, bme, chem, civil, ce, cs, ee, enve, ie, made, matsci, mech, noneng,
 
-    onchange=checkfilters
+    onchange=checkfilters updateFilters()
     function checkfield -->
-
-    <!--
-
-    <input type="button" class="filter sort" onclick="filterBy('intern')" /> Filter intern </span> 
-
-    <button class="filter" onclick="filterBy('intern')"> Filter intern </button>
-    <br>
-
-    <label>Intern</label>
-    <input type="checkbox" id='intern-filter' value='intern' onchange="if(this.checked) filterBy(this.value); else filterBy('');"/>
-
-    <label>Intern</label>
-    <input type="checkbox" id='intern-filter' value='intern' onchange="filterBy(this.value, this.checked)"/>
- -->
-
 
     <ul class="list"></ul>
 
@@ -127,7 +112,8 @@ mse = matsci
 me / meche... permanent vs full time
  */
 
- /* to get company list into json format:
+ /* 
+to get company list into json format:
 saved as .csv from excel
 used this lovely tool: http://www.convertcsv.com/csv-to-json.htm
 and put it in a separate js file. woohoo!
@@ -138,11 +124,8 @@ so did simple find replace in the .csv file
 need to figure out an excel trick to help me replace all "x" s with 1 and 0
 */
 
-var companyList = new List('companies', options, values); // should be ... but options... defined in week4list.js
-
-//var originalList = companyList;
-
-//var filteredList = companyList;
+var companyList = new List('companies', options, values); 
+// should be ... but options... defined in week4list.js
 
 //var filters = [filterFunc1, filterFunc2, filterFunc3];
 var activeFilters = [];
@@ -171,6 +154,8 @@ function displayCurrentSort(valueName)
 {
     // not working atm, no api plug 
   //document.getElementById('currentsorting').innerHTML = valueName; 
+    //document.getElementById('currentsorting').innerHTML += "\n Currently sorted?";
+
 }
 
 function displayCurrentFilter(valueName)
@@ -178,23 +163,93 @@ function displayCurrentFilter(valueName)
     var length = companyList.items.length;
     var visible = companyList.visibleItems.length;
     var matching = companyList.matchingItems.length;
-  //document.getElementById('currentfilter').innerHTML = valueName + ' ' + companyList.filtered;
 
-  //document.getElementById('currentsorting').innerHTML += "\n Currently sorted?";
-  document.getElementById('currentsorting').innerHTML = "Total: " + length + " | Visible: " + visible + " | Matching: " + matching;
+  //document.getElementById('currentfilter').innerHTML = 'filter applied? ' + companyList.filtered;
 
-    document.getElementById('currentfilter').innerHTML = activeFilters.toString();
+  document.getElementById('currentsorting').innerHTML = "Total: " + length + 
+        " | Visible: " + visible + " | Matching: " + matching;
+
+  //'none';
+  //document.getElementById('currentfilter').innerHTML += " + " + valueName;
+    //document.getElementById('currentfilter').innerHTML = activefilterstring;
+   document.getElementById('currentfilter').innerHTML = activeFilters.toString();
+
+}
+
+ // reset the company list and re-apply the filters still active
+function updateFilters()
+{
+    companyList.filter(); // refresh/clear all filters
+    
+    
+    options.valueNames.forEach(function (valueName) {
+        //console.log(valName);
+
+        var filterOn = document.getElementById(valueName);
+
+        // see if the corresponding checkbox for each filter value is checked
+        // if so add to list of active filters
+        if( filterOn != null && filterOn.checked == true )
+        {
+            //var filter = function(item)
+            //{ return item.values()[valueName] == true};
+            //activeFilters.push(valName);
+            
+            activeFilters.push(function(item)
+            { return item.values()[valueName] == true});
+        }
+
+        else if( filterOn != null && filterOn.checked == false)
+        {
+            // remove filter from list of active filters
+            removeFilter(valueName);
+        }
+
+    });
+
+
+    // reset the company list and re-apply the filters still active
+    //updateFilters();
+
+    // https://github.com/javve/list.js/pull/139
+    //Finally filter the LIST with the array of multiple filters
+    // LIST.filter(filters);
+
+    companyList.filter(activeFilters);
+
+    companyList.update();
+
+    displayCurrentFilter();
+
 
 }
 
 
 
+function checkFilters(valueName)
+{
+    var filterOn = document.getElementById(valueName);
+    
+    // value that was most recently changed
+    // if a new checkbox was ticked, we dont have to iterate through...
+    // actually yeah we do poopsies.
+    if(filterOn != null && filterOn.checked == true)
+    {
+        activeFilters.push(valueName);
+        companyList.filter(function(item)
+            { return item.values()[valueName] == true});
+    }
 
+
+}
+
+//https://github.com/javve/list.js/issues/189
 
 function clearFilters()
 {
   companyList.filter();
   document.getElementById('currentfilter').innerHTML = 'none';
+  // SHOULD ALSO UNCHECK ALL CHECKBOXES
 }
 
 function removeFilter(valueName)
@@ -207,79 +262,7 @@ function removeFilter(valueName)
     }
 }
 
-function updateFilters()
-{
-    companyList.filter(); // refresh  // clear filters by filter();
-   
-    
-    var activefilterstring = "";
-    options.valueNames.forEach(function (valName) {
-        //console.log(valName);
-        // see if the corresponding checkbox for each filter value is checked
-        if( document.getElementById(valName) != null && 
-            document.getElementById(valName).checked == true )
-        {
-            //filtered list or companylist??
-            companyList.filter(function(item)
-                { return item.values()[valName] == true});
-            activefilterstring += valName + " + ";
-        }
 
-});
-    document.getElementById('currentfilter').innerHTML = activefilterstring;
-}
-
-
-// value that was most recently changed
-function checkFilters(valueName)
-{
-    var filterOn = document.getElementById(valueName);
-    
-    if(filterOn != null && filterOn.checked == true)
-    {
-        activeFilters.push(valueName);
-        companyList.filter(function(item)
-            { return item.values()[valueName] == true});
-        document.getElementById('currentfilter').innerHTML += " + " + valueName;
-    }
-
-
-    else
-    {
-        updateFilters();
-        
-        }
-    
-
-    companyList.update();
-
-    displayCurrentFilter();
-    
-
-    /*
-    if(document.getElementById(valueName).checked != true)
-        filteredList = originalList; //companyList; // reset each time??
-
-
-    var activefilterstring = "";
-    options.valueNames.forEach(function (valName) {
-        console.log(valName);
-        // see if the corresponding checkbox for each filter value is checked
-        if(document.getElementById(valName) != null && document.getElementById(valName).checked == true)
-        {
-            //filteredList.filter
-            // item.values()[valueName]
-            filteredList.filter(function(item){ return item.values()[valName] == true});
-            //filterBy(valName, true);
-            activefilterstring += valName + " + ";
-        }
-    });
-    
-
-    //document.getElementById('currentfilter').innerHTML = 'none';
-    document.getElementById('currentfilter').innerHTML = activefilterstring;
-    */
-}
 
 function filterBy(valueName, active)
 {
@@ -374,26 +357,10 @@ function filterBy(valueName, active)
   // else remove that filter from the list... 
   
   /*
-  else
-  {
-    indexOf()...? seems inefficient
-
-    var filterPos = activeFilters.indexOf(valueName);
-  }... boolean array of all of the ppossible filters, 
+  ... boolean array of all of the ppossible filters, 
   if chuse enum, if check or not checked....?
   */
 
-//Finally filter the LIST with the array of multiple filters
-//userList.filter(filters); 
-  //userList.filter(activeFilters);
-
-/*
-function removeFilter(valueName)
-{
-  
-  if()
-
-}*/
 
 
 
