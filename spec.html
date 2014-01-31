@@ -68,23 +68,19 @@
                 <h2 id="goals-principles"> Goals / Guiding Principles </h2>
 
                 <p>
-                    My goal in this independent study is to develop a web/mobile hybrid app that can
-                both ease and enhance the experience of the Career Fair,
-                specifically the SWE iDay career fair that happens at
-                Northwestern every October. </p>
+                    My goal in this independent study is to develop a web/mobile hybrid app that can both ease and enhance the experience of the Career Fair, specifically the SWE iDay career fair that happens at Northwestern every October.
+                </p>
 
                 Reference to help me when designing and iterating on the UI and UX of this app:
                 <ul>
-                    <li>Simplify the career fair experience by enabling
-                            the user to do everything a paper program could do
-                            - and more - through the app.</li>
-                    <li>Increase engagement before, during, and after
-                            the career fair through this app.</li>
-                    <li>Focus on the experience of the student first.</li>
-                    <li>Mobile = first, tablet = second, others =
-                            afterthought (priorities of smooth user interface
-                            experience)</li>
-                </ul>
+                <li>Simplify the career fair experience by enabling the user to do everything a paper program could do - and more - through the app.</li>
+
+                <li>Increase engagement before, during, and after the career fair through this app.</li>
+
+                <li>Focus on the experience of the student first.</li>
+
+                <li>Mobile = first, tablet = second, others = afterthought (priorities of smooth user interface experience)</li>
+            </ul>
 
                 <!-- experience goals, functionality goals, interface goals....? diff types of goals?
 
@@ -95,26 +91,20 @@
                 <hr class="col-md-12">
 
                 <h3> Technology decisions (some pending) </h3>
-                <ul>
-                    <li>Realized the term for the type of app I want to make
-                    has a specific terminology and design pattern: Single Page
-                    Application (SPA).</li>
-                    <li>Despite researching the topic, I'm having some
-                    difficulty <strong>distinguishing between what makes a web
-                    site vs. web app vs. hybrid app.</strong> I don't believe
-                    there's one "true" definition, but I am concerned about the
-                    ultimate <strong>ability to be downloaded and run from a
-                    phone offline,</strong> which requires being accepted to
-                    app stores, which requires functionality beyond that of
-                    "just a web app", from what I understand.</li>
-                    <li>Decision between pure JavaScript, jQuery, and jQuery Mobile for functionality. Relevant concerns are built-in functionality (not reinventing the wheel) and [perceived] speed on a mobile device.</li>
-                    <li> Choice of HTML5 Mobile UI framework. Was concerned about using <a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a> in that I read criticism it wasn't "mobile-first", but as of today, Jan 30, I noticed the site has been revamped, and possibly some of the doucmentation as well. This will end up making my mind up about the jQuery issue if I stick with B3. My other consideration was <a href="http://foundation.zurb.com/" target="_blank">Zurb's Foundation 5.</a></li>
-                </ul>
 
-                
-               
+                <ul>
+
+                <li>Realized the term for the type of app I want to make has a specific terminology and design pattern: Single Page Application (SPA).</li>
+
+                <li>Despite researching the topic, I&#39;m having some difficulty <strong>distinguishing between what makes a web site vs. web app vs. hybrid app.</strong> I don&#39;t believe there&#39;s one &quot;true&quot; definition, but I am concerned about the ultimate <strong>ability to be downloaded and run from a phone offline,</strong> which requires being accepted to app stores, which requires functionality beyond that of &quot;just a web app&quot;, from what I understand.</li>
+
+                <li>Decision between pure JavaScript, jQuery, and jQuery Mobile for functionality. Relevant concerns are built-in functionality (not reinventing the wheel) and [perceived] speed on a mobile device.</li>
+
+                <li>Choice of HTML5 Mobile UI framework. Was concerned about using <a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a> in that I read criticism it wasn&#39;t &quot;mobile-first&quot;, but as of today, Jan 30, I noticed the site has been revamped, and possibly some of the doucmentation as well. This will end up making my mind up about the jQuery issue if I stick with B3. My other consideration was <a href="http://foundation.zurb.com/" target="_blank">Zurb&#39;s Foundation 5.</a></li>
+            </ul>
 
                 <hr class="col-md-12">
+
                 <h3 id="current">Current I-Day Experience /
                 Information</h3><em>Note: at a bare minimum, my app must offer
                 all of this data, and if possible, improve upon each one. ...
@@ -126,36 +116,26 @@
                 
                 <hr>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h4>In Scope</h4>Features that are planned to
-                                be implemented and fully[ish] functional.
-                            </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4>In Scope</h4>Features that are planned to be implemented and fully[ish] functional.
+                    </div>
 
-                            <div class="panel-body">
-                                <ul id="functional-features">
-                                    <li id="sort-features">
-                                        <strong>Sort:</strong> 
-                                        <!-- <em>Sorting:</em> -->
-                                         Ability to sort (ascending and
-                                        descending) company list by:
+                    <div class="panel-body">
+                        <ul id="functional-features">
+                            <li id="sort-features">
+                                <strong>Sort:</strong>  Ability to sort (ascending and descending) company list by:
 
-                                        <ul>
-                                            <li class="feature p1">Name,
-                                            alphabetical</li>
+                                <ul>
+                                    <li class="feature p1">Name, alphabetical</li>
 
-                                            <li class="feature p1">Location -
-                                            room/floor, alphabetical;
-                                            table/booth, numeric</li>
+                                    <li class="feature p1">Location - room/floor, alphabetical; table/booth, numeric</li>
 
-                                            <li class="feature p2">Company
-                                            size/number of employees,
-                                            numeric</li>
-                                        </ul>
-
-                                    </li>
+                                    <li class="feature p2">Company size/number of employees, numeric</li>
+                                </ul>
+                            </li>
 
                                     <li id="filter-features">
                                         <strong>Filter:</strong> Ability to
@@ -186,27 +166,13 @@
                                         Programmatically generate all filters to maximize reusability and minimize chance of typos/bugs
                                     </li>
 
-                                    <li class="feature p2">Saved user
-                                    settings/preferences, so that the same
-                                    search critera do not have to be repeatedly
-                                    entered.</li>
+                                    <li class="feature p2">Saved user settings/preferences, so that the same search critera do not have to be repeatedly entered.</li>
 
-                                    <li class="feature p2">Ability locate a
-                                    company's booth location on a map. That is,
-                                    looking at a company's profile should allow
-                                    you to jump to a map with a marker. This
-                                    would ideally also work in reverse,
-                                    selecting a table on the map could bring up
-                                    the option of seeing that company
-                                    profile.</li>
+                            <li class="feature p2">Ability locate a company&#39;s booth location on a map. That is, looking at a company&#39;s profile should allow you to jump to a map with a marker. This would ideally also work in reverse, selecting a table on the map could bring up the option of seeing that company profile.</li>
 
-                                    <li class="feature p3">Ability to star
-                                    favorite companies</li>
+                            <li class="feature p3">Ability to star favorite companies</li>
 
-                                    <li class="feature p3">Ability to hide
-                                    companies that are not applicable to the
-                                    user from cluttering up / displaying on the
-                                    map</li>
+                            <li class="feature p3">Ability to hide companies that are not applicable to the user from cluttering up / displaying on the map</li>
 
                                 </ul><!-- /#functional-features -->
                             </div><!-- /.panel-body -->
@@ -230,38 +196,21 @@
                                     experience / user interface for <strong>
                                         non-students</strong>, i.e.:
 
-                                        <ul>
-                                            <li class="feature oos">Recruiters
-                                            / Company representatives</li>
+                                <ul><!-- /#outofscope-features -->
+                                    <li class="feature oos">Recruiters / Company representatives</li>
 
-                                            <li class="feature oos">SWE student
-                                            coordinators / planners of
-                                            IDay</li>
+                                    <li class="feature oos">SWE student coordinators / planners of IDay</li>
 
-                                            <li class="feature oos">Potential
-                                            high-level stakeholders, e.g.
-                                            McCormick, University Career
-                                            Services, etc.</li>
-                                        </ul>
-                                    </li>
-                                </ul><!-- /#outofscope-features -->
-                                While out of scope for functionality
-                                implementation, it is possible that I will be
-                                able to prototype the experience of some of the
-                                below features. As the project evolves, this
-                                may change.
-
-                                <ul id=
-                                "prototype-only-features maybe-features">
-                                    <li class="feature p3">Ability to easily
-                                    import new data into the application for
-                                    non-techy people (i.e. event planners) -
-                                    this allows the app to be reused with
-                                    little additional effort</li>
-
-                                    <li class="feature p3">Minimize internet
-                                    usage</li>
+                                    <li class="feature oos">Potential high-level stakeholders, e.g. McCormick, University Career Services, etc.</li>
                                 </ul>
+                            </li>
+                        </ul>While out of scope for functionality implementation, it is possible that I will be able to prototype the experience of some of the below features. As the project evolves, this may change.
+
+                        <ul id="prototype-only-features maybe-features">
+                            <li class="feature p3">Ability to easily import new data into the application for non-techy people (i.e. event planners) - this allows the app to be reused with little additional effort</li>
+
+                            <li class="feature p3">Minimize internet usage</li>
+                        </ul>
                             </div><!-- /.panel-body -->
                         </div><!-- /.panel .panel-default -->
                     </div><!-- /.col-md-6 -->
