@@ -16,10 +16,44 @@
 			<li>{{title}}</li>
 		{{/speakers}}
 	</script>
+
+	 <script id="template" type="text/html">
+          <li class="mix {{position}} {{major}}" data-name={{name}} data-booth="{{booth}}">
+              <div class="meta name">
+                <div class="img_wrapper">
+                  <img src={{src}} onload="imgLoaded(this)" />
+                </div>
+                <div class="titles">
+                  <h2>{{name}}</h2>
+                  <p>
+                    <em>{{room}}</em>
+                  </p>
+                </div>
+                </div>
+                <div class="meta position">
+                    <p>{{position}}</p>
+                </div>
+                <div class="meta major">
+                    <p>{{major}}</p>
+                </div>
+                <div class="meta booth">
+                    <p>{{major}}</p>
+                </div>   
+          </li>
+        </script>
+
 	<script>
-		$(function() {
+		/*$(function() {
 			$.getJSON('./speakers.json', function(data) {
 			    var template = $('#speakers-template').html();
+			    var info = Mustache.to_html(template, data);
+			    $('#talktitles').html(info);
+			});
+		});*/
+
+		$(function() {
+			$.getJSON('./parks.json', function(data) {
+			    var template = $('#template').html();
 			    var info = Mustache.to_html(template, data);
 			    $('#talktitles').html(info);
 			});
