@@ -1,0 +1,544 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <link href="./css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="./css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css">
+  <!--link href="assets/css/stream.css" media="screen" rel="stylesheet" type="text/css"-->
+  <style>
+  body{
+  background-color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+}
+
+h4, dd, .checkbox label{
+  font-weight: 200;
+}
+
+dt{
+  font-weight: 400;
+}
+
+select, textarea, input{
+  border-radius: 0 !important;
+  font-weight: 200;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none !important;
+}
+
+select:focus, textarea:focus, input:focus{
+  border-color: #CCC !important;
+}
+
+.container{
+  margin:0 auto;
+}
+
+.sidebar{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  min-height: 600px;
+/*
+  box-shadow: inset -1px 0 0 #e5e5e5;
+  background-color: #f5f5f5;
+*/
+}
+
+.sidebar .row h4{
+  color: #808080;
+  padding-left: 0px;
+/* border-bottom: 2px solid #e5e5e5;
+  border-bottom: 2px solid #F08080; 
+  padding-bottom: 7px;
+ */
+}
+
+.sidebar .row{
+  border-bottom: 2px solid #20B2AA;
+  margin-bottom: 10px;
+}
+
+.sidebar .progress{
+  margin-bottom: 0px;
+  margin-top: 12px;
+  float: right;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+
+.sidebar .progress-bar{
+  background-color: #F08080;
+  border-radius: 0;
+}
+
+.criteria{
+  background-color: #D3D3D3;
+  min-height: 110px;
+  margin: 20px 0px;
+  padding-bottom: 5px;
+}
+
+.title{
+  padding: 5px 0 ;
+/*  color: #b94a48; 
+  color: #F08080;*/
+  color: #D3D3D3;
+  margin-left: 15px;
+  font-size: 33px;
+  font-weight: bold;
+  width: 140px;
+  text-shadow: #FFF 0px 1px 0px;
+}
+
+.title:hover{
+  color: #A9A9A9;
+}
+
+.content{
+  margin-top: 40px;
+}
+
+.thumbnail{
+  background-color: #D3D3D3;
+  min-height: 265px;
+  border-radius: 0;
+}
+
+.label{
+  border-radius: 0;
+}
+
+.caption .detail{
+  margin-top: 15px;
+}
+
+.caption .field{
+  font-weight: bold;
+  float: left;
+  width: 65px;
+}
+
+.field-row{
+  display: block;
+}
+
+.company{
+  margin-bottom: 20px;
+  padding-right: 5px;
+}
+
+.company h4{
+  margin-top: 15px;
+  margin-bottom: -5px;
+  border-bottom: 1px solid #A9A9A9; 
+  padding-bottom: 7px;
+}
+
+.isStarred{
+  float: right;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-right: -5px;
+  background-color: #F08080;
+}
+
+.isStarred .glyphicon{
+  vertical-align: middle;
+  color: #fff;
+}
+
+.first{
+  margin-top: 10px;
+}
+
+.search-icon{
+  position: relative;
+  margin-top: -27px;
+  display: inline-block;
+  width: 28px;
+  height: 14px;
+  line-height: 14px;
+  vertical-align: middle;
+  background-color: transparent;
+  font-size: 20px;
+  color: #20B2AA;
+  float: right;
+}
+
+.collection{
+  margin-right: 1px;
+}
+
+.description {
+  display: block;
+  position: absolute;
+  left: 15px;
+  height: auto;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  -webkit-transition: opacity .25s ease-in;
+  -ms-transition: opacity .25s ease-in;
+  -moz-transition: opacity .25s ease-in;
+  -o-transition: opacity .25s ease-in;
+  transition: opacity .25s ease-in;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: 200;
+}
+
+.caption:hover .description{
+  opacity: 1;
+}
+
+.caption:hover .detail{
+  opacity: 0;
+}
+
+.booth{
+  display: block;
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 15px;
+  color: #F08080;
+}
+
+.booth .glyphicon{
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.criteria h4{
+  border-bottom: 1px solid #A9A9A9;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 10px;
+  color: #808080;
+}
+
+.ui-widget-header{
+  background: none;
+  background-color: #20B2AA;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  background: none;
+  background-color: #A9A9A9;
+}
+
+.slider{
+  margin: 0 20px;
+}
+
+.slider-label{
+  display: block;
+  text-align: center;
+  font-weight: 200;
+}
+
+.criteria .checkbox{
+  margin-left: 20px;
+}
+
+.criteria select{
+  margin-left: 10px;
+}
+  </style>
+  
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery-ui-1.10.2.custom.min.js"></script>
+  
+  <script src="./js/mustache.js"></script>
+  <script src="./js/filter.js"></script>
+  
+  <script src="./data/top_movies_data.js"></script>
+  
+  <script>
+    //  src="lazy_id_filter.js"
+    jQuery(document).ready(function ($) {
+
+  var template = Mustache.compile($.trim($("#template").html())),
+    $container = $('.companies');
+
+  var all_majors = ["Applied Math", "Drama", "Thriller", "Adventure", "Western", "Action", "Biography", "History", "War", "Fantasy", "Sci-Fi", "Mystery", "Romance", "Family", "Horror", "Film-Noir", "Comedy", "Animation", "Musical", "Music", "Sport"];
+
+  var major_template = Mustache.compile($.trim($("#major_template").html())),
+    $major_container = $('#major_criteria')
+
+    $.each(all_majors, function (i, m) {
+      $major_container.append(major_template({
+        major: m
+      }));
+    });
+
+  /*
+  $("#rating_slider").slider({
+    min: 8,
+    max: 10,
+    values: [8, 10],
+    step: 0.1,
+    range: true,
+    slide: function (event, ui) {
+      $("#rating_range_label").html(ui.values[0] + ' - ' + ui.values[1]);
+      $('#rating_filter').val(ui.values[0] + '-' + ui.values[1]).trigger('change');
+    }
+  });
+
+  $("#booth_slider").slider({
+    min: 50,
+    max: 250,
+    values: [0, 250],
+    step: 10,
+    range: true,
+    slide: function (event, ui) {
+      $("#booth_range_label").html(ui.values[0] + ' mins. - ' + ui.values[1] + ' mins.');
+      $('#booth_filter').val(ui.values[0] + '-' + ui.values[1]).trigger('change');
+    }
+  });
+
+  $("#year_slider").slider({
+    min: 1920,
+    max: (new Date()).getFullYear(),
+    values: [1920, (new Date()).getFullYear()],
+    step: 10,
+    range: true,
+    slide: function (event, ui) {
+      $("#year_range_label").html(ui.values[0] + ' - ' + ui.values[1]);
+      $('#year_filter').val(ui.values[0] + '-' + ui.values[1]).trigger('change');
+    }
+  });*/
+
+  $.each(Movies, function (i, m) {
+    m.id = i + 1;
+  });
+  window.mf = MovieFilter(Movies);
+
+  $('#major_criteria :checkbox').prop('checked', true);
+  $('#all_majors').on('click', function (e) {
+    $('#major_criteria :checkbox:gt(0)').prop('checked', $(this).is(':checked'));
+    mf.filter();
+  });
+
+
+  // Here is the interesting part:
+  //------------------------------
+
+  // Sometimes the data initially loaded cannot contain everything
+  // The idea is then to allow to filter the data based on the id that is set
+  // in the loaded data and define the filter afterwards
+
+  // 1) In this case the ids for the filter are defined as a data attribute on the element (data-ids)
+  mf.addFilterCriteria('in_cinema', '#in_cinema');
+  mf.addFilterCriteria('straight_to_video', '#straight_to_video');
+
+  // 2) In this case we load the filter manually but this can easily come from
+  // an ajax request as well and then build the filter
+  /*top_worst_movie_filter_criteria = [
+    {
+      name: 'top_10_all_time',
+      fullname: 'Top 10 all time',
+      ids: [50, 1, 2, 4, 5, 20, 29, 40, 42, 53]
+    },
+    {
+      name: 'worst_10_all_time',
+      fullname: 'Worst 10 all time',
+      ids: [60, 44, 76, 47, 98, 93, 23, 45, 90, 155]
+    },
+    {
+      name: 'top_10_last_year',
+      fullname: 'Top 10 last year',
+      ids: [59, 43, 77, 33, 66, 89, 98, 22, 33, 122]
+    },
+    {
+      name: 'worst_10_last_year',
+      fullname: 'Worst 10 last year',
+      ids: [102, 104, 108, 111, 113, 119, 156, 176, 198, 134]
+    }
+  ];
+
+  top_worst_movie_filter_criteria_by_key = {}
+  // With the data retrieve we can build the filter
+  $.each(top_worst_movie_filter_criteria, function (i, t) {
+    top_worst_movie_filter_criteria_by_key[t.name] = t.ids;
+    $('#top_worst').append('<option value=' + t.name + '>' + t.fullname + '</option>');
+  });
+
+  // No we bind the filter logic
+  mf.addFilterCriteria('top_worst', '#top_worst', top_worst_movie_filter_criteria_by_key);*/
+
+});
+
+var MovieFilter = function (data) {
+  var template = Mustache.compile($.trim($("#template").html()));
+
+  var view = function (company) {
+    company.positions = company.positions.join(', ');
+    return template(company);
+  };
+  var callbacks = {
+    show_search_count: function (result) {
+      $('#total_companies').text(result.length);
+    },
+  };
+
+  options = {
+    filter_criteria: {
+      isStarred: ['#isStarred_filter .TYPE.range', 'isStarred'],
+      room: ['#room_filter .TYPE.range', 'room'], //......
+      booth: ['#booth_filter .TYPE.range', 'booth'],
+      major: ['#major_criteria input:checkbox:gt(0)', 'major']
+    },
+    and_filter_on: false,
+    callbacks: callbacks,
+    search: {
+      input: '#searchbox'
+    },
+    streaming: {
+      data_url: 'data/top_movies_data.json',
+      stream_after: 1,
+      batch_size: 50,
+      before_add: function (data) {
+        var offset = this.data.length;
+
+        if (offset == 450) {
+          this.clearStreamingTimer();
+        }
+
+        $.each(data, function (i, m) {
+          m.id = offset + 1;
+        })
+      },
+      after_add: function (data) {
+        var percent = (this.data.length - 250) * 100 / 250;
+        $('#stream_progress').text(percent + '%').attr('style', 'width: ' + percent + '%;');
+        if (percent == 100) $('#stream_progress').parent().fadeOut(1000);
+      }
+    }
+  }
+
+  return FilterJS(data, "#companies", view, options);
+}
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Filter.js</h1>
+
+    <h1 class="result_count">Count:</h1>
+
+    <div class="sidebar col-span-3">
+      <div class="row">
+        <h4 class="col-span-6">Companies (
+          <span id="total_companies">250</span>)</h4>
+        <div class="col-span-6 progress">
+          <div class="progress-bar" id="stream_progress" style="width: 0%">0 %</div>
+        </div>
+      </div>
+      
+      <div>
+        <input type="text" id="searchbox" placeholder="Search...">
+        <span class="glyphicon glyphicon-search search-icon"></span>
+      </div>
+      
+      <div class="criteria" id="isStarred_criteria">
+        <h4>Starred/Favorites</h4>
+        <span id="isStrred_range_label" class="slider-label">8 - 10</span>
+        <div id="isStarred_slider" class="slider"></div>
+        <input type="hidden" id="isStarred_filter" value="8-10" />
+      </div>
+      
+      <div class="criteria" id="booth_criteria">
+        <h4>Booth/Table #</h4>
+        <span id="booth_range_label" class="slider-label">50 mins - 250 mins</span>
+        <div id="booth_slider" class="slider"></div>
+        <input type="hidden" id="booth_filter" value="50-250">
+      </div>
+      
+      <div class="criteria" id="room_criteria">
+        <h4>Room</h4>
+        <span id="room_range_label" class="slider-label">1920 - 2013</span>
+        <div id="room_slider" class="slider"></div>
+        <input type="hidden" id="room_filter" value="1920-2013" />
+      </div>
+      
+      <div class="criteria" id="major_criteria">
+        <h4>Majors Sought</h4>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="All" id="all_majors">All
+          </label>
+        </div>
+      </div>
+      <!--
+      <div class="criteria">
+        <h4>Movie top/worst</h4>
+        <select id="top_worst" class="col-span-8"></select>
+      </div>
+      
+      <div class="criteria">
+        <h4>Additional criteria</h4>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" data-ids="[1,10,50,60,100]" id="in_cinema">In cinema
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" data-ids="[200,230,75,120,50]" id="straight_to_video">Straight to video
+          </label>
+        </div>
+      </div>
+      -->
+    </div> <!-- /sidebar col3span pushpin or map-marker or screenshot -new-window? -->
+    
+    <div class="companies content col-span-9" id="companies"> </div>
+    
+    
+    <script id="template" type="text/html">
+      <div class="col-span-4 company">
+          <div class="thumbnail">
+            <span class="label label-success isStarred">{{isStarred}}
+              <i class="glyphicon glyphicon-star"></i>
+            </span>
+            <div class="caption">
+              <h4>{{name}}</h4>
+              <div class="description">
+                {{description}}
+                <span class="booth">
+                  <i class="glyphicon glyphicon-map-marker"></i>
+                  Booth #{{booth}}
+    </span>
+    </div>
+              <div class="detail">
+                <dl>
+                  <dt>Director</dt>
+                  <dd>{{director}}</dd>
+                  <dt>Hiring for roles:</dt>
+                  <dd>{{positions}}</dt>
+                  <dt>Room</dt>
+                  <dd>{{room}}</dd>
+    </dl>
+    </div>
+    </div>
+    </div>
+    </div>
+    </script>
+    <script id="major_template" type="text/html">
+      <div class="checkbox">
+          <label>
+            <input type="checkbox" value="{{major}}"> {{major}}
+    </label>
+    </div>
+    </script>
+  </div>
+</body>
+
+</html>
