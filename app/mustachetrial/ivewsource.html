@@ -5,18 +5,28 @@
 	<title>Mustache Sample</title>
 </head>
 <body>
+		http://barcampdeland.org/_/data/speakers.json
+
 	<h2>Titles</h2>
 	<ul id="talktitles">
 	</ul>
-	http://barcampdeland.org/_/data/speakers.json
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
 	<script id="speakers-template" type="text/template">
 		{{#speakers}}
-			<li>{{title}}</li>
+			<li>
+			{{name}}
+			<ul>
+			<li>{{booth}}</li>
+			<li>{{room}}</li>
+			<li>{{position}}</li>
+			<li>{{major}}</li>
+			</ul>
+			</li>
 		{{/speakers}}
 	</script>
-
+<!--
 	 <script id="template" type="text/template">
 	 	{{#speakers}}
           <li class="mix {{position}} {{major}}" data-name={{name}} data-booth="{{booth}}">
@@ -43,23 +53,26 @@
           </li>
           {{/speakers}}
         </script>
+-->
+
+
 
 	<script>
-		/*$(function() {
-			$.getJSON('./speakers.json', function(data) {
+		$(function() {
+			$.getJSON('./parks.json', function(data) {
 			    var template = $('#speakers-template').html();
 			    var info = Mustache.to_html(template, data);
 			    $('#talktitles').html(info);
 			});
-		});*/
-
+		});
+/*
 		$(function() {
 			$.getJSON('./parks.json', function(data) {
 			    var template = $('#template').html();
 			    var info = Mustache.to_html(template, data);
 			    $('#talktitles').html(info);
 			});
-		});
+		});*/
 	</script>
 </body>
 </html>
