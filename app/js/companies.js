@@ -65,6 +65,7 @@ $(function () {
   // but for now maybe i'll just use variables? json objects? iono
 
   //name dataname filtername iono
+  /*
   var all_positions = [
     {
       name: "alaska",
@@ -106,7 +107,7 @@ $(function () {
       friendlyName: "Swimming",
   },
   ];
-
+*/
 
   /*
   <li class="active" data-filter="all" data-dimension="position">All</li>
@@ -129,7 +130,7 @@ $(function () {
 
   // create the HTML for the 2 drop down filters
 
-
+/*
   // make filters to fill list
   $(function () {
 
@@ -183,7 +184,7 @@ $(function () {
     $('#positions').append(positionFilters);
     $('#positions').addClass("drop_down wf");
 
-  });
+  });*/
   /*
   var sharedFilterListHTML = '<div class="drop_down wf">';
   sharedFilterListHTML += '<span class="anim150">';
