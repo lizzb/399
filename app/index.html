@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!--Add the module and controller to the HTML so that Angular knows how to bootstrap our application.-->
+<!-- define angular app -->
+<html ng-app="scotchApp">
+
+<head>
+
+  <!-- Setting <base> For Relative Links: To link around your application using relative links.  HTML5 mode set to true should automatically resolve relative links. This has just always worked for me. If your root of your application is different than the url (for instance /my-base, then use that as your base.
+  The $location service will automatically fallback to the hashbang method for browsers that do not support the HTML5 History API.This happens transparently to you and you won’t have to configure anything for it to work.
+  -->
+  <meta charset="utf-8">
+
+
+
+
+  <!-- SCROLLS -->
+  <!-- load bootstrap and fontawesome via CDN -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+  <!-- SPELLS -->
+  <!-- load jquery, bootstrap, and angular via CDN -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+  <script src="script.js"></script>
+
+  <base href="/">
+</head>
+
+<!-- define angular controller -->
+
+<body ng-controller="mainController">
+
+  <!-- HEADER AND NAVBAR -->
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Angular Routing Example</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              <i class="fa fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#about">
+              <i class="fa fa-shield"></i>About</a>
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="fa fa-comment"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT AND INJECTED VIEWS -->
+  <div id="main">
+
+    <!--
+    ng-view is an Angular directive that will include the template of the current route (/home, /about, or /contact) in the main layout file. In plain words, it takes the file we want based on the route and injects it into our main layout (index.html). We will add the ng-view code to our site in the div#main to tell Angular where to place our rendered pages.
+-->
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+    <div ng-view></div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    View the tutorial on
+    <a href="http://scotch.io/tutorials/javascript/single-page-apps-with-angularjs-routing-and-templating">Scotch.io</a>
+  </footer>
+
+</body>
+
+</html>
