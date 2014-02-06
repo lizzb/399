@@ -48,6 +48,53 @@ DEMO FEATURES
 
   <title>Companies - based off National Parks MixItUp Demo</title>
 
+<!--style> from shuffle.js adaptive layout, shows dimensions of screen at bottom
+body {
+  font-family: 'Ubuntu', Verdana, sans-serif;
+  color: #5d6d77;
+}
+
+body::before {
+  content: 'Default - 940px';
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background-color: rgba(119, 204, 102, 0.6);
+  -webkit-transition: background .2s ease;
+  -o-transition: background .2s ease;
+  transition: background .2s ease;
+}
+
+@media (min-width: 1200px) {
+  body::before {
+    content: 'Large Desktop - 1200px+';
+    background-color: rgba(204, 119, 102, 0.6);
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  body::before {
+    content: 'Portrait tablet to landscape and desktop - > 768px && < 979px';
+    background-color: rgba(204, 187, 102, 0.6);
+  }
+}
+@media (max-width: 767px) {
+  body::before {
+    content: 'Phones to Tablets - < 767px';
+    background-color: rgba(102, 153, 204, 0.6);
+  }
+}
+@media (max-width: 480px) {
+  body::before {
+    content: 'Phones - < 480px';
+    background-color: rgba(204, 102, 204, 0.6);
+  }
+}
+</style-->
+
+
 </head>
 
 <body>
@@ -108,13 +155,22 @@ DEMO FEATURES
               <li data-filter="pacific_west" data-dimension="position">Pacific West</li>
               <li data-filter="southeast" data-dimension="position">Southeast</li>
             -->
+              <li data-filter="Intern" data-dimension="position"> Intern </li>
+              <li data-filter="Full-Time" data-dimension="position">Full-Time</li>
+              <li data-filter="Co-Op" data-dimension="position">Co-Op</li>
+              <li data-filter="MS/PhD" data-dimension="position">MS/PhD</li>
+              <!--
               <li data-filter="Alaska" data-dimension="position">Alaska</li>
               <li data-filter="Intermountain" data-dimension="position">Intermountain</li>
               <li data-filter="Northeast" data-dimension="position">Northeast</li>
               <li data-filter="Pacific West" data-dimension="position">Pacific West</li>
               <li data-filter="Southeast" data-dimension="position">Southeast</li>
+            -->
             </ul>
           </div>
+
+          
+
 
           <div id="majors" class="drop_down wf">
             <span class="anim150">major</span>
@@ -126,10 +182,25 @@ DEMO FEATURES
               <li data-filter="fishing" data-dimension="major">Fishing</li>
               <li data-filter="swimming" data-dimension="major">Swimming</li>
               -->
+              <li data-filter="Applied Math" data-dimension="major"> Applied Math </li>
+              <li data-filter="BME" data-dimension="major">BME</li>
+              <li data-filter="Chem" data-dimension="major">Chem</li>
+              <li data-filter="Civil" data-dimension="major">Civil</li>
+              <li data-filter="CE" data-dimension="major">CE</li>
+              <li data-filter="CS" data-dimension="major">CS</li>
+              <li data-filter="EE" data-dimension="major">EE</li>
+              <li data-filter="EnvE" data-dimension="major">EnvE</li>
+              <li data-filter="IE" data-dimension="major">IE</li>
+              <li data-filter="MaDE" data-dimension="major">MaDE</li>
+              <li data-filter="MatSci" data-dimension="major">MatSci</li>
+              <li data-filter="Mech" data-dimension="major">Mech</li>
+              <li data-filter="Non-Eng" data-dimension="major">Non-Eng</li>
+              <!--li data-filter="" data-dimension="major"></li>
+
               <li data-filter="Camping" data-dimension="major">Camping</li>
               <li data-filter="Climbing" data-dimension="major">Climbing</li>
               <li data-filter="Fishing" data-dimension="major">Fishing</li>
-              <li data-filter="Swimming" data-dimension="major">Swimming</li>
+              <li data-filter="Swimming" data-dimension="major">Swimming</li>-->
             </ul>
           </div>
         </div>
