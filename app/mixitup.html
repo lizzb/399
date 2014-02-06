@@ -46,7 +46,7 @@ DEMO FEATURES
 
   <script src="./js/companies.js"></script>
 
-  <title>Companies - based off National Parks MixItUp Demo</title>
+  <title>Company List - based off National Parks MixItUp Demo</title>
 
 <!--style> from shuffle.js adaptive layout, shows dimensions of screen at bottom
 body {
@@ -106,22 +106,10 @@ body::before {
       <div class="wrapper just wf">
         <a class="ib" href="http://mixitup.io">
           <div id="Logo" class="ib">
-            <!--ul class="ib anim150 just">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul-->
           </div>
           <h1 class="ib">
-            <strong>Company List</strong>: A MixItUp Demo</h1>
+            <strong>Company List</strong> using MixItUp </h1>
         </a>
-
       </div>
     </header>
     <!-- END HEADER -->
@@ -130,7 +118,7 @@ body::before {
     <!-- BEGIN DEMO WRAPPER -->
     <div class="wrapper wf">
 
-      <!-- BEGIN CONTROLS -->
+      <!-- ---------- BEGIN CONTROLS ---------- -->
       <nav class="controls just">
 
         <!-- ---------- SORTING ----------  -->
@@ -148,40 +136,20 @@ body::before {
             <span class="anim150">Position</span>
             <ul class="anim250">
               <li class="active" data-filter="all" data-dimension="position">All</li>
-              <!--
-              <li data-filter="alaska" data-dimension="position">Alaska</li>
-              <li data-filter="intermountain" data-dimension="position">Intermountain</li>
-              <li data-filter="northeast" data-dimension="position">Northeast</li>
-              <li data-filter="pacific_west" data-dimension="position">Pacific West</li>
-              <li data-filter="southeast" data-dimension="position">Southeast</li>
-            -->
+              <!--li data-filter="" data-dimension="position"></li>-->
               <li data-filter="Intern" data-dimension="position"> Intern </li>
               <li data-filter="Full-Time" data-dimension="position">Full-Time</li>
               <li data-filter="Co-Op" data-dimension="position">Co-Op</li>
-              <li data-filter="MS/PhD" data-dimension="position">MS/PhD</li>
-              <!--
-              <li data-filter="Alaska" data-dimension="position">Alaska</li>
-              <li data-filter="Intermountain" data-dimension="position">Intermountain</li>
-              <li data-filter="Northeast" data-dimension="position">Northeast</li>
-              <li data-filter="Pacific West" data-dimension="position">Pacific West</li>
-              <li data-filter="Southeast" data-dimension="position">Southeast</li>
-            -->
+              <li data-filter="MS-PhD" data-dimension="position">MS/PhD</li>
             </ul>
           </div>
 
           
-
-
           <div id="majors" class="drop_down wf">
             <span class="anim150">major</span>
             <ul class="anim250">
               <li class="active" data-filter="all" data-dimension="major">All</li>
-              <!--
-              <li data-filter="camping" data-dimension="major">Camping</li>
-              <li data-filter="climbing" data-dimension="major">Climbing</li>
-              <li data-filter="fishing" data-dimension="major">Fishing</li>
-              <li data-filter="swimming" data-dimension="major">Swimming</li>
-              -->
+              <!--li data-filter="" data-dimension="major"></li>-->
               <li data-filter="Applied Math" data-dimension="major"> Applied Math </li>
               <li data-filter="BME" data-dimension="major">BME</li>
               <li data-filter="Chem" data-dimension="major">Chem</li>
@@ -195,12 +163,6 @@ body::before {
               <li data-filter="MatSci" data-dimension="major">MatSci</li>
               <li data-filter="Mech" data-dimension="major">Mech</li>
               <li data-filter="Non-Eng" data-dimension="major">Non-Eng</li>
-              <!--li data-filter="" data-dimension="major"></li>
-
-              <li data-filter="Camping" data-dimension="major">Camping</li>
-              <li data-filter="Climbing" data-dimension="major">Climbing</li>
-              <li data-filter="Fishing" data-dimension="major">Fishing</li>
-              <li data-filter="Swimming" data-dimension="major">Swimming</li>-->
             </ul>
           </div>
         </div>
@@ -208,7 +170,7 @@ body::before {
 
       <!-- END CONTROLS -->
 
-      <!-- BEGIN PARKS -->
+      <!-- ---------- BEGIN LIST OF COMPANIES ---------- -->
 
       <ul id="companies" class="just">
 
@@ -230,7 +192,7 @@ body::before {
         </div>
 
         <!-- FAIL ELEMENT -->
-        <div class="fail_element anim250">Sorry &mdash; we could not find any parks matching matching these criteria</div>
+        <div class="fail_element anim250">Sorry &mdash; we could not find any companies matching matching the selected criteria :( </div>
 
         <!-- BEGIN LIST OF COMPANIES(MANY OF THESE ELEMENTS ARE VISIBLE ONLY IN LIST MODE)-->
 
@@ -247,7 +209,7 @@ body::before {
   <!-- BEGIN FOOTER -->
 
   <footer class="wf">
-    <div class="left">
+    <!--div class="left">
     </div>
     <div class="right">
       <p>
@@ -255,7 +217,7 @@ body::before {
         <a href="#">Barrel Tool</a>
         <br/>Concept and development by Patrick Kunka</p>
       <p class="small">&copy; Copyright 2013 Barrel LLC. All rights reserved.</p>
-    </div>
+    </div-->
     <div class="clear"></div>
   </footer>
 

@@ -17,10 +17,16 @@
 $(function () {
   all_companies.forEach(function (company) {
     var companyHTML = '<li class="mix ';
-    companyHTML += company.position + ' '; // + park.major + ' "';
+    // need to add positions AND majors to class of the LI element for filtering
+
+    //companyHTML += company.position + ' '; // + park.major + ' "';
+    company.position.forEach(function (j) {
+      companyHTML += j + ' ';
+    });
     company.major.forEach(function (m) {
       companyHTML += m + ' ';
     });
+
     // mix_all gets added???
     companyHTML += '"';
     companyHTML += 'data-name="' + company.name + '" data-booth= "' + company.booth + '" >';
@@ -38,13 +44,17 @@ $(function () {
     companyHTML += '</div>'; //name
 
     companyHTML += '<div class="meta position">';
-    companyHTML += '<p>' + company.position + '</p>';
+    //companyHTML += '<p>' + company.position + '</p>';
+    company.position.forEach(function (job) {
+      companyHTML += job + ' ';
+    });
     companyHTML += '</div>';
 
     companyHTML += '<div class="meta major">';
     companyHTML += '<ul>';
     company.major.forEach(function (m) {
-      companyHTML += '<li>' + m + '</li>'; // maybe add all possible majors to a list here!
+      //companyHTML += '<li>' + m + '</li>'; // maybe add all possible majors to a list here!
+      companyHTML += m + ', ';
     });
     companyHTML += '</ul>';
     companyHTML += '</div>';

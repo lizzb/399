@@ -1,8 +1,11 @@
-var all_positions = ['Intern', 'Full-Time', 'Co-Op', 'MS/PhD'];
+var all_positions = ['Intern', 'Full-Time', 'Co-Op', 'MS/PhD']; // friendly names
+// intern fte coop msphd
 
 var all_majors = [ 'Applied Math', 'BME', 'Chem', 'Civil', 'CE', 'CS', 'EE', 'EnvE', 'IE', 'MaDE', 'MatSci', 'Mech', 'Non-Eng' ];
 
 // Wildcat Room (1) Northwestern (2) Louis (2)
+
+//MS/PhD --> MS-PhD
 
 var all_companies = [
   {
@@ -26,7 +29,7 @@ var all_companies = [
     booth: 45,
     room: "Louis (2)",
     major: ['CE', 'CS', 'Non-Eng' ],
-    position: ['Intern', 'Full-Time', 'Co-Op', 'MS/PhD'],
+    position: ['Intern', 'Full-Time', 'Co-Op', 'MS-PhD'],
     description: "Adage Technologies, an award-winning Chicago web development firm, specializes in creating engaging custom websites, custom software and mobile solutions since its inception in 2001.",
   },
   {
@@ -34,7 +37,7 @@ var all_companies = [
     booth: 9,
     room: "Louis (2)",
     major: ['CE', 'CS', 'EE' ],
-    position: ['Intern', 'Full-Time', 'Co-Op', 'MS/PhD'],
+    position: ['Intern', 'Full-Time', 'Co-Op', 'MS-PhD'],
     description: "Alcatel-Lucent is at the forefront of global communications. We provide products and innovations in IP and cloud networking, as well as ultra-broadband fixed and wireless access. We serve service providers and their customers, as well as enterprises and institutions throughout the world. Alcatel-Lucent's Bell Labs, one of the world�s foremost technology research institutes, is responsible for countless breakthroughs that have shaped the networking and communications industry.",
   },
 
