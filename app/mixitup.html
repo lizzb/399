@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" type="text/css" href="./css/companies.css" />
+
+  <!--link rel="shortcut icon" type="image/x-icon" href="im/favicon.ico" /-->
+
+  <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+
+  <script src="http://mixitup.io/demos/js/jquery-ui.sortable.min.js"></script>
+  <script src="http://mixitup.io/demos/js/jquery.ui.touch-punch.min.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+
+  <!-- 
+		NATIONAL PARKS: A MIXITUP DEMO
+		MixItUp is free for non-commercial and commercial use.
+		
+DEMO FEATURES
+- Switch between grid and list view using the 'toGrid' and 'toList' methods
+- Use different stylings for grid and list views via the 'gridClass' and 'listClass' options
+- Sort by name and by booth using sort buttons
+- Complex multi-dimensional checkbox filtering using the 'filter' method and custom click handlers
+- Fade-in "fail element" when MixItUp's filters return no elements.
+
+    don't know what mix_all class is but keeps getting added 
+    need to look at how this stuff is generated in code
+    generate filter list from item list - friendly name vs sort name
+    responsive? bootstrap?
+		-->
+
+  <script src="./js/companyGrid.js"></script>
+
+  <script src="./js/companies.js"></script>
+
+  <title>Companies - based off National Parks MixItUp Demo</title>
+
+</head>
+
+<body>
+  <section>
+
+    <!-- BEGIN HEADER -->
+
+    <header class="ns">
+      <div class="wrapper just wf">
+        <a class="ib" href="http://mixitup.io">
+          <div id="Logo" class="ib">
+            <!--ul class="ib anim150 just">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul-->
+          </div>
+          <h1 class="ib">
+            <strong>Company List</strong>: A MixItUp Demo</h1>
+        </a>
+
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+
+    <!-- BEGIN DEMO WRAPPER -->
+    <div class="wrapper wf">
+
+      <!-- BEGIN CONTROLS -->
+      <nav class="controls just">
+
+        <!-- ---------- SORTING ----------  -->
+        <div class="group" id="Sorts">
+          <div class="button active" id="ToList">
+            <i></i>List View</div>
+          <div class="button" id="ToGrid">
+            <i></i>Grid View</div>
+        </div>
+
+        <!-- ---------- FILTERS ----------  -->
+        <div class="group" id="Filters">
+
+          <div id="positions" class="drop_down wf">
+            <!--<span class="anim150">Position</span>
+            <ul class="anim250">
+              <li class="active" data-filter="all" data-dimension="position">All</li>
+              <!--
+              <li data-filter="alaska" data-dimension="position">Alaska</li>
+              <li data-filter="intermountain" data-dimension="position">Intermountain</li>
+              <li data-filter="northeast" data-dimension="position">Northeast</li>
+              <li data-filter="pacific_west" data-dimension="position">Pacific West</li>
+              <li data-filter="southeast" data-dimension="position">Southeast</li>
+            --
+              <li data-filter="Alaska" data-dimension="position">Alaska</li>
+              <li data-filter="Intermountain" data-dimension="position">Intermountain</li>
+              <li data-filter="Northeast" data-dimension="position">Northeast</li>
+              <li data-filter="Pacific West" data-dimension="position">Pacific West</li>
+              <li data-filter="Southeast" data-dimension="position">Southeast</li>
+            </ul>-->
+          </div>
+
+          <div id="majors" class="drop_down wf">
+            <!--<span class="anim150">major</span>
+            <ul class="anim250">
+              <li class="active" data-filter="all" data-dimension="major">All</li>
+              <!--
+              <li data-filter="camping" data-dimension="major">Camping</li>
+              <li data-filter="climbing" data-dimension="major">Climbing</li>
+              <li data-filter="fishing" data-dimension="major">Fishing</li>
+              <li data-filter="swimming" data-dimension="major">Swimming</li>
+              --
+              <li data-filter="Camping" data-dimension="major">Camping</li>
+              <li data-filter="Climbing" data-dimension="major">Climbing</li>
+              <li data-filter="Fishing" data-dimension="major">Fishing</li>
+              <li data-filter="Swimming" data-dimension="major">Swimming</li>
+            </ul>-->
+          </div>
+        </div>
+      </nav>
+
+      <!-- END CONTROLS -->
+
+      <!-- BEGIN PARKS -->
+
+      <ul id="companies" class="just">
+
+        <!-- "TABLE" HEADER CONTAINING SORT BUTTONS (HIDDEN IN GRID MODE)-->
+
+        <div class="list_header">
+          <div class="meta name active desc" id="SortByName">
+            Name &nbsp;
+            <span class="sort anim150 asc active" data-sort="data-name" data-order="desc"></span>
+            <span class="sort anim150 desc" data-sort="data-name" data-order="asc"></span>
+          </div>
+          <div class="meta position">Position</div>
+          <div class="meta major">Major</div>
+          <div class="meta booth" id="SortByBooth">
+            Booth # &nbsp;
+            <span class="sort anim150 asc" data-sort="data-booth" data-order="asc"></span>
+            <span class="sort anim150 desc" data-sort="data-booth" data-order="desc"></span>
+          </div>
+        </div>
+
+        <!-- FAIL ELEMENT -->
+        <div class="fail_element anim250">Sorry &mdash; we could not find any parks matching matching these criteria</div>
+
+        <!-- BEGIN LIST OF COMPANIES(MANY OF THESE ELEMENTS ARE VISIBLE ONLY IN LIST MODE)-->
+
+        <!-- END LIST OF COMPANIES -->
+
+      </ul>
+
+    </div>
+
+    <!-- END DEMO WRAPPER -->
+
+  </section>
+
+  <!-- BEGIN FOOTER -->
+
+  <footer class="wf">
+    <div class="left">
+    </div>
+    <div class="right">
+      <p>
+        <strong>MixItUp</strong>is a
+        <a href="#">Barrel Tool</a>
+        <br/>Concept and development by Patrick Kunka</p>
+      <p class="small">&copy; Copyright 2013 Barrel LLC. All rights reserved.</p>
+    </div>
+    <div class="clear"></div>
+  </footer>
+
+  <!-- END FOOTER -->
+
+
+
+</body>
+
+</html>
