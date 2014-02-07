@@ -43,25 +43,25 @@ myApp.config(['$routeProvider','$locationProvider', function($routeProvider, $lo
 	         $routeProvider
 	         // route for the home page
 	         .when('/', {
-	           templateUrl: '/399/app/angular/pages/home.html',
+	           templateUrl: '/pages/home.html',
 	           controller: 'mainController'
 	         })
 
 	         // route for the companies page
 	         .when('/companies', {
-	           templateUrl: '/399/app/angular/pages/companies.html',
+	           templateUrl: '/pages/companies.html',
 	           controller: 'companiesController'
 	         })
 
 	         // route for the about page
 	         .when('/about', {
-	           templateUrl: '/399/app/angular/pages/about.html',
+	           templateUrl: '/pages/about.html',
 	           controller: 'aboutController'
 	         })
 
 	         // route for the contact page
 	         .when('/contact', {
-	           templateUrl: '/399/app/angular/pages/contact.html',
+	           templateUrl: '/pages/contact.html',
 	           controller: 'contactController'
 	         });
 
