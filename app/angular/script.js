@@ -42,26 +42,26 @@ myApp.config(['$routeProvider','$locationProvider', function($routeProvider, $lo
 	       scotchApp.config(function ($routeProvider, $locationProvider) {
 	         $routeProvider
 	         // route for the home page
-	         .when('./399/app/angular', {
-	           templateUrl: 'pages/home.html',
+	         .when('/', {
+	           templateUrl: '/399/app/angular/pages/home.html',
 	           controller: 'mainController'
 	         })
 
 	         // route for the companies page
 	         .when('/companies', {
-	           templateUrl: 'pages/companies.html',
+	           templateUrl: '/399/app/angular/pages/companies.html',
 	           controller: 'companiesController'
 	         })
 
 	         // route for the about page
 	         .when('/about', {
-	           templateUrl: 'pages/about.html',
+	           templateUrl: '/399/app/angular/pages/about.html',
 	           controller: 'aboutController'
 	         })
 
 	         // route for the contact page
 	         .when('/contact', {
-	           templateUrl: 'pages/contact.html',
+	           templateUrl: '/399/app/angular/pages/contact.html',
 	           controller: 'contactController'
 	         });
 
