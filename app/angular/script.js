@@ -42,7 +42,7 @@ myApp.config(['$routeProvider','$locationProvider', function($routeProvider, $lo
 	       scotchApp.config(function ($routeProvider, $locationProvider) {
 	         $routeProvider
 	         // route for the home page
-	         .when('/', {
+	         .when('./', {
 	           templateUrl: 'pages/home.html',
 	           controller: 'mainController'
 	         })
