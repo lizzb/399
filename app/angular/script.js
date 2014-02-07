@@ -47,6 +47,12 @@ myApp.config(['$routeProvider','$locationProvider', function($routeProvider, $lo
 	           controller: 'mainController'
 	         })
 
+	         // route for the companies page
+	         .when('/companies', {
+	           templateUrl: 'pages/companies.html',
+	           controller: 'companiesController'
+	         })
+
 	         // route for the about page
 	         .when('/about', {
 	           templateUrl: 'pages/about.html',
@@ -76,6 +82,11 @@ myApp.config(['$routeProvider','$locationProvider', function($routeProvider, $lo
 	       scotchApp.controller('mainController', function ($scope) {
 	         // create a message to display in our view
 	         $scope.message = 'Everyone come and see how good I look!';
+	       });
+
+	       scotchApp.controller('companiesController', function ($scope) {
+	         // create a message to display in our view
+	         //$scope.message = 'this should be  a list...';
 	       });
 
 	       scotchApp.controller('aboutController', function ($scope) {

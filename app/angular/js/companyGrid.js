@@ -1,24 +1,215 @@
+var all_positions = ['Intern', 'Full-Time', 'Co-Op', 'MS/PhD']; // friendly names
+// intern fte coop msphd
+
+var all_majors = [ 'Applied Math', 'BME', 'Chem', 'Civil', 'CE', 'CS', 'EE', 'EnvE', 'IE', 'MaDE', 'MatSci', 'Mech', 'Non-Eng' ];
+
+// Wildcat Room (1) Northwestern (2) Louis (2)
+
+//MS/PhD --> MS-PhD
+
+var all_companies = [
+  {
+    name: "3M Company",
+    booth: 79,
+    room: "Wildcat Room (1)",
+    major: ['Chem', 'CE', 'EE', 'IE', 'MaDE', 'MatSci', 'Mech'],
+    position: ['Intern', 'Full-Time'],
+    description: "3M is a global innovation company that never stops inventing. Over the years, our innovations have improved daily life for hundreds of millions of people all over the world. We have made driving at night easier, made buildings safer, and made consumer electronics lighter, less energy-intensive and less harmful to the environment. We even helped put a man on the moon. Every day at 3M, one idea always leads to the next, igniting momentum to make progress possible around the world.",
+  },
+  {
+    name: "Accenture",
+    booth: 69,
+    room: "Northwestern (2)",
+    major: ['BME', 'Chem', 'Civil', 'CE', 'CS', 'EE', 'EnvE', 'IE', 'MaDE', 'MatSci', 'Mech', 'Non-Eng' ],
+    position: ['Intern', 'Full-Time'],
+    description: "Accenture helps organizations assess how to maximize their performance and works with them to achieve their vision. We develop and implement technology to improve our clients� productivity and efficiency � and may run parts of their business. Ultimately, we enable our clients to become high-performance businesses and governments.",
+  },
+  {
+    name: "Adage Technologies",
+    booth: 45,
+    room: "Louis (2)",
+    major: ['CE', 'CS', 'Non-Eng' ],
+    position: ['Intern', 'Full-Time', 'Co-Op', 'MS-PhD'],
+    description: "Adage Technologies, an award-winning Chicago web development firm, specializes in creating engaging custom websites, custom software and mobile solutions since its inception in 2001.",
+  },
+  {
+    name: "Alcatel-Lucent",
+    booth: 9,
+    room: "Louis (2)",
+    major: ['CE', 'CS', 'EE' ],
+    position: ['Intern', 'Full-Time', 'Co-Op', 'MS-PhD'],
+    description: "Alcatel-Lucent is at the forefront of global communications. We provide products and innovations in IP and cloud networking, as well as ultra-broadband fixed and wireless access. We serve service providers and their customers, as well as enterprises and institutions throughout the world. Alcatel-Lucent's Bell Labs, one of the world�s foremost technology research institutes, is responsible for countless breakthroughs that have shaped the networking and communications industry.",
+  },
+
+];
+
+
+
+/*
+{
+    name: "",
+    booth: ,
+    room: "",
+    major: ,
+    position: ,
+    description: ,
+  },
+
+  {
+  name: "3M Company",
+  booth: 79,
+  src: "",
+  room: "Wildcat Room (1)",
+  position: [''],
+  major: ['', '', ''],
+  },
+
+  {
+  name: "",
+  booth: ,
+  src: "",
+  room: '',
+  position: [''],
+  major: ['', '', ''],
+  }, 
+  {
+  name: "",
+  booth: ,
+  src: "",
+  room: '',
+  position: [''],
+  major: ['', '', ''],
+  }, 
+  {
+  name: "",
+  booth: ,
+  src: "",
+  room: '',
+  position: [''],
+  major: ['', '', ''],
+  }, 
+  {
+  name: "",
+  booth: ,
+  src: "",
+  room: '',
+  position: [''],
+  major: ['', '', ''],
+  }, 
+
+];
+*/
+
+/*
+
+  {
+    name: "Acadia",  
+    booth: 47452.80,
+    src: "im/acadia.jpg",
+    room: 'Maine',
+    position: ['Northeast'],
+    major: ['Camping', 'Climbing', 'Fishing', 'Swimming'],
+
+  },
+      {
+  name: "Arches",
+  booth: 76678.98,
+  src: "im/arches.jpg",
+  room: 'Utah',
+  position: ['Intermountain'],
+  major: ['Camping', 'Climbing'],
+  },
+  
+  {
+  name: "Crater Lake",
+  booth: 183224.05,
+  src: "im/crater.jpg",
+  room: 'Oregon',
+  position: ['Pacific West'],
+  major: ['Camping', 'Fishing'],
+  },
+  
+  {
+  name: "Denali",
+  booth: 4740911.37,
+  src: "im/denali.jpg",
+  room: 'Alaska',
+  position: ['Alaska'],
+  major: ['Camping', 'Climbing', 'Fishing'],
+  },
+  
+  {
+  name: "Glacier Bay",
+  booth: 3223383.66,
+  src: "im/glacier.jpg",
+  room: 'Alaska',
+  position: ['Alaska'],
+  major: ['Camping', 'Fishing'],
+  },
+  
+  {         
+  name: "Grand Canyon",
+  booth: 1217261.75,
+  src: "im/grand.jpg",
+  room: 'Arizona',
+  position: ['Intermountain'],
+  major: ['Camping', 'Fishing'],
+  },
+  
+  {
+  name: "Great Smoky Mountains",
+  booth: 522418.90,
+  src: "im/great.jpg",
+  room: 'Tennessee, North Carolina',
+  position: ['Southeast'],
+  major: ['Camping', 'Fishing'],
+  },
+  
+  {
+  name: "Haleakala",
+  booth: 33264.62,
+  src: "im/haleakala.jpg",
+  room: 'Hawaii',
+  position: ['Pacific West'],
+  major: ['Camping', 'Swimming'],
+  },
+  
+  {
+  name: "Yellowstone",
+  booth: 2219790.71,
+  src: "im/yellowstone.jpg",
+  room: 'Wyoming, Montana, Idaho',
+  position: ['Intermountain'],
+  major: ['Camping', 'Climbing', 'Fishing', 'Swimming'],
+  },
+  {
+  name: "Zion",
+  booth: 146597.40,
+  src: "im/zion.jpg",
+  room: 'Utah',
+  position: ['Intermountain'],
+  major: ['Camping', 'Climbing', 'Fishing'],
+  },
+
+  */
+
+/*
 var values = [
   {
     "name":"3M Company",
     "description":"3M is a global innovation company that never stops inventing. Over the years, our innovations have improved daily life for hundreds of millions of people all over the world. We have made driving at night easier, made buildings safer, and made consumer electronics lighter, less energy-intensive and less harmful to the environment. We even helped put a man on the moon. Every day at 3M, one idea always leads to the next, igniting momentum to make progress possible around the world.",
-    "Room":"Wildcat Room",
-    "Floor":1,
-    "booth":79,
-    "am":"",
-    "bme":"",
+    
     "chem":"1",
-    "civil":"",
+    
     "ce":"1",
-    "cs":"",
+    
     "ee":"1",
-    "enve":"",
+   
     "ie":"1",
     "made":"1",
     "matsci":"1",
     "mech":"1",
-    "noneng":"",
-    "msphd":"",
+    
     "fte":"1",
     "coop":"",
     "intern":"1"
