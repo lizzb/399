@@ -60,6 +60,12 @@
         <i class="fa fa-sort-amount-asc"> </i>
         <i class="fa fa-sort-amount-desc"> </i>
       </a>
+
+      <a href="" class="btn btn-default" ng-click="sortType = 'major'; asc=!asc">
+        Major
+        <i class="fa fa-sort-amount-asc"> </i>
+        <i class="fa fa-sort-amount-desc"> </i>
+      </a>
   
   
   
@@ -73,7 +79,10 @@
         <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
           <a href="#/companies/{{company.booth}}" class="thumb"><img ng-src="{{company.logoFull}}"><img ng-src="{{company.logoSquare}}"></a>
           <a href="#/companies/{{company.booth}}">{{company.name}}</a>
+          <p>
           <!--p>{{company.description}}</p-->
+          Booth: {{company.booth}} &nbsp;&nbsp;&nbsp; Room: {{company.room}}
+          </p>
         </li>
       </ul>
 

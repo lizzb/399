@@ -2,22 +2,34 @@
 <html lang="en" ng-app="iday399App">
 <head>
   <meta charset="utf-8">
+  <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+  <meta name="description" content="">
+  <meta name="author" content="">
   <title> 399 Industry Day with AngularJS </title>
   <link rel="stylesheet" href="css/app.css">
   <!--link rel="stylesheet" href="css/bootstrap.css"-->
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-   
  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <style>
-      body {
-  padding-top: 70px;
+      body { padding-top: 70px; } /* for fixed header */
+      /*
+      *, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
 
+body {
+display: block;
+margin: 8px;
+}
+*/
 </style>
 </head>
 <body>
@@ -39,13 +51,56 @@
         <li><a href="#">Home</a></li>
         <li><a href="#about">About <i class="fa fa-info"> </i> </a></li>
         <li><a href="#feedback">Feedback</a></li>
+        <li>
+          <a href="#favorites">
+          <i class="fa fa-star-o"></i>  <i class="fa fa-star"></i>
+          <i class="fa fa-flag-o"></i>  <i class="fa fa-flag"></i><br>
+          <i class="fa fa-heart-o"></i> <i class="fa fa-heart"></i>
+          <i class="fa fa-bookmark-o"></i>  <i class="fa fa-bookmark"></i>
+        </a>
+        </li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 </div>
 <div class="container">
 
+<a class='item'> hey there good lookin ionic item class </a>
 
+  <i class="fa fa-star-o"></i>      <i class="fa fa-star"></i>      <br>
+  <i class="fa fa-flag-o"> </i>     <i class="fa fa-flag"></i>      <br>
+  <i class="fa fa-heart-o"> </i>    <i class="fa fa-heart"></i>     <br>
+  <i class="fa fa-bookmark-o"></i>  <i class="fa fa-bookmark"></i>  <br>
+
+
+  <i class="fa fa-comments-o"></i>  <i class="fa fa-comments"></i>  <br>
+  <i class="fa fa-thumbs-o-up"></i> <i class="fa fa-thumbs-o-down"></i> 
+  <i class="fa fa-thumbs-up"></i>   <i class="fa fa-thumbs-down"></i>
+
+  <br>
+
+  <i class="fa fa-home"></i>      <i class="fa fa-briefcase"></i>   <br>
+  <i class="fa fa-user"></i>   <i class="fa fa-users"></i> <br>
+  <i class="fa fa-cog"></i>       <i class="fa fa-cogs"></i>        <br>
+
+  <i class="fa fa-info"></i>  
+  <i class="fa fa-question"></i>
+  <i class="fa fa-exclamation"></i>
+  <br>
+
+  <i class="fa fa-location-arrow"></i>
+  <i class="fa fa-map-marker"></i>
+  <i class="fa fa-thumb-tack"></i><br>
+  
+  <i class="fa fa-chevron-left"></i> <i class="fa fa-chevron-right"> </i>
+  <i class="fa fa-bars"></i>  <br>
+  <i class="fa fa-list"></i>
+  <i class="fa fa-list-ul"></i>
+  <i class="fa fa-th-list"></i>
+  <br>
+  <i class="fa fa-th"> </i>   <i class="fa fa-th-large"> </i> <br>
+  
+  
 
   <div ng-view></div>
 
@@ -72,7 +127,6 @@
               </label>
             </div>
           </div>
-
  -->
 
   <!-- Bootstrap core JavaScript
@@ -82,6 +136,8 @@
 
     <!-- Latest compiled and minified JavaScript -->
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+<!--<script src="../../dist/js/bootstrap.min.js"></script-->
 
 </body>
 </html>
