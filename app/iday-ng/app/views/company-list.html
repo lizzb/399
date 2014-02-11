@@ -1,0 +1,82 @@
+ <!--link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <i class="fa fa-filter"> </i>
+      <i class="fa fa-search"> </i>
+      
+      Search: <input ng-model="query">
+      Sort by:
+      <!--select class="sorter" ng-model="orderProp">
+        <option value="name">
+        Alphabetical
+        
+        <i http://docs.angularjs.org/api/ng.filter:orderBy class="fa fa-sort-alpha-desc"> </i>
+        </option>
+        <option value="booth">Booth</option>
+      </select-->
+
+      <a href="" class="btn btn-default" ng-click="sortType = 'name'; asc=!asc">
+        Name
+        <i class="fa fa-sort-alpha-asc"> </i>
+        <i class="fa fa-sort-alpha-desc"> </i>
+      </a>
+
+      <a href="" class="btn btn-default" ng-click="sortType = 'booth'; asc=!asc">
+        Booth
+        <i class="fa fa-sort-numeric-asc"> </i>
+        <i class="fa fa-sort-numeric-desc"> </i>
+      </a>
+
+      <a href="" class="btn btn-default" ng-click="sortType = 'room'; asc=!asc">
+        Room
+        <i class="fa fa-sort"> </i>
+        <i class="fa fa-sort-asc"> </i>
+        <i class="fa fa-sort-desc"> </i>
+      </a>
+
+      <!--button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star"></span> Star
+      </button>
+
+    <a href="" class="btn btn-default" ng-model="orderProp">
+    <i class="fa fa-sort-alpha-asc"> </i>
+    </a>
+
+    <button value="-name" type="button" class="btn btn-default" ng-model="orderProp">
+    <i class="fa fa-sort-alpha-desc"> </i>
+    </button-->
+
+    <a href="" class="btn btn-default" ng-click="sortType = 'description'; asc=!asc">
+        Description first letter
+    <i class="glyphicon glyphicon-sort"></i>
+    </a>
+
+  
+    <a href="" class="btn btn-default" ng-click="sortType = 'position'; asc=!asc">
+        Position
+        <i class="fa fa-sort-amount-asc"> </i>
+        <i class="fa fa-sort-amount-desc"> </i>
+      </a>
+  
+  
+  
+  
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content orderBy:orderProp-->
+
+      <ul class="companies">
+        <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
+          <a href="#/companies/{{company.booth}}" class="thumb"><img ng-src="{{company.logoFull}}"><img ng-src="{{company.logoSquare}}"></a>
+          <a href="#/companies/{{company.booth}}">{{company.name}}</a>
+          <!--p>{{company.description}}</p-->
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
