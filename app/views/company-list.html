@@ -4,19 +4,16 @@
     <div class="col-md-2">
       <!--Sidebar content-->
 
-      <i class="fa fa-filter"> </i>
-      <i class="fa fa-search"> </i>
       
-      Search: <input ng-model="query">
+      
+      
+      Search: <input ng-model="query"> <i class="fa fa-search"> </i>
+      Filter by: <i class="fa fa-filter"> </i>
       Sort by:
       <!--select class="sorter" ng-model="orderProp">
-        <option value="name">
-        Alphabetical
-        
-        <i http://docs.angularjs.org/api/ng.filter:orderBy class="fa fa-sort-alpha-desc"> </i>
-        </option>
-        <option value="booth">Booth</option>
-      </select-->
+      don't use selects because can't be styled or smoething!
+      <!-- http://docs.angularjs.org/api/ng.filter:orderBy-->
+        <!-- -->
 
       <a href="" class="btn btn-default" ng-click="sortType = 'name'; asc=!asc">
         Name
@@ -56,13 +53,13 @@
 
   
     <a href="" class="btn btn-default" ng-click="sortType = 'position'; asc=!asc">
-        Position
+        Position first letter
         <i class="fa fa-sort-amount-asc"> </i>
         <i class="fa fa-sort-amount-desc"> </i>
       </a>
 
       <a href="" class="btn btn-default" ng-click="sortType = 'major'; asc=!asc">
-        Major
+        Major first letter
         <i class="fa fa-sort-amount-asc"> </i>
         <i class="fa fa-sort-amount-desc"> </i>
       </a>
@@ -73,7 +70,7 @@
 
     </div>
     <div class="col-md-10">
-      <!--Body content orderBy:orderProp-->
+      <!--Body content -->
 
       <ul class="companies">
         <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
