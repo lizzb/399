@@ -1,15 +1,12 @@
- <!--link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"-->
-<!--<div class="container">
-  <!--<div class="row">
-    <div class="col-md-2">
-      <!--Sidebar content-->
+<div class="row">
+  <!-- if i wanted a sidebar - actually not a sidebar anymore
+    <div class="col-md-2" -->
 
-      
-      
-      
+      <!--Sidebar content -->
+          
       Search: <input ng-model="query"> <i class="fa fa-search"> </i>
       Filter by: <i class="fa fa-filter"> </i>
-      <i class="glyphicon glyphicon-sort"></i>
+      <i class="glyphicon glyphicon-sort"></i> <!-- GLYPHICONS and FONT AWESOME WORK -->
       Sort by:
       <!--select class="sorter" ng-model="orderProp">
       don't use selects because can't be styled or smoething!
@@ -64,15 +61,14 @@
         <i class="fa fa-sort-amount-asc"> </i>
         <i class="fa fa-sort-amount-desc"> </i>
       </a>
-  
-  
-  
-  
+    </div> -->
 
-    </div>
-    <div class="col-md-10" -->
-      <!--Body content -->
+</div><!-- end row -->
 
+<!-- if i wanted a sidebar
+<div class="col-md-10" -->
+<!--Body content -->
+<div class="row"> 
       <ul class="companies">
         <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
           <a href="#/companies/{{company.booth}}" class="thumb"><img ng-src="{{company.logoFull}}"><img ng-src="{{company.logoSquare}}"></a>
@@ -84,6 +80,5 @@
         </li>
       </ul>
 
-    <!--</div>
+    </div>
   </div>
-<<!--/div-->
