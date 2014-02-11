@@ -2,44 +2,22 @@
 <html lang="en" ng-app="iday399App">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!-- important for mobile -->
   <meta name="description" content="">
   <meta name="author" content="">
+
   <title> 399 Industry Day with AngularJS </title>
   
   <link rel="stylesheet" href="./css/bootstrap.css">
- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
- <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
-  <style>
-      body { padding-top: 70px; } /* for fixed header */
-      ul, menu, dir {
-display: block;
--webkit-margin-before: 0em;
--webkit-margin-after: 0em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
--webkit-padding-start: 0px;
-}
-      .thumbnail, .ul {padding: 0px; margin:0px;}
-      /*
-      *, *:before, *:after {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
 
-body {
-display: block;
-margin: 8px;
-}
-*/
-</style>
 </head>
 <body>
 
@@ -54,99 +32,81 @@ margin: 8px;
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Page Header</a>
+        <i class="fa fa-chevron-left"></i>
+        <i class="fa fa-chevron-right"></i>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About <i class="fa fa-info"> </i> </a></li>
-        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#">Menu/Home
+        <i class="fa fa-home"></i>
+        <i class="fa fa-th"></i>
+  <i class="fa fa-th-large"></i>
+        </a></li>
         <li>
-          <a href="#favorites">
+          <a href="#">Layout/Map
+          <i class="fa fa-location-arrow"></i>
+  <i class="fa fa-map-marker"></i>
+  <i class="fa fa-thumb-tack"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorites"> Favorites
           <i class="fa fa-star-o"></i>  <i class="fa fa-star"></i>
           <i class="fa fa-flag-o"></i>  <i class="fa fa-flag"></i><br>
           <i class="fa fa-heart-o"></i> <i class="fa fa-heart"></i>
           <i class="fa fa-bookmark-o"></i>  <i class="fa fa-bookmark"></i>
         </a>
         </li>
+        <li><a href="#">Settings
+         <i class="fa fa-user"></i>
+          <i class="fa fa-cog"></i>
+  <i class="fa fa-cogs"></i>
+        </a></li>
+        <li>
+          <a href="#recruiters"> Recruiters
+          <i class="fa fa-users"></i>
+          Companies
+          <i class="fa fa-briefcase"></i><br>
+          Company List
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-list"></i>
+          <i class="fa fa-list-ul"></i>
+          <i class="fa fa-th-list"></i>
+          </a>
+        </li>
+        <li><a href="#about">About
+          <i class="fa fa-info"></i>
+          <i class="fa fa-question"></i>
+          <i class="fa fa-exclamation"></i>
+          </a></li>
+        <li>
+          <a href="#feedback"> Feedback
+          <i class="fa fa-comments-o"></i> 
+          <i class="fa fa-comments"></i>
+          <i class="fa fa-thumbs-o-up"></i>
+          <i class="fa fa-thumbs-o-down"></i>
+          <i class="fa fa-thumbs-up"></i>
+          <i class="fa fa-thumbs-down"></i>
+          </a>
+        </li>
+        
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 </div>
 <div class="container">
 
-<!--a class='item'> hey there good lookin ionic item class </a>
-
-  <i class="fa fa-star-o"></i>      <i class="fa fa-star"></i>      <br>
-  <i class="fa fa-flag-o"> </i>     <i class="fa fa-flag"></i>      <br>
-  <i class="fa fa-heart-o"> </i>    <i class="fa fa-heart"></i>     <br>
-  <i class="fa fa-bookmark-o"></i>  <i class="fa fa-bookmark"></i>  <br>
-
-
-  <i class="fa fa-comments-o"></i>  <i class="fa fa-comments"></i>  <br>
-  <i class="fa fa-thumbs-o-up"></i> <i class="fa fa-thumbs-o-down"></i> 
-  <i class="fa fa-thumbs-up"></i>   <i class="fa fa-thumbs-down"></i>
-
-  <br>
-
-  <i class="fa fa-home"></i>      <i class="fa fa-briefcase"></i>   <br>
-  <i class="fa fa-user"></i>   <i class="fa fa-users"></i> <br>
-  <i class="fa fa-cog"></i>       <i class="fa fa-cogs"></i>        <br>
-
-  <i class="fa fa-info"></i>  
-  <i class="fa fa-question"></i>
-  <i class="fa fa-exclamation"></i>
-  <br>
-
-  <i class="fa fa-location-arrow"></i>
-  <i class="fa fa-map-marker"></i>
-  <i class="fa fa-thumb-tack"></i><br>
-  
-  <i class="fa fa-chevron-left"></i> <i class="fa fa-chevron-right"> </i>
-  <i class="fa fa-bars"></i>  <br>
-  <i class="fa fa-list"></i>
-  <i class="fa fa-list-ul"></i>
-  <i class="fa fa-th-list"></i>
-  <br>
-  <i class="fa fa-th"> </i>   <i class="fa fa-th-large"> </i> <br-->
-  
-  
 
   <div ng-view></div>
 
-  </div><!-- /.container -->
+</div><!-- /.container -->
 
-  <!-- input ng-model="userInput"> Uppercased: {{ userInput | uppercase }}
-
-<div class="row">
-          <div class="col-md-6">
-            <h4>selectables</h4>
-            <div class="form-group">
-              <label ng-repeat="fruit in fruits" class="checkbox-inline">
-                <!--
-                  - use `value="{{fruit.name}}"` to give the input a real value, in case the form gets submitted
-                    traditionally
-
-                  - use `ng-checked="fruit.selected"` to have the checkbox checked based on some angular expression
-                    (no two-way-data-binding)
-
-                  - use `ng-model="fruit.selected"` to utilize two-way-data-binding. Note that `.selected`
-                    is arbitrary. The property name could be anything and will be created on the object if not present.
-                --
-                <input type="checkbox" name="selectedFruits[]" value="{{fruitName}}" ng-model="fruit.selected"> {{fruit.name}}
-              </label>
-            </div>
-          </div>
- -->
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-
-<!--<script src="../../dist/js/bootstrap.min.js"></script-->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

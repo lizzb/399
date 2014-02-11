@@ -2,80 +2,71 @@
   <!-- if i wanted a sidebar - actually not a sidebar anymore
     <div class="col-md-2" -->
 
-      <!--Sidebar content -->
+      <!-- ---------- Sort/filter controls ---------- -->
           
       Search: <input ng-model="query"> <i class="fa fa-search"> </i>
       Filter by: <i class="fa fa-filter"> </i>
-      <i class="glyphicon glyphicon-sort"></i> <!-- GLYPHICONS and FONT AWESOME WORK -->
+      <i class="glyphicon glyphicon-sort"></i>
+      <!-- glyphicons AND font awesome work -->
       Sort by:
       <!--select class="sorter" ng-model="orderProp">
-      don't use selects because can't be styled or smoething!
-      <!-- http://docs.angularjs.org/api/ng.filter:orderBy-->
-        <!-- -->
+      don't use selects because can't be styled as well or something
+      <!-- http://docs.angularjs.org/api/ng.filter:orderBy -->
 
-      <a href="" class="btn btn-default" ng-click="sortType = 'name'; asc=!asc">
+      <a href="" class="btn btn-default" ng-click="sortType='name'; asc=!asc">
         Name
-        <i class="fa fa-sort-alpha-asc"> </i>
-        <i class="fa fa-sort-alpha-desc"> </i>
+        <i class="fa fa-sort-alpha-asc"></i>
+        <i class="fa fa-sort-alpha-desc"></i>
       </a>
 
-      <a href="" class="btn btn-default" ng-click="sortType = 'booth'; asc=!asc">
+      <a href="" class="btn btn-default" ng-click="sortType='booth'; asc=!asc">
         Booth
-        <i class="fa fa-sort-numeric-asc"> </i>
-        <i class="fa fa-sort-numeric-desc"> </i>
+        <i class="fa fa-sort-numeric-asc"></i>
+        <i class="fa fa-sort-numeric-desc"></i>
       </a>
 
-      <a href="" class="btn btn-default" ng-click="sortType = 'room'; asc=!asc">
+      <a href="" class="btn btn-default" ng-click="sortType='room'; asc=!asc">
         Room
         <i class="fa fa-sort"> </i>
         <i class="fa fa-sort-asc"> </i>
         <i class="fa fa-sort-desc"> </i>
-      </a>
-
-      <!--button type="button" class="btn btn-default btn-lg">
-      <span class="glyphicon glyphicon-star"></span> Star
-      </button>
-
-    <a href="" class="btn btn-default" ng-model="orderProp">
-    <i class="fa fa-sort-alpha-asc"> </i>
-    </a>
-
-    <button value="-name" type="button" class="btn btn-default" ng-model="orderProp">
-    <i class="fa fa-sort-alpha-desc"> </i>
-    </button--
-
-    <a href="" class="btn btn-default" ng-click="sortType = 'description'; asc=!asc">
-        Description first letter
-    <i class="glyphicon glyphicon-sort"></i>
-    </a>
-
-  
-    <a href="" class="btn btn-default" ng-click="sortType = 'position'; asc=!asc">
-        Position first letter
         <i class="fa fa-sort-amount-asc"> </i>
         <i class="fa fa-sort-amount-desc"> </i>
       </a>
 
-      <a href="" class="btn btn-default" ng-click="sortType = 'major'; asc=!asc">
-        Major first letter
-        <i class="fa fa-sort-amount-asc"> </i>
-        <i class="fa fa-sort-amount-desc"> </i>
-      </a>
-    </div> -->
+      <!--
+      ng-click="sortType = 'description' or 'position' or 'major' sorts by the first letter of that field, not the length
 
-</div><!-- end row -->
+      filterBy='position'
+      filterBy='major'
+      search includes the description and majors in it i think
+        -->
+
+</div><!-- end row sorting filtering controls -->
 
 <!-- if i wanted a sidebar
 <div class="col-md-10" -->
+
 <!--Body content -->
 <div class="row"> 
       <ul class="companies">
         <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
-          <a href="#/companies/{{company.booth}}" class="thumb"><img ng-src="{{company.logoFull}}"><img ng-src="{{company.logoSquare}}"></a>
-          <a href="#/companies/{{company.booth}}">{{company.name}}</a>
-         
+        <span class="companyBoothLocation">
           <!--p>{{company.description}}</p-->
-          Booth: {{company.booth}} &nbsp;&nbsp;&nbsp; Room: {{company.room}}
+          Booth: {{company.booth}} &nbsp;&nbsp;&nbsp; 
+          <!-- Room: {{company.room}}-->
+          </span>
+          <a href="#/companies/{{company.booth}}" class="thumb">
+          <img ng-src="{{company.logoFull}}">
+          <img ng-src="{{company.logoSquare}}">
+          </a>
+          <a href="#/companies/{{company.booth}}">{{company.name}}</a><br>
+         
+          <!--dd ng-repeat="job in company.position track by $index">
+          {{job}} <dd-->
+          {{company.position.join(', ')}}
+          <!--br--> &nbsp;&nbsp;&nbsp;
+          {{company.major.join(', ')}}
          
         </li>
       </ul>
