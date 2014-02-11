@@ -2,63 +2,70 @@
 
 body {
   padding-top: 20px;
+  body { padding-top: 70px; } /* for fixed header */
 }
 
 /*.controls { float: left; display: inline;}*/
 
 .companies {
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   list-style: none;
 }
 .sorter{
+  /*used to apply to selection dropdown */
   width: 120px;
 }
+.thumbnail {margin-bottom: 0px;}
 
 .thumb {
   float: left;
-  margin: -1em 1em 1.5em 0em;
-  padding-bottom: 1em;
-  height: 100px;
-  width: 100px;
+  /*margin: -1em 1em 1.5em 0em;
+  padding-bottom: 1em;*/
+  /*height: 100px;
+  width: 100px;*/
+  height: 80px; width: 80px;
 /*
   height: 70px;
   width: 70px;*/
 }
+.thumbnail, .ul {padding: 0px; margin:0px;}
 
 .companies li {
   clear: both;
-  height: 80px; 
+  height: 80px;
+  font-family:'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  color: #444444;
+  padding-top: 15px;
+  /*padding: 15px;*/
 
   /*100px;*/
-  /*padding-top: 15px;*/
 
-  /*display: inline-block;*/
+/*display: inline-block; block;*/
 /*width: 200px;
 height: 200px;*/
 vertical-align: top;
-margin-bottom: 20px;
+/*margin-bottom: 20px;*/
 /*background: #ccc;*/
 /*color: #fff;*/
 /*font-size: 30px;*/
+
+/*background-color: white;*/
+
+
+/*font-size: 16px;*/
 text-align: center;
 /*line-height: 200px;*/
 /*}
 
 .item {*/
+  /*
   
-  background-color: white;
-  position: relative;
-  z-index: 2;
-  display: block;
   margin: -1px;
-  padding: 15px;
   border: 1px solid #dddddd; 
-  font-size: 16px;
-  font-family:'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  color: #444444;
+  
 }
  /*}
- .item:after {*/
+ .item:after {
   .companies li:after {
   display: -webkit-box;
 display: -webkit-flex;
@@ -87,7 +94,7 @@ font-size: 16px;
 font-family: 'Ionicons';
 line-height: 1;
 speak: none;
-}
+}*/
 
 /** Detail View **/
 img.company {
