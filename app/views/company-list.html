@@ -1,28 +1,39 @@
 <div class="row">
   <!-- if i wanted a sidebar - actually not a sidebar anymore
-    <div class="col-md-2" -->
+  <div class="col-md-2" -->
 
-      <!-- ---------- Sort/filter controls ---------- -->
-          
-      Search: <input ng-model="query"> <i class="fa fa-search"> </i>
-      Filter by: <i class="fa fa-filter"> </i>
-      <i class="glyphicon glyphicon-sort"></i>
-      <!-- glyphicons AND font awesome work -->
-      Sort by:
+    <!-- ---------- Sort/filter controls ---------- -->
+
+    Search: <input ng-model="query"> <i class="fa fa-search"> </i>
+    Filter by: <i class="fa fa-filter"> </i>
+    <i class="glyphicon glyphicon-sort"></i>
+    <!-- glyphicons AND font awesome work -->
+    Sort by:
       <!--select class="sorter" ng-model="orderProp">
       don't use selects because can't be styled as well or something
-      <!-- http://docs.angularjs.org/api/ng.filter:orderBy -->
+      <!-- http://docs.angularjs.org/api/ng.filter:orderBy 
+http://stackoverflow.com/questions/7792652/what-is-the-best-way-to-conditionally-apply-a-class-with-angularjs
+class="otherClass ng-class:($index==selectedIndex)? 'selected' : '';"
+http://stackoverflow.com/questions/15557151/ngclass-style-with-dash-in-key
+<i class="icon-home" ng-class="{'icon-white': someBooleanValue}">
+
+http://docs.angularjs.org/api/ng.directive:ngSwitch
+
+      -->
 
       <a href="" class="btn btn-default" ng-click="sortType='name'; asc=!asc">
         Name
+        <!-- display the OPPOSITE value icon for current sort direction -->
+        <i class="fa" ng-class="orderBy == '-name' ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc'"></i>
+        <i class="fa" ng-class="orderBy == 'name' ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc'"></i>
+        <!--
         <i class="fa fa-sort-alpha-asc"></i>
-        <i class="fa fa-sort-alpha-desc"></i>
+        <i class="fa fa-sort-alpha-desc"></i>-->
       </a>
 
       <a href="" class="btn btn-default" ng-click="sortType='booth'; asc=!asc">
         Booth
-        <i class="fa fa-sort-numeric-asc"></i>
-        <i class="fa fa-sort-numeric-desc"></i>
+        <i class="fa" ng-class="orderBy == '-booth' ? 'fa-sort-numeric-asc' : 'fa-sort-numeric-desc'"></i>
       </a>
 
       <a href="" class="btn btn-default" ng-click="sortType='room'; asc=!asc">
@@ -35,39 +46,81 @@
       </a>
 
       <!--
+
+
+      <div class="bar">
+
+    <!-- These two buttons switch the layout variable,
+       which causes the correct UL to be shown. --
+
+    <a class="list-icon" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'"></a>
+    <a class="grid-icon" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'"></a>
+  </div>
+
+
+      The ngClass directive allows you to dynamically set CSS classes on an HTML element by databinding an expression that represents all classes to be added.
+
+The directive won't add duplicate classes if a particular class was already set.
+
+When the expression changes, the previously added classes are removed and only then the new classes are added.
+
       ng-click="sortType = 'description' or 'position' or 'major' sorts by the first letter of that field, not the length
+
+      <a ng-click="sort(sortvalue)">
+  <span ng-transclude=""></span>
+  <span ng-show="sortedby == sortvalue">
+    <i ng-class="{true: 'icon-arrow-up', false: 'icon-arrow-down'}[sortdir == 'asc']"></i>
+  </span>
+</a>
+What does this transclude option do, exactly? transclude makes the contents of a directive with this option have access to the scope outside of the directive rather than inside.
+
+To illustrate this, see the example below. Notice that we've added a link function in script.js that redefines name as Jeff. What do you think the {{name}} binding will resolve to now?
+The transclude option changes the way scopes are nested. It makes it so that the contents of a transcluded directive have whatever scope is outside the directive, rather than whatever scope is on the inside. In doing so, it gives the contents access to the outside scope.
+
+Note that if the directive did not create its own scope, then scope in scope.name = 'Jeff'; would reference the outside scope and we would see Jeff in the output.
+
+This behavior makes sense for a directive that wraps some content, because otherwise you'd have to pass in each model you wanted to use separately. If you have to pass in each model that you want to use, then you can't really have arbitrary contents, can you?
+
+Best Practice: only use transclude: true when you want to create a directive that wraps arbitrary content.
+Next, we want to add buttons to this dialog box, and allow someone using the directive to bind their own behavior to it.
 
       filterBy='position'
       filterBy='major'
       search includes the description and majors in it i think
-        -->
+    -->
 
-</div><!-- end row sorting filtering controls -->
+  </div><!-- end row sorting filtering controls -->
 
 <!-- if i wanted a sidebar
-<div class="col-md-10" -->
+  <div class="col-md-10" -->
 
-<!--Body content -->
-<div class="row"> 
+    <!--Body content -->
+    <div class="row"> 
       <ul class="companies">
+
         <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
-        <span class="companyBoothLocation">
-          <!--p>{{company.description}}</p-->
-          Booth: {{company.booth}} &nbsp;&nbsp;&nbsp; 
-          <!-- Room: {{company.room}}-->
+
+          <span class="companyBoothLocation">
+            <!--p>{{company.description}}</p-->
+            Booth: {{company.booth}} &nbsp;&nbsp;&nbsp; 
+            <!-- Room: {{company.room}}-->
           </span>
           <a href="#/companies/{{company.booth}}" class="thumb">
-          <img ng-src="{{company.logoFull}}">
-          <img ng-src="{{company.logoSquare}}">
+            <img ng-src="{{company.logoFull}}">
+            <img ng-src="{{company.logoSquare}}">
           </a>
-          <a href="#/companies/{{company.booth}}">{{company.name}}</a><br>
-         
+
+          <a href="#/companies/{{company.booth}}">{{company.name}}</a>
+
+          <br>
+
           <!--dd ng-repeat="job in company.position track by $index">
           {{job}} <dd-->
           {{company.position.join(', ')}}
-          <!--br--> &nbsp;&nbsp;&nbsp;
+          <!--br-->
+          &nbsp;&nbsp;&nbsp;
           {{company.major.join(', ')}}
-         
+
         </li>
       </ul>
 
