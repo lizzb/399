@@ -622,8 +622,8 @@
   },
   {
     "name":"Schneider Electric",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/schneider-electric-wide.png",
+    "logoSquare":"img/logos/schneider-electric-square.png",
     "description":"Helping people make the most of their energy\n\nHave you ever dreamed of improving your bottom line while consuming less energy and without a power outage? We can help you solve this problem with solutions to make energy safe, reliable, efficient, productive and green from plant to plug.\n\nBeyond business solutions, we cover all the aspects of sustainable development: society, governance and environment. And because you cannot manage what you cannot measure, we follow our improvements with a unique tool: the Planet & Society barometer.",
     "booth":33,
     "major": ["ce","cs","ee","ie","mde","me","non"],
@@ -658,8 +658,8 @@
   },
   {
     "name":"Think Big Analytics",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/think-big-wide.png",
+    "logoSquare":"img/logos/think-big-wide.png",
     "description":"Companies are transforming their businesses by leveraging the power of Big Data. To move beyond traditional business intelligence to true Analytics requires a Big Data roadmap, skills training, and deep data science & engineering expertise. Think Big's technology-enabled services include proven solutions that navigate organizations through the five essential stages of adoption.",
     "booth":29,
     "major": ["cs"],
@@ -685,7 +685,7 @@
   },
   {
     "name":"United Airlines",
-    "logoFull":"",
+    "logoFull":"img/logos/united-airlines-wide.png",
     "logoSquare":"img/logos/united-airlines-square.png",
     "description":"United is the world�s leading airline and is focused on being the airline customers want to fly, the airline employees want to work for and the airline shareholders want to invest in.\n\nUnited Airlines and United Express operate an average of 5,341 flights a day to more than 360 airports across six continents. In 2012, United and United Express carried more passenger traffic than any other airline in the world and operated nearly two million flights carrying 140 million customers. ",
     "booth":72,
