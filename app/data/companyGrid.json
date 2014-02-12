@@ -1,7 +1,7 @@
 [
   {
     "name":"3M Company",
-    "logoFull":"",
+    "logoFull":"img/logos/3m-wide.png",
     "logoSquare":"img/logos/3m-square.png",
     "description":"3M is a global innovation company that never stops inventing. Over the years, our innovations have improved daily life for hundreds of millions of people all over the world. We have made driving at night easier, made buildings safer, and made consumer electronics lighter, less energy-intensive and less harmful to the environment. We even helped put a man on the moon. Every day at 3M, one idea always leads to the next, igniting momentum to make progress possible around the world.",
     "booth":79,
@@ -10,7 +10,7 @@
   },
   {
     "name":"Accenture",
-    "logoFull":"",
+    "logoFull":"img/logos/accenture-wide.png",
     "logoSquare":"img/logos/accenture-square.png",
     "description":"Accenture helps organizations assess how to maximize their performance and works with them to achieve their vision. We develop and implement technology to improve our clients� productivity and efficiency � and may run parts of their business. Ultimately, we enable our clients to become high-performance businesses and governments.",
     "booth":69,
@@ -19,8 +19,8 @@
   },
   {
     "name":"Adage Technologies",
-    "logoFull":"",
-    "logoSquare":"img/logos/adage-square.png",
+    "logoFull":"img/logos/adage-tech-wide.png",
+    "logoSquare":"img/logos/adage-tech-square.png",
     "description":"Adage Technologies, an award-winning Chicago web development firm, specializes in creating engaging custom websites, custom software and mobile solutions since its inception in 2001.",
     "booth":45,
     "major": ["ce","cs","non"],
@@ -28,7 +28,7 @@
   },
   {
     "name":"Alcatel-Lucent",
-    "logoFull":"",
+    "logoFull":"img/logos/alcatel-lucent-wide.png",
     "logoSquare":"img/logos/alcatel-lucent-square.png",
     "description":"Alcatel-Lucent is at the forefront of global communications. We provide products and innovations in IP and cloud networking, as well as ultra-broadband fixed and wireless access. We serve service providers and their customers, as well as enterprises and institutions throughout the world. Alcatel-Lucent's Bell Labs, one of the world�s foremost technology research institutes, is responsible for countless breakthroughs that have shaped the networking and communications industry. ",
     "booth":9,
@@ -37,7 +37,7 @@
   },
   {
     "name":"Allstate Insurance",
-    "logoFull":"",
+    "logoFull":"img/logos/allstate-wide.png",
     "logoSquare":"img/logos/allstate-square.png",
     "description":"The Allstate Corporation is the largest publicly held personal lines property and casualty insurer in America. Allstate was founded in 1931 and became a publicly traded company in 1993. We are listed on the New York Stock Exchange under the trading symbol ALL. Allstate is widely known through the \"You're In Good Hands With Allstate �\" slogan. As of year-end 2012, Allstate had $126.9 billion in total assets. Allstate is reinventing protection and retirement to help approximately 16 million households insure what they have today and better prepare for tomorrow.",
     "booth":60,
@@ -46,7 +46,7 @@
   },
   {
     "name":"Altec Inc.",
-    "logoFull":"",
+    "logoFull":"img/logos/altec-wide.png",
     "logoSquare":"img/logos/altec-square.png",
     "description":"Altec is a leading provider of products and services to the electric utility, telecommunications, tree care, lights and signs, and contractor markets. We deliver products and services in more than 100 countries throughout the world. Altec, Inc. is the holding company for Altec Industries, Global Rental, Altec NUECO, Altec Worldwide, Altec Capital, Altec Supply, and Altec Ventures, LLC.",
     "booth":43,
@@ -55,7 +55,7 @@
   },
   {
     "name":"American Medical Association",
-    "logoFull":"",
+    "logoFull":"img/logos/ama-wide",
     "logoSquare":"img/logos/ama-square.png",
     "description":"As the nation's health care system continues to evolve, the AMA is dedicated to ensuring sustainable physician practices that result in better health outcomes for patients. This work is captured in the AMA's five-year strategic plan, which aims to ensure that enhancements to health care in the United States are physician-led, advance the physician-patient relationship, and ensure that health care costs can be prudently managed.",
     "booth":48,
@@ -64,7 +64,7 @@
   },
   {
     "name":"AT&T",
-    "logoFull":"",
+    "logoFull":"img/logos/at-t-wide.png",
     "logoSquare":"img/logos/at-t-square.png",
     "description":"AT&T is bringing it all together for our customers, from revolutionary smartphones to next-generation TV services and sophisticated solutions for multi-national businesses.\n\n For more than a century, we have consistently provided innovative, reliable, high-quality products and services and excellent customer care. Today, our mission is to connect people with their world, everywhere they live and work, and do it better than anyone else. We're fulfilling this vision by creating new solutions for consumers and businesses and by driving innovation in the communications and entertainment industry.",
     "booth":74,
@@ -73,7 +73,7 @@
   },
   {
     "name":"AvantCredit",
-    "logoFull":"",
+    "logoFull":"img/logos/avantcredit-wide.png",
     "logoSquare":"img/logos/avantcredit-square.png",
     "description":"Our team has over 25 years of combined experience giving online credit options. Our mission is to give affordable personal loans to responsible people who should not have to settle for an expensive payday loan or take hours out of their busy day to travel to a loan store or bank.",
     "booth":52,
@@ -82,8 +82,8 @@
   },
   {
     "name":"Baxter Healthcare Corporation",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/baxter-wide.png",
+    "logoSquare":"img/logos/baxter-square.png",
     "description":"Baxter International Inc. (NYSE:BAX), through its subsidiaries, develops, manufactures and markets products that save and sustain the lives of people with hemophilia, immune disorders, infectious diseases, kidney disease, trauma, and other chronic and acute medical conditions. As a global, diversified healthcare company, Baxter applies a unique combination of expertise in medical devices, pharmaceuticals and biotechnology to create products that advance patient care worldwide. ",
     "booth":80,
     "major": ["bme","che","ie","mse","me"],
@@ -91,7 +91,7 @@
   },
   {
     "name":"Bemis Company",
-    "logoFull":"",
+    "logoFull":"img/logos/bemis-wide.png",
     "logoSquare":"img/logos/bemis-square.png",
     "description":"Established in 1858 in St. Louis, Missouri, as a manufacturer of machine sewn cotton bags for milled food and grain products, Bemis has played an influential role in the packaging industry ever since its founding. Now a global supplier of flexible packaging and pressure sensitive label materials headquartered in Neenah, Wisconsin, Bemis serves customers worldwide and produces packaging for products found in virtually every aisle of the grocery store. ",
     "booth":4,
@@ -100,7 +100,7 @@
   },
   {
     "name":"Boeing Company",
-    "logoFull":"",
+    "logoFull":"img/logos/boeing-wide.png",
     "logoSquare":"img/logos/boeing-square.png",
     "description":"Boeing is the world's leading aerospace company and the largest manufacturer of commercial jetliners and military aircraft combined. Additionally, Boeing designs and manufactures rotorcraft, electronic and defense systems, missiles, satellites, launch vehicles and advanced information and communication systems. As a major service provider to NASA, Boeing is the prime contractor for the International Space Station. The company also provides numerous military and commercial airline support services. Boeing provides products and support services to customers in 150 countries and is one of the largest U.S. exporters in terms of sales.",
     "booth":7,
@@ -109,7 +109,7 @@
   },
   {
     "name":"Cars.com",
-    "logoFull":"",
+    "logoFull":"img/logos/carsdotcom-wide.png",
     "logoSquare":"img/logos/carsdotcom-square.png",
     "description":"Visited by more than 11 million car shoppers each month, Cars.com is the leading destination for online car shoppers, offering credible and easy-to-understand information from consumers and experts to help buyers formulate opinions on what to buy, where to buy and how much to pay for a car.\n\nWith comprehensive pricing information, dealer reviews, side-by-side comparison tools, photo galleries, videos, unbiased editorial content and a large selection of new- and used-car inventory, Cars.com puts car buyers in control of their shopping process with the information they need to make confident buying decisions.",
     "booth":2,
@@ -397,7 +397,7 @@
   },
   {
     "name":"Institute for Defense Analysis",
-    "logoFull":"",
+    "logoFull":"img/logos/ida-wide.png",
     "logoSquare":"img/logos/ida-square.png",
     "description":"",
     "booth":41,
@@ -406,7 +406,7 @@
   },
   {
     "name":"ITW",
-    "logoFull":"",
+    "logoFull":"img/logos/itw-wide.png",
     "logoSquare":"img/logos/itw-square.png",
     "description":"Since our founding more than 100 years ago, ITW has become one of the world�s leading diversified manufacturers of specialized industrial equipment, consumables, and related service businesses. ITW businesses serve local customers and markets around the globe, with a significant presence in developed as well as emerging markets. ",
     "booth":16,
@@ -424,8 +424,8 @@
   },
   {
     "name":"Lend Lease ",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/lend-lease-wide.png",
+    "logoSquare":"img/logos/lend-lease-square.png",
     "description":"Over 50 years of experience has taken us across the globe from Australia to Asia, Europe and the Americas. We employ more than 18,000 people around the world and manage an extensive portfolio of assets. We�re proud to say that over a million people around the world live, work, shop or are connected through an asset we have created, every single day.  \n\nOur clients, partners and investors can choose to leverage our strengths and local expertise at any stage of the property and infrastructure spectrum � from development, investment management, project management & construction, and asset & property management � or partner with us right through the complete journey. ",
     "booth":32,
     "major": ["civ"],
@@ -442,8 +442,8 @@
   },
   {
     "name":"McDonnell Boehnen Hulbert & Berghoff LLP",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/mbhb-llc-wide.png",
+    "logoSquare":"img/logos/mbhb-llc-square.png",
     "description":"At McDonnell Boehnen Hulbert & Berghoff LLP (\"MBHB\"), we provide creative, pragmatic business solutions through a variety of intellectual property services, including litigation, prosecution, and general client counseling.\n\nMBHB�s practice areas encompass all aspects of intellectual property law. We have practical experience in a myriad of technology areas. Our attorneys are experienced in the procurement, licensing, enforcement, and defense of patents, trademarks, copyrights, trade secrets, and unfair competition actions in a number of technological disciplines and product categories including biotechnology, business methods, chemical, electrical, mechanical and materials, pharmaceuticals and diagnostics, software and telecommunications.",
     "booth":28,
     "major": ["ce","cs","ee","me"],
@@ -478,8 +478,8 @@
   },
   {
     "name":"Mozilla",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/mozilla-wide.png",
+    "logoSquare":"img/logos/mozilla-square.png",
     "description":"Our mission is to promote openness, innovation & opportunity on the Web.\n\nAt Mozilla, we�re a global community of technologists, thinkers and builders working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.",
     "booth":64,
     "major": ["cs"],
@@ -496,8 +496,8 @@
   },
   {
     "name":"Northrop Grumman",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/norththrop-grumman-wide.png",
+    "logoSquare":"img/logos/norththrop-grumman-square.png",
     "description":"Northrop Grumman is a leading global security company providing innovative systems, products and solutions in unmanned systems, cyber, C4ISR, and logistics and modernization to government and commercial customers worldwide. \n\nOur mission is to be at the forefront of technology and innovation, delivering superior capability in tandem with maximized cost efficiencies. The security solutions we provide help secure freedoms for our nation as well as those of our allies. Squarely meeting our obligations, fiscally and technologically, isn't just a business goal, but a moral imperative. To that end, as we evolve as a company, the responsibility we feel for our country and the citizens and troops we help support grows with us. _",
     "booth":82,
     "major": ["ce","cs"],
@@ -505,8 +505,8 @@
   },
   {
     "name":"Northwestern Mutual",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/northwestern-mutual-wide.png",
+    "logoSquare":"img/logos/northwestern-mutual-square.png",
     "description":"We are well-positioned to help you manage financial risk and achieve financial security in today's complex world. People are the power behind Northwestern Mutual, and diversity makes us better. We are committed to reflecting and serving the marketplace. We will do so by attracting and enhancing the engagement of those who bring their unique perspectives, ideas, and beliefs. At Northwestern Mutual, people matter. Learn more about our commitment by reading our Diversity and Inclusion brochure and watching this video.",
     "booth":36,
     "major": ["ce","cs","non"],
@@ -514,7 +514,7 @@
   },
   {
     "name":"Oracle America, Inc.",
-    "logoFull":"",
+    "logoFull":"img/logos/oracle-wide.png",
     "logoSquare":"img/logos/oracle-square.png",
     "description":"Oracle continually applies good corporate governance principles. The composition and activities of the company's Board of Directors, the approach to public disclosure, and the availability of ethics and business conduct resources for employees exemplifies the company's commitment to good corporate governance practices. Analysts and Investors also have targeted information available to them. ",
     "booth":62,
@@ -532,8 +532,8 @@
   },
   {
     "name":"P&G",
-    "logoFull":"",
-    "logoSquare":"img/logos/pg-square.png",
+    "logoFull":"img/logos/p-g-wide.png",
+    "logoSquare":"img/logos/p-g-square.png",
     "description":"Companies like P&G are a force in the world. Our market capitalization is greater than the GDP of many countries, and we market our products in more than 180 countries. With this stature comes both responsibility and opportunity. Our responsibility is to be an ethical corporate citizen�but our opportunity is something far greater, and is embodied in our Purpose.\n\nWe will provide branded products and services of superior quality and value that improve the lives of the world�s consumers, now and for generations to come. As a result, consumers will reward us with leadership sales, profit and value creation, allowing our people, our shareholders and the communities in which we live and work to prosper.",
     "booth":81,
     "major": ["bme","che","mde","mse","non"],
@@ -550,7 +550,7 @@
   },
   {
     "name":"PEC North America",
-    "logoFull":"",
+    "logoFull":"img/logos/pec-wide.png",
     "logoSquare":"img/logos/pec-square.png",
     "description":"Founded in 1984, PEC is now headquartered in Leuven, Belgium with R&D and project management groups in Belgium, Hungary, the United States, China and Japan.\n\nOur company is staffed with highly educated experts in different technological and functional domains : Robotics, Material Handling, Power Electronics, Embedded Controls, Software , Development (.Net - Oracle), IT Security. This multidisciplinary skill matrix forms the core of PEC�s technological leadership, and creates substantial competitive advantages for our customers, in terms of quality, reliability and operational cost.",
     "booth":67,
@@ -559,7 +559,7 @@
   },
   {
     "name":"PepsiCo",
-    "logoFull":"",
+    "logoFull":"img/logos/pepsico-wide.png",
     "logoSquare":"img/logos/pepsico-square.png",
     "description":"PepsiCo, Inc. was established through the merger of Pepsi-Cola and Frito-Lay. PepsiCo, Inc. (PepsiCo), incorporated on November 13, 1986, is a global food and beverage company. The Company makes, markets, sells and distributes a range of foods and beverages in more than 200 countries and territories. PepsiCo is organized into four business units: PepsiCo Americas Foods (PAF), which includes Frito-Lay North America (FLNA), Quaker Foods North America (QFNA) and all of its Latin American food and snack businesses (LAF); PepsiCo Americas Beverages (PAB), which includes all of its North American and Latin American beverage businesses; PepsiCo Europe, which includes all beverage, food and snack businesses in Europe, and PepsiCo Asia, Middle East and Africa (AMEA), which includes all beverage, food and snack businesses in AMEA.",
     "booth":55,
@@ -568,8 +568,8 @@
   },
   {
     "name":"Pratt & Whitney",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/pratt-whitney-wide.png",
+    "logoSquare":"img/logos/pratt-whitney-square.png",
     "description":"Pratt & Whitney, a United Technologies Corp. company (NYSE:UTX), is a world leader in the design, manufacture and service of aircraft engines, auxiliary and ground power units, and small turbojet propulsion products. Today, Pratt & Whitney develops game-changing technologies for the future, such as the PurePower� PW1000G engine, with patented Geared Turbofan engine technology. The company's worldwide large commercial engine maintenance, repair and overhaul network provides innovative services that add value and delight customers around the globe.",
     "booth":13,
     "major": ["mde","mse","me"],
@@ -604,7 +604,7 @@
   },
   {
     "name":"SapientNitro",
-    "logoFull":"",
+    "logoFull":"img/logos/sapient-nitro-wide.png",
     "logoSquare":"img/logos/sapient-nitro-square.png",
     "description":"We live in an always-on world, where perpetual connection has revolutionized daily life and unhinged the effectiveness of traditional marketing approaches. Never before has it been so critical for our clients to think about their customer's complete brand and buying experience as a single landscape � a never-ending narrative that offers an everywhere, anytime experience of their promise and message, be it during attraction, engagement or transaction.",
     "booth":50,
@@ -631,7 +631,7 @@
   },
   {
     "name":"Shmoop University, Inc.",
-    "logoFull":"",
+    "logoFull":"img/logos/shmoop-wide.png",
     "logoSquare":"img/logos/shmoop-square.png",
     "description":"Shmoop is a digital publishing company with a point of view. We seek to empower and broaden the range and depth of choices that students have in life. Our teaching \"method\" revolves around the basic notion that learning is often unnecessarily hard�so we carry gallons of academic WD-40 that we squirt on the tracks whenever we can.",
     "booth":70,
@@ -640,7 +640,7 @@
   },
   {
     "name":"SpaceX",
-    "logoFull":"",
+    "logoFull":"img/logos/spacex-wide.png",
     "logoSquare":"img/logos/spacex-square.png",
     "description":"SpaceX has gained worldwide attention for a series of historic milestones. It is the only private company ever to return a spacecraft from low-Earth orbit, which it first accomplished in December 2010. The company made history again in May 2012 when its Dragon spacecraft attached to the International Space Station, exchanged cargo payloads, and returned safely to Earth � a technically challenging feat previously accomplished only by governments. Since then Dragon has twice delivered cargo to and from the space station, in the first of many cargo resupply missions for NASA.",
     "booth":53,
@@ -721,8 +721,8 @@
   },
   {
     "name":"Wolverine Trading, LLC",
-    "logoFull":"img/logos/wolverine-wide.png",
-    "logoSquare":"img/logos/wolverine-square.png",
+    "logoFull":"img/logos/wolverine-trading-wide.png",
+    "logoSquare":"img/logos/wolverine-trading-square.png",
     "description":"Wolverine is a diversified financial institution specializing in proprietary trading, asset management, order execution services, and technology solutions. We are recognized as a market leader in derivatives valuation, trading, and value-added order execution across global equity, options, and futures markets. Our focus on innovation, achievement, and integrity serves the interests of our clients and colleagues. Wolverine is headquartered in Chicago, with branch offices in New York, San Francisco, and London.",
     "booth":26,
     "major": ["ce","cs","non"],
@@ -739,8 +739,8 @@
   },
   {
     "name":"Zebra Technologies Corporation",
-    "logoFull":"img/logos/zebra-wide.png",
-    "logoSquare":"img/logos/zebra-square.png",
+    "logoFull":"img/logos/zebra-tech-wide.png",
+    "logoSquare":"img/logos/zebra-tech-square.png",
     "description":"A global leader respected for innovation and reliability, Zebra provides enabling technologies that allow customers to take smarter actions.\n\nZebra's extensive portfolio of barcode, receipt, kiosk and RFID printers and supplies, as well as real-time location solutions give a digital voice to assets, people and transactions that provides greater visibility into mission-critical information.",
     "booth":34,
     "major": ["che","ce","cs","ee","me","non"],
