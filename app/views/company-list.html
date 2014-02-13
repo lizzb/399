@@ -4,9 +4,22 @@
 
     <!-- ---------- Sort/filter controls ---------- -->
 
+    <div class="alert alert-info">
+                 <h4>Total Filtered Client: {{filteredList.length}}</h4>
+
+                 <p>Number of visible people: {{(companies|filter:query).length}}</p>
+                  <p>Total number of people: {{companies.length}}</p>
+
+            </div>
+
     Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
     Filter by: <i class="fa fa-filter"> </i> <br>
     
+
+<div id="status">Current filter: {{query}}</div>
+
+
+
     <!-- glyphicons AND font awesome work -->
     
     Sort by:<i class="glyphicon glyphicon-sort"></i> <br>
@@ -66,8 +79,6 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
       </a-->
 
       <!--
-
-
       <div class="bar">
 
     <!-- These two buttons switch the layout variable,
@@ -76,34 +87,30 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
     <a class="list-icon" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'"></a>
     <a class="grid-icon" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'"></a>
   </div>
+      ngClass directive
+      allows you to dynamically set CSS classes on an HTML element by databinding an expression that represents all classes to be added.
+When the expression changes, the previously added classes are removed and only then the new classes are added.The directive won't add duplicate classes if a particular class was already set.
 
-
-      The ngClass directive allows you to dynamically set CSS classes on an HTML element by databinding an expression that represents all classes to be added.
-
-The directive won't add duplicate classes if a particular class was already set.
-
-When the expression changes, the previously added classes are removed and only then the new classes are added.
-
-      ng-click="sortType = 'description' or 'position' or 'major' sorts by the first letter of that field, not the length
-
+     
       <a ng-click="sort(sortvalue)">
   <span ng-transclude=""></span>
   <span ng-show="sortedby == sortvalue">
     <i ng-class="{true: 'icon-arrow-up', false: 'icon-arrow-down'}[sortdir == 'asc']"></i>
   </span>
 </a>
-What does this transclude option do, exactly? transclude makes the contents of a directive with this option have access to the scope outside of the directive rather than inside.
 
-To illustrate this, see the example below. Notice that we've added a link function in script.js that redefines name as Jeff. What do you think the {{name}} binding will resolve to now?
+transclude makes the contents of a directive with this option have access to the scope outside of the directive rather than inside.
+
 The transclude option changes the way scopes are nested. It makes it so that the contents of a transcluded directive have whatever scope is outside the directive, rather than whatever scope is on the inside. In doing so, it gives the contents access to the outside scope.
 
 Note that if the directive did not create its own scope, then scope in scope.name = 'Jeff'; would reference the outside scope and we would see Jeff in the output.
 
 This behavior makes sense for a directive that wraps some content, because otherwise you'd have to pass in each model you wanted to use separately. If you have to pass in each model that you want to use, then you can't really have arbitrary contents, can you?
 
-Best Practice: only use transclude: true when you want to create a directive that wraps arbitrary content.
-Next, we want to add buttons to this dialog box, and allow someone using the directive to bind their own behavior to it.
+Best Practice: only use transclude: true 
+when you want to create a directive that wraps arbitrary content.
 
+Next, we want to add buttons to this dialog box, and allow someone using the directive to bind their own behavior to it.
       filterBy='position'
       filterBy='major'
       search includes the description and majors in it i think
@@ -111,14 +118,17 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
 
   </div><!-- end row sorting filtering controls -->
 
+
 <!-- if i wanted a sidebar
   <div class="col-md-10" -->
 
     <!--Body content -->
     <div class="row"> 
       <ul class="companies">
+
+      <li ng-repeat="company in filteredList = (companies | filter: query | orderBy:sortType:asc)" class="thumbnail">
         
-        <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
+        <!--li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail"-->
 
         <a href="#/companies/{{company.booth}}">
         <img class="companies-list-square" ng-src="{{company.logoSquare}}">
