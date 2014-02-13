@@ -11,7 +11,38 @@ idayControllers.controller('CompanyListController', ['$scope', '$http',
       $scope.companies = data;
     });
 
+    var categories = ['ft', 'int', 'coop', 'msphd'];
+    $scope.filters = [];
+    //$scope.selectedFilter = [];
     $scope.orderProp = 'name';
+
+/*
+    $scope.selectedGenres = "Action, Drama"; 
+
+$scope.containsComparator = function(expected, actual){  
+  return actual.indexOf(expected) > -1;
+};*/
+    $scope.filterByPosition = function(category){scope.filters.push(category);}
+
+    //http://jsfiddle.net/TahmidTanzim/N9Vqk/
+    //  ($scope) {
+    /*$scope.setSelectedFilter = function (input) {
+        //var id = this.company.id;
+        var id = input;
+        if (_.contains($scope.selectedFilter, id)) {
+            $scope.selectedFilter = _.without($scope.selectedFilter, id);
+        } else {
+            $scope.selectedFilter.push(id);
+        }
+        return false;
+    };*/
+
+    /*$scope.isChecked = function (id) {
+        if (_.contains($scope.selectedFilter, id)) {
+            return 'icon-ok pull-right';
+        }
+        return false;
+    };*/
   }]);
 
 

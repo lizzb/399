@@ -14,15 +14,37 @@
 
     Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
     Filter by: <i class="fa fa-filter"> </i> <br>
-    
+
+    <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('am')">
+        <!--span data-ng-class="isChecked()"</span-->
+        AM
+        </a>
+
+        <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('bme')">
+        <!--span data-ng-class="isChecked()"</span-->
+       BME
+        </a>
+
+        <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('cs')">
+        <!--span data-ng-class="isChecked()"</span-->
+        CS
+        </a>
+
+ Filter By Category: 
+
+ <button ng-click="filterByPosition('ft')"> full time </button>
+ <button ng-click="filterByPosition('int')"> intern </button>
+ <button ng-click="filterByPosition('coop')"> coop </button>
+ <button ng-click="filterByPosition('msphd')"> msphd </button>
+
+ <!--button ng-repeat="cat in categories" ng-click="filterProductsByCategory(cat)">{{cat}}</button-->
+
 
 <div id="status">Current filter: {{query}}</div>
 
-
-
     <!-- glyphicons AND font awesome work -->
-    
     Sort by:<i class="glyphicon glyphicon-sort"></i> <br>
+
       <!--select class="sorter" ng-model="orderProp">
       don't use selects because can't be styled as well or something
       <!-- http://docs.angularjs.org/api/ng.filter:orderBy 
@@ -126,7 +148,7 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
     <div class="row"> 
       <ul class="companies">
 
-      <li ng-repeat="company in filteredList = (companies | filter: query | orderBy:sortType:asc)" class="thumbnail">
+      <li ng-repeat="company in filteredList = (companies | filter:{query, filterByPosition('ft')}| orderBy:sortType:asc)" class="thumbnail">
         
         <!--li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail"-->
 
@@ -146,6 +168,7 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
 
           
           <!--
+          http://stackoverflow.com/questions/19948280/angularjs-not-filtering-products-list
           <a href="#/companies/{{company.booth}}" class="">
             <img ng-src="{{company.logoFull}}">
           </a>
