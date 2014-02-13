@@ -244,8 +244,8 @@
   },
   {
     "name":"Etherios, a Division of Digi International",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/etherios-wide.png",
+    "logoSquare":"img/logos/etherios-square.png",
     "description":"At Etherios, our mission is to deliver industry leading cloud-based solutions. We love what we do. Etherios is comprised of passionate and driven individuals that are focused on delivering innovative solutions and customer success for our clients. We were born in the cloud. We work with organizations of all sizes and across a diverse range of industries to deliver best-in-class cloud based products and services. Our capabilities encompass advisory, salesforce.com, wireless design and M2M consulting services. Our combined product and services offering uniquely position us to be your end-to-end M2M cloud solution expert.",
     "booth":31,
     "major": ["ce","cs","ee"],
@@ -334,7 +334,7 @@
   },
   {
     "name":"Goodyear Tire & Rubber Company",
-    "logoFull":"",
+    "logoFull":"img/logos/goodyear-wide.png",
     "logoSquare":"img/logos/goodyear-square.png",
     "description":"The Goodyear Tire & Rubber Company was founded in 1898 by 38-year-old Frank Seiberling.\n\nLooking back, the founding of The Goodyear Tire & Rubber Company in 1898 seems especially remarkable, for the beginning was anything but auspicious. The 38-year-old founder, Frank A. Seiberling, purchased the company�s first plant with a $3,500 down payment -- using money he borrowed from a brother-in-law Lucius C. Miles. The rubber and cotton that were the lifeblood of the industry had to be transported from halfway around the world, to a landlocked town that had only limited rail transportation. ",
     "booth":73,
@@ -343,8 +343,8 @@
   },
   {
     "name":"GTL/Illinois River Energy",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/gtl-wide.png",
+    "logoSquare":"img/logos/gtl-square.png",
     "description":"Illinois River Energy, LLC (IRE), owned by GTL Resources USA, Inc., operates a dry mill, corn-based bio-refinery which produces fuel grade ethanol, wet and dry distiller�s grains (ddgs), and Inedible corn oil that is utilized in the production of biodiesel and the animal feed market. The plant is located in Rochelle, Illinois where it processes over 40 million bushels of corn each year. The facility annually produces over 120 million gallons of denatured fuel grade renewable ethanol, over 300,000 tons of distiller�s grains and over 24 million pounds of Inedible corn oil.\n\nIRE is located on an 81 acre industrial site, southeast of Rochelle, IL at 1900 Steward Road. The facility has a positive economic impact within Rochelle and the surrounding communities. Corn is secured locally direct from farmers and through various elevators in the region.",
     "booth":14,
     "major": ["che"],
@@ -352,8 +352,8 @@
   },
   {
     "name":"Hanley, Flight & Zimmerman LLC",
-    "logoFull":"",
-    "logoSquare":"img/logos/hfz-square.png",
+    "logoFull":"img/logos/hfz-llc-wide.png",
+    "logoSquare":"img/logos/hfz-llc-square.png",
     "description":"HFZ is a firm of innovative legal professionals with several decades of combined real-world technical expertise and legal experience, proudly specializing in a broad spectrum of technical areas. We provide expert, high-value patent prosecution and counseling services to numerous companies including top patent-earning entities in the U.S.\n\nWith actual, practical expertise in mechanical, electrical, and software arts, we craft useful claims and identify effective enforcement and defensive opportunities for your intellectual property. Throughout prosecution, HFZ keeps your business goals in mind and provides you with information you need to make business decisions.",
     "booth":51,
     "major": ["ce","ee","me","non"],
@@ -361,8 +361,8 @@
   },
   {
     "name":"HERE, a Nokia Business",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/here-nokia-wide.png",
+    "logoSquare":"img/logos/here-nokia-square.png",
     "description":"Nokia's mission is simple: Connecting People. Our goal is to build great mobile products that enable billions of people worldwide to enjoy more of what life has to offer. Our challenge is to achieve this in an increasingly dynamic and competitive environment.\n\nIdeas. Energy. Excitement. Opportunities. In today's mobile world, it feels like anything is possible - and that's what inspires us to get out of bed every day.",
     "booth":30,
     "major": ["ce","cs"],
@@ -370,7 +370,7 @@
   },
   {
     "name":"Hospira",
-    "logoFull":"",
+    "logoFull":"img/logos/hospira-wide.png",
     "logoSquare":"img/logos/hospira-square.png",
     "description":"Hospira is the world's leading provider of injectable drugs and infusion technologies. Through our broad, integrated portfolio, we are uniquely positioned to Advance Wellness� by improving patient and caregiver safety while reducing healthcare costs. \n\nThrough our offering of high-quality, lower-cost generic medications, we continue to help reduce the overall costs of healthcare � to improve both the affordability of care for patients and the financial strength of the global healthcare system.\n\nBy working with our device customers to integrate technologies at the point of care, we are the partner of choice for improving patient and caregiver safety, clinical outcomes, cost management, as well as caregiver efficiency and effectiveness.",
     "booth":66,
@@ -379,8 +379,8 @@
   },
   {
     "name":"Illinois Dept. of Transportaion",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/idot-square.png",
+    "logoSquare":"img/logos/idot-wide.png",
     "description":"The mission of IDOT is to provide safe, cost-effective transportation for Illinois in ways that enhance quality of life, promote economic prosperity, and demonstrate respect for our environment. We will accomplish our mission while making the following principles the hallmark of all our work: Safety, Integrity, Diversity, Responsiveness, Quality, Innovation. The vision of IDOT is to be recognized as the premier state department of transportation in the nation.",
     "booth":37,
     "major": ["civ"],
@@ -388,7 +388,7 @@
   },
   {
     "name":"IMC Financial Markets",
-    "logoFull":"",
+    "logoFull":"img/logos/imc-wide.png",
     "logoSquare":"img/logos/imc-square.png",
     "description":"IMC financial markets is one of the world�s leading proprietary trading firms and a key market maker in various products listed on exchanges throughout the world.\n\nIn general, our main strategies can be grouped into: Market Making or liquidity providing,  Algorithmic arbitrage,  Statistical arbitrage\n\nAll of our strategies are proprietary and within IMC financial markets we do not have any external clients. All of our strategies have a short-term focus and are considered as �high frequency trading�. ",
     "booth":10,
@@ -748,8 +748,8 @@
   },
   {
     "name":"ZS Associates",
-    "logoFull":"img/logos/zs-wide.png",
-    "logoSquare":"img/logos/zs-square.png",
+    "logoFull":"img/logos/zs-associates-wide.png",
+    "logoSquare":"img/logos/zs-associates-square.png",
     "description":"ZS Associates is one of the world's largest business services firms specializing in transforming sales and marketing from an art to a science. We help clients gain market share at lower cost. We do so by creating data-driven strategies that they can implement rapidly and by taking on sales and marketing operations to make them more competitive. \n\nWith 20 offices around the world, we have worked with more than 700 companies in 70 countries across consumer products, energy, high-tech, insurance, medical products and services, pharmaceuticals and other industries.",
     "booth":40,
     "major": ["am","bme","che","civ","ce","cs","ee","env","ie","mde","mse","me"],
