@@ -106,7 +106,9 @@ ul.companies li {
   padding: 0px;
   margin: 0px;
   vertical-align: center;
-  height: 80px;
+  /*height: 80px;*/
+  max-height: 80px;
+  max-width: 80px; /* care about width in the listing not height, for cheaty non square items */
   float:left;
   border:none;
 }

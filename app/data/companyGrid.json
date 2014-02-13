@@ -127,8 +127,8 @@
   },
   {
     "name":"Chrylser Group LLC",
-    "logoFull":"",
-    "logoSquare":"img/logos/chrylser-square.png",
+    "logoFull":"img/logos/chrylser-group-wide.png",
+    "logoSquare":"img/logos/chrylser-group-square.png",
     "description":"Chrysler Group LLC, formed in 2009 to establish a global strategic alliance with Fiat S.p.A., produces Chrysler, Jeep, Dodge, Ram, SRT, FIAT and Mopar vehicles and products. With the resources, technology and worldwide distribution network required to compete on a global scale, the alliance builds on Chrysler Group�s culture of innovation, first established by Walter P. Chrysler in 1925, and Fiat�s complementary technology that dates back to its_ founding in 1899.",
     "booth":44,
     "major": ["che","cs","ee","mse","me"],
@@ -145,7 +145,7 @@
   },
   {
     "name":"Clarity Solutions Group",
-    "logoFull":"",
+    "logoFull":"img/logos/clarity-wide.png",
     "logoSquare":"img/logos/clarity-square.png",
     "description":"Clarity is a data and analytics firm providing expert consulting solutions and ongoing support with an uncompromising focus on client success. Our clients trust us to produce innovative, value-driven solutions that leverage existing investments to quickly generate results. Our elite team of passionate professionals works with clients in a variety of industries throughout North America, transforming the way businesses think about, organize and use their data.\n\nWe offer the enterprise-level expertise of a systems integrator, the client-centric focus of a boutique data services provider, and the strategic business experience of a top-tier management consulting firm. Our two subsidiaries extend and augment those offerings. Clarity Resource Group provides expert staffing solutions whether they are short-term or contract-to-hire. Clarity Operations provides a full-suite of managed services offering ensuring our clients have ongoing support for their data and analytics solutions.",
     "booth":23,
@@ -154,7 +154,7 @@
   },
   {
     "name":"CME Group",
-    "logoFull":"",
+    "logoFull":"img/logos/cme-group-wide.png",
     "logoSquare":"img/logos/cme-group-square.png",
     "description":"As the world's leading and most diverse derivatives marketplace, CME Group is where the world comes to manage risk. We offer the widest range of global benchmark products across all major asset classes. Helping businesses everywhere mitigate the myriad risks they face in today�s uncertain global economy allows them to operate more effectively, create more jobs, and pass benefits on to consumers.",
     "booth":12,
@@ -163,8 +163,8 @@
   },
   {
     "name":"ComEd",
-    "logoFull":"",
-    "logoSquare":"img/logos/comed-square.png",
+    "logoFull":"img/logos/com-ed-wide.png",
+    "logoSquare":"img/logos/com-ed-square.png",
     "description":"Commonwealth Edison Company, perhaps better known as ComEd, is a unit of Chicago-based Exelon Corporation. Exelon is one of the nation's largest electric utilities, with approximately 5.4 million customers. ComEd provides service to approximately 3.8 million customers across Northern Illinois, or 70 percent of the state's population.\n\nComEd is an energy delivery company. We do not own power plants and we do not make electricity. We deliver electricity to your home or business. To do this, we manage more than 90,000 miles of powerlines in an 11,400-square-mile territory. Since 2001, we have invested more than $5 billion in our electrical transmission and distributions system to continue to provide customers like you with the quality service you expect and deserve.",
     "booth":20,
     "major": ["ee","me","non"],
@@ -190,7 +190,7 @@
   },
   {
     "name":"DENSO International America",
-    "logoFull":"",
+    "logoFull":"img/logos/denso-wide.png",
     "logoSquare":"img/logos/denso-square.png",
     "description":"DENSO is a global automotive supplier of advanced automotive technology, systems and components, heading toward an automotive society where cars put less drag on the environment and drivers have fewer worries about traffic accidents.\n\nDENSO's lead in developing this automotive society comes from anticipating the needs of automakers and closely partnering with customers right from the start.\n\nOur teams work quickly and diligently to manufacture products that show a commitment to safety and the environment, while at the same time punch up the level of driving comfort and convenience.",
     "booth":46,
@@ -208,7 +208,7 @@
   },
   {
     "name":"DMC Inc",
-    "logoFull":"",
+    "logoFull":"img/logos/dmc-wide.png",
     "logoSquare":"img/logos/dmc-square.png",
     "description":"DMC offers high-caliber engineering and software development services for manufacturing, testing, and product development organizations in the Chicago area and throughout the world. Since 1996, we have been building mission-critical systems for top organizations.",
     "booth":54,
@@ -217,7 +217,7 @@
   },
   {
     "name":"Dropbox",
-    "logoFull":"",
+    "logoFull":"img/logos/dropbox-wide.png",
     "logoSquare":"img/logos/dropbox-square.png",
     "description":"Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere, and share them easily. Any file you save to your Dropbox will automatically save to all your computers, your phone or iPad, and the Dropbox website. Dropbox also makes it easy to share with others. And if your computer melts down, you can restore all your files from the Dropbox website with a couple clicks. Dropbox has more than 200,000,000 users.",
     "booth":58,
@@ -226,7 +226,7 @@
   },
   {
     "name":"ENVIRON International Corp",
-    "logoFull":"",
+    "logoFull":"img/logos/environ-wide.png",
     "logoSquare":"img/logos/environ-square.png",
     "description":"Since 1982, ENVIRON has worked with clients around the world to help resolve their most demanding environmental and human health issues. We combine resources across geographic boundaries and technical and scientific disciplines to provide clients with the best, most responsive teams�whether responding to existing challenges, evaluating opportunities to improve performance or seeking to reduce future liabilities. Clients benefit from our unique ability to bring clarity to issues at the intersection of science, business and policy.",
     "booth":47,
@@ -235,7 +235,7 @@
   },
   {
     "name":"Epic",
-    "logoFull":"",
+    "logoFull":"img/logos/epic-wide.png",
     "logoSquare":"img/logos/epic-square.png",
     "description":"Epic makes software for mid-size and large medical groups, hospitals and integrated healthcare organizations � working with customers that include community hospitals, academic facilities, children's organizations, safety net providers and multi-hospital systems. Our integrated software spans clinical, access and revenue functions and extends into the home.",
     "booth":5,
@@ -253,8 +253,8 @@
   },
   {
     "name":"ExxonMobil",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/exxon-mobil-wide.png",
+    "logoSquare":"img/logos/exxon-mobil-square.png",
     "description":"Over the last 125 years ExxonMobil has evolved from a regional marketer of kerosene in the U.S. to the largest publicly traded petroleum and petrochemical enterprise in the world. Today we operate in most of the world's countries and are best known by our familiar brand names: Exxon, Esso and Mobil. We make the products that drive modern transportation, power cities, lubricate industry and provide petrochemical building blocks that lead to thousands of consumer goods. ",
     "booth":76,
     "major": ["che","civ","ee","mse","me","non"],
@@ -262,7 +262,7 @@
   },
   {
     "name":"Facebook",
-    "logoFull":"",
+    "logoFull":"img/logos/facebook-wide.png",
     "logoSquare":"img/logos/facebook-square.png",
     "description":"Founded in 2004, Facebook�s mission is to give people the power to share and make the world more open and connected. People use Facebook to stay connected with friends and family, to discover what�s going on in the world, and to share and express what matters to them.",
     "booth":77,
@@ -271,7 +271,7 @@
   },
   {
     "name":"FactSet Research Systems",
-    "logoFull":"",
+    "logoFull":"img/logos/factset-wide.png",
     "logoSquare":"img/logos/factset-square.png",
     "description":"FactSet consolidates all the tools you need to monitor global markets, public and private companies, and equity and fixed income portfolios in a single, intuitive interface.\n\nWith FactSet, you gain powerful analytics tailored to your workflow, the broadest scope of data available, and access to industry-leading client service. Our solutions are designed to fit seamlessly into your workflow, with a wide selection of customizable reports and charts that are relevant to your job function",
     "booth":42,
@@ -289,7 +289,7 @@
   },
   {
     "name":"Ford Motor Company",
-    "logoFull":"",
+    "logoFull":"img/logos/ford-wide.png",
     "logoSquare":"img/logos/ford-square.png",
     "description":"Ford Motor Company is an American multinational automaker headquartered in Dearborn, Michigan, a suburb of Detroit. It was founded by Henry Ford and incorporated on June 16, 1903. The company sells automobiles and commercial vehicles under the Ford brand and luxury cars under the Lincoln brand. In the past it has also produced heavy trucks, tractors and automotive components. Ford owns small stakes in Mazda of Japan and Aston Martin of the United Kingdom. It is listed on the New York Stock Exchange and is controlled by the Ford family, although they have minority ownership.",
     "booth":71,
@@ -595,8 +595,8 @@
   },
   {
     "name":"S&C Electric",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/s-c-electric-wide.png",
+    "logoSquare":"img/logos/s-c-electric-square.png",
     "description":"",
     "booth":75,
     "major": [],
@@ -676,8 +676,8 @@
   },
   {
     "name":"Trading Technologies",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/trading-tech-wide.png",
+    "logoSquare":"img/logos/trading-tech-square.png",
     "description":"We distribute our software and solutions to end users through more than 100 firms, including 19 of the top 20 U.S. futures brokers. We're proud to have the world's premier investment banks, brokers, Futures Commission Merchants (FCMs), hedge funds, proprietary trading firms and other trading institutions as our customers.\n\nOur customers tell us they trust TT to help them succeed in the often turbulent world of trading because of our technology, our people and our ongoing drive to innovate. We can anticipate and deliver the innovations that traders need in large part because we are intimately familiar with what they do. ",
     "booth":17,
     "major": ["cs"],
