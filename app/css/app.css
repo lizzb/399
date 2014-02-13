@@ -123,7 +123,8 @@ ul.companies li img{
   float:left;
   border:none;
 }
-.right {float: right;}
+.left {float: left; display: inline-block;}
+.right {float: right; display: inline-block;}
 .companies-list-square {}
 .logo-square {
     width: 100px;

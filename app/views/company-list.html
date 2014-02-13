@@ -8,6 +8,7 @@
     Filter by: <i class="fa fa-filter"> </i> <br>
     
     <!-- glyphicons AND font awesome work -->
+    
     Sort by:<i class="glyphicon glyphicon-sort"></i> <br>
       <!--select class="sorter" ng-model="orderProp">
       don't use selects because can't be styled as well or something
@@ -26,6 +27,7 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
       with a switching icon
       but not yet working 
       -->
+      <div class="left">
       <a href="" class="btn btn-default" ng-click="sortType='name'; asc=!asc">
         Name
         <!-- display the OPPOSITE value icon for current sort direction --
@@ -36,11 +38,12 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
        <a href="" class="btn btn-default" ng-click="sortType='name';">
         <i class="fa fa-sort-alpha-asc"></i>
         </a>
-
         <a href="" class="btn btn-default" ng-click="sortType='-name';">
         <i class="fa fa-sort-alpha-desc"></i>
         </a>
+</div>
 
+<div class="right">
       <a href="" class="btn btn-default" ng-click="sortType='booth'; asc=!asc">
         Booth
         <!--i class="fa" ng-class="orderBy == '-booth' ? 'fa-sort-numeric-asc' : 'fa-sort-numeric-desc'"></i-->
@@ -49,11 +52,10 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
       <a href="" class="btn btn-default" ng-click="sortType='booth';">
         <i class="fa fa-sort-numeric-asc"></i>
         </a>
-
         <a href="" class="btn btn-default" ng-click="sortType='-booth';">
         <i class="fa fa-sort-numeric-desc"></i>
         </a>
-
+</div>
       <!--a href="" class="btn btn-default" ng-click="sortType='room'; asc=!asc">
         Room
         <i class="fa fa-sort"> </i>
@@ -125,8 +127,9 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
 
         <span class="companyBoothLocation">
             <!--p>{{company.description}}</p-->
-            Booth: {{company.booth}} &nbsp;&nbsp;&nbsp; 
+            Booth: {{company.booth}}
             <!-- Room: {{company.room}}-->
+            <i class="fa fa-compass fa-2x"></i>
           </span>
 
         <!--a href="#/companies/{{company.booth}}" class="thumb"-->
