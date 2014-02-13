@@ -280,7 +280,7 @@
   },
   {
     "name":"Fenwal Inc, a Fresenius-Kabi Company",
-    "logoFull":"",
+    "logoFull":"img/logos/fenwal-wide.png",
     "logoSquare":"img/logos/fenwal-square.png",
     "description":"Fenwal is a pioneer and global leader in the development of products that improve the safety and availability of blood. Our products help shape the practice of transfusion medicine, making life-saving blood therapies available to the medical professionals and patients worldwide who rely on them.",
     "booth":1,
@@ -298,7 +298,7 @@
   },
   {
     "name":"FTI Consulting",
-    "logoFull":"",
+    "logoFull":"img/logos/fti-wide.png",
     "logoSquare":"img/logos/fti-square.png",
     "description":"Global organizations increasingly face complex challenges created by unpredictable financial markets, ever-changing governmental regulation and increasing global interdependencies. The enterprise value of each organization depends on how well these threats or opportunities are handled. But few have the capability or objective to manage them internally.",
     "booth":3,
