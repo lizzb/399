@@ -4,13 +4,15 @@
 
     <!-- ---------- Sort/filter controls ---------- -->
 
-    <div class="alert alert-info">
+    <!--div class="alert alert-info">
                  <h4>Total Filtered Client: {{filteredList.length}}</h4>
 
                  <p>Number of visible people: {{(companies|filter:query).length}}</p>
                   <p>Total number of people: {{companies.length}}</p>
 
-            </div>
+            </div-->
+
+    Showing {{filteredList.length}} of {{companies.length}} total. <br>
 
     Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
     Filter by: <i class="fa fa-filter"> </i> <br>
@@ -148,7 +150,7 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
     <div class="row"> 
       <ul class="companies">
 
-      <li ng-repeat="company in filteredList = (companies | filter:{query, filterByPosition('ft')}| orderBy:sortType:asc)" class="thumbnail">
+      <li ng-repeat="company in filteredList = (companies | filter: query | orderBy:sortType:asc)" class="thumbnail">
         
         <!--li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail"-->
 
@@ -157,24 +159,11 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
         <div class="companies-list-info">
 
 
-        <span class="companyBoothLocation">
-            <!--p>{{company.description}}</p-->
+        <span class="companyBoothLocation"> 
             Booth: {{company.booth}}
             <!-- Room: {{company.room}}-->
             <i class="fa fa-compass fa-2x"></i>
           </span>
-
-        <!--a href="#/companies/{{company.booth}}" class="thumb"-->
-
-          
-          <!--
-          http://stackoverflow.com/questions/19948280/angularjs-not-filtering-products-list
-          <a href="#/companies/{{company.booth}}" class="">
-            <img ng-src="{{company.logoFull}}">
-          </a>
-          -->
-            
-            
 
           {{company.name}}
 
@@ -189,6 +178,14 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
           </div>
           </a>
         </li>
+
+        <!--a href="#/companies/{{company.booth}}" class="thumb"-->
+        <!--
+          http://stackoverflow.com/questions/19948280/angularjs-not-filtering-products-list
+          <a href="#/companies/{{company.booth}}" class="">
+            <img ng-src="{{company.logoFull}}">
+          </a>
+          -->
         
       </ul>
 
