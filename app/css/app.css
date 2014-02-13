@@ -39,8 +39,6 @@ margin: 8px;
 
 .thumbnail {margin-bottom: 0px;}
 
-
-
 .thumb {
   float: left;
   /*margin: -1em 1em 1.5em 0em;
@@ -69,14 +67,12 @@ ul.companies {
   /*margin: 0 auto;*/
 }
 
-
 ul.companies li {
   clear: both; /* WHAT DOES CLEAR DO?? */
   height: 80px;
   font-family:'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   color: #444444;
-  /*padding-top: 15px;*/
-  padding-top:10px;
+  padding-top:10px; /*padding-top: 15px;*/
 
   vertical-align: top;  /* IS VERTICAL AND TEXT ALIGN VALID? */
   text-align: center;
@@ -106,9 +102,10 @@ ul.companies li {
   padding: 0px;
   margin: 0px;
   vertical-align: center;
+  max-width: 80px;
   /*height: 80px;*/
-  max-height: 80px;
-  max-width: 80px; /* care about width in the listing not height, for cheaty non square items */
+  /*max-height: 80px;
+  max-width: 80px;*/ /* care about width in the listing not height, for cheaty non square items */
   float:left;
   border:none;
 }
@@ -126,6 +123,15 @@ ul.companies li img{
   float:left;
   border:none;
 }
+.right {float: right;}
+.companies-list-square {}
+.logo-square {
+    width: 100px;
+}
+.logo-wide {
+  width: 270px;
+  max-width: 270px;
+}
 
 ul.companies li p{
   margin-left: 75px;
@@ -134,12 +140,37 @@ ul.companies li p{
   color:#6e7a7f;
 }
 
+.companyProfileHeading {
+  color: #ccc;
+  font-size: 14px;
+  /*font-variant: small-caps;*/
 
+}
 
+.companyNameHeading {
+  color: #999;
+  font-size: 19px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgray;
+}
+.description { color: #666;}
 
+.detailsHeading, .positionsHeading, .majorsHeading {
+  color: indigo;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+/*
+ {
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}*/
 
 /** Detail View **/
-img.company {
+/*img.company {
   float: left;
   border: 1px solid black;
   margin-right: 3em;
@@ -148,7 +179,11 @@ img.company {
   padding: 2em;
   height: 400px;
   width: 400px;
-}
+}*/
+
+
+
+
 
 
 /*
@@ -170,6 +205,7 @@ ul.company-thumbs img {
   padding: 1em;
 }*/
 
+/*
 ul.specs {
   clear: both;
   margin: 0;
@@ -195,5 +231,5 @@ ul.specs dt {
 h1 {
   border-bottom: 1px solid gray;
 }
-
+*/
 

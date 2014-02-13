@@ -7,42 +7,38 @@
 {{company.major}} 
 {{company.position}} 
 
-<!--"[ 'fte','int' ]"
+fte int coop msphd
+
+"[ 'fte','int' ]"
 "['che','ce','ee','ie','mde','mse','me',],",
-<!--img ng-src="{{mainImageUrl}}" class="company"-->
+-->
+<!--dd>{{company.position.join(', ')}}</dd-->
+<!-- {{job | checkmark}} marks either check or X -->
 
-<h1>{{company.name}}</h1>
+ <h3 class="companyProfileHeading"> Company Profile </h3>
 
-<!--p>{{company.description}}</p-->
-<ul class="specs">
-<li>
-  <span> Positions </span>
-  <dl>
-  <dt>Looking for the following:</dt>
-      <!--dd>{{company.position.join(', ')}}</dd-->
-      <dd ng-repeat="job in company.position track by $index">
-      {{job}}
-      <!-- {{job | checkmark}} marks either check or X -->
-      </dd>
-      </dd>
-  <!--dt>Dimensions</dt>
-      <dd ng-repeat="job in company.position">{{job}}</dd-->
-  </dl>
-  </li>
-  <li>
-    <span>Availability and Networks</span>
-    <dl>
-      <dt>Availability</dt>
-      <dd>{{company.major.join(', ')}}</dd>
-      <!--dd ng-repeat="major in company.major">{{major}}</dd-->
-    </dl>
-  </li> 
-  <li>
-    <span>Additional Features</span>
-    <dd>{{company.description}}</dd>
-  </li> 
+ <img class="logo-wide" ng-src="{{company.logoFull}}">
 
-</ul>
+<h1 class="companyNameHeading">{{company.name}}</h1>
+
+<img class="logo-square right" ng-src="{{company.logoSquare}}">
 
 
+<div class="positions">
+  <h3 class="positionsHeading"> Positions </h3>
+  <!--span class="Looking for the following:"> </span-->
+    <dd ng-repeat="job in company.position track by $index">{{job}} </dd>
+</div>
+
+<div class="majors">
+  <h3 class="majorsHeading"> Majors </h3>
+  <!--span class="Looking for the following:"> </span-->
+  <dd>{{company.major.join(', ')}}</dd>
+  <!--dd ng-repeat="major in company.major">{{major}}</dd-->
+
+</div>
+
+<div class="description">
+ <h3 class="detailsHeading"> Description </h3>
+{{company.description}}
 </div>
