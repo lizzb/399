@@ -39,10 +39,12 @@ margin: 8px;
 
 .thumbnail {margin-bottom: 0px;}
 
+
+
 .thumb {
   float: left;
-  margin: -1em 1em 1.5em 0em;
-  padding-bottom: 1em;
+  /*margin: -1em 1em 1.5em 0em;
+  padding-bottom: 1em;*/
   /*height: 100px; width: 100px; 200*/
   height: 80px; width: 80px;
   height: 70px; width: 70px;
@@ -55,7 +57,7 @@ margin: 8px;
   color:#389dc1;
 }*/
 
-a:hover{
+a, a:hover{
   text-decoration:none;
 }
 
@@ -73,7 +75,8 @@ ul.companies li {
   height: 80px;
   font-family:'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   color: #444444;
-  padding-top: 15px;
+  /*padding-top: 15px;*/
+  padding-top:10px;
 
   vertical-align: top;  /* IS VERTICAL AND TEXT ALIGN VALID? */
   text-align: center;
@@ -97,9 +100,27 @@ ul.companies li {
   */
 }
 
+/* when a square logo is displayed next to company name on company grid list */
+.companies-list-square
+{
+  padding: 0px;
+  margin: 0px;
+  vertical-align: center;
+  height: 80px;
+  float:left;
+  border:none;
+}
+
+.companies-list-info
+{
+  padding-top: 15px;
+}
+
 ul.companies li img{
-  width:60px;
-  height:60px;
+  /*width:60px;
+  height:60px;*/
+  padding-top: none;
+  height: 60px;     /* this is smaller than i want, want it to fill full, but will fiddle with CSS... not now */
   float:left;
   border:none;
 }

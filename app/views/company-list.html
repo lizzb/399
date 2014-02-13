@@ -4,11 +4,11 @@
 
     <!-- ---------- Sort/filter controls ---------- -->
 
-    Search: <input ng-model="query"> <i class="fa fa-search"> </i>
-    Filter by: <i class="fa fa-filter"> </i>
-    <i class="glyphicon glyphicon-sort"></i>
+    Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
+    Filter by: <i class="fa fa-filter"> </i> <br>
+    
     <!-- glyphicons AND font awesome work -->
-    Sort by:
+    Sort by:<i class="glyphicon glyphicon-sort"></i> <br>
       <!--select class="sorter" ng-model="orderProp">
       don't use selects because can't be styled as well or something
       <!-- http://docs.angularjs.org/api/ng.filter:orderBy 
@@ -21,29 +21,47 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
 
       -->
 
+      <!-- 
+      trying to have just one button for sorting name 
+      with a switching icon
+      but not yet working 
+      -->
       <a href="" class="btn btn-default" ng-click="sortType='name'; asc=!asc">
         Name
-        <!-- display the OPPOSITE value icon for current sort direction -->
+        <!-- display the OPPOSITE value icon for current sort direction --
         <i class="fa" ng-class="orderBy == '-name' ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc'"></i>
-        <i class="fa" ng-class="orderBy == 'name' ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc'"></i>
-        <!--
-        <i class="fa fa-sort-alpha-asc"></i>
-        <i class="fa fa-sort-alpha-desc"></i>-->
+        <i class="fa" ng-class="orderBy == 'name' ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc'"></i> -->
       </a>
+
+       <a href="" class="btn btn-default" ng-click="sortType='name';">
+        <i class="fa fa-sort-alpha-asc"></i>
+        </a>
+
+        <a href="" class="btn btn-default" ng-click="sortType='-name';">
+        <i class="fa fa-sort-alpha-desc"></i>
+        </a>
 
       <a href="" class="btn btn-default" ng-click="sortType='booth'; asc=!asc">
         Booth
-        <i class="fa" ng-class="orderBy == '-booth' ? 'fa-sort-numeric-asc' : 'fa-sort-numeric-desc'"></i>
+        <!--i class="fa" ng-class="orderBy == '-booth' ? 'fa-sort-numeric-asc' : 'fa-sort-numeric-desc'"></i-->
       </a>
 
-      <a href="" class="btn btn-default" ng-click="sortType='room'; asc=!asc">
+      <a href="" class="btn btn-default" ng-click="sortType='booth';">
+        <i class="fa fa-sort-numeric-asc"></i>
+        </a>
+
+        <a href="" class="btn btn-default" ng-click="sortType='-booth';">
+        <i class="fa fa-sort-numeric-desc"></i>
+        </a>
+
+      <!--a href="" class="btn btn-default" ng-click="sortType='room'; asc=!asc">
         Room
         <i class="fa fa-sort"> </i>
         <i class="fa fa-sort-asc"> </i>
         <i class="fa fa-sort-desc"> </i>
         <i class="fa fa-sort-amount-asc"> </i>
         <i class="fa fa-sort-amount-desc"> </i>
-      </a>
+      </a-->
 
       <!--
 
@@ -97,20 +115,32 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
     <!--Body content -->
     <div class="row"> 
       <ul class="companies">
-
+        
         <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
 
-          <span class="companyBoothLocation">
+        <a href="#/companies/{{company.booth}}">
+        <img class="companies-list-square" ng-src="{{company.logoSquare}}">
+        <div class="companies-list-info">
+
+
+        <span class="companyBoothLocation">
             <!--p>{{company.description}}</p-->
             Booth: {{company.booth}} &nbsp;&nbsp;&nbsp; 
             <!-- Room: {{company.room}}-->
           </span>
-          <a href="#/companies/{{company.booth}}" class="thumb">
-            <img ng-src="{{company.logoFull}}">
-            <img ng-src="{{company.logoSquare}}">
-          </a>
 
-          <a href="#/companies/{{company.booth}}">{{company.name}}</a>
+        <!--a href="#/companies/{{company.booth}}" class="thumb"-->
+
+          
+          <!--
+          <a href="#/companies/{{company.booth}}" class="">
+            <img ng-src="{{company.logoFull}}">
+          </a>
+          -->
+            
+            
+
+          {{company.name}}
 
           <br>
 
@@ -120,8 +150,10 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
           <!--br-->
           &nbsp;&nbsp;&nbsp;
           {{company.major.join(', ')}}
-
+          </div>
+          </a>
         </li>
+        
       </ul>
 
     </div>
