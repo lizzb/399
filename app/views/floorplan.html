@@ -2,40 +2,32 @@
 <html lang="en" class=" -webkit-">
 <head>
 <meta charset="utf-8">
-<!--title>Clown Car Technique with Single HTTP request!</title-->
+<!--title>Clown Car Technique with Single HTTP request!</title
+<title>demosthenes.info – Make SVG Responsive</title>
+-->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if(top != self) top.location.replace(location);</script>
-<script src="/assets/scripts/jquery.min.js"></script>
-<script src="/assets/scripts/moment.min.js"></script>
+<!--http://demosthenes.info/blog/744/Make-SVG-Responsive-->
 
 <style id="base-embedded">
 .svg-container{
 	display:inline-block;
 	position:relative;
-	width:100%;
-	padding-bottom:90%;
+	width:100%; /* assumes you want it to be full width of parent container */
+	padding-bottom:90%; /* another place had 100%; */
 	vertical-align:middle;
 	overflow:hidden;
 }
 .svg-content{
 	display:inline-block;
 	position:absolute;
-	top:3rem;
+	top:3rem; /* other place had top: 0; */
 	left:0;
 }
 </style>
 
 
-
-<title>demosthenes.info – Make SVG Responsive</title>
-<!--script type="text/javascript" async="" src="//demosthenes-demo.disqus.com/embed.js"></script>
-<script async="" type="text/javascript" src="http://demosthenes-demo.disqus.com/count.js"></script>
-
-<style type="text/css">
-.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
-<script async="" src="http://demosthenes-demo.disqus.com/count-data.js?2=http%3A%2F%2Fdemosthenes.info%2Fblog%2F744%2FMake-SVG-Responsive"></script>
-<script src="//a.disquscdn.com/next/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script-->
 
 
 </head>
@@ -43,14 +35,14 @@
 
 
 <figure class="svg-container">
-<svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
-<!--svg width="640" height="480" xmlns="http://www.w3.org/2000/svg"-->
-
- <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+<!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
  <!-- 
   3f007f = purple = building outline
   003f7f = blue = unused rooms outline
+  FF8B00 = orange
  -->
+<svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
+<!--svg width="640" height="480" xmlns="http://www.w3.org/2000/svg"-->
  <g display="inline">
   <title> Norris Floor 2 </title>
   <g id="building_outline">
@@ -116,28 +108,36 @@
 </g>
 
 <g id="rooms-floor2">
-<rect height="35" width="74" y="188.33333" x="86" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#FF8B00" fill="lightpink" id="1851-room-201"/>
-  <!-- 82 185.333 -->
 
-  <rect id="lake-room-203" height="75" width="142" y="4.33333" x="5.33333" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#FF6D00" fill="lightgrey"/>
-  <!-- lake was 1.333 1.333 -->
+<rect id="1851-room-201" fill="mistyrose" stroke="#FF8B00" stroke-width="2.7" height="35" width="74" y="188.33333" x="86" stroke-linecap="null" stroke-linejoin="null"  onclick="alert(this.id)" />
+  <!-- 82, 185.333  fill=lightpink stroke=FF8B00-->
 
-<rect id="northwestern-room-202AB" height="163.66665" width="80.66668" y="80.66667" x="5.33333" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#FFFF00" fill="lightblue" />
+  <rect id="lake-room-203" fill="lightcyan" stroke="#FF6D00" height="75" width="142" y="4.33333" x="5.33333" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" onclick="alert(this.id)" />
+  <!-- lake was 1.333, 1.333 fill="lightgrey" stroke="#FF6D00" -->
+
+<rect id="northwestern-room-202AB" fill="lavender" stroke="#FFFF00" height="163.66665" width="80.66668" y="80.66667" x="5.33333" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7"   onclick="alert(this.id)" />
+<!-- fill="lightblue" stroke="#FFFF00" -->
   
-  
-  <rect height="55" width="44.4" y="4.33333" x="149.4" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#250A4F" fill="lavender" id="scholars-room-204"/>
+  <rect id="scholars-room-204" fill="lightblue" stroke="#250A4F" height="55" width="44.4" y="4.33333" x="149.4" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" onclick="alert(this.id)" />
+  <!-- fill="lavender" stroke="#250A4F" -->
 
  <rect id="louis-room-205ab" fill="palegreen" stroke="#7166DE" stroke-width="2.7" stroke-linejoin="null" stroke-linecap="null" x="195" y="3.33334" width="284.66673" height="160.33334" onclick="alert(this.id)" />
-<!-- 191 1.333-->
-  <rect id="arch-room-206" fill="white" stroke="#D93A00" stroke-width="2.7" stroke-linejoin="null" stroke-linecap="null" x="479" y="79" width="90" height="84.66667" onclick="alert(this.id)" />
-       <!-- 476 77 -->
+<!-- 191,1.333  fill="palegreen" stroke="#7166DE"-->
+
+<rect id="arch-room-206" fill="lightsteelblue" stroke="#D93A00" stroke-width="2.7" stroke-linejoin="null" stroke-linecap="null" x="479" y="79" width="90" height="84.66667" onclick="alert(this.id)" />
+       <!-- 476,77  fill="white" stroke="#D93A00"-->
+
  <rect id="rock-room" fill="plum" stroke="#7166DE" stroke-width="2.7" stroke-linejoin="null" stroke-linecap="null" x="500" y="166" width="67.66668" height="78.33332" onclick="alert(this.id)" />
- <!-- 498.333 162 ... 164 -->
- <rect id="armadillo-room" fill="white" stroke="#7166DE" stroke-width="2.7" stroke-linejoin="null" stroke-linecap="null" x="500" y="244.33333" width="67.66668" height="73" onclick="alert(this.id)" />
+ <!-- 498.333 162 ... 164 fill=plum stroke=7166de-->
+
+ <rect id="armadillo-room" fill="lime" stroke="#7166DE" stroke-width="2.7" stroke-linejoin="null" stroke-linecap="null" x="500" y="244.33333" width="67.66668" height="73" onclick="alert(this.id)" />
  <!-- 498.333 241.333 -->
+
  <rect id="armadillo-room-part" fill="lime" stroke="#005fbf" stroke-width="2.7" stroke-linejoin="null" stroke-linecap="null" x="543" y="315.66667" width="25.66668" height="9.66665" onclick="alert(this.id)"/>
- </g>
  <!-- 540.333 314.666 -->
+ </g>
+ 
+
 </g>
 </svg>
 
@@ -147,43 +147,3 @@
  
 </body>
 </html>
-
-
-</body></html>
-
-<!--<html>
-<style>
-.svg-container {
-display: inline-block;
-position: relative;
-width: 100%; /* assumes you want it to be full width of parent container */
-padding-bottom: 100%;
-vertical-align: middle;
-overflow: hidden;
-}
-
-.svg-content {
-display: inline-block;
-position: absolute;
-top: 0;
-left: 0;
-}
-
-</style>
-
-<!--http://demosthenes.info/blog/744/Make-SVG-Responsive
-<svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-<circle fill="#F7941E" stroke="#231F20" stroke-width="10" stroke-miterlimit="10" cx="250" cy="250" r="200" opacity="0.6" />
-<img src="../img/map/norris2.svg" alt="Norris Floor 2" style="width:600px; height: 480px;" class="svg-content">
-
-
-
-
-<div class="svg-container">
-
-	<object data="../img/map/norris2.svg" type="image/svg+xml"></object>
-</div>
-
-</html>
-
--->
