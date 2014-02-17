@@ -208,8 +208,8 @@
   },
   {
     "name":"DMC Inc",
-    "logoFull":"img/logos/dmc-wide.png",
-    "logoSquare":"img/logos/dmc-square.png",
+    "logoFull":"img/logos/dmc-inc-wide.png",
+    "logoSquare":"img/logos/dmc-inc-square.png",
     "description":"DMC offers high-caliber engineering and software development services for manufacturing, testing, and product development organizations in the Chicago area and throughout the world. Since 1996, we have been building mission-critical systems for top organizations.",
     "booth":54,
     "major": ["ce","cs","ee","me"],
@@ -307,7 +307,7 @@
   },
   {
     "name":"GAF",
-    "logoFull":"",
+    "logoFull":"img/logos/gaf-wide.png",
     "logoSquare":"img/logos/gaf-square.png",
     "description":"Founded in 1886, GAF has become North America�s largest manufacturer of commercial and residential roofing. Our success in growing the company to nearly $3 billion in sales has been based on our unique philosophy of: Helping property owners & architects to make their best and safest roofing choices, Helping supportive distributors and roofing contractors to build their businesses and avoid hassles",
     "booth":83,
@@ -316,8 +316,8 @@
   },
   {
     "name":"General Dynamics Electric Boat",
-    "logoFull":"",
-    "logoSquare":"",
+    "logoFull":"img/logos/gdeb-wide.png",
+    "logoSquare":"img/logos/gdeb-square.png",
     "description":"Electric Boat has a distinguished history, tracing its roots to February 7th, 1899, when the company was established to complete a vessel that would revolutionize naval warfare. Named Holland for its inventor, the visionary Irishman John Phillip Holland, this 54-foot vessel in 1900 became the first commissioned U.S. Navy submarine. Since then, the Holland�s successors have been employed to radically reshape naval warfare and maritime strategy, while contributing to the successful outcome of World War II and play an indispensable role in the country�s Cold War victory.",
     "booth":25,
     "major": ["civ","ce","cs","ee","me"],
@@ -379,8 +379,8 @@
   },
   {
     "name":"Illinois Dept. of Transportaion",
-    "logoFull":"img/logos/idot-square.png",
-    "logoSquare":"img/logos/idot-wide.png",
+    "logoFull":"img/logos/idot-wide.png",
+    "logoSquare":"img/logos/idot-square.png",
     "description":"The mission of IDOT is to provide safe, cost-effective transportation for Illinois in ways that enhance quality of life, promote economic prosperity, and demonstrate respect for our environment. We will accomplish our mission while making the following principles the hallmark of all our work: Safety, Integrity, Diversity, Responsiveness, Quality, Innovation. The vision of IDOT is to be recognized as the premier state department of transportation in the nation.",
     "booth":37,
     "major": ["civ"],
