@@ -1,75 +1,26 @@
 <div class="row">
-  <!-- if i wanted a sidebar - actually not a sidebar anymore
-  <div class="col-md-2" -->
+
 
     <!-- ---------- Sort/filter controls ---------- -->
-
-    <!--div class="alert alert-info">
-                 <h4>Total Filtered Client: {{filteredList.length}}</h4>
-
-                 <p>Number of visible people: {{(companies|filter:query).length}}</p>
-                  <p>Total number of people: {{companies.length}}</p>
-
-            </div-->
 
     Showing {{filteredList.length}} of {{companies.length}} total. <br>
 
     Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
     Filter by: <i class="fa fa-filter"> </i> <br>
+      <!-- 
 
-    <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('am')">
-        <!--span data-ng-class="isChecked()"</span-->
-        AM
-        </a>
+      http://docs.angularjs.org/api/ng.filter:orderBy 
 
-        <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('bme')">
-        <!--span data-ng-class="isChecked()"</span-->
-       BME
-        </a>
+http://stackoverflow.com/questions/7792652/what-is-the-best-way-to-conditionally-apply-a-class-with-angularjs
 
-        <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('cs')">
-        <!--span data-ng-class="isChecked()"</span-->
-        CS
-        </a>
-<!--
- Filter By Category: 
+class="otherClass ng-class:($index==selectedIndex)? 'selected' : '';"
 
- <button ng-click="filterByPosition('ft')"> full time </button>
- <button ng-click="filterByPosition('int')"> intern </button>
- <button ng-click="filterByPosition('coop')"> coop </button>
- <button ng-click="filterByPosition('msphd')"> msphd </button>
--->
- <!--button ng-repeat="cat in categories" ng-click="filterProductsByCategory(cat)">{{cat}}</button-->
+http://stackoverflow.com/questions/15557151/ngclass-style-with-dash-in-key
+<i class="icon-home" ng-class="{'icon-white': someBooleanValue}">
 
-     <!--ul class="inline">
-        <li>
-            <div class="alert alert-info">
-                 <h4>Total Filtered Client: {{filtered.length}}</h4>
+http://docs.angularjs.org/api/ng.directive:ngSwitch
+      -->
 
-            </div>
-        </li>
-        <li>
-            <div class="btn-group" data-ng-class="{open: open}">
-                <button class="btn">Filter by Major</button>
-                <button class="btn dropdown-toggle" data-ng-click="open=!open"><span class="caret"></span>
-
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-                    <li><a data-ng-click="checkAll()"><i class="icon-ok-sign"></i>  Check All</a>
-
-                    </li>
-                    <li><a data-ng-click="selectedMajor=[];"><i class="icon-remove-sign"></i>  Uncheck All</a>
-
-                    </li>
-                    <li class="divider"></li>
-                    <li data-ng-repeat="major in majorList"> <a data-ng-click="setSelectedClient()">{{major.name}}<span data-ng-class="isChecked(major.id)"></span></a>
-
-                    </li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-    <hr/-->
 
 
 <div id="status">Current filter: {{query}}</div>
@@ -77,22 +28,10 @@
     <!-- glyphicons AND font awesome work -->
     Sort by:<i class="glyphicon glyphicon-sort"></i> <br>
 
-      <!--select class="sorter" ng-model="orderProp">
-      don't use selects because can't be styled as well or something
-      <!-- http://docs.angularjs.org/api/ng.filter:orderBy 
-http://stackoverflow.com/questions/7792652/what-is-the-best-way-to-conditionally-apply-a-class-with-angularjs
-class="otherClass ng-class:($index==selectedIndex)? 'selected' : '';"
-http://stackoverflow.com/questions/15557151/ngclass-style-with-dash-in-key
-<i class="icon-home" ng-class="{'icon-white': someBooleanValue}">
 
-http://docs.angularjs.org/api/ng.directive:ngSwitch
-
-      -->
-
-      <!-- 
+      <!--       
       trying to have just one button for sorting name 
-      with a switching icon
-      but not yet working 
+      with a switching icon but not yet working 
       -->
       <div class="left">
       <a href="" class="btn btn-default" ng-click="sortType='name'; asc=!asc">
@@ -123,86 +62,26 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
         <i class="fa fa-sort-numeric-desc"></i>
         </a>
 </div>
-      <!--a href="" class="btn btn-default" ng-click="sortType='room'; asc=!asc">
-        Room
-        <i class="fa fa-sort"> </i>
-        <i class="fa fa-sort-asc"> </i>
-        <i class="fa fa-sort-desc"> </i>
-        <i class="fa fa-sort-amount-asc"> </i>
-        <i class="fa fa-sort-amount-desc"> </i>
-      </a-->
-
-      <!--
-      <div class="bar">
-
-    <!-- These two buttons switch the layout variable,
-       which causes the correct UL to be shown. --
-
-    <a class="list-icon" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'"></a>
-    <a class="grid-icon" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'"></a>
-  </div>
-      ngClass directive
-      allows you to dynamically set CSS classes on an HTML element by databinding an expression that represents all classes to be added.
-When the expression changes, the previously added classes are removed and only then the new classes are added.The directive won't add duplicate classes if a particular class was already set.
-
-     
-      <a ng-click="sort(sortvalue)">
-  <span ng-transclude=""></span>
-  <span ng-show="sortedby == sortvalue">
-    <i ng-class="{true: 'icon-arrow-up', false: 'icon-arrow-down'}[sortdir == 'asc']"></i>
-  </span>
-</a>
-
-transclude makes the contents of a directive with this option have access to the scope outside of the directive rather than inside.
-
-The transclude option changes the way scopes are nested. It makes it so that the contents of a transcluded directive have whatever scope is outside the directive, rather than whatever scope is on the inside. In doing so, it gives the contents access to the outside scope.
-
-Note that if the directive did not create its own scope, then scope in scope.name = 'Jeff'; would reference the outside scope and we would see Jeff in the output.
-
-This behavior makes sense for a directive that wraps some content, because otherwise you'd have to pass in each model you wanted to use separately. If you have to pass in each model that you want to use, then you can't really have arbitrary contents, can you?
-
-Best Practice: only use transclude: true 
-when you want to create a directive that wraps arbitrary content.
-
-Next, we want to add buttons to this dialog box, and allow someone using the directive to bind their own behavior to it.
-      filterBy='position'
-      filterBy='major'
-      search includes the description and majors in it i think
-    -->
 
   </div><!-- end row sorting filtering controls -->
 
 
-<!-- if i wanted a sidebar
-  <div class="col-md-10" -->
-
-    <!--Body content -->
+    <!-- ---------- Body content ---------- -->
     <div class="row"> 
       <ul class="companies">
-      <!--
-ng-repeat="company in filteredList = (companies | filter: query | orderBy:sortType:asc)"
-      majorFilter:selectedMajor-->
-
-      <li ng-repeat="company in filteredList = (companies | majorFilter:selectedMajor | filter: query | orderBy:sortType:asc)" class="thumbnail">
+    
         
-        <!--li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail"-->
-
-
-        <!-- <a href="#/companies/{{company.booth}}">
-        <img class="companies-list-square" ng-src="{{company.logoSquare}}">
-        <div class="companies-list-info">
-
--->
+        <li ng-repeat="company in filteredList = (companies | filter:query | orderBy:sortType:asc)" class="thumbnail">
 
         <a href="#/companies/{{company.id}}">
-        <img class="companies-list-square" ng-src="../img/logos/{{company.id}}-square.png"> </a>
+        <img class="companies-list-square" ng-src="../app/img/logos/{{company.id}}-square.png"> </a>
         <div class="companies-list-info">
          
 
           <a href="#/map/{{company.id}}">
         <span class="companyBoothLocation"> 
-            Booth: {{company.booth}}
-            <!-- Room: {{company.room}}-->
+            Booth: {{company.booth}} &nbsp; &nbsp;
+            Room: {{company.room}}
             <i class="fa fa-compass fa-2x"></i>
           </span>
           </a>
@@ -223,15 +102,8 @@ ng-repeat="company in filteredList = (companies | filter: query | orderBy:sortTy
           
         </li>
 
-        <!--a href="#/companies/{{company.booth}}" class="thumb"-->
-        <!--
-          http://stackoverflow.com/questions/19948280/angularjs-not-filtering-products-list
-          <a href="#/companies/{{company.booth}}" class="">
-            <img ng-src="{{company.logoFull}}">
-          </a>
-          -->
+
         
       </ul>
 
-    </div>
-  </div>
+    </div> <!-- /row -->
