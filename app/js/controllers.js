@@ -3,119 +3,18 @@
 // http://jsfiddle.net/Ln26K/
 /* Controllers */
 // $http.get('data/companyGrid.json').success(function(data) {
-
+//     $scope.companies = data;
 
 var idayControllers = angular.module('idayControllers', []);
 
-idayControllers.controller('CompanyListController', ['$scope', 'filterFilter', '$http',
+idayControllers.controller('CompanyListController', ['$scope', '$http',
   function($scope, $http) {
-      $http.get('data/week7grid.json').success(function(data) {
-        $scope.companies = data;
+    $http.get('data/week7grid.json').success(function(data) {
+      $scope.companies = data;
+    
+      $scope.selectedMajor = [];
 
-
-//http://stackoverflow.com/questions/14514461/how-can-angularjs-bind-to-list-of-checkbox-values
-//app.controller('ObjectArrayCtrl', ['$scope', 'filterFilter', function ObjectArrayCtrl($scope, filterFilter) {
-  // fruits
-  $scope.majors = [
-    { name: 'am',    selected: true },
-    { name: 'bme',   selected: false },
-    { name: 'ce',     selected: true },
-    { name: 'cs', selected: false }
-  ];
-
-  // selected fruits
-  $scope.selection = [];
-
-  // helper method
-  $scope.selectedMajors = function selectedMajors() {
-    return filterFilter($scope.majors, { selected: true });
-  };
-
-  // watch fruits for changes
-  $scope.$watch('majors|filter:{selected:true}', function (nv) {
-    $scope.selection = nv.map(function (major) {
-      return major.name;
-    });
-  }, true);
-
-      })
-
-      $scope.orderProp = 'name';  
-
-
-
-
-}]);
-
-// positive theres a more efficient way to do this....
-// $http.get('data/companyGrid.json').success(function(data){
-  // if (item.booth == $routeParams.companyId)
-  /// ['$scope', '$routeParams', '$http',
-  // $http.get('data/week7grid.json').success(function(data){
-
-idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams',
-  '$http', function($scope, $routeParams, $http){
-    $http.get('data/week7grid.json').success(function(data){
-    angular.forEach(data, function(comp) {
-          if (comp.id == $routeParams.companyId) 
-          {
-            $scope.company = comp;
-            $scope.companyId = $routeParams.companyId;
-            //$scope.mainImageUrl = item.logoFull;
-          }    
-        });
-  })
-  //'FullCompanyList', function($scope, $routeParams, FullCompanyList) {
-        
-        
-     
-  }]);
-
-
-/*
-idayControllers.controller('CompanyListController', ['$scope', FullCompanyList,
-  function($scope, FullCompanyList) {
-      data = FullCompanyList.get();
-
-      $scope.companies = FullCompanyList.get(); // query for all companies
-      $scope.orderProp = 'name';  
-}]);
-
-// positive theres a more efficient way to do this....
-// $http.get('data/companyGrid.json').success(function(data){
-  // if (item.booth == $routeParams.companyId)
-  /// ['$scope', '$routeParams', '$http',
-  // $http.get('data/week7grid.json').success(function(data){
-
-idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams',
-  'FullCompanyList', function($scope, $routeParams, FullCompanyList) {
-        
-        angular.forEach(data, function(comp) {
-          if (comp.id == $routeParams.companyId) 
-          {
-            $scope.company = comp;
-            $scope.companyId = $routeParams.companyId;
-            //$scope.mainImageUrl = item.logoFull;
-          }    
-        });
-     
-  }]);*/
-
-
-
-
-idayControllers.controller('CompanyListLocationController', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    //$scope.phoneId = $routeParams.phoneId;
-  }]);
-
-idayControllers.controller('CompanyLocationController', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    //$scope.companyId = $routeParams.phoneId;
-  }]);
-
-      /*$scope.selectedMajor = [];
-
+      $scope.orderProp = 'name';
 
       $scope.majorList = [{
         id: 1,
@@ -150,12 +49,13 @@ idayControllers.controller('CompanyLocationController', ['$scope', '$routeParams
         $scope.selectedMajor = _.pluck($scope.majorList, 'id');
     };
 
-    */
 
 
 
 
-   // var categories = ['ft', 'int', 'coop', 'msphd'];
+    });
+
+    var categories = ['ft', 'int', 'coop', 'msphd'];
   
    // $scope.filters = [];
   //$scope.selectedFilter = [];
@@ -164,7 +64,7 @@ idayControllers.controller('CompanyLocationController', ['$scope', '$routeParams
     
      
 
-
+}]);
 
 /*
     $scope.selectedGenres = "Action, Drama"; 
@@ -208,7 +108,7 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
 // positive theres a more efficient way to do this....
 // $http.get('data/companyGrid.json').success(function(data){
   // if (item.booth == $routeParams.companyId)
-/*
+
 idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
     $http.get('data/week7grid.json').success(function(data){
@@ -220,19 +120,27 @@ idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams'
             // $scope.phoneId = $routeParams.phoneId;
             //$scope.mainImageUrl = item.logoFull;
           }    
-        });*/
+        });
 
         /*
         $scope.setImage = function(imageUrl) {
       $scope.mainImageUrl = imageUrl;
        
-      }
+      }*/
     });
      
-  }]);*/
+  }]);
 
 
+idayControllers.controller('CompanyListLocationController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    //$scope.phoneId = $routeParams.phoneId;
+  }]);
 
+idayControllers.controller('CompanyLocationController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    //$scope.companyId = $routeParams.phoneId;
+  }]);
 
 // http://stackoverflow.com/questions/14857739/angular-js-detailed-view-with-only-one-json
 

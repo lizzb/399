@@ -31,15 +31,6 @@ app.filter('majorFilter', function () {
     };
 });
 
-app.filter('majorSelection', ['filterFilter', function (filterFilter) {
-    return function majorSelection(input, prop) {
-      return filterFilter(input, { selected: true }).map(function (major) {
-        return major[prop];
-      });
-    };
-  }]);
-//})(angular.module('app', []));
-
 /*
 app.filter('majorFilter', [function () {
     return function (companies, selectedMajor) {
@@ -61,12 +52,10 @@ app.filter('majorFilter', [function () {
 */
 
 // http://tutorialzine.com/2013/08/learn-angularjs-5-examples/
-    // All filters must return a function. 
-    // The first parameteris the data that is to be filtered, 
-    // and the second is an argument that may be passed 
-    // with a colon (searchFor:searchString) filterPostion:position
-    
-/*app.filter('filterByPosition', function(){
+    // All filters must return a function. The first parameter
+    // is the data that is to be filtered, and the second is an
+    // argument that may be passed with a colon (searchFor:searchString) filterPostion:position
+/*app.filter('filterByPositionv', function(){
 
 return function(arr, positionFilter){
 

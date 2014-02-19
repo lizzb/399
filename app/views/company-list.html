@@ -10,43 +10,27 @@
                  <p>Number of visible people: {{(companies|filter:query).length}}</p>
                   <p>Total number of people: {{companies.length}}</p>
 
-            </div-->      
+            </div-->
 
     Showing {{filteredList.length}} of {{companies.length}} total. <br>
 
     Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
     Filter by: <i class="fa fa-filter"> </i> <br>
 
-    <!--a href="" class="btn btn-link" data-ng-click="setSelectedFilter('am')">
-        <!--span data-ng-class="isChecked()"</span--
+    <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('am')">
+        <!--span data-ng-class="isChecked()"</span-->
         AM
         </a>
 
         <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('bme')">
-        <!--span data-ng-class="isChecked()"</span--
+        <!--span data-ng-class="isChecked()"</span-->
        BME
         </a>
 
         <a href="" class="btn btn-link" data-ng-click="setSelectedFilter('cs')">
-        <!--span data-ng-class="isChecked()"</span--
+        <!--span data-ng-class="isChecked()"</span-->
         CS
-        </a-->
-        <!--input type="checkbox" ng-model="am.selected" value="am"> <label> am </label>
-        <input type="checkbox" ng-model="bme.selected" value="bme"> <label> bme </label-->
-
-        <label ng-repeat="major in majors">
-        <input type="checkbox" name="selectedMajors[]" value="{{fruitName}}" ng-model="major.selected"> {{major.name}}</label>
-
-        <!--input type="checkbox" ng-model="cs.selected"> <label> cs </label>
-        <input type="checkbox" ng-model="ce"> <label> ce </label>
-        <input type="checkbox" ng-model="intern"> <label> intern </label>
-        <input type="checkbox" ng-model="fte"> <label> fte </label>
-        <input type="checkbox" ng-model="coop"> <label> co-op </label>
-    Name: <input ng-model="search.name"/>
-    Major: <input ng-model="filter.am"/>
-    Position: <input ng-model="filter.int"/-->
-   
-
+        </a>
 <!--
  Filter By Category: 
 
@@ -139,12 +123,6 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
         <i class="fa fa-sort-numeric-desc"></i>
         </a>
 </div>
-
-
-<!--div class="ng-binding">
-                Name
-                <i class="glyphicon glyphicon-sort-by-alphabet" ng-class="{'glyphicon-sort-by-alphabet': orderBy.asc, 'glyphicon-sort-by-alphabet-alt': !orderBy.asc}" ng-show="orderBy.field == 'name'"></i>
-            </div-->
       <!--a href="" class="btn btn-default" ng-click="sortType='room'; asc=!asc">
         Room
         <i class="fa fa-sort"> </i>
@@ -202,28 +180,22 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
     <div class="row"> 
       <ul class="companies">
       <!--
-       <table>
-        <tr ng-repeat="company in companies | filter:{name: search.name, phone: search.phone}">
 ng-repeat="company in filteredList = (companies | filter: query | orderBy:sortType:asc)"
-      majorFilter:selectedMajor
+      majorFilter:selectedMajor-->
 
-<li ng-repeat="company in filteredList = (companies | majorFilter:selectedMajor | filter: query | orderBy:sortType:asc)" class="thumbnail">
-
-<li ng-repeat="company in filteredList = (companies | filter:{name: query, filter.am: false, filter.int: true} | orderBy:sortType:asc)" class="thumbnail">
-      -->
-
-      <!--li ng-repeat="company in filteredList = (companies | filter:selectedMajors | orderBy:sortType:asc)" class="thumbnail"-->
+      <li ng-repeat="company in filteredList = (companies | majorFilter:selectedMajor | filter: query | orderBy:sortType:asc)" class="thumbnail">
         
-        <li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail">
+        <!--li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail"-->
 
 
         <!-- <a href="#/companies/{{company.booth}}">
         <img class="companies-list-square" ng-src="{{company.logoSquare}}">
         <div class="companies-list-info">
-        -->
+
+-->
 
         <a href="#/companies/{{company.id}}">
-        <img class="companies-list-square" ng-src="../app/img/logos/{{company.id}}-square.png"> </a>
+        <img class="companies-list-square" ng-src="../img/logos/{{company.id}}-square.png"> </a>
         <div class="companies-list-info">
          
 

@@ -18,36 +18,23 @@ fte int coop msphd
 
  <h3 class="companyProfileHeading"> Company Profile </h3>
 
- <img class="logo-wide" ng-src="../app/img/logos/{{company.id}}-wide.png">
+ <img class="logo-wide" ng-src="../img/logos/{{company.id}}-wide.png">
 
 <h1 class="companyNameHeading">{{company.name}}</h1>
 
-<img class="logo-square right" ng-src="../app/img/logos/{{company.id}}-square.png"">
+<img class="logo-square right" ng-src="../img/logos/{{company.id}}-square.png"">
 
 
 <div class="positions">
   <h3 class="positionsHeading"> Positions </h3>
   <!--span class="Looking for the following:"> </span-->
-    <!--dd ng-repeat="job in company.position track by $index">{{job}} </dd-->
+    <dd ng-repeat="job in company.position track by $index">{{job}} </dd>
 </div>
 
 <div class="majors">
   <h3 class="majorsHeading"> Majors </h3>
-  <dd> {{company.am | checkmark}} Applied Math </dd>
-  <dt> {{company.bme | checkmark}} BME </dt>
-  <dd> {{company.chem | checkmark}} Chemical Engineering </dd>
-  <dd> {{company.civil | checkmark}} Civil Engineering  </dd>
-  <dt> {{company.ce | checkmark}} Computer Engineering </dt>
-  <dd> {{company.cs | checkmark}} Computer Science </dd>
-  <dt> {{company.ee | checkmark}} Electrical Engineering </dt>
-  <dd> {{company.enve | checkmark}} Environmental Engineering  </dd>
-  <dt> {{company.mech | checkmark}} Mechanical Engineering  </dt>
-  <dd> {{company.matsci | checkmark}} Material Science Engineering  </dd>
-  <dd> {{company.made | checkmark}} MaDE </dd>
-  <dd> {{company.noneng | checkmark}} Non-Engineering  </dd>
-
   <!--span class="Looking for the following:"> </span-->
-  <!--dd>{{company.major.join(', ')}}</dd-->
+  <dd>{{company.major.join(', ')}}</dd>
   <!--dd ng-repeat="major in company.major">{{major}}</dd-->
 
 </div>
