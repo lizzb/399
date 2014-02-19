@@ -1,20 +1,70 @@
 'use strict';
 
+// http://jsfiddle.net/Ln26K/
 /* Controllers */
-
+// $http.get('data/companyGrid.json').success(function(data) {
+//     $scope.companies = data;
 
 var idayControllers = angular.module('idayControllers', []);
 
 idayControllers.controller('CompanyListController', ['$scope', '$http',
   function($scope, $http) {
-    $http.get('data/companyGrid.json').success(function(data) {
+    $http.get('data/week7grid.json').success(function(data) {
       $scope.companies = data;
+    
+      $scope.selectedMajor = [];
+
+      $scope.orderProp = 'name';
+
+      $scope.majorList = [{
+        id: 1,
+        name: 'cs'
+    }, {
+        id: 2,
+        name: 'ee'
+    }, {
+        id: 3,
+        name: 'am'
+    }];
+
+
+   $scope.setSelectedMajor = function () {
+        var id = this.major.id;
+        if (_.contains($scope.selectedMajor, id)) {
+            $scope.selectedMajor = _.without($scope.selectedMajor, id);
+        } else {
+            $scope.selectedMajor.push(id);
+        }
+        return false;
+    };
+
+    $scope.isChecked = function (id) {
+        if (_.contains($scope.selectedMajor, id)) {
+            return 'icon-ok pull-right';
+        }
+        return false;
+    };
+
+    $scope.checkAll = function () {
+        $scope.selectedMajor = _.pluck($scope.majorList, 'id');
+    };
+
+
+
+
+
     });
 
     var categories = ['ft', 'int', 'coop', 'msphd'];
-    $scope.filters = [];
-    //$scope.selectedFilter = [];
-    $scope.orderProp = 'name';
+  
+   // $scope.filters = [];
+  //$scope.selectedFilter = [];
+    
+
+    
+     
+
+}]);
 
 /*
     $scope.selectedGenres = "Action, Drama"; 
@@ -22,7 +72,7 @@ idayControllers.controller('CompanyListController', ['$scope', '$http',
 $scope.containsComparator = function(expected, actual){  
   return actual.indexOf(expected) > -1;
 };*/
-    $scope.filterByPosition = function(category){scope.filters.push(category);}
+    //$scope.filterByPosition = function(category){scope.filters.push(category);}
 
     //http://jsfiddle.net/TahmidTanzim/N9Vqk/
     //  ($scope) {
@@ -43,7 +93,7 @@ $scope.containsComparator = function(expected, actual){
         }
         return false;
     };*/
-  }]);
+  /*}]);*/
 
 
 /*
@@ -56,16 +106,19 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
 */
 
 // positive theres a more efficient way to do this....
+// $http.get('data/companyGrid.json').success(function(data){
+  // if (item.booth == $routeParams.companyId)
 
 idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
-    $http.get('data/companyGrid.json').success(function(data){
+    $http.get('data/week7grid.json').success(function(data){
         
-        angular.forEach(data, function(item) {
-          if (item.booth == $routeParams.companyId) 
+        angular.forEach(data, function(comp) {
+          if (comp.id == $routeParams.companyId) 
           {
-            $scope.company = item;
-            $scope.mainImageUrl = item.logoFull;
+            $scope.company = comp;
+            // $scope.phoneId = $routeParams.phoneId;
+            //$scope.mainImageUrl = item.logoFull;
           }    
         });
 
@@ -79,7 +132,15 @@ idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams'
   }]);
 
 
+idayControllers.controller('CompanyListLocationController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    //$scope.phoneId = $routeParams.phoneId;
+  }]);
 
+idayControllers.controller('CompanyLocationController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    //$scope.companyId = $routeParams.phoneId;
+  }]);
 
 // http://stackoverflow.com/questions/14857739/angular-js-detailed-view-with-only-one-json
 

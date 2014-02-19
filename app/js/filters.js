@@ -12,11 +12,50 @@ app.filter('checkmark', function() {
   };
 });
 
+app.filter('majorFilter', function () {
+    return function (companies, selectedMajor) {
+        if (!angular.isUndefined(companies) && !angular.isUndefined(selectedMajor) && selectedMajor.length > 0) {
+            var tempCompanies = [];
+            angular.forEach(selectedMajor, function (id) {
+                // need to iterate through a list not just 1
+                angular.forEach(companies, function (company) {
+                    if (angular.equals(company.major.id, id)) {
+                        tempCompanies.push(company);
+                    }
+                });
+            });
+            return tempCompanies;
+        } else {
+            return companies;
+        }
+    };
+});
+
+/*
+app.filter('majorFilter', [function () {
+    return function (companies, selectedMajor) {
+        if (!angular.isUndefined(companies) && !angular.isUndefined(selectedMajor) && selectedMajor.length > 0) {
+            var tempCompanies = [];
+            angular.forEach(selectedMajor, function (id) {
+                angular.forEach(companies, function (company) {
+                    if (angular.equals(company.major.id, id)) {
+                        tempCompanies.push(company);
+                    }
+                });
+            });
+            return tempCompanies;
+        } else {
+            return companies;
+        }
+    };
+}]);
+*/
+
 // http://tutorialzine.com/2013/08/learn-angularjs-5-examples/
     // All filters must return a function. The first parameter
     // is the data that is to be filtered, and the second is an
     // argument that may be passed with a colon (searchFor:searchString) filterPostion:position
-app.filter('filterByPositionv', function(){
+/*app.filter('filterByPositionv', function(){
 
 return function(arr, positionFilter){
 
@@ -40,7 +79,7 @@ return function(arr, positionFilter){
         return result;
     };
 
-});
+});*/
 
 /*
 <i class="fa iconname"></li>
