@@ -31,6 +31,15 @@ app.filter('majorFilter', function () {
     };
 });
 
+app.filter('majorSelection', ['filterFilter', function (filterFilter) {
+    return function majorSelection(input, prop) {
+      return filterFilter(input, { selected: true }).map(function (major) {
+        return major[prop];
+      });
+    };
+  }]);
+//})(angular.module('app', []));
+
 /*
 app.filter('majorFilter', [function () {
     return function (companies, selectedMajor) {

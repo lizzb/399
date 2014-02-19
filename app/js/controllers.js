@@ -7,13 +7,44 @@
 
 var idayControllers = angular.module('idayControllers', []);
 
-idayControllers.controller('CompanyListController', ['$scope', '$http',
+idayControllers.controller('CompanyListController', ['$scope', 'filterFilter', '$http',
   function($scope, $http) {
       $http.get('data/week7grid.json').success(function(data) {
         $scope.companies = data;
+
+
+//http://stackoverflow.com/questions/14514461/how-can-angularjs-bind-to-list-of-checkbox-values
+//app.controller('ObjectArrayCtrl', ['$scope', 'filterFilter', function ObjectArrayCtrl($scope, filterFilter) {
+  // fruits
+  $scope.majors = [
+    { name: 'am',    selected: true },
+    { name: 'bme',   selected: false },
+    { name: 'ce',     selected: true },
+    { name: 'cs', selected: false }
+  ];
+
+  // selected fruits
+  $scope.selection = [];
+
+  // helper method
+  $scope.selectedMajors = function selectedMajors() {
+    return filterFilter($scope.majors, { selected: true });
+  };
+
+  // watch fruits for changes
+  $scope.$watch('majors|filter:{selected:true}', function (nv) {
+    $scope.selection = nv.map(function (major) {
+      return major.name;
+    });
+  }, true);
+
       })
 
       $scope.orderProp = 'name';  
+
+
+
+
 }]);
 
 // positive theres a more efficient way to do this....
