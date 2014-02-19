@@ -23,7 +23,7 @@ idayControllers.controller('CompanyListController', ['$scope', '$http',
   // $http.get('data/week7grid.json').success(function(data){
 
 idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams',
-  '$http', function($scope, $http){
+  '$http', function($scope, $routeParams, $http){
     $http.get('data/week7grid.json').success(function(data){
     angular.forEach(data, function(comp) {
           if (comp.id == $routeParams.companyId) 

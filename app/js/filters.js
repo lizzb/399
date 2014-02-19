@@ -52,10 +52,12 @@ app.filter('majorFilter', [function () {
 */
 
 // http://tutorialzine.com/2013/08/learn-angularjs-5-examples/
-    // All filters must return a function. The first parameter
-    // is the data that is to be filtered, and the second is an
-    // argument that may be passed with a colon (searchFor:searchString) filterPostion:position
-/*app.filter('filterByPositionv', function(){
+    // All filters must return a function. 
+    // The first parameteris the data that is to be filtered, 
+    // and the second is an argument that may be passed 
+    // with a colon (searchFor:searchString) filterPostion:position
+    
+/*app.filter('filterByPosition', function(){
 
 return function(arr, positionFilter){
 

@@ -31,6 +31,11 @@
         <!--span data-ng-class="isChecked()"</span-->
         CS
         </a>
+    Name: <input ng-model="search.name"/>
+    Major: <input ng-model="search.major"/>
+    Position: <input ng-model="search.position"/>
+   
+
 <!--
  Filter By Category: 
 
@@ -180,10 +185,16 @@ Next, we want to add buttons to this dialog box, and allow someone using the dir
     <div class="row"> 
       <ul class="companies">
       <!--
+       <table>
+        <tr ng-repeat="company in companies | filter:{name: search.name, phone: search.phone}">
 ng-repeat="company in filteredList = (companies | filter: query | orderBy:sortType:asc)"
-      majorFilter:selectedMajor-->
+      majorFilter:selectedMajor
 
-      <li ng-repeat="company in filteredList = (companies | majorFilter:selectedMajor | filter: query | orderBy:sortType:asc)" class="thumbnail">
+<li ng-repeat="company in filteredList = (companies | majorFilter:selectedMajor | filter: query | orderBy:sortType:asc)" class="thumbnail">
+
+      -->
+
+      <li ng-repeat="company in filteredList = (companies | filter:{name: query, major: search.major, position: search.position} | orderBy:sortType:asc)" class="thumbnail">
         
         <!--li ng-repeat="company in companies | filter:query | orderBy:sortType:asc" class="thumbnail"-->
 
@@ -195,7 +206,7 @@ ng-repeat="company in filteredList = (companies | filter: query | orderBy:sortTy
 -->
 
         <a href="#/companies/{{company.id}}">
-        <img class="companies-list-square" ng-src="../img/logos/{{company.id}}-square.png"> </a>
+        <img class="companies-list-square" ng-src="../app/img/logos/{{company.id}}-square.png"> </a>
         <div class="companies-list-info">
          
 
