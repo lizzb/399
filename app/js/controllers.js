@@ -3,18 +3,88 @@
 // http://jsfiddle.net/Ln26K/
 /* Controllers */
 // $http.get('data/companyGrid.json').success(function(data) {
-//     $scope.companies = data;
+
 
 var idayControllers = angular.module('idayControllers', []);
 
 idayControllers.controller('CompanyListController', ['$scope', '$http',
   function($scope, $http) {
-    $http.get('data/week7grid.json').success(function(data) {
-      $scope.companies = data;
-    
-      $scope.selectedMajor = [];
+      $http.get('data/week7grid.json').success(function(data) {
+        $scope.companies = data;
+      })
 
-      $scope.orderProp = 'name';
+      $scope.orderProp = 'name';  
+}]);
+
+// positive theres a more efficient way to do this....
+// $http.get('data/companyGrid.json').success(function(data){
+  // if (item.booth == $routeParams.companyId)
+  /// ['$scope', '$routeParams', '$http',
+  // $http.get('data/week7grid.json').success(function(data){
+
+idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams',
+  '$http', function($scope, $http){
+    $http.get('data/week7grid.json').success(function(data){
+    angular.forEach(data, function(comp) {
+          if (comp.id == $routeParams.companyId) 
+          {
+            $scope.company = comp;
+            $scope.companyId = $routeParams.companyId;
+            //$scope.mainImageUrl = item.logoFull;
+          }    
+        });
+  })
+  //'FullCompanyList', function($scope, $routeParams, FullCompanyList) {
+        
+        
+     
+  }]);
+
+
+/*
+idayControllers.controller('CompanyListController', ['$scope', FullCompanyList,
+  function($scope, FullCompanyList) {
+      data = FullCompanyList.get();
+
+      $scope.companies = FullCompanyList.get(); // query for all companies
+      $scope.orderProp = 'name';  
+}]);
+
+// positive theres a more efficient way to do this....
+// $http.get('data/companyGrid.json').success(function(data){
+  // if (item.booth == $routeParams.companyId)
+  /// ['$scope', '$routeParams', '$http',
+  // $http.get('data/week7grid.json').success(function(data){
+
+idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams',
+  'FullCompanyList', function($scope, $routeParams, FullCompanyList) {
+        
+        angular.forEach(data, function(comp) {
+          if (comp.id == $routeParams.companyId) 
+          {
+            $scope.company = comp;
+            $scope.companyId = $routeParams.companyId;
+            //$scope.mainImageUrl = item.logoFull;
+          }    
+        });
+     
+  }]);*/
+
+
+
+
+idayControllers.controller('CompanyListLocationController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    //$scope.phoneId = $routeParams.phoneId;
+  }]);
+
+idayControllers.controller('CompanyLocationController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    //$scope.companyId = $routeParams.phoneId;
+  }]);
+
+      /*$scope.selectedMajor = [];
+
 
       $scope.majorList = [{
         id: 1,
@@ -49,13 +119,12 @@ idayControllers.controller('CompanyListController', ['$scope', '$http',
         $scope.selectedMajor = _.pluck($scope.majorList, 'id');
     };
 
+    */
 
 
 
 
-    });
-
-    var categories = ['ft', 'int', 'coop', 'msphd'];
+   // var categories = ['ft', 'int', 'coop', 'msphd'];
   
    // $scope.filters = [];
   //$scope.selectedFilter = [];
@@ -64,7 +133,7 @@ idayControllers.controller('CompanyListController', ['$scope', '$http',
     
      
 
-}]);
+
 
 /*
     $scope.selectedGenres = "Action, Drama"; 
@@ -108,7 +177,7 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
 // positive theres a more efficient way to do this....
 // $http.get('data/companyGrid.json').success(function(data){
   // if (item.booth == $routeParams.companyId)
-
+/*
 idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
     $http.get('data/week7grid.json').success(function(data){
@@ -120,27 +189,19 @@ idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams'
             // $scope.phoneId = $routeParams.phoneId;
             //$scope.mainImageUrl = item.logoFull;
           }    
-        });
+        });*/
 
         /*
         $scope.setImage = function(imageUrl) {
       $scope.mainImageUrl = imageUrl;
        
-      }*/
+      }
     });
      
-  }]);
+  }]);*/
 
 
-idayControllers.controller('CompanyListLocationController', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    //$scope.phoneId = $routeParams.phoneId;
-  }]);
 
-idayControllers.controller('CompanyLocationController', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    //$scope.companyId = $routeParams.phoneId;
-  }]);
 
 // http://stackoverflow.com/questions/14857739/angular-js-detailed-view-with-only-one-json
 

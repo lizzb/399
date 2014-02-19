@@ -33,8 +33,17 @@ fte int coop msphd
 
 <div class="majors">
   <h3 class="majorsHeading"> Majors </h3>
+  <dd> {{company.am | checkmark}} Applied Math </dd>
+  <dt> {{company.bme | checkmark}} BME </dt>
+  <dd> {{company.chem | checkmark}} Chemical Engineering </dd>
+  <dt> {{company.ce | checkmark}} Computer Engineering </dt>
+  <dd> {{company.cs | checkmark}} Computer Science </dd>
+  <dt> {{company.ee | checkmark}} Electrical Engineering </dt>
+  <dd> {{company.enve | checkmark}} Environmental Engineering  </dd>
+  <dt> {{company.mech | checkmark}} Mechanical Engineering  </dt>
+
   <!--span class="Looking for the following:"> </span-->
-  <dd>{{company.major.join(', ')}}</dd>
+  <!--dd>{{company.major.join(', ')}}</dd-->
   <!--dd ng-repeat="major in company.major">{{major}}</dd-->
 
 </div>

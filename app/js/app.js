@@ -5,7 +5,8 @@
 var iday399App = angular.module('iday399App', [
   'ngRoute',
   'idayControllers',
-  'idayFilters'
+  'idayFilters',
+  'idayServices'
 ]);
 
 iday399App.config(['$routeProvider',
