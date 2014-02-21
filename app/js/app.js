@@ -19,7 +19,7 @@ iday399App.config(['$routeProvider',
         templateUrl: 'views/company-details.html',
         controller: 'CompanyDetailsController'
       }).
-      when('/map/companies', {
+      when('/map/', { // /companies
         templateUrl: 'views/floorplan.html',
         controller: 'CompanyListLocationController'
       }).
