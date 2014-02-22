@@ -49,7 +49,32 @@ and then in your view, modify the filter to be:
 
 -->
 <!--dd>{{company.position.join(', ')}}</dd-->
-<!-- {{job | checkmark}} marks either check or X -->
+<!-- {{job | checkmark}} marks either check or X --
+    "id":"3m",
+    "logoFull":"",
+    "logoSquare":"",
+    "name":"3M Company",
+    "description":"3M is a global innovation company that never stops inventing. Over the years, our innovations have improved daily life for hundreds of millions of people all over the world. We have made driving at night easier, made buildings safer, and made consumer electronics lighter, less energy-intensive and less harmful to the environment. We even helped put a man on the moon. Every day at 3M, one idea always leads to the next, igniting momentum to make progress possible around the world.",
+    "Room":"Wildcat Room",
+    "Floor":1,
+    "booth":79,
+    "am":false,
+    "bme":false,
+    "chem":true,
+    "civil":false,
+    "ce":true,
+    "cs":false,
+    "ee":true,
+    "enve":false,
+    "ie":true,
+    "made":true,
+    "matsci":true,
+    "mech":true,
+    "noneng":false,
+    "msphd":false,
+    "fte":true,
+    "coop":false,
+    "intern":true
 
 <!--div ng-repeat="company in companies | filter:{id: companyId}"--> 
 
@@ -69,13 +94,41 @@ and then in your view, modify the filter to be:
   <h3 class="positionsHeading"> Positions </h3>
   <!--span class="Looking for the following:"> </span-->
     <!--dd ng-repeat="job in company.position track by $index">{{job}} </dd-->
+    {{company.intern | checkmark}} Intern &nbsp;&nbsp;&nbsp;
+    {{company.fte | checkmark}} Full-Time &nbsp;&nbsp;&nbsp;
+    {{company.coop | checkmark}} Co-Op &nbsp;&nbsp;&nbsp;
+    {{company.msphd | checkmark}} MS/PhD &nbsp;&nbsp;&nbsp;
 </div>
 
 <div class="majors">
   <h3 class="majorsHeading"> Majors </h3>
+  <span ng-show="{{company.am}} == true"> Applied Math </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.bme}} == true"> Biomedical </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.chem}} == true"> Chemical </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.civil}}==true"> Civil </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.ce}}==true"> Computer </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.cs}}==true"> CompSci </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.ee}}==true"> Electrical </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.enve}}==true"> Environmental </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.ie}}==true"> Industrial </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.made}}==true"> MaDE </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.matsci}}==true"> Material Science </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.mech}}==true"> Mechanical </span> &nbsp;&nbsp;&nbsp;
+  <span ng-show="{{company.noneng}}==true"> Non-engineering </span> &nbsp;&nbsp;&nbsp;
+
+
   <!--span class="Looking for the following:"> </span-->
-  <dd>{{company.major.join(', ')}}</dd>
+  <!--dd>{{company.major.join(', ')}}</dd-->
   <!--dd ng-repeat="major in company.major">{{major}}</dd-->
+
+ 
+  
+  <!--span class="glyphicon glyphicon-thumbs-up"></span> I show up when your checkbox is checked.
+    </div>
+  {{company.intern | checkmark}} Applied Math &nbsp;&nbsp;&nbsp;
+  {{company.fte | checkmark}}  
+  {{company.coop | checkmark}}
+  {{company.msphd | checkmark}} MS/PhD -->
 
 </div>
 

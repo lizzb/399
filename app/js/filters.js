@@ -30,47 +30,69 @@ app.filter('companyFilter', function() {
 	{
 		if (!angular.isUndefined(companies))
 		{
-			
-			console.log('yay!');
+			console.log('company list is defined');
 			var tempCompanies = [];
-			angular.forEach(companies, function(company, index){
-				//console.log(index + ":" + company); // vlue
-				//console.log(value.name);
-				//if(company.am)
-				//	console.log('oh yeah applied math for '+ company.name)
 
+			var chosenMajors = ['am', 'noneng']; //'cs',
+			var chosenPositions = ['intern', 'fte'];
+
+			angular.forEach(companies, function(company, index){
+				//console.log(index + ":" + company); // key + : + value
+
+				for (var i = 0; i<chosenMajors.length; i++)
+				{
+					var major = chosenMajors[i];
+
+					for(var j=0; j<chosenPositions.length; j++)
+					{
+						var position = chosenPositions[j];
+
+						//if(company[chosenMajors[i]] && company[chosenPositions[j]])
+						if(company[major] && company[position])
+						{
+							console.log(company.name + " " + chosenMajors[i] + " " + chosenPositions[j]);
+							if(tempCompanies.indexOf(company) == -1)
+								tempCompanies.push(company);
+						}
+					}
+					// i should add in a break here so that once a company is added it continues...
+
+				}
+				/*
+				chosenMajors.forEach(function(m){
+					if(company[m])
+					{
+						console.log(company.name + ' has major ' + m);
+						if(tempCompanies.indexOf(company) == -1)
+							tempCompanies.push(company);
+					}
+					
+				});
+
+				chosenPositions.forEach(function(p){
+					if(company[p])
+					{
+						console.log(company.name + ' has position/role ' + p);
+						if(tempCompanies.indexOf(company) == -1)
+							tempCompanies.push(company);
+					}
+					
+				});*/
+/*
 				if(company.am)// && $scope.majors.selectedMajor name == 'am')
 				{
-					console.log('am checked and this company has got itttt');
+					console.log('oh yeah applied math for '+ company.name)
 					tempCompanies.push(company);
 				}
-				//this.push(key + ": " + value);
+				*/
 			});
-			//, log); //(var i = 0; i < 84; i++)
-			/*{
-				//console.log(companies[i].name);
-				console.log(c.name);
-			}*/
-			//console.log;
+			
+			
 			return tempCompanies;
 		}
-/*
-		var tempCompanies = [];
-		for(var c in companies)
-		{
-			tempCompanies.push(c);
-		}
-		/*angular.forEach(companies, function (company)
-		{
-			
-			tempCompanies.push(company);
-		}*
-		return tempCompanies; //companies; //return (company.ce =="1");
-		}
-		return false;
-		*/
 
-		//console.log(companies + "hey");
+
+		console.log('company list still undefined');
 		return companies;
 	};
 });
