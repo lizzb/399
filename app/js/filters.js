@@ -28,14 +28,22 @@ app.filter('checkmark', function() {
 app.filter('companyFilter', function() {
 	return function(companies)
 	{
-		
 		if (!angular.isUndefined(companies))
 		{
+			
 			console.log('yay!');
-			//var log = [];
-			angular.forEach(companies, function(value, index){
-				console.log(index + ":" + value);
-				console.log(value.name);
+			var tempCompanies = [];
+			angular.forEach(companies, function(company, index){
+				//console.log(index + ":" + company); // vlue
+				//console.log(value.name);
+				//if(company.am)
+				//	console.log('oh yeah applied math for '+ company.name)
+
+				if(company.am)// && $scope.majors.selectedMajor name == 'am')
+				{
+					console.log('am checked and this company has got itttt');
+					tempCompanies.push(company);
+				}
 				//this.push(key + ": " + value);
 			});
 			//, log); //(var i = 0; i < 84; i++)
@@ -44,7 +52,7 @@ app.filter('companyFilter', function() {
 				console.log(c.name);
 			}*/
 			//console.log;
-
+			return tempCompanies;
 		}
 /*
 		var tempCompanies = [];

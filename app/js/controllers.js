@@ -42,17 +42,8 @@ $scope.positions = [
     ];
     
 
- // helper method for adding checkboxes
-$scope.selectedMajors = function selectedMajors() {
-  return filterFilter($scope.majors, { selectedMajor: true });
-};
+
     
-
-// helper method for adding checkboxes
-$scope.selectedPositions = function selectedPositions() {
-  return filterFilter($scope.positions, { selectedPosition: true });
-};
-
 }]);
 
 
