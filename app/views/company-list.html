@@ -63,6 +63,28 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
         </a>
 </div>
 
+
+    <h4> majors </h4>
+    
+    <div class="form-group">
+<label ng-repeat="m in majors" class="checkbox-inline">
+<input type="checkbox" name="selectedMajors[]" value="{{m.name}}" ng-model="m.selectedMajor"> {{m.friendlyName}}
+</label>
+
+      
+<div class="form-group">
+<label ng-repeat="p in positions" class="checkbox-inline">
+<input type="checkbox" name="selectedPositions[]" value="{{p.name}}" ng-model="p.selectedPosition"> {{p.friendlyName}}
+</label>
+      </div> <!--/form-group-->
+
+<!--{{positions}}
+{{majors}}
+{{selectedPositions}}
+{{selectedMajors}}
+
+{{majors|majorSelection }}-->
+
   </div><!-- end row sorting filtering controls -->
 
 
@@ -70,13 +92,13 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
     <div class="row"> 
       <ul class="companies">
     
+      <!--li ng-repeat="company in filteredList = (companies | filter:query | orderBy:sortType:asc)" class="thumbnail"-->
         
-        <li ng-repeat="company in filteredList = (companies | filter:query | orderBy:sortType:asc)" class="thumbnail">
+        <li ng-repeat="company in filteredList = (companies | companyFilter | orderBy:sortType:asc)" class="thumbnail">
 
         <a href="#/companies/{{company.id}}">
         <img class="companies-list-square" ng-src="../app/img/logos/{{company.id}}-square.png"> </a>
         <div class="companies-list-info">
-         
 
           <a href="#/map/{{company.id}}">
         <span class="companyBoothLocation"> 

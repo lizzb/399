@@ -15,7 +15,44 @@ idayControllers.controller('CompanyListController', ['$scope', '$http',
       $scope.companies = data;
 
     });
+
+
+$scope.positions = [
+  { friendlyName: 'Full Time', name: 'fte'},
+  { friendlyName: 'Intern', name: 'int' },
+  { friendlyName: 'Co-Op', name: 'coop' },
+  { friendlyName: 'MS/PhD', name: 'msphd'}
+];
     
+    
+ $scope.majors = [
+      { friendlyName: 'Applied Math', name: 'am'},
+      { friendlyName: 'Biomedical', name: 'bme'},
+      { friendlyName: 'Chemical', name: 'chem'},
+      { friendlyName: 'Civil', name: 'civil'},
+      { friendlyName: 'Computer', name: 'ce'},
+      { friendlyName: 'CompSci', name: 'cs'},
+      { friendlyName: 'Electrical', name: 'ee'},
+      { friendlyName: 'Environmental', name: 'enve'},
+      { friendlyName: 'Industrial', name: 'ie'},
+      { friendlyName: 'MaDE', name: 'made'},
+      { friendlyName: 'Material Science', name:'matsci' },
+      { friendlyName: 'Mechanical', name: 'mech' },
+      { friendlyName: 'Non-engineering', name: 'noneng' }
+    ];
+    
+
+ // helper method for adding checkboxes
+$scope.selectedMajors = function selectedMajors() {
+  return filterFilter($scope.majors, { selectedMajor: true });
+};
+    
+
+// helper method for adding checkboxes
+$scope.selectedPositions = function selectedPositions() {
+  return filterFilter($scope.positions, { selectedPosition: true });
+};
+
 }]);
 
 
