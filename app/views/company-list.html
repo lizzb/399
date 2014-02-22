@@ -36,6 +36,14 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
       <div class="left">
       <a href="" class="btn btn-default" ng-click="sortType='name'; asc=!asc">
         Name
+        <!-- ng show seems to be static poop
+        <span ng-show="orderBy:sortType:asc">
+          <i class="fa fa-sort-alpha-asc"></i>
+        </span> 
+        <span ng-show="orderBy:sortType:desc">
+          <i class="fa fa-sort-alpha-desc"></i>
+        </span>
+        -->
         <!-- display the OPPOSITE value icon for current sort direction --
         <i class="fa" ng-class="orderBy == '-name' ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc'"></i>
         <i class="fa" ng-class="orderBy == 'name' ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc'"></i> -->
@@ -78,6 +86,8 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
 </label>
       </div> <!--/form-group-->
 
+      
+
 <!--{{positions}}
 {{majors}}
 {{selectedPositions}}
@@ -114,12 +124,6 @@ http://docs.angularjs.org/api/ng.directive:ngSwitch
 
           <br>
 
-          <!--dd ng-repeat="job in company.position track by $index">
-          {{job}} <dd-->
-          <!--{{company.position.join(', ')}}
-          <!--br--
-          &nbsp;&nbsp;&nbsp;
-          {{company.major.join(', ')}}-->
           </div>
           
         </li>
