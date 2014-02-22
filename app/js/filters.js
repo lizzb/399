@@ -26,6 +26,8 @@ app.filter('checkmark', function() {
 // company and client with underscore example
 
 app.filter('companyFilter', function() {
+
+	// SOMEHOW FEED IN THE CURRENTLY CHECKED BOXES
 	return function(companies)
 	{
 		if (!angular.isUndefined(companies))
