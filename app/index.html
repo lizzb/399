@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!-- important for mobile -->
   <meta name="description" content="">
   <meta name="author" content="">
-<!-- http://scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag-->
+  <!-- http://scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag-->
   <base href="/399/app/">
 
   <title> 399 Industry Day with AngularJS </title>
@@ -23,96 +23,123 @@
 <body>
 
 
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="#" class="navbar-brand right">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!--Icons to stay uncollapsed for easy access:
+        Companies Company List icon to stay uncollapsed 
+        Map
+        -->
+        <a href="#/companies" class="navbar-brand right">
           <i class="fa fa-list"></i>
-          <!--Companies Company List-->
+          
         </a>
-      <a class="navbar-brand" href="#">Page Header</a>
-        <!--i class="fa fa-chevron-left"></i>
-        <i class="fa fa-chevron-right"></i-->
-        </li>
+        <a href="#/map/companies" class="navbar-brand right">
+          <i class="fa fa-compass fa-lg"></i>
+        </a>
+        
+        <a class="navbar-brand" href="#">Industry Day</a>
+      </li>
     </div>
-    <div class="collapse navbar-collapse">
+
+    <!-- i want this to close once a selection has been made automatically!!! pull-right deprecated but using it anywayyy no just kidding i'm not cuz i cant get the dropdown to be small
+dropdown-menu-left right
+    -->
+
+
+    <div class="collapse navbar-collapse ">
       <ul class="nav navbar-nav">
-        <li><a href="#">
+        <!--li><a href="#">
         <i class="fa fa-home"></i>
-        <!--i class="fa fa-th"></i>
-        <i class="fa fa-th-large"></i-->
         Menu/Home
         </a>
-        </li>
-        <li><a href="#">
-          <i class="fa fa-list"></i>
+      </li-->
+      <li><a href="#/companies">
+        <i class="fa fa-list"></i> Company List
+      </a></li>
+
+      <li><a href="#/map/companies">
+        <i class="fa fa-location-arrow"></i> Layout/Map
+      </a></li>
+      
+      <li><a href="#favorites">
+        <i class="fa fa-star"></i> Favorites
+      </a></li>
+      
+      <li><a href="#/settings">
+        <i class="fa fa-cog"></i> Settings
+      </a></li>
+      
+      <li><a href="#recruiters">
+        <i class="fa fa-users"></i> Recruiters
+      </a></li>
+      
+      <li><a href="#/credits">
+        <i class="fa fa-info"></i> About/Thanks
+      </a></li>
+      
+      <li><a href="#/feedback">
+        <i class="fa fa-comments-o"></i> Feedback Survey
+      </a></li>
+
+</ul>
+</div><!--/.nav-collapse -->
+</div>
+</div>
+<div class="container">
+
+
+<!--i class="fa fa-chevron-left"></i>
+  <i class="fa fa-chevron-right"></i-->
+
+
+    <!-- other icon options -->
+
+
+    <!-- home/landing/splash/idk -->
+<!--i class="fa fa-th"></i>
+  <i class="fa fa-th-large"></i-->
+
+    <!-- companies -->
           <!--i class="fa fa-briefcase"></i><br>
           <i class="fa fa-bars"></i>
           <i class="fa fa-list-ul"></i>
           <i class="fa fa-th-list"></i>
-          Companies -->
-          Company List
-        </a>
-        </li>
-        <li>
-          <a href="#/map/companies">
-          <i class="fa fa-location-arrow"></i>
+        -->
+
+
+        <!-- map-related -->
           <!--i class="fa fa-map-marker"></i>
           <i class="fa fa-thumb-tack"></i-->
-          Layout/Map
-          </a>
-        </li>
-        <li>
-          <a href="#favorites">
-          <!--i class="fa fa-star-o"></i-->
-          <i class="fa fa-star"></i>
-          <!--i class="fa fa-flag-o"></i>  <i class="fa fa-flag"></i><br>
+
+            <!-- favorites/starred/bookmarked/pinned/whatever -->
+            <!--i class="fa fa-star-o"></i-->
+<!--i class="fa fa-flag-o"></i>  <i class="fa fa-flag"></i><br>
           <i class="fa fa-heart-o"></i> <i class="fa fa-heart"></i>
           <i class="fa fa-bookmark-o"></i>  <i class="fa fa-bookmark"></i-->
-          Favorites
-        </a>
-        </li>
-        <li><a href="#">
-         <!--i class="fa fa-user"></i>
-          <i class="fa fa-cogs"></i-->
-          <i class="fa fa-cog"></i>
-          Settings
-        </a></li>
-        <li>
-          <a href="#recruiters">
-          <i class="fa fa-users"></i>
-          Recruiters
-          </a>
-        </li>
-        <li><a href="#about">
-          <i class="fa fa-info"></i>
-          <!--i class="fa fa-question"></i>
-          <i class="fa fa-exclamation"></i-->
-          About
-          </a></li>
-        <li>
-          <a href="#feedback">
-          <i class="fa fa-comments-o"></i> 
-          <!--i class="fa fa-comments"></i>
-          <i class="fa fa-thumbs-o-up"></i>
-          <i class="fa fa-thumbs-o-down"></i>
-          <i class="fa fa-thumbs-up"></i>
-          <i class="fa fa-thumbs-down"></i-->
-          Feedback
-          </a>
-        </li>
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
-<div class="container">
+
+          <!-- settings -->
+<!--i class="fa fa-user"></i>
+  <i class="fa fa-cogs"></i-->
+
+    <!-- about/info/credits -->
+<!--i class="fa fa-question"></i>
+  <i class="fa fa-exclamation"></i-->
+
+    <!-- feedback/survey -->
+<!--i class="fa fa-comments"></i>
+<i class="fa fa-thumbs-o-up"></i>
+<i class="fa fa-thumbs-o-down"></i>
+<i class="fa fa-thumbs-up"></i>
+<i class="fa fa-thumbs-down"></i-->
+
 
 
   <div ng-view></div>
@@ -121,11 +148,11 @@
 
 
   <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script-->
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script-->
 
 </body>
 </html>
