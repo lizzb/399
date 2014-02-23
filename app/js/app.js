@@ -30,6 +30,10 @@ iday399App.config(['$routeProvider',
       otherwise({
         redirectTo: '/companies'
       });
+
+// http://scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag
+      // use the HTML5 History API
+//    $locationProvider.html5Mode(true);
   }]);
 
 // floorplan.html
