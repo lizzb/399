@@ -60,8 +60,6 @@
     </div>
 
 
-
-
   </div><!-- end row sorting filtering controls -->
 
 
@@ -70,7 +68,15 @@
 
     <ul class="companies">
 
-      <!--li ng-repeat="company in filteredList = (companies | filter:query | orderBy:sortType:asc)" class="thumbnail"-->
+      <!--li ng-repeat="company in filteredList = (companies | filter:query | orderBy:sortType:asc)" class="thumbnail"
+
+[filteredList = (companies | companyFilter(companies, selectedMajors, selectedPostitions) | orderBy:sortType:asc)] starting at [(companies, selectedMajors, selectedPostitions) | orderBy:sortType:asc)].
+
+
+
+      company in filteredList(selectedMajors(), selectedPostitions()) 
+      companyFilter(companies, selectedMajors, selectedPostitions)
+      -->
 
       <li ng-repeat="company in filteredList = (companies | companyFilter | orderBy:sortType:asc)" class="thumbnail">
 
