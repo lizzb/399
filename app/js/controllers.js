@@ -38,29 +38,13 @@ $rootScope.positions = [ //$scope.positions = [
     ];
 
 
-
     $http.get('data/week7grid.json').success(function(data) {
       $scope.companies = data;
       $rootScope.companies = data;
 });
 
-
-
-
-      $filter('companyFilter')($rootScope.majors, $rootScope.positions);
-    
-
-/*
-function CompanyListController($scope, $http, $rootScope) {
-    $http.get('data/week7grid.json').success(function(data) {
-      $scope.companies = data;
-
-    });*/
-
- // helper method for adding checkboxes
-
- // yeah pretty sure i'm using rootscope in a totally non angular way but whateeevvsvss
-/*$rootScope.selectedMajors = function selectedMajors() {
+ /*// yeah pretty sure i'm using rootscope in a totally non angular way but whateeevvsvss
+$rootScope.selectedMajors = function selectedMajors() {
   var temp = [];
    angular.forEach(majors, function(m) {
       if (m.selectedMajor) temp.push(m.name);        
@@ -72,8 +56,30 @@ function CompanyListController($scope, $http, $rootScope) {
 
 // helper method for adding checkboxes
 $rootScope.selectedPositions = function selectedPositions() {
+  var temp = [];
+   angular.forEach(positions, function(m) {
+      if (m.selectedPosition) temp.push(m.name);        
+  });
+   return temp;
   //return filterFilter($scope.positions, { selectedPosition: true });
 };*/
+console.log('rootscope M: '+$rootScope.majors);
+$filter('companyFilter')($rootScope.majors, $rootScope.positions); //, $rootScope);
+
+
+//$filter('companyFilter')($rootScope.selectedMajors, $rootScope.selectedPositions);
+    
+
+/*
+function CompanyListController($scope, $http, $rootScope) {
+    $http.get('data/week7grid.json').success(function(data) {
+      $scope.companies = data;
+
+    });*/
+
+ // helper method for adding checkboxes
+
+
 
 /*
 

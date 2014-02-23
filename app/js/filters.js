@@ -36,6 +36,7 @@ app.filter('companyFilter', function() {
 	//return function(companies)
 	{
 
+
 		var tempCompanies = [];
 		var chosenMajors = []; //selectedMajors; //[];
 		var chosenPositions = []; //selectedPositions; //[];
@@ -43,7 +44,7 @@ app.filter('companyFilter', function() {
 		if(angular.isUndefined(companies) || angular.isUndefined(selectedMajors) || angular.isUndefined(selectedPositions))
 		{
 			console.log('companies undefined: '+ angular.isUndefined(companies)+ '  selMajs undefined:'+angular.isUndefined(selectedMajors)+'  selPos undefined:'+angular.isUndefined(selectedPositions));
-			return companies;
+			//return companies;
 		}
 		//else
 		
@@ -51,18 +52,19 @@ app.filter('companyFilter', function() {
 		if (!angular.isUndefined(companies))
 		{
 			console.log('company list is defined');
+			//console.log('rootscope M: '+$rootScope.selectedMajors);
 
 			if (!angular.isUndefined(selectedMajors))
-		{
-			console.log('selected majors  is defined');
+			{
+			console.log('-- MAJORS defined-- ');
 			chosenMajors = selectedMajors;
-		}
+			}
 			
 			if (!angular.isUndefined(selectedPositions))
-		{
-			console.log('selected positions is defined');
+			{
+			console.log('-- POSITIONS defined --');
 			chosenPositions = selectedPositions; 
-		}
+			}
 			//var chosenMajors = $rootScope.selectedMajors; //['am', 'noneng']; //'cs',
 			//var chosenPositions = $rootScope.selectedPositions; //['intern', 'fte'];
 			// selectedMajor
@@ -90,7 +92,7 @@ app.filter('companyFilter', function() {
 			});
 			}**/
 			
-
+			//console.log('majors' + selectedMajors);
 
 			angular.forEach(companies, function(company, index){
 				//console.log(index + ":" + company); // key + : + value
