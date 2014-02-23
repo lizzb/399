@@ -9,15 +9,24 @@
 
 var idayControllers = angular.module('idayControllers', []);
 
-idayControllers.controller('CompanyListController', ['$scope', '$http',
-  function($scope, $http) {
+//http://jsfiddle.net/natefriedman/3XT3F/1/
+
+idayControllers.controller('CompanyListController', ['$scope', '$http', '$rootScope',
+  function($scope, $http, $rootScope) {
+    $http.get('data/week7grid.json').success(function(data) {
+      $scope.companies = data;
+      $rootScope.companies = data;
+    });
+
+/*
+function CompanyListController($scope, $http, $rootScope) {
     $http.get('data/week7grid.json').success(function(data) {
       $scope.companies = data;
 
-    });
+    });*/
 
 
-$scope.positions = [
+$rootScope.positions = [ //$scope.positions = [
   { friendlyName: 'Full Time', name: 'fte'},
   { friendlyName: 'Intern', name: 'int' },
   { friendlyName: 'Co-Op', name: 'coop' },
@@ -25,7 +34,7 @@ $scope.positions = [
 ];
     
     
- $scope.majors = [
+ $rootScope.majors = [ //$scope.majors = [
       { friendlyName: 'Applied Math', name: 'am'},
       { friendlyName: 'Biomedical', name: 'bme'},
       { friendlyName: 'Chemical', name: 'chem'},
@@ -60,12 +69,12 @@ $scope.positions = [
 
 // need a factory i think but services were being weird
 /*
-idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams',
-  function($scope, $routeParams){
-   // $scope.company = $routeParams.companyId;
-  }])*/
-
-idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams', '$http',
+idayControllers.controller('CompanyDetailsController', ['$rootScope', '$routeParams',
+  function($rootScope, $routeParams){
+   $rootScope.company = $routeParams.companyId;
+  }])
+*/
+/*idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
     $http.get('data/week7grid.json').success(function(data){
         
@@ -79,8 +88,17 @@ idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams'
         });
     });
      
-  }]);
+  }]);*/
 
+idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams', '$rootScope',
+  function($scope, $routeParams, $rootScope){
+    angular.forEach($rootScope.companies, function(comp) {
+          if (comp.id == $routeParams.companyId) 
+          {
+            $scope.company = comp;
+          }    
+        });
+  }])
 
 /*
 Use an Angular filter on your view
