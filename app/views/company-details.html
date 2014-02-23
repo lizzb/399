@@ -1,18 +1,33 @@
-<!-- 
-.majorsHeading .majors  .positionsHeading .positions
-
+<!--
 now each major and position is separate, rather than array
-
+<div class="positions">
+  <h3 class="positionsHeading"> Positions </h3>
   <span class="Looking for the following:"> </span>
-  
-  <dd ng-repeat="job in company.position track by $index">{{job}} </dd>
+    <dd ng-repeat="job in company.position track by $index">{{job}} </dd>
+</div>
 
+<div class="majors">
+  <h3 class="majorsHeading"> Majors </h3>
+  <span class="Looking for the following:"> </span
   <dd>{{company.major.join(', ')}}</dd>
   <dd ng-repeat="major in company.major">{{major}}</dd
 
-  http://jsfiddle.net/bmleite/Ad6u9/
--->
+/*
+–  Matty J Feb 27 '13 at 3:31
+Use an Angular filter on your view
+(there's no need to filter the data on the service):
+<div ng-repeat="entry in playgrounds | filter:{id: 1}">
+And if you want to filter your view on a $routeParams parameter, 
+add to your controller...
+$scope.myParam = $routeParams.parameterNameFromRouteController; 
+and then in your view, modify the filter...
+<input type="checkbox" name="selectedMajors[]" value="{{m.name}}" ng-model="m.selectedMajor"> 
+*/
 
+  
+  http://jsfiddle.net/bmleite/Ad6u9/
+
+-->
 <!-- {{job | checkmark}} marks either check or X -->
 
 <!-- display a loading screen if not loaded yet? -->
