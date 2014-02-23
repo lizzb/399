@@ -50,9 +50,6 @@ $rootScope.positions = [ //$scope.positions = [
       { friendlyName: 'Non-engineering', name: 'noneng' }
     ];
     
-
-
-    
 }]);
 
 
@@ -90,6 +87,10 @@ idayControllers.controller('CompanyDetailsController', ['$rootScope', '$routePar
      
   }]);*/
 
+// not sure if i HAVE to feed in rootscope or if i can do this some better way?
+// stil dont undrestnd scopes
+
+
 idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams', '$rootScope',
   function($scope, $routeParams, $rootScope){
     angular.forEach($rootScope.companies, function(comp) {
@@ -98,7 +99,10 @@ idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams'
             $scope.company = comp;
           }    
         });
+    $scope.majors = $rootScope.majors;
   }])
+
+
 
 /*
 Use an Angular filter on your view
@@ -137,6 +141,8 @@ idayControllers.controller('CompanyListLocationController', ['$scope', '$routePa
   function($scope, $routeParams) {
     //$scope.phoneId = $routeParams.phoneId;
   }]);
+
+// disable links if not loaded yet?
 
 idayControllers.controller('CompanyLocationController', ['$scope', '$routeParams',
   function($scope, $routeParams) {

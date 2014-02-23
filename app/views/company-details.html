@@ -21,6 +21,7 @@ And if you want to filter your view on a $routeParams parameter,
 add to your controller...
 $scope.myParam = $routeParams.parameterNameFromRouteController; 
 and then in your view, modify the filter...
+<input type="checkbox" name="selectedMajors[]" value="{{m.name}}" ng-model="m.selectedMajor"> 
 */
 
   
@@ -29,6 +30,7 @@ and then in your view, modify the filter...
 -->
 <!-- {{job | checkmark}} marks either check or X -->
 
+<!-- display a loading screen if not loaded yet? -->
 
  <h3 class="companyProfileHeading">
  	Company Profile
@@ -40,9 +42,21 @@ and then in your view, modify the filter...
 
 <img class="logo-square right" ng-src="../app/img/logos/{{company.id}}-square.png"">
 
+<!--
+ <li ng-repeat="m in majors">
+ {{m.friendlyName}}
+ </li>
+-->
+
+<!-- {{company[m.name]}}"> {{company[m.name]}} -->
 
 <div class="majors">
   <h3 class="majorsHeading"> Majors </h3>
+    <span ng-repeat="m in majors" ng-show="company[m.name]">
+    {{company[m.name]}} {{m.friendlyName}} &nbsp;&nbsp;&nbsp; 
+    </span>
+
+  <!--
   <span ng-show="company.am"> Applied Math &nbsp;&nbsp;&nbsp; </span> 
   <span ng-show="company.bme"> Biomedical &nbsp;&nbsp;&nbsp;</span> 
   <span ng-show="company.chem"> Chemical &nbsp;&nbsp;&nbsp;</span> 
@@ -56,6 +70,7 @@ and then in your view, modify the filter...
   <span ng-show="company.matsci"> Material Science &nbsp;&nbsp;&nbsp;</span> 
   <span ng-show="company.mech"> Mechanical &nbsp;&nbsp;&nbsp;</span> 
   <span ng-show="company.noneng"> Non-engineering &nbsp;&nbsp;&nbsp;</span> 
+  -->
 </div>
 
 
