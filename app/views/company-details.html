@@ -44,6 +44,7 @@ and then in your view, modify the filter...
 
 <!--
  <li ng-repeat="m in majors">
+ {{company[m.name]}} 
  {{m.friendlyName}}
  </li>
 -->
@@ -52,9 +53,9 @@ and then in your view, modify the filter...
 
 <div class="majors">
   <h3 class="majorsHeading"> Majors </h3>
-    <span ng-repeat="m in majors" ng-show="company[m.name]">
-    {{company[m.name]}} {{m.friendlyName}} &nbsp;&nbsp;&nbsp; 
-    </span>
+    <li ng-repeat="m in majors" ng-show="company[m.name]">
+    {{m.friendlyName}} &nbsp;&nbsp;&nbsp; 
+    </li>
 
   <!--
   <span ng-show="company.am"> Applied Math &nbsp;&nbsp;&nbsp; </span> 
@@ -76,10 +77,16 @@ and then in your view, modify the filter...
 
 <div class="positions">
   <h3 class="positionsHeading"> Positions </h3>
+    <span ng-repeat="p in jobs">
+      {{company[p.name] | checkmark }} {{p.friendlyName}} &nbsp;&nbsp;&nbsp;
+    </span>
+
+<!--
     {{company.intern | checkmark}} Intern &nbsp;&nbsp;&nbsp;
     {{company.fte | checkmark}} Full-Time &nbsp;&nbsp;&nbsp;
     {{company.coop | checkmark}} Co-Op &nbsp;&nbsp;&nbsp;
     {{company.msphd | checkmark}} MS/PhD &nbsp;&nbsp;&nbsp;
+    -->
 </div>
 
 <div class="description">

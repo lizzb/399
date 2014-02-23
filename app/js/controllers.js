@@ -100,6 +100,8 @@ idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams'
           }    
         });
     $scope.majors = $rootScope.majors;
+    $scope.jobs = $rootScope.positions; // pass from a diff scope??
+    // both jobs and positions work, both are accessible from within companydetails
   }])
 
 
