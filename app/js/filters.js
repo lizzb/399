@@ -25,21 +25,72 @@ app.filter('checkmark', function() {
 // http://jsfiddle.net/TahmidTanzim/N9Vqk/
 // company and client with underscore example
 
+//http://stackoverflow.com/questions/17596246/access-scope-variables-from-a-filter-in-angularjs
+
+
 app.filter('companyFilter', function() {
 
 	// SOMEHOW FEED IN THE CURRENTLY CHECKED BOXES
 	// maybe this is a scope thing?
-	return function(companies)
+	return function(companies, selectedMajors, selectedPositions)
+	//return function(companies)
 	{
+
+		var tempCompanies = [];
+		var chosenMajors = []; //selectedMajors; //[];
+		var chosenPositions = []; //selectedPositions; //[];
+
+		if(angular.isUndefined(companies) || angular.isUndefined(selectedMajors) || angular.isUndefined(selectedPositions))
+		{
+			console.log('companies undefined: '+ angular.isUndefined(companies)+ '  selMajs undefined:'+angular.isUndefined(selectedMajors)+'  selPos undefined:'+angular.isUndefined(selectedPositions));
+			return companies;
+		}
+		//else
+		
+
 		if (!angular.isUndefined(companies))
 		{
 			console.log('company list is defined');
-			var tempCompanies = [];
 
-			var chosenMajors = ['am', 'noneng']; //'cs',
-			var chosenPositions = ['intern', 'fte'];
+			if (!angular.isUndefined(selectedMajors))
+		{
+			console.log('selected majors  is defined');
+			chosenMajors = selectedMajors;
+		}
+			
+			if (!angular.isUndefined(selectedPositions))
+		{
+			console.log('selected positions is defined');
+			chosenPositions = selectedPositions; 
+		}
+			//var chosenMajors = $rootScope.selectedMajors; //['am', 'noneng']; //'cs',
+			//var chosenPositions = $rootScope.selectedPositions; //['intern', 'fte'];
 			// selectedMajor
 			// .selectedPosition
+			//if($scope.majors.selectedMajor) chosenMajors.push()
+
+			/*
+			$rootScope.selectedMajors = function selectedMajors() {
+  var temp = [];
+   angular.forEach(majors, function(m) {
+      if (m.selectedMajor) temp.push(m.name);        
+  });
+   return temp;
+  //return filterFilter($scope.majors, { selectedMajor: true });
+};*/
+			/*
+			if (!angular.isUndefined(majors))
+			{
+				angular.forEach(majors, function(major, index)
+			{
+				if(major.selectedMajor)
+				{
+					chosenMajors.push(major.name);
+				}
+			});
+			}**/
+			
+
 
 			angular.forEach(companies, function(company, index){
 				//console.log(index + ":" + company); // key + : + value
@@ -102,15 +153,5 @@ app.filter('companyFilter', function() {
 	};
 });
 
-/*
- // helper method for adding checkboxes
-$scope.selectedMajors = function selectedMajors() {
-  return filterFilter($scope.majors, { selectedMajor: true });
-};
-    
 
-// helper method for adding checkboxes
-$scope.selectedPositions = function selectedPositions() {
-  return filterFilter($scope.positions, { selectedPosition: true });
-};
-*/
+
