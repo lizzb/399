@@ -28,6 +28,7 @@ app.filter('checkmark', function() {
 app.filter('companyFilter', function() {
 
 	// SOMEHOW FEED IN THE CURRENTLY CHECKED BOXES
+	// maybe this is a scope thing?
 	return function(companies)
 	{
 		if (!angular.isUndefined(companies))
@@ -37,6 +38,8 @@ app.filter('companyFilter', function() {
 
 			var chosenMajors = ['am', 'noneng']; //'cs',
 			var chosenPositions = ['intern', 'fte'];
+			// selectedMajor
+			// .selectedPosition
 
 			angular.forEach(companies, function(company, index){
 				//console.log(index + ":" + company); // key + : + value
