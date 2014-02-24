@@ -27,7 +27,7 @@ app.filter('checkmark', function() {
 
 //http://stackoverflow.com/questions/17596246/access-scope-variables-from-a-filter-in-angularjs
 
-
+/*--------------------
 app.filter('companyFilter', function() {
 
 	// SOMEHOW FEED IN THE CURRENTLY CHECKED BOXES
@@ -91,7 +91,7 @@ app.filter('companyFilter', function() {
 			}**/
 			
 
-
+/*--------------------
 			angular.forEach(companies, function(company, index){
 				//console.log(index + ":" + company); // key + : + value
 
@@ -141,7 +141,7 @@ app.filter('companyFilter', function() {
 					tempCompanies.push(company);
 				}
 				*/
-			});
+/*--------------------			});
 			
 			
 			return tempCompanies;
@@ -151,7 +151,7 @@ app.filter('companyFilter', function() {
 		console.log('company list still undefined');
 		return companies;
 	};
-});
+});*/
 
 
 

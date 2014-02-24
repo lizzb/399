@@ -15,7 +15,7 @@ idayControllers.controller('CompanyListController', ['$scope', '$http', '$rootSc
 
 $rootScope.positions = [ //$scope.positions = [
   { friendlyName: 'Full Time', name: 'fte'},
-  { friendlyName: 'Intern', name: 'int' },
+  { friendlyName: 'Intern', name: 'intern' },
   { friendlyName: 'Co-Op', name: 'coop' },
   { friendlyName: 'MS/PhD', name: 'msphd'}
 ];

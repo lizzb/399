@@ -8,7 +8,38 @@
   Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
   Filter by: <i class="fa fa-filter"> </i>
 
-      <!--h4> majors </h4-->
+
+<! -- 
+replaced
+name="selectedMajors[]" value="{{m.name}}" ng-model="m.selectedMajor"
+with
+ng-click="includeMajor(m.name)
+
+input type="checkbox" name="selectedMajors[]" value="{{m.name}}" ng-model="m.selectedMajor" ng-click="includeMajor(m.name)"
+{{m.friendlyName}}
+input type="checkbox" name="selectedPositions[]" value="{{p.name}}" ng-model="p.selectedPosition" ng-click="includePosition(p.name)
+{{p.friendlyName}}
+pretty sure its not the best form/practice but i dont caaaaareee right now
+-->
+
+<div class="form-group">
+      <label ng-repeat="m in majors" class="checkbox-inline">
+        <input type="checkbox" ng-click="includeMajor(m.name)"> 
+        {{m.friendlyName}}
+      </label>
+    </div> <!--/form-group-->
+
+    <div class="form-group">
+      <label ng-repeat="p in positions" class="checkbox-inline">
+        <input type="checkbox" ng-click="includePosition(p.name)""> 
+        {{p.friendlyName}}
+      </label>
+    </div> <!--/form-group-->
+
+
+
+
+      <!--h4> majors </h4--
 
            <h4> Majors </h4>
     
@@ -22,7 +53,7 @@
 <div ng-repeat="p in positions">
 <label class="checkboxFilters">
     <input type="checkbox" ng-click="includePosition(p.name)" />{{p.friendlyName}} &nbsp; &nbsp;</label>
-</div>
+</div>-->
 
     
     <!--div class="form-group">
