@@ -9,12 +9,27 @@
   Filter by: <i class="fa fa-filter"> </i>
 
       <!--h4> majors </h4-->
+
+           <h4> Majors </h4>
     
-    <div class="form-group">
+<div ng-repeat="m in majors">
+<label class="checkboxFilters">
+    <input type="checkbox" ng-click="includeMajor(m.name)" />{{m.friendlyName}} &nbsp; &nbsp;</label>
+</div>
+<br><br>
+    <hr>    
+<h4> Positions </h4>
+<div ng-repeat="p in positions">
+<label class="checkboxFilters">
+    <input type="checkbox" ng-click="includePosition(p.name)" />{{p.friendlyName}} &nbsp; &nbsp;</label>
+</div>
+
+    
+    <!--div class="form-group">
       <label ng-repeat="m in majors" class="checkbox-inline">
         <input type="checkbox" name="selectedMajors[]" value="{{m.name}}" ng-model="m.selectedMajor"> {{m.friendlyName}}
       </label>
-    </div> <!--/form-group-->
+    </div> <!--/form-group--
 
     <div class="form-group">
       <label ng-repeat="p in positions" class="checkbox-inline">
@@ -72,13 +87,13 @@
 
 [filteredList = (companies | companyFilter(companies, selectedMajors, selectedPostitions) | orderBy:sortType:asc)] starting at [(companies, selectedMajors, selectedPostitions) | orderBy:sortType:asc)].
 
-
+filter:companyFilter
 
       company in filteredList(selectedMajors(), selectedPostitions()) 
       companyFilter(companies, selectedMajors, selectedPostitions)
       -->
 
-      <li ng-repeat="company in filteredList = (companies | companyFilter | orderBy:sortType:asc)" class="thumbnail">
+      <li ng-repeat="company in filteredList = (companies | filter:userFilter | orderBy:sortType:asc)" class="thumbnail">
 
         <a href="#/companies/{{company.id}}">
           <img class="companies-list-square" ng-src="../app/img/logos/{{company.id}}-square.png">
