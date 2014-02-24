@@ -7,9 +7,13 @@ var idayControllers = angular.module('idayControllers', []);
 // disable links to company details if not loaded yet...? how to handle
 
 idayControllers.controller('LandingPageController', 
-  ['$scope', 
-  function($scope) {
-    //$scope.phoneId = $routeParams.phoneId;
+  ['$scope', '$http', '$rootScope',
+  function($scope, $http, $rootScope){
+    $http.get('data/week7grid.json').success(function(data) {
+    $rootScope.allCompanies = data;
+    //$scope.companies = data;            // the filtered companies
+    $rootScope.filteredCompanies = data;  // the filtered companies
+  });
   }]);
 
 /* 
@@ -29,11 +33,11 @@ idayControllers.controller('LandingPageController',
 
 
 idayControllers.controller('CompanyListController', ['$scope', '$http', '$rootScope', //'$filter',
-  function($scope, $http, $rootScope){ //$filter) {
+  function($scope, /*$http,*/ $rootScope){ //$filter) {
 
-  $http.get('data/week7grid.json').success(function(data) {
-  $scope.companies = data;
-  $rootScope.companies = data;
+  //$http.get('data/week7grid.json').success(function(data) {
+  $rootScope.companies = $rootScope.filteredCompanies;
+  //$rootScope.companies = data;
 
   //$scope.positions = [
   $rootScope.positions = [ 
@@ -60,7 +64,7 @@ idayControllers.controller('CompanyListController', ['$scope', '$http', '$rootSc
       { friendlyName: 'Non-engineering', name: 'noneng' }
     ];
 
-});
+//});
 
 
     $scope.majorsIncluded = [];

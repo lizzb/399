@@ -1,14 +1,10 @@
 <!-- 
 .majorsHeading .majors  .positionsHeading .positions
 
-now each major and position is separate, rather than array
+  ng-repeat="major in company.major">{{major}}
+  ng-repeat="job in company.position track by $index">{{job}} 
+ {{company.major.join(', ')}}
 
-  <span class="Looking for the following:"> </span>
-  
-  <dd ng-repeat="job in company.position track by $index">{{job}} </dd>
-
-  <dd>{{company.major.join(', ')}}</dd>
-  <dd ng-repeat="major in company.major">{{major}}</dd
 
   http://jsfiddle.net/bmleite/Ad6u9/
 -->
@@ -17,46 +13,20 @@ now each major and position is separate, rather than array
 
 <!-- display a loading screen if not loaded yet? -->
 
- <h3 class="companyProfileHeading">
- 	Company Profile
- </h3>
+<h3 class="companyProfileHeading"> Company Profile </h3>
 
- <img class="logo-wide" ng-src="../app/img/logos/{{company.id}}-wide.png">
+<img class="logo-wide" ng-src="../app/img/logos/{{company.id}}-wide.png">
 
 <h1 class="companyNameHeading"> {{company.name}} </h1>
 
-<img class="logo-square right" ng-src="../app/img/logos/{{company.id}}-square.png"">
+<img class="logo-square right" ng-src="../app/img/logos/{{company.id}}-square.png">
 
-<!--
- <li ng-repeat="m in majors">
- {{company[m.name]}} 
- {{m.friendlyName}}
- </li>
--->
-
-<!-- {{company[m.name]}}"> {{company[m.name]}} -->
 
 <div class="majors">
   <h3 class="majorsHeading"> Majors </h3>
     <li ng-repeat="m in majors" ng-show="company[m.name]">
     {{m.friendlyName}} &nbsp;&nbsp;&nbsp; 
     </li>
-
-  <!--
-  <span ng-show="company.am"> Applied Math &nbsp;&nbsp;&nbsp; </span> 
-  <span ng-show="company.bme"> Biomedical &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.chem"> Chemical &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.civil"> Civil &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.ce"> Computer &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.cs"> CompSci &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.ee"> Electrical &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.enve"> Environmental &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.ie"> Industrial &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.made"> MaDE &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.matsci"> Material Science &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.mech"> Mechanical &nbsp;&nbsp;&nbsp;</span> 
-  <span ng-show="company.noneng"> Non-engineering &nbsp;&nbsp;&nbsp;</span> 
-  -->
 </div>
 
 
@@ -66,17 +36,11 @@ now each major and position is separate, rather than array
       {{company[p.name] | checkmark }} {{p.friendlyName}} &nbsp;&nbsp;&nbsp;
     </span>
 
-<!--
-    {{company.intern | checkmark}} Intern &nbsp;&nbsp;&nbsp;
-    {{company.fte | checkmark}} Full-Time &nbsp;&nbsp;&nbsp;
-    {{company.coop | checkmark}} Co-Op &nbsp;&nbsp;&nbsp;
-    {{company.msphd | checkmark}} MS/PhD &nbsp;&nbsp;&nbsp;
-    -->
 </div>
 
 <div class="description">
- <h3 class="detailsHeading"> Description </h3>
-{{company.description}}
+  <h3 class="detailsHeading"> Description </h3>
+    {{company.description}}
 </div>
 
 </div>

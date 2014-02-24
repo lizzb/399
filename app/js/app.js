@@ -13,7 +13,7 @@ iday399App.config(['$routeProvider', //'$locationProvider'
     $routeProvider.
       when('/', {
         templateUrl: 'views/landing-page.html',
-        controller: ''
+        controller: 'LandingPageController'
       }).
       when('/companies', {
         templateUrl: 'views/company-list.html',
@@ -33,15 +33,19 @@ iday399App.config(['$routeProvider', //'$locationProvider'
       }).
       when('/settings', {
         templateUrl: 'views/settings.html',
-        controller: ''
+        controller: 'UserSettingsFiltersController'
       }).
       when('/credits', {
         templateUrl: 'views/credits.html',
-        controller: ''
+        controller: 'AcknowledgementsController'
       }).
       when('/feedback', {
         templateUrl: 'views/feedback-survey.html',
-        controller: ''
+        controller: 'FeedbackSurveyController'
+      }).
+      when('/favorites', {
+        templateUrl: 'views/settings.html', //.....
+        controller: 'FavoritesController'
       }).
       otherwise({
         redirectTo: '/' //'/app/' // "home" page
