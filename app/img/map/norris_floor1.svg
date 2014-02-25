@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="480">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g display="inline">
+  <title>Layer 1</title>
+  <image xlink:href="http://www.norris.northwestern.edu/wp-content/uploads/2010/03/floorplan_web__first_2013.jpg" id="svg_1" height="500" width="600" y="0" x="0"/>
+ </g>
+ <g display="inline">
+  <title>Floor1outline</title>
+  <path id="svg_4" d="m472.40997 436.06396l-142.42197 -0.02698l-172.589 0.11301l-0.255 35.31396l-40.50999 -0.45895l-44.0108 -0.45901l-12.0209 0.07202l0.1459 -179.41901l-0.0418 -66.17201l-41.7083 0.164l0.1664 -201.93797l368.64652 -0.1863l0.31 86.84131l84.94595 -0.5l-0.66696 327.9" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#3f007f" fill="none"/>
+ </g>
+ <g display="inline">
+  <title>rooms</title>
+  <rect id="svg_5" height="138.8" width="88.3" y="86.8" x="18.9" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.2" stroke="#007fff" fill="none"/>
+  <rect id="svg_6" height="86.8" width="133.6" y="24" x="172.4" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.2" stroke="#007fff" fill="none"/>
+  <rect fill="none" stroke="#007fff" stroke-width="2.2" stroke-linejoin="null" stroke-linecap="null" x="19" y="24" width="72" height="62.7" id="svg_12"/>
+  <rect fill="none" stroke="#007fff" stroke-width="2.2" stroke-linejoin="null" stroke-linecap="null" x="91.7" y="24" width="80.7" height="46.3" id="svg_13"/>
+ </g>
+ <g display="inline">
+  <title>Big Ten Room</title>
+  <g id="svg_2">
+   <!--image x="165" y="12.33809" width="155.00001" height="82.70876" id="svg_1" xlink:href="http://i.imgur.com/bnheBMY.png"/-->
+   <rect id="bigten-room_outline" height="58.2" width="133.3" y="30.1" x="172.6" stroke-width="2.7" stroke="#ff7f00" fill="none"/>
+   <rect id="table_84" height="7.7" width="16.9" y="37.1" x="184.3" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none"/>
+   <rect id="table_83" height="7.7" width="16.9" y="37.1" x="229.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none"/>
+   <rect id="table_82" height="7.7" width="16.9" y="37.1" x="277.3" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none"/>
+   <rect id="table_81" transform="matrix(0.20821781082233312,-0.22672609951737063,0.22672609951737063,0.20821781082233312,227.16585241749192,180.1290334120971) " height="25" width="55.1" y="-88.2" x="369.3" stroke-linecap="null" stroke-linejoin="null" stroke-width="6.1" stroke="#007fff" fill="none"/>
+   <rect id="table_80" height="7.7" width="16.9" y="75.6" x="218.2" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none"/>
+  </g>
+ </g>
+ <g display="inline">
+  <title>Wildcat Room</title>
+  <g id="svg_4">
+   <!--image xlink:href="http://i.imgur.com/y1P9fKi.png" id="svg_1" height="91.24643" width="171" y="73.53768" x="-21.00001"/-->
+   <rect fill="none" stroke="#ff7f00" stroke-width="2.7" x="19.4" y="87.1" width="87.6" height="72.6" id="svg_3"/>
+   <rect id="table_77" fill="none" stroke="#007fff" stroke-width="1.7" stroke-linejoin="null" stroke-linecap="null" x="28" y="91.7" width="12.5" height="5.7"/>
+   <rect id="table_78" fill="none" stroke="#007fff" stroke-width="1.7" stroke-linejoin="null" stroke-linecap="null" x="54.3" y="91.7" width="12.5" height="5.7"/>
+   <rect id="table_79" fill="none" stroke="#007fff" stroke-width="1.7" stroke-linejoin="null" stroke-linecap="null" x="82" y="91.7" width="12.5" height="5.7"/>
+   <rect transform="matrix(0,0.22684037191856943,-0.22684037191856943,0,488.2566391297564,316.52864096986764) " fill="none" stroke="#007fff" stroke-width="7.7" stroke-linejoin="null" stroke-linecap="null" x="-929.8" y="2014.4" width="55.1" height="25" id="svg_8"/>
+   <rect id="svg_9" transform="matrix(0,0.22684037191856943,-0.22684037191856943,0,509.57963755141134,337.85163939152255) " fill="none" stroke="#007fff" stroke-width="7.7" stroke-linejoin="null" stroke-linecap="null" x="-929.8" y="2108.4" width="55.1" height="25"/>
+   <rect id="table_74" fill="none" stroke="#007fff" stroke-width="1.7" stroke-linejoin="null" stroke-linecap="null" x="27.6" y="146.6" width="12.5" height="5.7"/>
+   <rect id="table_73" fill="none" stroke="#007fff" stroke-width="1.7" stroke-linejoin="null" stroke-linecap="null" x="53" y="146.6" width="12.5" height="5.7"/>
+   <rect id="table_72" fill="none" stroke="#007fff" stroke-width="1.7" stroke-linejoin="null" stroke-linecap="null" x="77.3" y="146.6" width="12.5" height="5.7"/>
+  </g>
+ </g>
+ <g display="inline">
+  <title>bathrooms</title>
+  <rect fill="#7fff00" stroke="#007fff" stroke-width="2.2" stroke-linejoin="null" stroke-linecap="null" x="107.3" y="87" width="39.3" height="45.3" id="svg_7"/>
+  <rect fill="#7fff00" stroke="#007fff" stroke-width="2.2" stroke-linejoin="null" stroke-linecap="null" x="107.3" y="176.7" width="39" height="49" id="svg_10"/>
+ </g>
+</svg>

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="768" height="576">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g display="inline">
+  <title>img</title>
+  <image width="500" height="452" id="svg_1" xlink:href="http://www.norris.northwestern.edu/wp-content/uploads/2011/11/floorplan_web_second.png"/>
+  <rect id="svg_6" height="14" width="0" y="214.3" x="84" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#3f007f" fill="none"/>
+ </g>
+ <g display="inline">
+  <title>outline</title>
+  <path fill="none" stroke="#3f007f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" d="m484.097748 297.666656l-21.714752 0.02533l-0.381989 40.359009l-135.490997 0.050018l0.078003 60.768982l-172.58902 0.101013l-0.25499 27.10199l-43.010002 0.036011l-43.010803 0.036987l-0.020897 -153.26001l14.645897 0.072021l-0.041801 -44.854004l-66.708299 0.145996l0.1664 -198.416702l392.667509 -0.166599l0.289001 63.333302l74.945984 0l0.332855 204.7" id="svg_4"/>
+ </g>
+ <g display="inline">
+  <title>rooms</title>
+  <rect id="svg_5" height="135" width="66.6" y="93.2" x="15.8" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#007fff" fill="none"/>
+  <rect id="svg_7" height="62.8" width="117.2" y="30" x="15.8" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#007fff" fill="none"/>
+  <rect id="svg_8" height="132.8" width="235.4" y="30" x="173.2" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#007fff" fill="none"/>
+  <path id="svg_9" d="m105.400002 259l56.799995 0l0 31.200012l-37.866997 0l-9.071999 -14.587006l-9.861 0l0 -16.613007l0 0l0 0z" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#007fff" fill="#7fff00"/>
+  <rect id="svg_10" height="31.2" width="50" y="258.8" x="234.8" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#007fff" fill="#7fff00"/>
+ </g>
+ <g display="inline">
+  <title>Lake Room</title>
+  <g id="svg_11">
+   <rect id="svg_3" height="62.9" width="117.5" y="29.9" x="15.7" stroke-width="2.2" stroke="#ff7f00" fill="none"/>
+   <g id="svg_12">
+    <rect height="4.9" width="10.7" y="34.8" x="34.2" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none" id="table_58"/>
+    <rect height="4.9" width="10.7" y="34.8" x="60.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none" id="table_57"/>
+    <rect height="4.9" width="10.7" y="34.8" x="84.6" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none" id="table_56"/>
+    <rect height="4.9" width="10.7" y="35.1" x="106.3" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none" id="table_55"/>
+    <rect height="25" width="55.1" y="1940.9" x="-1441.2" stroke-linecap="null" stroke-linejoin="null" stroke-width="7.7" stroke="#007fff" fill="none" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,403.4439139031087,329.9646760208869) " id="table_59"/>
+    <rect height="25" width="55.1" y="2025.9" x="-1439.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="7.7" stroke="#007fff" fill="none" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,420.00422557413077,346.6811025842007) " id="table_60"/>
+    <rect height="4.9" width="10.7" y="83" x="39" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none" id="table_61"/>
+    <rect height="4.9" width="10.7" y="83" x="65.3" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none" id="table_62"/>
+    <rect height="4.9" width="10.7" y="83" x="91.6" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.7" stroke="#007fff" fill="none" id="table_63"/>
+    <rect height="25" width="55.1" y="1976.9" x="-923.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="7.7" stroke="#007fff" fill="none" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,510.98850834721515,235.56604734420384) " id="table_54"/>
+   </g>
+  </g>
+ </g>
+ <g display="inline">
+  <title>Louis Room</title>
+  <g id="svg_13">
+   <g id="svg_16">
+    <g id="back_wall_svg_13">
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="197" y="40.2" width="10.7" height="5.8" id="table_53"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="217.9" y="40.2" width="10.7" height="5.8" id="table_52"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="237.3" y="40.2" width="10.7" height="5.8" id="table_51"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="258.2" y="40.2" width="10.7" height="5.8" id="table_49"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="279" y="40.4" width="10.7" height="5.8" id="table_48"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="299.8" y="40.4" width="10.7" height="5.8" id="table_47"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="317.9" y="40.4" width="10.7" height="5.8" id="table_46"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="335.5" y="40.4" width="10.7" height="5.8" id="table_45"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="354.6" y="40.4" width="10.7" height="5.8" id="table_44"/>
+     <rect fill="none" stroke="#00ffff" stroke-width="2" x="375.4" y="40.2" width="10.7" height="5.8" id="table_43"/>
+    </g>
+    <g id="front_wall_svg_14">
+     <rect id="table_7" fill="none" stroke="#7f007f" stroke-width="2" x="194.1" y="142" width="10.7" height="5.8"/>
+     <rect id="table_6" fill="none" stroke="#7f007f" stroke-width="2" x="213.6" y="142" width="10.7" height="5.8"/>
+     <rect id="table_5" fill="none" stroke="#7f007f" stroke-width="2" x="231" y="142" width="10.7" height="5.8"/>
+     <rect id="table_4" fill="none" stroke="#7f007f" stroke-width="2" x="292.2" y="142" width="10.7" height="5.8"/>
+     <rect id="table_3" fill="none" stroke="#7f007f" stroke-width="2" x="311.4" y="142" width="10.7" height="5.8"/>
+     <rect id="table_2" fill="none" stroke="#7f007f" stroke-width="2" x="330.9" y="142" width="10.7" height="5.8"/>
+     <rect id="table_1" fill="none" stroke="#7f007f" stroke-width="2" x="351.7" y="142" width="10.7" height="5.8"/>
+    </g>
+    <g id="row_highest">
+     <rect fill="none" stroke="#007fff" stroke-width="2" x="226.8" y="67" width="10.7" height="5.8" id="svg_26"/>
+     <rect fill="none" stroke="#007fff" stroke-width="2" x="245.8" y="67" width="10.7" height="5.8" id="svg_27"/>
+     <rect fill="none" stroke="#007fff" stroke-width="2" x="210.5" y="67" width="10.7" height="5.8" id="svg_28"/>
+     <rect fill="none" stroke="#007fff" stroke-width="2" x="266.7" y="67" width="10.7" height="5.8" id="svg_29"/>
+     <rect fill="none" stroke="#007fff" stroke-width="2" x="287.6" y="67" width="10.7" height="5.8" id="svg_30"/>
+     <rect fill="none" stroke="#007fff" stroke-width="2" x="308.3" y="67" width="10.7" height="5.8" id="svg_31"/>
+     <rect fill="none" stroke="#007fff" stroke-width="2" x="329.1" y="67" width="10.7" height="5.8" id="svg_32"/>
+     <rect fill="none" stroke="#007fff" stroke-width="2" x="350" y="67" width="10.7" height="5.8" id="svg_33"/>
+    </g>
+    <g id="row_mid_high">
+     <rect fill="none" stroke="#ff0098" stroke-width="2" x="226.8" y="78.8" width="10.7" height="5.8" id="table_26"/>
+     <rect fill="none" stroke="#ff0098" stroke-width="2" x="245.8" y="78.8" width="10.7" height="5.8" id="table_27"/>
+     <rect fill="none" stroke="#ff0098" stroke-width="2" x="210.5" y="78.8" width="10.7" height="5.8" id="table_25"/>
+     <rect fill="none" stroke="#ff0098" stroke-width="2" x="266.7" y="78.8" width="10.7" height="5.8" id="table_28"/>
+     <rect fill="none" stroke="#ff0098" stroke-width="2" x="287.6" y="78.8" width="10.7" height="5.8" id="table_29"/>
+     <rect fill="none" stroke="#ff0098" stroke-width="2" x="308.3" y="78.8" width="10.7" height="5.8" id="table_30"/>
+     <rect fill="none" stroke="#ff0098" stroke-width="2" x="329.3" y="78.8" width="10.7" height="5.8" id="table_31"/>
+     <rect fill="none" stroke="#ff0098" stroke-width="2" x="350.2" y="78.8" width="10.7" height="5.8" id="table_32"/>
+    </g>
+    <g id="row_mid_low">
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="226.8" y="102.6" width="10.7" height="5.8" id="table_23"/>
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="248.9" y="102.6" width="10.7" height="5.8" id="table_22"/>
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="210.5" y="102.6" width="10.7" height="5.8" id="table_24"/>
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="270" y="102.6" width="10.7" height="5.8" id="table_21"/>
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="290.8" y="102.6" width="10.7" height="5.8" id="table_20"/>
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="311.6" y="102.6" width="10.7" height="5.8" id="table_19"/>
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="332.4" y="102.6" width="10.7" height="5.8" id="table_18"/>
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="350.2" y="102.6" width="10.7" height="5.8" id="table_17"/>
+    </g>
+    <g id="row_lowest">
+     <rect fill="none" stroke="#5f00bf" stroke-width="2" x="226.8" y="114.4" width="10.7" height="5.8" id="table_10"/>
+     <rect fill="none" stroke="#5f00bf" stroke-width="2" x="248.9" y="114.4" width="10.7" height="5.8" id="table_11"/>
+     <rect fill="none" stroke="#5f00bf" stroke-width="2" x="210.5" y="114.4" width="10.7" height="5.8" id="table_9"/>
+     <rect fill="none" stroke="#5f00bf" stroke-width="2" x="270" y="114.4" width="10.7" height="5.8" id="table_12"/>
+     <rect fill="none" stroke="#5f00bf" stroke-width="2" x="290.8" y="114.4" width="10.7" height="5.8" id="table_13"/>
+     <rect fill="none" stroke="#5f00bf" stroke-width="2" x="311.6" y="114.4" width="10.7" height="5.8" id="table_14"/>
+     <rect fill="none" stroke="#5f00bf" stroke-width="2" x="332.4" y="114.4" width="10.7" height="5.8" id="table_15"/>
+     <rect fill="none" stroke="#5f00bf" stroke-width="2" x="350.2" y="114.4" width="10.7" height="5.8" id="table_16"/>
+    </g>
+    <g id="svg_15">
+     <!--rect transform="matrix(0,-0.7410423755645752,0.7410423755645752,0,394.23048303764153,512.3526331796711) " id="table_43" height="15.2" width="28" y="72.1" x="594.2" stroke-width="2" stroke="#ff0000" fill="none"/-->
+     <rect fill="none" stroke="#ff0000" stroke-width="2" x="810.1" y="-180.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,466.54258277105976,383.5777300915772) " id="table_433"/>
+     <rect fill="none" stroke="#0000ff" stroke-width="2" x="810.1" y="-105.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,439.7510461075514,410.3692667550855) " id="table_42"/>
+     <rect fill="none" stroke="#00ff00" stroke-width="2" x="810.6" y="-35.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,413.1508775630682,437.35217153761886) " id="table_41"/>
+     <rect fill="none" stroke="#ff00ff" stroke-width="2" x="228.1" y="-28.1" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,187.33649711349835,217.27883465880078) " id="table_8"/>
+     <rect id="svg_65" height="116.4" width="235" y="39.6" x="173.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#ff7f00" fill="none"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
