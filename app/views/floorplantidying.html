@@ -35,7 +35,7 @@ still hve id="norris2outline" norris1outline
         */
 
 .booths{
-          fill: none;
+          fill: white; /* if none, then you have to click on the outline to enable */
           stroke-linecap: null;
           stroke-linejoin: null;
           stroke-width: 1.7;
@@ -150,6 +150,7 @@ still hve id="norris2outline" norris1outline
 
 <!-- http://www.petercollingridge.co.uk/sites/files/peter/room_plan_isometric.svg -->
     <!--
+    i have a file somewhere called isometric foor plan to referene...
     <figure class="svg-container">
 
 <svg xmlns:svg="http://www.w3.org/2000/svg"
@@ -211,7 +212,7 @@ still hve id="norris2outline" norris1outline
     </svg>
 </figure>
 -->
-
+    <button onclick="toggleActiveRoom('northwestern')"> Louis </button>
     <button onclick="toggleActiveRoom('louis')"> Louis </button>
     <button onclick="toggleActiveRoom('lake')"> Lake </button>
     <button onclick="toggleActiveRoom('wildcat')"> Wildcat </button>
@@ -418,26 +419,26 @@ still hve id="norris2outline" norris1outline
      <rect  id="table_32" x="350.2" y="78.8" width="10.7" height="5.8" />
     </g>
     <g id="louis33-40">
-    <rect id="table_40" x="210.5" y="67" width="10.7" height="5.8" />
-     <rect id="table_39" x="226.8" y="67" width="10.7" height="5.8" />
-     <rect id="table_38" x="245.8" y="67" width="10.7" height="5.8" />
-     <rect id="table_37" x="266.7" y="67" width="10.7" height="5.8" />
-     <rect id="table_36" x="287.6" y="67" width="10.7" height="5.8" />
-     <rect id="table_35" x="308.3" y="67" width="10.7" height="5.8" />
-     <rect id="table_34" x="329.1" y="67" width="10.7" height="5.8" />
-     <rect id="table_33" x="350"   y="67" width="10.7" height="5.8" />
+    <rect id="table_40" x="210.5" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_39" x="226.8" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_38" x="245.8" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_37" x="266.7" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_36" x="287.6" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_35" x="308.3" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_34" x="329.1" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_33" x="350"   y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
     </g>
     <g id="louis44-53">
-     <rect id="table_53" x="197"   y="40.2" width="10.7" height="5.8" />
-     <rect id="table_52" x="217.9" y="40.2" width="10.7" height="5.8" />
-     <rect id="table_51" x="237.3" y="40.2" width="10.7" height="5.8" />
-     <rect id="table_50" x="258.2" y="40.2" width="10.7" height="5.8" />
-     <rect id="table_49" x="279"   y="40.4" width="10.7" height="5.8" />
-     <rect id="table_48" x="299.8" y="40.4" width="10.7" height="5.8" />
-     <rect id="table_47" x="317.9" y="40.4" width="10.7" height="5.8" />
-     <rect id="table_46" x="335.5" y="40.4" width="10.7" height="5.8" />
-     <rect id="table_45" x="354.6" y="40.4" width="10.7" height="5.8" />
-     <rect id="table_44" x="375.4" y="40.2" width="10.7" height="5.8" />
+     <rect id="table_53" x="197"   y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_52" x="217.9" y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_51" x="237.3" y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_50" x="258.2" y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_49" x="279"   y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_48" x="299.8" y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_47" x="317.9" y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_46" x="335.5" y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_45" x="354.6" y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
+     <rect id="table_44" x="375.4" y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" />
     <!--
       <rect id="table_43rot" x="810.1" y="-180.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,466.54258277105976,383.5777300915772) " />
       
@@ -447,17 +448,17 @@ still hve id="norris2outline" norris1outline
  
      <rect id="table_8rot" x="228.1" y="-28.1" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,187.33649711349835,217.27883465880078) " />
     -->
-     <rect id="table_43" height="10.7" width="5.8" x="397" y="63" class="rotated-booth" /> <!-- red -->
+     <rect id="table_43" height="10.7" width="5.8" x="397" y="63" class="rotated-booth"  onclick="toggleActive(this.id)" /> <!-- red -->
 
-      <rect id="table_42" height="10.7" width="5.8" x="399" y="90" class="rotated-booth" />
+      <rect id="table_42" height="10.7" width="5.8" x="399" y="90" class="rotated-booth"  onclick="toggleActive(this.id)" />
 
-      <rect id="table_41" height="10.7" width="5.8" x="399" y="117" class="rotated-booth" />
+      <rect id="table_41" height="10.7" width="5.8" x="399" y="117" class="rotated-booth"  onclick="toggleActive(this.id)" />
       
       
 
       
  
-      <rect id="table_8" height="10.7" width="5.8" x="177" y="119" class="rotated-booth" />
+      <rect id="table_8" height="10.7" width="5.8" x="177" y="119" class="rotated-booth"  onclick="toggleActive(this.id)" />
     </g>
     
   </g> <!-- /louis-booths -->
@@ -472,14 +473,14 @@ still hve id="norris2outline" norris1outline
   <g id="northwestern-a-booths" class="booths">
    <!--image x="-11" y="81.98372" width="125.99993" height="67.23418" id="svg_1" xlink:href="http://i.imgur.com/I9TubHD.png"/-->
   <!-- -->
-   <rect id="table_66" x="22.283" y="96.76533" width="8.17217" height="3.71462" />
-   <rect id="table_65" x="44.12497" y="96.76533" width="8.17217" height="3.71462" />
-   <rect id="table_64" x="67.60138" y="96.76533" width="8.17217" height="3.71462" />
+   <rect id="table_66" x="22.283" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" />
+   <rect id="table_65" x="44.12497" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" />
+   <rect id="table_64" x="67.60138" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" />
    <rect id="table_67" transform="matrix(0,0.14858483140013623,-0.14858483140013623,0,-26.349701351024308,55.183887911123094) "  x="351.29156" y="-330.76349" width="55.12025" height="25" />
    <rect id="table_68" transform="matrix(0,0.14858483140013623,-0.14858483140013623,0,-13.719988414788096,67.81360084735928) "  x="351.29156" y="-245.76349" width="55.12025" height="25" />
-   <rect id="table_69"x="22.283" y="132.87145" width="8.17217" height="3.71462" />
-   <rect id="table_70" x="44.71931" y="132.87145" width="8.17217" height="3.71462" />
-   <rect id="table_71" x="67.74996" y="132.87145" width="8.17217" height="3.71462" />
+   <rect id="table_69"x="22.283" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" />
+   <rect id="table_70" x="44.71931" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" />
+   <rect id="table_71" x="67.74996" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" />
   </g>
  </g>
 
@@ -545,12 +546,12 @@ still hve id="norris2outline" norris1outline
   <rect id="104_bigten"    x="172.4" y="24"  width="133.6" height="86.8" />
     <g id="bigten-booths" class="booths">
       <title>Big Ten Room</title>
-      <rect id="table_84" height="7.7" width="16.9" y="37.1" x="184.3" />
-      <rect id="table_83" height="7.7" width="16.9" y="37.1" x="229.5" />
-      <rect id="table_82" height="7.7" width="16.9" y="37.1" x="277.3" />
-      <rect id="table_80" height="7.7" width="16.9" y="75.6" x="218.2" />
+      <rect id="table_84" height="7.7" width="16.9" y="37.1" x="184.3"  onclick="toggleActive(this.id)" />
+      <rect id="table_83" height="7.7" width="16.9" y="37.1" x="229.5"  onclick="toggleActive(this.id)" />
+      <rect id="table_82" height="7.7" width="16.9" y="37.1" x="277.3"  onclick="toggleActive(this.id)" />
+      <rect id="table_80" height="7.7" width="16.9" y="75.6" x="218.2"  onclick="toggleActive(this.id)" />
       <!--rect id="table_81rot" transform="matrix(0.20821781082233312,-0.22672609951737063,0.22672609951737063,0.20821781082233312,227.16585241749192,180.1290334120971) " height="25" width="55.1" y="-88.2" x="369.3" stroke-width="6.1"/-->
-      <rect id="table_81" width="7.7" height="16.9" transform="rotate(45 337 -20)" y="70" x="369.3" class="rotated-booth"/>
+      <rect id="table_81" width="7.7" height="16.9" transform="rotate(45 337 -20)" y="70" x="369.3" class="rotated-booth"  onclick="toggleActive(this.id)" />
     </g> <!--/ bigten-booths -->
     
  </g> <!--/ floor1-rooms -->
