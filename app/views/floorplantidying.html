@@ -1,0 +1,551 @@
+<html>
+<style>
+
+.svg-container{
+    display:inline-block;
+    position:relative;
+    width:100%; /* assumes you want it to be full width of parent container */
+    padding-bottom:90%; /* another place had 100%; */
+    vertical-align:middle;
+    overflow:hidden;
+}
+.svg-content{
+    display:inline-block;
+    position:absolute;
+    top:3rem; /* other place had top: 0; */
+    left:0;
+}
+
+
+</style>
+
+
+
+<!-- http://www.petercollingridge.co.uk/sites/files/peter/room_plan_isometric.svg -->
+    <!--
+    <figure class="svg-container">
+
+<svg xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg"
+     version="1.1"
+     viewbox="0 0 300 180"
+     width="300"
+     height="180"
+     preserveAspectRation="xMinYMin meet"
+     class="svg-content">
+    <style>
+        .room{
+            fill:       #ccc;
+            stroke:     #999;
+            stroke-width:   2;
+        }
+        .room:hover{
+            fill:       #0f0;
+        }
+
+        .selectedRoom{
+            fill:       #eee;
+            stroke:     #c00;
+            stroke-width:   2;
+        }
+
+        .selectedBooth{
+            fill:       dodgerblue;
+            stroke:     #f0f;
+            stroke-width:   1.5;
+        }
+
+        .booth {
+            fill:       #ccc;
+            stroke:     #fff;
+            stroke-width: 1.5;
+        }
+
+        .row1 {fill: dodgerblue;}
+    </style>
+    
+  <g transform="translate(150, 90)">
+    <g transform="matrix(0.707 0.409 -0.707 0.409 0 -0.816)">
+      <g transform="translate(-150, -80)">
+        <rect id="louis" class="room" x="20" y="1" width="80" height="140" onclick="toggleActiveRoom(this.id)"/>
+                    <rect id="t1" class="booth row1" x="25" y="10" width="6.5" height="15" onclick="toggleActive(this.id)" />
+                    <rect id="t2" class="booth row1" x="25" y="30" width="6.5" height="15" onclick="toggleActive(this.id)" />
+                    <rect id="t3" class="booth row1" x="25" y="50" width="6.5" height="15" onclick="toggleActive(this.id)" />
+                    <rect id="t4" class="booth row1" x="25" y="70" width="6.5" height="15" onclick="toggleActive(this.id)" />
+                    <rect id="t5" class="booth row1" x="25" y="90" width="6.5" height="15" onclick="toggleActive(this.id)" />
+                    <rect id="t6" class="booth row1" x="25" y="110" width="6.5" height="15" onclick="toggleActive(this.id)" />
+        <rect id="lake" class="room" x="160" y="1" width="100" height="60" onclick="toggleActiveRoom(this.id)" />
+        <path id="wildcat" class="room" d="M20 159 l0 -20 l240 0 l0 -138 l20 0 l0 158z" onclick="toggleActiveRoom(this.id)"/>
+        <path id="bigten" class="room" d="M100 139 l0 -138 l60 0 l0 60 l100 0 l0 78z" onclick="toggleActiveRoom(this.id)"/>
+      </g>
+    </g>
+  </g>
+    
+    </svg>
+</figure>
+-->
+
+    <button onclick="toggleActiveRoom('louis')"> Louis </button>
+    <button onclick="toggleActiveRoom('lake')"> Lake </button>
+    <button onclick="toggleActiveRoom('wildcat')"> Wildcat </button>
+    <button onclick="toggleActiveRoom('bigten')"> Big 10 </button>
+
+    <br>
+    <label> <input type="checkbox" onclick="toggleActive('table_1')" /> 1 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_2')" /> 2 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_3')" /> 3 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_4')" /> 4 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_5')" /> 5 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_6')" /> 6 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_7')" /> 7 </label>
+    <br>
+    <label> <input type="checkbox" onclick="toggleActive('table_8')" /> 8 </label>
+    <br>
+    <label> <input type="checkbox" onclick="toggleActive('table_9')" /> 9 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_10')"/> 10 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_11')" /> 11 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_12')" /> 12 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_13')" /> 13 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_14')" /> 14 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_15')" /> 15 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_16')" /> 16 </label>
+    <br>
+    <label> <input type="checkbox" onclick="toggleActive('table_17')" /> 17 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_18')" /> 18 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_19')" /> 19 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_20')" /> 20 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_21')" /> 21 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_22')" /> 22 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_23')" /> 23 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_24')" /> 24 </label>
+    <br>
+    <label> <input type="checkbox" onclick="toggleActive('table_25')" /> 25 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_26')" /> 26 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_27')" /> 27 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_28')" /> 28 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_29')" /> 29 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_30')" /> 30 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_31')" /> 31 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_32')" /> 32 </label>
+    <br>
+    <label> <input type="checkbox" onclick="toggleActive('table_33')" /> 33 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_34')" /> 34 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_35')" /> 35 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_36')" /> 36 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_37')" /> 37 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_38')" /> 38 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_39')" /> 39 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_40')" /> 40 </label>
+    <br>
+    <label> <input type="checkbox" onclick="toggleActive('table_41')" /> 41 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_42')" /> 42 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_43')" /> 43 </label>
+    <br>
+    <label> <input type="checkbox" onclick="toggleActive('table_44')" /> 44 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_45')" /> 45 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_46')" /> 46 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_47')" /> 47 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_48')" /> 48 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_49')" /> 49 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_50')" /> 50 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_51')" /> 51 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_52')" /> 52 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_53')" /> 53 </label>
+    
+    <br> LAKE
+    <label> <input type="checkbox" onclick="toggleActive('table_54')" /> 54 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_55')" /> 55 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_56')" /> 56 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_57')" /> 57 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_58')" /> 58 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_59')" /> 59 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_60')" /> 60 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_61')" /> 61 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_62')" /> 62 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_63')" /> 63 </label>
+    <br>
+    NORTHWESTERN
+    <label> <input type="checkbox" onclick="toggleActive('table_64')" /> 64 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_65')" /> 65 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_66')" /> 66 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_67')" /> 67 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_68')" /> 68 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_69')" /> 69 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_70')" /> 70 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_71')" /> 71 </label>
+    <br>
+    WILDCAT
+    <label> <input type="checkbox" onclick="toggleActive('table_72')" /> 72 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_73')" /> 73 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_74')" /> 74 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_75')" /> 75 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_76')" /> 76 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_77')" /> 77 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_78')" /> 78 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_79')" /> 79 </label>
+    <br>
+    BIG TEN
+    <label> <input type="checkbox" onclick="toggleActive('table_80')" /> 80 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_81')" /> 81 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_82')" /> 82 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_83')" /> 83 </label>
+    <label> <input type="checkbox" onclick="toggleActive('table_84')" /> 84 </label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="svg-container"> <!-- viewBox="0 0 768 576" -->
+  <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
+
+  <style>
+  
+        .room {
+            fill:       none;
+            stroke:     #007fff;
+            stroke-width:   2;
+            stroke-linecap: null;
+            stroke-linejoin: null;
+            /*stroke-width: 2.2;*/
+            
+        }
+        /*Lake Room height="62.9" width="117.5" y="29.9" x="15.7" stroke-width="2.2" stroke="#ff7f00" */
+        .lakeroom { stroke: #ff7f00; stroke-width: 2.2; }
+         /*stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#ff7f00" fill="none" id="svg_65" height="116.4" width="235" y="39.6" x="173.5" */
+        .louisroom { stroke: #ff7f00; stroke-width: 2.7; }
+  .norris-outline {
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke-width: 2;
+          stroke: #3f007f;
+          fill: none;
+        }
+        .vertical-booth {stroke: hotpink;}
+        
+        .northwestern-a-booths
+         {
+          fill: none;
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke: #007fff;
+          stroke-width: 2.7;
+         }
+        
+        .louis-booths {
+          fill: none;
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke-width: 2;
+        }
+        
+         
+  
+        
+        .louis44-53 { stroke: #00ffff; } /* back wall row | y = 40.2 */
+        .louis33-40 { stroke: #007fff; } /* highest row | y = 67 */
+        .louis25-32 { stroke: #ff0098; } /* row_mid_high | y = 78.8 */
+        .louis17-24 { stroke: #00ff00; } /* row_mid_low | y = 102.6 */
+        .louis9-16   { stroke: #5f00bf; } /* row lowest | y = 114.4 */
+        .louis43 { stroke: #ff0000; }
+        .louis42 { stroke: #0000ff; }
+        .louis41 { stroke: #00ff00; }
+        .louis8 { stroke: #ff00ff; }
+        .louis1-7   { stroke: #7f007f; } /* front wall row | y = 142 */
+        
+        #floor2-rooms { stroke: #007fff; /*blue */}
+        #201_1851, #204_scholars, #206_arch, #208_armadillo, #207_rock
+        #205ab_louis, #205a_louis, #205b_louis,
+        #202ab_northwestern, #203_lake, {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
+        #202a_northwestern, #202b_northwestern { }
+        
+        #louis-interior, #northwestern-a-interior {}
+        .bathroom {fill: #7fff00;}
+        #lake-interior {
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke: #007fff;
+          fill: none;
+          stroke-width: 1.7;
+        }
+        
+        #northwestern-a-outline { 
+          stroke: #ff7f00; stroke-width: 2.7; 
+          /*fill="none" stroke="#ff7f00" stroke-width="2.7"*/
+          }
+        
+  </style>
+  <!--
+  <g display="inline">
+  <title>img</title>
+  <image width="500" height="452" id="svg_1" xlink:href="http://www.norris.northwestern.edu/wp-content/uploads/2011/11/floorplan_web_second.png"/>
+  <rect id="svg_6" height="14" width="0" y="214.3" x="84" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#3f007f" fill="none"/>
+ </g>
+  -->
+  
+ <g id="floor2-outline" display="inline" class="norris-outline">
+  <path id="norris2outline" d="m484.097748 297.666656l-21.714752 0.02533l-0.381989 40.359009l-135.490997 0.050018l0.078003 60.768982l-172.58902 0.101013l-0.25499 27.10199l-43.010002 0.036011l-43.010803 0.036987l-0.020897 -153.26001l14.645897 0.072021l-0.041801 -44.854004l-66.708299 0.145996l0.1664 -198.416702l392.667509 -0.166599l0.289001 63.333302l74.945984 0l0.332855 204.7"/>
+ </g>
+  <g id="floor2-rooms" class="room" display="inline">
+  <rect id="202ab_northwestern" x="15.8" y="93.2" height="135" width="66.6"  />
+  <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2"  />
+  
+  <g id="lake-interior" class="room lakeroom">
+    <title>Lake Room</title>
+    
+    <!--rect id="table_54rot" height="25" width="55.1" y="1976.9" x="-923.5" stroke-width="7.7" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,510.98850834721515,235.56604734420384) " stroke-width="7.7"/-->
+    <rect id="table_54" width="4.9" height="10.7" y="47" x="20"  class="vertical-booth"/>
+    
+    <rect id="table_55" height="4.9" width="10.7" y="35.1" x="106.3"/>
+    <rect id="table_56" height="4.9" width="10.7" y="34.8" x="84.6" />
+    <rect id="table_57" height="4.9" width="10.7" y="34.8" x="60.5" />
+    <rect id="table_58" height="4.9" width="10.7" y="34.8" x="34.2" />
+    
+    <!--rect id="table_59rot" height="25" width="55.1" y="1940.9" x="-1441.2" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,403.4439139031087,329.9646760208869) "  stroke-width="7.7" /-->
+    <rect id="table_59" width="4.9" height="10.7" y="64" x="20" class="vertical-booth"/>
+    <!--rect id="table_60rot"height="25" width="55.1" y="2025.9" x="-1439.5" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,420.00422557413077,346.6811025842007) " stroke-width="7.7" /-->
+    <rect id="table_60" width="4.9" height="10.7" y="54" x="121" class="vertical-booth"/>
+    
+    <rect id="table_61" height="4.9" width="10.7" y="83" x="39" />
+    <rect id="table_62" height="4.9" width="10.7" y="83" x="65.3" />
+    <rect id="table_63" height="4.9" width="10.7" y="83" x="91.6" />
+     
+    
+    
+   
+  </g>
+  
+  
+  
+  <rect id="205ab_louis" class="room louisroom" height="132.8" width="235.4" y="30" x="173.2" />
+  <title>Louis Room</title>
+  <g id="louis-interior" class="louis-booths">
+  
+  <g id="front_wall" class="louis-booths louis1-7">
+     <rect id="table_7"  x="194.1" y="142" width="10.7" height="5.8"/>
+     <rect id="table_6"  x="213.6" y="142" width="10.7" height="5.8"/>
+     <rect id="table_5"  x="231"   y="142" width="10.7" height="5.8"/>
+     <rect id="table_4"  x="292.2" y="142" width="10.7" height="5.8"/>
+     <rect id="table_3"  x="311.4" y="142" width="10.7" height="5.8"/>
+     <rect id="table_2"  x="330.9" y="142" width="10.7" height="5.8"/>
+     <rect id="table_1"  x="351.7" y="142" width="10.7" height="5.8"/>
+    </g>
+    <g id="row_lowest" class="louis-booths louis9-16">
+     <rect id="table_9"  x="210.5" y="114.4" width="10.7" height="5.8" />
+     <rect id="table_10" x="226.8" y="114.4" width="10.7" height="5.8" />
+     <rect id="table_11" x="248.9" y="114.4" width="10.7" height="5.8" />
+     <rect id="table_12" x="270"   y="114.4" width="10.7" height="5.8" />
+     <rect id="table_13" x="290.8" y="114.4" width="10.7" height="5.8" />
+     <rect id="table_14" x="311.6" y="114.4" width="10.7" height="5.8" />
+     <rect id="table_15" x="332.4" y="114.4" width="10.7" height="5.8" />
+     <rect id="table_16" x="350.2" y="114.4" width="10.7" height="5.8" />
+    </g>
+    <g id="row_mid_low" class="louis-booths louis17-24">
+     <rect id="table_24" x="210.5" y="102.6" width="10.7" height="5.8" />
+     <rect id="table_23" x="226.8" y="102.6" width="10.7" height="5.8" />
+     <rect id="table_22" x="248.9" y="102.6" width="10.7" height="5.8" />
+     <rect id="table_21" x="270"   y="102.6" width="10.7" height="5.8" />
+     <rect id="table_20" x="290.8" y="102.6" width="10.7" height="5.8" />
+     <rect id="table_19" x="311.6" y="102.6" width="10.7" height="5.8" />
+     <rect id="table_18" x="332.4" y="102.6" width="10.7" height="5.8" />
+     <rect id="table_17" x="350.2" y="102.6" width="10.7" height="5.8" />
+    </g>
+    <g id="row_mid_high" class="louis-booths louis25-32">
+     <rect  id="table_25" x="210.5" y="78.8" width="10.7" height="5.8" />
+     <rect  id="table_26" x="226.8" y="78.8" width="10.7" height="5.8" />
+     <rect  id="table_27" x="245.8" y="78.8" width="10.7" height="5.8" />
+     <rect  id="table_28" x="266.7" y="78.8" width="10.7" height="5.8" />
+     <rect  id="table_29" x="287.6" y="78.8" width="10.7" height="5.8" />
+     <rect  id="table_30" x="308.3" y="78.8" width="10.7" height="5.8" />
+     <rect  id="table_31" x="329.3" y="78.8" width="10.7" height="5.8" />
+     <rect  id="table_32" x="350.2" y="78.8" width="10.7" height="5.8" />
+    </g>
+    
+    
+    <g id="row_highest" class="louis-booths louis33-40">
+    <rect id="table_40" x="210.5" y="67" width="10.7" height="5.8" />
+     <rect id="table_39" x="226.8" y="67" width="10.7" height="5.8" />
+     <rect id="table_38" x="245.8" y="67" width="10.7" height="5.8" />
+     <rect id="table_37" x="266.7" y="67" width="10.7" height="5.8" />
+     <rect id="table_36" x="287.6" y="67" width="10.7" height="5.8" />
+     <rect id="table_35" x="308.3" y="67" width="10.7" height="5.8" />
+     <rect id="table_34" x="329.1" y="67" width="10.7" height="5.8" />
+     <rect id="table_33" x="350"   y="67" width="10.7" height="5.8" />
+    </g>
+    
+    <g id="back_wall" class="louis-booths louis44-53">
+     <rect id="table_53" x="197"   y="40.2" width="10.7" height="5.8" />
+     <rect id="table_52" x="217.9" y="40.2" width="10.7" height="5.8" />
+     <rect id="table_51" x="237.3" y="40.2" width="10.7" height="5.8" />
+     <rect id="table_50" x="258.2" y="40.2" width="10.7" height="5.8" />
+     <rect id="table_49" x="279"   y="40.4" width="10.7" height="5.8" />
+     <rect id="table_48" x="299.8" y="40.4" width="10.7" height="5.8" />
+     <rect id="table_47" x="317.9" y="40.4" width="10.7" height="5.8" />
+     <rect id="table_46" x="335.5" y="40.4" width="10.7" height="5.8" />
+     <rect id="table_45" x="354.6" y="40.4" width="10.7" height="5.8" />
+     <rect id="table_44" x="375.4" y="40.2" width="10.7" height="5.8" />
+    
+      <rect id="table_43" class="louis-booths louis43" x="810.1" y="-180.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,466.54258277105976,383.5777300915772) " />
+      
+      <rect id="table_42" class="louis-booths louis42" x="810.1" y="-105.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,439.7510461075514,410.3692667550855) " />
+
+     <rect id="table_41" class="louis-booths louis41" x="810.6" y="-35.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,413.1508775630682,437.35217153761886) " />
+ 
+     <rect id="table_8" class="louis-booths louis8" x="228.1" y="-28.1" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,187.33649711349835,217.27883465880078) " />
+    </g>
+    
+  </g> <!-- /louis-interior -->
+  <g display="inline">
+  <rect id="northwestern-room_outline" id="northwestern-a-outline" x="15.4481" y="92.75354" width="67.16035" height="47.54715" />
+  <title>Northwestern Room</title>
+  <g id="northwestern-interior" class="northwestern-a-booths">
+   <!--image x="-11" y="81.98372" width="125.99993" height="67.23418" id="svg_1" xlink:href="http://i.imgur.com/I9TubHD.png"/-->
+  <!-- -->
+   <rect id="table_66" x="22.283" y="96.76533" width="8.17217" height="3.71462" />
+   <rect id="table_65" x="44.12497" y="96.76533" width="8.17217" height="3.71462" />
+   <rect id="table_64" x="67.60138" y="96.76533" width="8.17217" height="3.71462" />
+   <rect id="table_67" transform="matrix(0,0.14858483140013623,-0.14858483140013623,0,-26.349701351024308,55.183887911123094) "  x="351.29156" y="-330.76349" width="55.12025" height="25" />
+   <rect id="table_68" transform="matrix(0,0.14858483140013623,-0.14858483140013623,0,-13.719988414788096,67.81360084735928) "  x="351.29156" y="-245.76349" width="55.12025" height="25" />
+   <rect id="table_69"x="22.283" y="132.87145" width="8.17217" height="3.71462" />
+   <rect id="table_70" x="44.71931" y="132.87145" width="8.17217" height="3.71462" />
+   <rect id="table_71" x="67.74996" y="132.87145" width="8.17217" height="3.71462" />
+  </g>
+ </g>
+
+  <path id="female-br-2" class="bathroom female" d="m105.400002 259l56.799995 0l0 31.200012l-37.866997 0l-9.071999 -14.587006l-9.861 0l0 -16.613007l0 0l0 0z" />
+  <rect id="male-br-2" class="bathroom male" height="31.2" width="50" y="258.8" x="234.8" />
+  
+ </g>
+  
+  
+  
+  
+  </svg>
+</figure>
+
+
+<figure class="svg-container">
+<svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
+  <style>
+  
+        .room {
+            fill:       none;
+            /*stroke:     #007fff;*/
+            stroke-width:   2;
+            stroke-linecap: null;
+            stroke-linejoin: null;
+            stroke-width: 2.2;
+        }
+        .booths{
+          fill: none;
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke-width: 1.7;
+          stroke: #007fff; /* blue  #ff7f00 = orange */
+          stroke: hotpink;
+        }
+        
+        .norris-outline {
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke-width: 2;
+          stroke: #3f007f;
+          fill: none;
+        }
+        .selectedRoom{
+            fill:       #eee;
+            stroke:     #c00;
+            stroke-width:   2;
+        }
+
+        .selectedBooth{
+            fill:       dodgerblue;
+            stroke:     #f0f;
+            stroke-width:   1.5;
+        }
+        #floor1-rooms { stroke: #007fff; /*blue */}
+        #102_evans, #103_chicago, #104_bigten, #101ab_wildcat {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
+        #101a_wildcat, #101b_wildcat { }
+        
+        #bigten-interior, #wildcat-a-interior {}
+  </style>
+   <!-- 
+<g display="inline">
+  <title>Original Image</title>
+  <image xlink:href="http://www.norris.northwestern.edu/wp-content/uploads/2010/03/floorplan_web__first_2013.jpg" id="svg_1" height="500" width="600" y="0" x="0"/>
+ </g>
+ -->
+ 
+ <g id="floor1-outline" display="inline" class="norris-outline">
+  <path id="norris1outline" d="m472.40997 436.06396l-142.42197 -0.02698l-172.589 0.11301l-0.255 35.31396l-40.50999 -0.45895l-44.0108 -0.45901l-12.0209 0.07202l0.1459 -179.41901l-0.0418 -66.17201l-41.7083 0.164l0.1664 -201.93797l368.64652 -0.1863l0.31 86.84131l84.94595 -0.5l-0.66696 327.9" />
+ </g>
+ 
+  <g id="floor1-rooms" class="room" display="inline">
+  
+  <rect id="101ab_wildcat" x="18.9" y="86.8" width="88.3"  height="138.8"   />
+  <title>Wildcat Room</title>
+  <!--image xlink:href="http://i.imgur.com/y1P9fKi.png" id="svg_1" height="91.24643" width="171" y="73.53768" x="-21.00001"/-->
+  <g id="wildcat-partitions">
+    <!-- stroke-width="2.7" x="19.4" y="87.1" width="87.6" height="72.6" -->
+    <rect id="101a_wildcat"  x="18.9" y="86.8"  width="88.3"  height="69.4" />
+      <g id="wildcat-a-interior" class="booths">
+        <rect id="table_72" x="77.3" y="146.6" width="12.5" height="5.7" onclick="toggleActive(this.id)" />
+        <rect id="table_73" x="53"   y="146.6" width="12.5" height="5.7" onclick="toggleActive(this.id)" />
+        <rect id="table_74" x="27.6" y="146.6" width="12.5" height="5.7" onclick="toggleActive(this.id)" />
+        <rect id="table_75" transform="matrix(0,0.22684037191856943,-0.22684037191856943,0,509.57963755141134,337.85163939152255) "  x="-929.8" y="2108.4" width="55.1" height="25" stroke-width="7.7" onclick="toggleActive(this.id)" />
+        <rect id="table_76" transform="matrix(0,0.22684037191856943,-0.22684037191856943,0,488.2566391297564,316.52864096986764) " x="-929.8" y="2014.4" width="55.1" height="25" onclick="toggleActive(this.id)" />
+        <rect id="table_77" x="28" y="91.7" width="12.5" height="5.7" onclick="toggleActive(this.id)" />
+        <rect id="table_78" x="54.3" y="91.7" width="12.5" height="5.7" onclick="toggleActive(this.id)" />
+        <rect id="table_79" x="82" y="91.7" width="12.5" height="5.7" onclick="toggleActive(this.id)" />
+      </g> <!--/ wildcat-a-interior -->
+    
+    
+    <rect id="101ab_wildcat" x="18.9" y="156.2" width="88.3"  height="69.4" />
+  </g>
+  <rect id="102_evans"     x="19"    y="24"  width="72"    height="62.7" />
+  <rect id="103_chicago"   x="91.7"  y="24"  width="80.7"  height="46.3" />
+  
+  <rect id="104_bigten"    x="172.4" y="24"  width="133.6" height="86.8" />
+    <g id="bigten-interior" class="booths">
+      <title>Big Ten Room</title>
+      <rect id="table_84" height="7.7" width="16.9" y="37.1" x="184.3" />
+      <rect id="table_83" height="7.7" width="16.9" y="37.1" x="229.5" />
+      <rect id="table_82" height="7.7" width="16.9" y="37.1" x="277.3" />
+      <rect id="table_80" height="7.7" width="16.9" y="75.6" x="218.2" />
+      <rect id="table_81" transform="matrix(0.20821781082233312,-0.22672609951737063,0.22672609951737063,0.20821781082233312,227.16585241749192,180.1290334120971) " height="25" width="55.1" y="-88.2" x="369.3" stroke-width="6.1"/>
+    </g> <!--/ bigten-interior -->
+    
+ </g> <!--/ floor1-rooms -->
+    
+  </svg>
+</figure>
+
+
+<script>
+function toggleActiveRoom(roomid) {
+    var roomclass = document.getElementById(roomid).getAttribute("class");
+    if (roomclass != "selectedRoom")
+        document.getElementById(roomid).setAttribute("class", "selectedRoom");
+    else
+        document.getElementById(roomid).setAttribute("class", "");
+}
+
+function toggleActive(tid) {
+    var boothclass = document.getElementById(tid).getAttribute("class");
+    if (boothclass != "selectedBooth")
+        document.getElementById(tid).setAttribute("class", "selectedBooth");
+    else
+        document.getElementById(tid).setAttribute("class", "");
+}
+
+
+</script>
+
+</html>
