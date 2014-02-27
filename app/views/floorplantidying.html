@@ -208,16 +208,54 @@
 
   <style>
 
+  .norris-outline {
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke-width: 2;
+          fill: none;
+          stroke: #3f007f; /* dark purpley indigo */
+        }
+
+      .room {
+            fill:       none;
+            stroke:     #007fff;
+            stroke-width:   2;
+            stroke-linecap: null;
+            stroke-linejoin: null;
+            /*stroke-width: 2.2;*/
+            
+        }
+
+        .room-outline {
+            stroke: #ff7f00;
+            stroke-width: 2.7; 
+            /*.lakeroom was 2.2 */
+          }
+
+         /*Lake Room height="62.9" width="117.5" y="29.9" x="15.7" stroke-width="2.2" stroke="#ff7f00" */
+        /*.lakeroom { stroke: #ff7f00; stroke-width: 2.2; } */
+         /*stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#ff7f00" fill="none" id="svg_65" height="116.4" width="235" y="39.6" x="173.5" */
+        /*.louisroom { stroke: #ff7f00; stroke-width: 2.7; }*/
+        /*
+        #northwestern-a-outline { 
+          stroke: #ff7f00; stroke-width: 2.7; 
+          /*fill="none" stroke="#ff7f00" stroke-width="2.7"*
+          }*/
+
+
+
+
     .booth {
       fill: none;
       stroke-linecap: null;
       stroke-linejoin: null;
-      stroke: #007fff;
-      /*stroke-width:   2;
-      stroke:     #007fff;*/
+      stroke: #007fff;    /* default table/booth color = nice blue outline */
+      /*stroke-width:   2; */
+      /* .louis-booths had 2, .northwestern-a-booths had 2.7, #lake-interior had 1.7 */
+      stroke-width: 2;
 
     }
-
+    /*
      #lake-interior {
           stroke-linecap: null;
           stroke-linejoin: null;
@@ -225,8 +263,8 @@
           fill: none;
           stroke-width: 1.7;
         }
-        #louis-interior, #northwestern-a-interior {}
-
+    #louis-interior, #northwestern-a-interior {}
+  */
     /*
         .northwestern-a-booths
          {
@@ -241,39 +279,10 @@
 
     .vertical-booth {stroke: hotpink;}
   
-        .room {
-            fill:       none;
-            stroke:     #007fff;
-            stroke-width:   2;
-            stroke-linecap: null;
-            stroke-linejoin: null;
-            /*stroke-width: 2.2;*/
-            
-        }
+  
+          
 
-         /*Lake Room height="62.9" width="117.5" y="29.9" x="15.7" stroke-width="2.2" stroke="#ff7f00" */
-        /*.lakeroom { stroke: #ff7f00; stroke-width: 2.2; } */
-         /*stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#ff7f00" fill="none" id="svg_65" height="116.4" width="235" y="39.6" x="173.5" */
-        /*.louisroom { stroke: #ff7f00; stroke-width: 2.7; }*/
-        /*
-        #northwestern-a-outline { 
-          stroke: #ff7f00; stroke-width: 2.7; 
-          /*fill="none" stroke="#ff7f00" stroke-width="2.7"*
-          }*/
-
-          .room-outline {
-            stroke: #ff7f00;
-            stroke-width: 2.7; 
-            /*.lakeroom was 2.2 */
-          }
-
-        .norris-outline {
-          stroke-linecap: null;
-          stroke-linejoin: null;
-          stroke-width: 2;
-          fill: none;
-          stroke: #3f007f; /* dark purpley indigo */
-        }
+        
         
         
         
@@ -321,6 +330,11 @@
  </g>
   <g id="floor2-rooms" class="room" display="inline">
   <rect id="202ab_northwestern" x="15.8" y="93.2" height="135" width="66.6"  />
+
+
+  <!-- -------------------- LAKE ROOM -------------------- -->
+
+
   <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2"  />
   
   <g id="lake-interior" class="room room-outline">
@@ -347,14 +361,14 @@
     
    
   </g>
-  
+  <!-- -------------------- LOUIS ROOM -------------------- -->
   
   
   <rect id="205ab_louis" class="room room-outline" height="132.8" width="235.4" y="30" x="173.2" />
   <title>Louis Room</title>
   <g id="louis-interior" class="louis-booths">
   
-  <g id="front_wall" class="louis-booths louis1-7">
+  <g id="front_wall" class="booth louis1-7">
      <rect id="table_7"  x="194.1" y="142" width="10.7" height="5.8"/>
      <rect id="table_6"  x="213.6" y="142" width="10.7" height="5.8"/>
      <rect id="table_5"  x="231"   y="142" width="10.7" height="5.8"/>
@@ -363,7 +377,7 @@
      <rect id="table_2"  x="330.9" y="142" width="10.7" height="5.8"/>
      <rect id="table_1"  x="351.7" y="142" width="10.7" height="5.8"/>
     </g>
-    <g id="row_lowest" class="louis-booths louis9-16">
+    <g id="row_lowest" class="booth louis9-16">
      <rect id="table_9"  x="210.5" y="114.4" width="10.7" height="5.8" />
      <rect id="table_10" x="226.8" y="114.4" width="10.7" height="5.8" />
      <rect id="table_11" x="248.9" y="114.4" width="10.7" height="5.8" />
@@ -373,7 +387,7 @@
      <rect id="table_15" x="332.4" y="114.4" width="10.7" height="5.8" />
      <rect id="table_16" x="350.2" y="114.4" width="10.7" height="5.8" />
     </g>
-    <g id="row_mid_low" class="louis-booths louis17-24">
+    <g id="row_mid_low" class="booth louis17-24">
      <rect id="table_24" x="210.5" y="102.6" width="10.7" height="5.8" />
      <rect id="table_23" x="226.8" y="102.6" width="10.7" height="5.8" />
      <rect id="table_22" x="248.9" y="102.6" width="10.7" height="5.8" />
@@ -383,7 +397,7 @@
      <rect id="table_18" x="332.4" y="102.6" width="10.7" height="5.8" />
      <rect id="table_17" x="350.2" y="102.6" width="10.7" height="5.8" />
     </g>
-    <g id="row_mid_high" class="louis-booths louis25-32">
+    <g id="row_mid_high" class="booth louis25-32">
      <rect  id="table_25" x="210.5" y="78.8" width="10.7" height="5.8" />
      <rect  id="table_26" x="226.8" y="78.8" width="10.7" height="5.8" />
      <rect  id="table_27" x="245.8" y="78.8" width="10.7" height="5.8" />
@@ -393,9 +407,7 @@
      <rect  id="table_31" x="329.3" y="78.8" width="10.7" height="5.8" />
      <rect  id="table_32" x="350.2" y="78.8" width="10.7" height="5.8" />
     </g>
-    
-    
-    <g id="row_highest" class="louis-booths louis33-40">
+    <g id="row_highest" class="booth louis33-40">
     <rect id="table_40" x="210.5" y="67" width="10.7" height="5.8" />
      <rect id="table_39" x="226.8" y="67" width="10.7" height="5.8" />
      <rect id="table_38" x="245.8" y="67" width="10.7" height="5.8" />
@@ -405,8 +417,7 @@
      <rect id="table_34" x="329.1" y="67" width="10.7" height="5.8" />
      <rect id="table_33" x="350"   y="67" width="10.7" height="5.8" />
     </g>
-    
-    <g id="back_wall" class="louis-booths louis44-53">
+    <g id="back_wall" class="booth louis44-53">
      <rect id="table_53" x="197"   y="40.2" width="10.7" height="5.8" />
      <rect id="table_52" x="217.9" y="40.2" width="10.7" height="5.8" />
      <rect id="table_51" x="237.3" y="40.2" width="10.7" height="5.8" />
@@ -418,20 +429,20 @@
      <rect id="table_45" x="354.6" y="40.4" width="10.7" height="5.8" />
      <rect id="table_44" x="375.4" y="40.2" width="10.7" height="5.8" />
     
-      <rect id="table_43" class="louis-booths louis43" x="810.1" y="-180.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,466.54258277105976,383.5777300915772) " />
+      <rect id="table_43" class="booth louis43" x="810.1" y="-180.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,466.54258277105976,383.5777300915772) " />
       
-      <rect id="table_42" class="louis-booths louis42" x="810.1" y="-105.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,439.7510461075514,410.3692667550855) " />
+      <rect id="table_42" class="boothlouis42" x="810.1" y="-105.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,439.7510461075514,410.3692667550855) " />
 
-     <rect id="table_41" class="louis-booths louis41" x="810.6" y="-35.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,413.1508775630682,437.35217153761886) " />
+     <rect id="table_41" class="booth louis41" x="810.6" y="-35.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,413.1508775630682,437.35217153761886) " />
  
-     <rect id="table_8" class="louis-booths louis8" x="228.1" y="-28.1" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,187.33649711349835,217.27883465880078) " />
+     <rect id="table_8" class="booth louis8" x="228.1" y="-28.1" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,187.33649711349835,217.27883465880078) " />
     </g>
     
   </g> <!-- /louis-interior -->
   <g display="inline">
   <rect id="northwestern-room_outline" class="room-outline" x="15.4481" y="92.75354" width="67.16035" height="47.54715" />
   <title>Northwestern Room</title>
-  <g id="northwestern-interior" class="northwestern-a-booths">
+  <g id="northwestern-interior" class="booth">
    <!--image x="-11" y="81.98372" width="125.99993" height="67.23418" id="svg_1" xlink:href="http://i.imgur.com/I9TubHD.png"/-->
   <!-- -->
    <rect id="table_66" x="22.283" y="96.76533" width="8.17217" height="3.71462" />
