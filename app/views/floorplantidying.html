@@ -63,7 +63,7 @@ still hve id="norris2outline" norris1outline
         
 
         .room {
-            fill:       none; /* blue */
+            fill:  white; /*     none; /* blue */
             stroke:     #007fff;
             stroke-width:   2;
             stroke-linecap: null;
@@ -344,38 +344,38 @@ still hve id="norris2outline" norris1outline
  <g display="inline" class="norris-outline">
   <path id="norris2outline" d="m484.097748 297.666656l-21.714752 0.02533l-0.381989 40.359009l-135.490997 0.050018l0.078003 60.768982l-172.58902 0.101013l-0.25499 27.10199l-43.010002 0.036011l-43.010803 0.036987l-0.020897 -153.26001l14.645897 0.072021l-0.041801 -44.854004l-66.708299 0.145996l0.1664 -198.416702l392.667509 -0.166599l0.289001 63.333302l74.945984 0l0.332855 204.7"/>
  </g>
-  <g id="floor2-rooms" class="room" display="inline">
-  <rect id="202ab_northwestern" x="15.8" y="93.2" height="135" width="66.6"  />
+  <g id="floor2-rooms" class="room" display="inline" > <!-- can't put function here sad -->
+  <rect id="202ab_northwestern" x="15.8" y="93.2" height="135" width="66.6"  onclick="toggleActiveRoom(this.id)" />
 
 
   <!-- ------------------------- LAKE ROOM ------------------------- -->
 
 
-  <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2" class="room room-outline" />
+  <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2" class="room room-outline" onclick="toggleActiveRoom(this.id)" />
   
   <g id="lake-booths" class="booths">
     <title>Lake Room</title>
     
     <!--rect id="table_54rot" height="25" width="55.1" y="1976.9" x="-923.5" stroke-width="7.7" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,510.98850834721515,235.56604734420384) " stroke-width="7.7"/-->
     <rect id="table_54" width="4.9" height="10.7" y="47" x="20"  class="rotated-booth"/>
-    <rect id="table_55" height="4.9" width="10.7" y="35.1" x="106.3"/>
-    <rect id="table_56" height="4.9" width="10.7" y="34.8" x="84.6" />
-    <rect id="table_57" height="4.9" width="10.7" y="34.8" x="60.5" />
-    <rect id="table_58" height="4.9" width="10.7" y="34.8" x="34.2" />
+    <rect id="table_55" height="4.9" width="10.7" y="35.1" x="106.3"  onclick="toggleActive(this.id)" />
+    <rect id="table_56" height="4.9" width="10.7" y="34.8" x="84.6"  onclick="toggleActive(this.id)" />
+    <rect id="table_57" height="4.9" width="10.7" y="34.8" x="60.5"  onclick="toggleActive(this.id)" />
+    <rect id="table_58" height="4.9" width="10.7" y="34.8" x="34.2"  onclick="toggleActive(this.id)" />
     <!--rect id="table_59rot" height="25" width="55.1" y="1940.9" x="-1441.2" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,403.4439139031087,329.9646760208869) "  stroke-width="7.7" /-->
-    <rect id="table_59" width="4.9" height="10.7" y="64" x="20" class="rotated-booth"/>
+    <rect id="table_59" width="4.9" height="10.7" y="64" x="20" class="rotated-booth" onclick="toggleActive(this.id)" />
     <!--rect id="table_60rot"height="25" width="55.1" y="2025.9" x="-1439.5" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,420.00422557413077,346.6811025842007) " stroke-width="7.7" /-->
-    <rect id="table_60" width="4.9" height="10.7" y="54" x="121" class="rotated-booth"/>
-    <rect id="table_61" height="4.9" width="10.7" y="83" x="39" />
-    <rect id="table_62" height="4.9" width="10.7" y="83" x="65.3" />
-    <rect id="table_63" height="4.9" width="10.7" y="83" x="91.6" />
+    <rect id="table_60" width="4.9" height="10.7" y="54" x="121" class="rotated-booth"  onclick="toggleActive(this.id)" />
+    <rect id="table_61" height="4.9" width="10.7" y="83" x="39"  onclick="toggleActive(this.id)" />
+    <rect id="table_62" height="4.9" width="10.7" y="83" x="65.3"  onclick="toggleActive(this.id)" />
+    <rect id="table_63" height="4.9" width="10.7" y="83" x="91.6"  onclick="toggleActive(this.id)" />
   </g>
 
 
   <!-- ------------------------- LOUIS ROOM ------------------------- -->
   
   
-  <rect id="205ab_louis" class="room room-outline" height="132.8" width="235.4" y="30" x="173.2" />
+  <rect id="205ab_louis" class="room room-outline" height="132.8" width="235.4" y="30" x="173.2"  onclick="toggleActiveRoom(this.id)" />
   <title>Louis Room</title>
   <g id="louis-booths" class="booths">
   
@@ -468,7 +468,7 @@ still hve id="norris2outline" norris1outline
 
 
   <g display="inline">
-  <rect id="northwestern-room_outline" class="room-outline" x="15.4481" y="92.75354" width="67.16035" height="47.54715" />
+  <rect id="northwestern-room_outline" class="room-outline" x="15.4481" y="92.75354" width="67.16035" height="47.54715"  onclick="toggleActiveRoom(this.id)" />
   <title>Northwestern Room</title>
   <g id="northwestern-a-booths" class="booths">
    <!--image x="-11" y="81.98372" width="125.99993" height="67.23418" id="svg_1" xlink:href="http://i.imgur.com/I9TubHD.png"/-->
@@ -520,12 +520,13 @@ still hve id="norris2outline" norris1outline
  
   <g id="floor1-rooms" class="room" display="inline">
   
-  <rect id="101ab_wildcat" x="18.9" y="86.8" width="88.3"  height="138.8"   />
+  <rect id="101b_wildcat" x="18.9" y="156.2" width="88.3"  height="69.4"  onclick="toggleActiveRoom(this.id)" />
+  <rect id="101ab_wildcat" x="18.9" y="86.8" width="88.3"  height="138.8"   onclick="toggleActiveRoom(this.id)"  />
   <title>Wildcat Room</title>
   <!--image xlink:href="http://i.imgur.com/y1P9fKi.png" id="svg_1" height="91.24643" width="171" y="73.53768" x="-21.00001"/-->
   <g id="wildcat-partitions">
     <!-- stroke-width="2.7" x="19.4" y="87.1" width="87.6" height="72.6" -->
-    <rect id="101a_wildcat"  x="18.9" y="86.8"  width="88.3"  height="69.4" />
+    <rect id="101a_wildcat"  x="18.9" y="86.8"  width="88.3"  height="69.4" onclick="toggleActiveRoom(this.id)"/>
       <g id="wildcat-a-booths" class="booths">
         <rect id="table_72" x="77.3" y="146.6" width="12.5" height="5.7" onclick="toggleActive(this.id)" />
         <rect id="table_73" x="53"   y="146.6" width="12.5" height="5.7" onclick="toggleActive(this.id)" />
@@ -538,12 +539,12 @@ still hve id="norris2outline" norris1outline
       </g> <!--/ wildcat-a-booths -->
     
     
-    <rect id="101ab_wildcat" x="18.9" y="156.2" width="88.3"  height="69.4" />
+    
   </g>
-  <rect id="102_evans"     x="19"    y="24"  width="72"    height="62.7" />
-  <rect id="103_chicago"   x="91.7"  y="24"  width="80.7"  height="46.3" />
+  <rect id="102_evans"     x="19"    y="24"  width="72"    height="62.7"  onclick="toggleActiveRoom(this.id)" />
+  <rect id="103_chicago"   x="91.7"  y="24"  width="80.7"  height="46.3"  onclick="toggleActiveRoom(this.id)" />
   
-  <rect id="104_bigten"    x="172.4" y="24"  width="133.6" height="86.8" />
+  <rect id="104_bigten"    x="172.4" y="24"  width="133.6" height="86.8"  onclick="toggleActiveRoom(this.id)" />
     <g id="bigten-booths" class="booths">
       <title>Big Ten Room</title>
       <rect id="table_84" height="7.7" width="16.9" y="37.1" x="184.3"  onclick="toggleActive(this.id)" />
