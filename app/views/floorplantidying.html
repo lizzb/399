@@ -207,6 +207,39 @@
   <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
 
   <style>
+
+    .booth {
+      fill: none;
+      stroke-linecap: null;
+      stroke-linejoin: null;
+      stroke: #007fff;
+      /*stroke-width:   2;
+      stroke:     #007fff;*/
+
+    }
+
+     #lake-interior {
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke: #007fff;
+          fill: none;
+          stroke-width: 1.7;
+        }
+        #louis-interior, #northwestern-a-interior {}
+
+    /*
+        .northwestern-a-booths
+         {
+          stroke: #007fff;
+          stroke-width: 2.7;
+         }*/
+        /*
+        .louis-booths {
+          stroke-width: 2; /* louis-booths *
+          stroke-width: 2.7; /* northwestern-a-booths *
+        }*/
+
+    .vertical-booth {stroke: hotpink;}
   
         .room {
             fill:       none;
@@ -217,34 +250,32 @@
             /*stroke-width: 2.2;*/
             
         }
-        /*Lake Room height="62.9" width="117.5" y="29.9" x="15.7" stroke-width="2.2" stroke="#ff7f00" */
-        .lakeroom { stroke: #ff7f00; stroke-width: 2.2; }
+
+         /*Lake Room height="62.9" width="117.5" y="29.9" x="15.7" stroke-width="2.2" stroke="#ff7f00" */
+        /*.lakeroom { stroke: #ff7f00; stroke-width: 2.2; } */
          /*stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#ff7f00" fill="none" id="svg_65" height="116.4" width="235" y="39.6" x="173.5" */
-        .louisroom { stroke: #ff7f00; stroke-width: 2.7; }
-  .norris-outline {
+        /*.louisroom { stroke: #ff7f00; stroke-width: 2.7; }*/
+        /*
+        #northwestern-a-outline { 
+          stroke: #ff7f00; stroke-width: 2.7; 
+          /*fill="none" stroke="#ff7f00" stroke-width="2.7"*
+          }*/
+
+          .room-outline {
+            stroke: #ff7f00;
+            stroke-width: 2.7; 
+            /*.lakeroom was 2.2 */
+          }
+
+        .norris-outline {
           stroke-linecap: null;
           stroke-linejoin: null;
           stroke-width: 2;
-          stroke: #3f007f;
           fill: none;
+          stroke: #3f007f; /* dark purpley indigo */
         }
-        .vertical-booth {stroke: hotpink;}
         
-        .northwestern-a-booths
-         {
-          fill: none;
-          stroke-linecap: null;
-          stroke-linejoin: null;
-          stroke: #007fff;
-          stroke-width: 2.7;
-         }
         
-        .louis-booths {
-          fill: none;
-          stroke-linecap: null;
-          stroke-linejoin: null;
-          stroke-width: 2;
-        }
         
          
   
@@ -253,12 +284,14 @@
         .louis33-40 { stroke: #007fff; } /* highest row | y = 67 */
         .louis25-32 { stroke: #ff0098; } /* row_mid_high | y = 78.8 */
         .louis17-24 { stroke: #00ff00; } /* row_mid_low | y = 102.6 */
-        .louis9-16   { stroke: #5f00bf; } /* row lowest | y = 114.4 */
-        .louis43 { stroke: #ff0000; }
-        .louis42 { stroke: #0000ff; }
-        .louis41 { stroke: #00ff00; }
-        .louis8 { stroke: #ff00ff; }
+        .louis9-16  { stroke: #5f00bf; } /* row lowest | y = 114.4 */
         .louis1-7   { stroke: #7f007f; } /* front wall row | y = 142 */
+
+        .louis43 { stroke: #ff0000; } /* top vertical right row red */
+        .louis42 { stroke: #0000ff; } /* middle vertical right row blue */
+        .louis41 { stroke: #00ff00; } /* bottom vertical right row green */
+        .louis8  { stroke: #ff00ff; } /* solo vertical left row magenta */
+        
         
         #floor2-rooms { stroke: #007fff; /*blue */}
         #201_1851, #204_scholars, #206_arch, #208_armadillo, #207_rock
@@ -266,20 +299,13 @@
         #202ab_northwestern, #203_lake, {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
         #202a_northwestern, #202b_northwestern { }
         
-        #louis-interior, #northwestern-a-interior {}
-        .bathroom {fill: #7fff00;}
-        #lake-interior {
-          stroke-linecap: null;
-          stroke-linejoin: null;
-          stroke: #007fff;
-          fill: none;
-          stroke-width: 1.7;
-        }
         
-        #northwestern-a-outline { 
-          stroke: #ff7f00; stroke-width: 2.7; 
-          /*fill="none" stroke="#ff7f00" stroke-width="2.7"*/
-          }
+        .bathroom {fill: #7fff00;}
+
+        
+        
+
+         
         
   </style>
   <!--
@@ -297,7 +323,7 @@
   <rect id="202ab_northwestern" x="15.8" y="93.2" height="135" width="66.6"  />
   <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2"  />
   
-  <g id="lake-interior" class="room lakeroom">
+  <g id="lake-interior" class="room room-outline">
     <title>Lake Room</title>
     
     <!--rect id="table_54rot" height="25" width="55.1" y="1976.9" x="-923.5" stroke-width="7.7" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,510.98850834721515,235.56604734420384) " stroke-width="7.7"/-->
@@ -324,7 +350,7 @@
   
   
   
-  <rect id="205ab_louis" class="room louisroom" height="132.8" width="235.4" y="30" x="173.2" />
+  <rect id="205ab_louis" class="room room-outline" height="132.8" width="235.4" y="30" x="173.2" />
   <title>Louis Room</title>
   <g id="louis-interior" class="louis-booths">
   
@@ -403,7 +429,7 @@
     
   </g> <!-- /louis-interior -->
   <g display="inline">
-  <rect id="northwestern-room_outline" id="northwestern-a-outline" x="15.4481" y="92.75354" width="67.16035" height="47.54715" />
+  <rect id="northwestern-room_outline" class="room-outline" x="15.4481" y="92.75354" width="67.16035" height="47.54715" />
   <title>Northwestern Room</title>
   <g id="northwestern-interior" class="northwestern-a-booths">
    <!--image x="-11" y="81.98372" width="125.99993" height="67.23418" id="svg_1" xlink:href="http://i.imgur.com/I9TubHD.png"/-->
