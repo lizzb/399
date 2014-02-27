@@ -16,6 +16,15 @@
     left:0;
 }
 
+
+.norris-outline {
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke-width: 2;
+          stroke: #3f007f; /* dark purpley indigo */
+          fill: none;
+        }
+
 .booths{
           fill: none;
           stroke-linecap: null;
@@ -24,6 +33,133 @@
           stroke: hotpink; /*dodgerblue*/
           stroke: #007fff; /* blue  #ff7f00 = orange */
         }
+
+    .vertical-booth {stroke: hotpink;}
+  
+        
+        #louis44-53 { stroke: #00ffff; } /* back wall row | y = 40.2 */
+        #louis33-40 { stroke: #007fff; } /* highest row | y = 67 */
+        #louis25-32 { stroke: #ff0098; } /* row_mid_high | y = 78.8 */
+        #louis17-24 { stroke: #00ff00; } /* row_mid_low | y = 102.6 */
+        #louis9-16  { stroke: #5f00bf; } /* row lowest | y = 114.4 */
+        #louis1-7   { stroke: #7f007f; } /* front wall row | y = 142 */
+
+        #table_43 { stroke: #ff0000; } /* top vertical right row red */
+        #table_42 { stroke: #0000ff; } /* middle vertical right row blue */
+        #table_41 { stroke: #00ff00; } /* bottom vertical right row green */
+        #table_8  { stroke: #ff00ff; } /* solo vertical left row magenta */
+
+
+.room {
+            fill:       none;
+            /*stroke:     #007fff;*/
+            stroke-width:   2;
+            stroke-linecap: null;
+            stroke-linejoin: null;
+            stroke-width: 2.2;
+        }
+        
+        
+        
+        .selectedRoom{
+            fill:       #eee;
+            stroke:     #c00;
+            stroke-width:   2;
+        }
+
+        .selectedBooth{
+            fill:       dodgerblue;
+            stroke:     #f0f;
+            stroke-width:   1.5;
+        }
+        #floor1-rooms { stroke: #007fff; /*blue */}
+        #102_evans,
+        #103_chicago,
+        #104_bigten,
+        #101ab_wildcat {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
+
+        #101a_wildcat,
+        #101b_wildcat { }
+        
+        #bigten-interior,
+        #wildcat-a-interior {}
+
+
+        
+        #floor2-rooms { stroke: #007fff; /*blue */}
+
+      .room {
+            fill:       none;
+            stroke:     #007fff;
+            stroke-width:   2;
+            stroke-linecap: null;
+            stroke-linejoin: null;
+            /*stroke-width: 2.2;*/
+            
+        }
+
+        .room-outline {
+            stroke: #ff7f00;
+            stroke-width: 2.7; 
+            /*.lakeroom was 2.2 */
+          }
+
+         /*Lake Room height="62.9" width="117.5" y="29.9" x="15.7" stroke-width="2.2" stroke="#ff7f00" */
+        /*.lakeroom { stroke: #ff7f00; stroke-width: 2.2; } */
+         /*stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#ff7f00" fill="none" id="svg_65" height="116.4" width="235" y="39.6" x="173.5" */
+        /*.louisroom { stroke: #ff7f00; stroke-width: 2.7; }*/
+        /*
+        #northwestern-a-outline { 
+          stroke: #ff7f00; stroke-width: 2.7; 
+          /*fill="none" stroke="#ff7f00" stroke-width="2.7"*
+          }*/
+
+
+
+
+    /*.booths {
+      fill: none;
+      stroke-linecap: null;
+      stroke-linejoin: null;
+      stroke: #007fff;    /* default table/booth color = nice blue outline */
+      /*stroke-width:   2; */
+      /* .louis-booths had 2, .northwestern-a-booths had 2.7, #lake-interior had 1.7 */
+     /* stroke-width: 2;
+
+    }
+    /*
+     #lake-interior {
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke: #007fff;
+          fill: none;
+          stroke-width: 1.7;
+        }
+    #louis-interior, #northwestern-a-interior {}
+  */
+    /*
+        .northwestern-a-booths
+         {
+          stroke: #007fff;
+          stroke-width: 2.7;
+         }*/
+        /*
+        .louis-booths {
+          stroke-width: 2; /* louis-booths *
+          stroke-width: 2.7; /* northwestern-a-booths *
+        }*/
+
+
+        
+        
+        
+        #201_1851, #204_scholars, #206_arch, #208_armadillo, #207_rock
+        #205ab_louis, #205a_louis, #205b_louis,
+        /*#202ab_northwestern, #203_lake, {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
+        #202a_northwestern, #202b_northwestern { }
+        
+        
+        .bathroom {fill: #7fff00;}
 
 
 </style>
@@ -217,101 +353,7 @@
 
   <style>
 
-  .norris-outline {
-          stroke-linecap: null;
-          stroke-linejoin: null;
-          stroke-width: 2;
-          fill: none;
-          stroke: #3f007f; /* dark purpley indigo */
-        }
-
-        #floor2-rooms { stroke: #007fff; /*blue */}
-
-      .room {
-            fill:       none;
-            stroke:     #007fff;
-            stroke-width:   2;
-            stroke-linecap: null;
-            stroke-linejoin: null;
-            /*stroke-width: 2.2;*/
-            
-        }
-
-        .room-outline {
-            stroke: #ff7f00;
-            stroke-width: 2.7; 
-            /*.lakeroom was 2.2 */
-          }
-
-         /*Lake Room height="62.9" width="117.5" y="29.9" x="15.7" stroke-width="2.2" stroke="#ff7f00" */
-        /*.lakeroom { stroke: #ff7f00; stroke-width: 2.2; } */
-         /*stroke-linecap="null" stroke-linejoin="null" stroke-width="2.7" stroke="#ff7f00" fill="none" id="svg_65" height="116.4" width="235" y="39.6" x="173.5" */
-        /*.louisroom { stroke: #ff7f00; stroke-width: 2.7; }*/
-        /*
-        #northwestern-a-outline { 
-          stroke: #ff7f00; stroke-width: 2.7; 
-          /*fill="none" stroke="#ff7f00" stroke-width="2.7"*
-          }*/
-
-
-
-
-    /*.booths {
-      fill: none;
-      stroke-linecap: null;
-      stroke-linejoin: null;
-      stroke: #007fff;    /* default table/booth color = nice blue outline */
-      /*stroke-width:   2; */
-      /* .louis-booths had 2, .northwestern-a-booths had 2.7, #lake-interior had 1.7 */
-     /* stroke-width: 2;
-
-    }
-    /*
-     #lake-interior {
-          stroke-linecap: null;
-          stroke-linejoin: null;
-          stroke: #007fff;
-          fill: none;
-          stroke-width: 1.7;
-        }
-    #louis-interior, #northwestern-a-interior {}
-  */
-    /*
-        .northwestern-a-booths
-         {
-          stroke: #007fff;
-          stroke-width: 2.7;
-         }*/
-        /*
-        .louis-booths {
-          stroke-width: 2; /* louis-booths *
-          stroke-width: 2.7; /* northwestern-a-booths *
-        }*/
-
-    .vertical-booth {stroke: hotpink;}
   
-        
-        #louis44-53 { stroke: #00ffff; } /* back wall row | y = 40.2 */
-        #louis33-40 { stroke: #007fff; } /* highest row | y = 67 */
-        #louis25-32 { stroke: #ff0098; } /* row_mid_high | y = 78.8 */
-        #louis17-24 { stroke: #00ff00; } /* row_mid_low | y = 102.6 */
-        #louis9-16  { stroke: #5f00bf; } /* row lowest | y = 114.4 */
-        #louis1-7   { stroke: #7f007f; } /* front wall row | y = 142 */
-
-        #table_43 { stroke: #ff0000; } /* top vertical right row red */
-        #table_42 { stroke: #0000ff; } /* middle vertical right row blue */
-        #table_41 { stroke: #00ff00; } /* bottom vertical right row green */
-        #table_8  { stroke: #ff00ff; } /* solo vertical left row magenta */
-        
-        
-        
-        #201_1851, #204_scholars, #206_arch, #208_armadillo, #207_rock
-        #205ab_louis, #205a_louis, #205b_louis,
-        /*#202ab_northwestern, #203_lake, {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
-        #202a_northwestern, #202b_northwestern { }
-        
-        
-        .bathroom {fill: #7fff00;}
 
         
         
@@ -474,39 +516,7 @@
 <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
   <style>
   
-        .room {
-            fill:       none;
-            /*stroke:     #007fff;*/
-            stroke-width:   2;
-            stroke-linecap: null;
-            stroke-linejoin: null;
-            stroke-width: 2.2;
-        }
         
-        
-        .norris-outline {
-          stroke-linecap: null;
-          stroke-linejoin: null;
-          stroke-width: 2;
-          stroke: #3f007f;
-          fill: none;
-        }
-        .selectedRoom{
-            fill:       #eee;
-            stroke:     #c00;
-            stroke-width:   2;
-        }
-
-        .selectedBooth{
-            fill:       dodgerblue;
-            stroke:     #f0f;
-            stroke-width:   1.5;
-        }
-        #floor1-rooms { stroke: #007fff; /*blue */}
-        #102_evans, #103_chicago, #104_bigten, #101ab_wildcat {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
-        #101a_wildcat, #101b_wildcat { }
-        
-        #bigten-interior, #wildcat-a-interior {}
   </style>
    <!-- 
 <g display="inline">
