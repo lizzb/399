@@ -16,6 +16,15 @@
     left:0;
 }
 
+.booths{
+          fill: none;
+          stroke-linecap: null;
+          stroke-linejoin: null;
+          stroke-width: 1.7;
+          stroke: hotpink; /*dodgerblue*/
+          stroke: #007fff; /* blue  #ff7f00 = orange */
+        }
+
 
 </style>
 
@@ -216,6 +225,8 @@
           stroke: #3f007f; /* dark purpley indigo */
         }
 
+        #floor2-rooms { stroke: #007fff; /*blue */}
+
       .room {
             fill:       none;
             stroke:     #007fff;
@@ -245,14 +256,14 @@
 
 
 
-    .booth {
+    /*.booths {
       fill: none;
       stroke-linecap: null;
       stroke-linejoin: null;
       stroke: #007fff;    /* default table/booth color = nice blue outline */
       /*stroke-width:   2; */
       /* .louis-booths had 2, .northwestern-a-booths had 2.7, #lake-interior had 1.7 */
-      stroke-width: 2;
+     /* stroke-width: 2;
 
     }
     /*
@@ -279,15 +290,6 @@
 
     .vertical-booth {stroke: hotpink;}
   
-  
-          
-
-        
-        
-        
-        
-         
-  
         
         #louis44-53 { stroke: #00ffff; } /* back wall row | y = 40.2 */
         #louis33-40 { stroke: #007fff; } /* highest row | y = 67 */
@@ -302,10 +304,10 @@
         #table_8  { stroke: #ff00ff; } /* solo vertical left row magenta */
         
         
-        #floor2-rooms { stroke: #007fff; /*blue */}
+        
         #201_1851, #204_scholars, #206_arch, #208_armadillo, #207_rock
         #205ab_louis, #205a_louis, #205b_louis,
-        #202ab_northwestern, #203_lake, {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
+        /*#202ab_northwestern, #203_lake, {  stroke: #ff7f00; /*orange*/} /* doesnt show up */
         #202a_northwestern, #202b_northwestern { }
         
         
@@ -335,9 +337,9 @@
   <!-- -------------------- LAKE ROOM -------------------- -->
 
 
-  <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2"  />
+  <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2" class="room room-outline" />
   
-  <g id="lake-interior" class="room room-outline">
+  <g id="lake-interior" class="booths">
     <title>Lake Room</title>
     
     <!--rect id="table_54rot" height="25" width="55.1" y="1976.9" x="-923.5" stroke-width="7.7" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,510.98850834721515,235.56604734420384) " stroke-width="7.7"/-->
@@ -368,7 +370,7 @@
   <title>Louis Room</title>
   <g id="louis-interior" class="booths">
   
-  <g id="louis1-7" >
+  <g id="louis1-7">
      <rect id="table_7"  x="194.1" y="142" width="10.7" height="5.8"/>
      <rect id="table_6"  x="213.6" y="142" width="10.7" height="5.8"/>
      <rect id="table_5"  x="231"   y="142" width="10.7" height="5.8"/>
@@ -377,7 +379,7 @@
      <rect id="table_2"  x="330.9" y="142" width="10.7" height="5.8"/>
      <rect id="table_1"  x="351.7" y="142" width="10.7" height="5.8"/>
     </g>
-    <g id="louis9-16" >
+    <g id="louis9-16">
      <rect id="table_9"  x="210.5" y="114.4" width="10.7" height="5.8" />
      <rect id="table_10" x="226.8" y="114.4" width="10.7" height="5.8" />
      <rect id="table_11" x="248.9" y="114.4" width="10.7" height="5.8" />
@@ -387,7 +389,7 @@
      <rect id="table_15" x="332.4" y="114.4" width="10.7" height="5.8" />
      <rect id="table_16" x="350.2" y="114.4" width="10.7" height="5.8" />
     </g>
-    <g id="louis17-24" class="booths">
+    <g id="louis17-24">
      <rect id="table_24" x="210.5" y="102.6" width="10.7" height="5.8" />
      <rect id="table_23" x="226.8" y="102.6" width="10.7" height="5.8" />
      <rect id="table_22" x="248.9" y="102.6" width="10.7" height="5.8" />
@@ -397,7 +399,7 @@
      <rect id="table_18" x="332.4" y="102.6" width="10.7" height="5.8" />
      <rect id="table_17" x="350.2" y="102.6" width="10.7" height="5.8" />
     </g>
-    <g id="louis25-32" class="booths">
+    <g id="louis25-32">
      <rect  id="table_25" x="210.5" y="78.8" width="10.7" height="5.8" />
      <rect  id="table_26" x="226.8" y="78.8" width="10.7" height="5.8" />
      <rect  id="table_27" x="245.8" y="78.8" width="10.7" height="5.8" />
@@ -407,7 +409,7 @@
      <rect  id="table_31" x="329.3" y="78.8" width="10.7" height="5.8" />
      <rect  id="table_32" x="350.2" y="78.8" width="10.7" height="5.8" />
     </g>
-    <g id="louis33-40" class="booths">
+    <g id="louis33-40">
     <rect id="table_40" x="210.5" y="67" width="10.7" height="5.8" />
      <rect id="table_39" x="226.8" y="67" width="10.7" height="5.8" />
      <rect id="table_38" x="245.8" y="67" width="10.7" height="5.8" />
@@ -417,7 +419,7 @@
      <rect id="table_34" x="329.1" y="67" width="10.7" height="5.8" />
      <rect id="table_33" x="350"   y="67" width="10.7" height="5.8" />
     </g>
-    <g id="louis44-53" class="booths">
+    <g id="louis44-53">
      <rect id="table_53" x="197"   y="40.2" width="10.7" height="5.8" />
      <rect id="table_52" x="217.9" y="40.2" width="10.7" height="5.8" />
      <rect id="table_51" x="237.3" y="40.2" width="10.7" height="5.8" />
@@ -480,14 +482,7 @@
             stroke-linejoin: null;
             stroke-width: 2.2;
         }
-        .booths{
-          fill: none;
-          stroke-linecap: null;
-          stroke-linejoin: null;
-          stroke-width: 1.7;
-          stroke: #007fff; /* blue  #ff7f00 = orange */
-          stroke: hotpink;
-        }
+        
         
         .norris-outline {
           stroke-linecap: null;
