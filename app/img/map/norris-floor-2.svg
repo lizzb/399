@@ -1,4 +1,72 @@
-  <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" xlink:title="floor2" class="svg-content">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
+    <style>
+
+.norris-outline {
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  stroke-width: 2;
+  stroke: #3f007f; /* dark purpley indigo */
+  fill: none;
+}
+
+.bathroom {fill: #7fff00;}
+.male {fill: lightblue;}
+.female{fill: mistyrose;}
+
+.room {
+  fill:  white; /*     none; /* blue */
+  stroke:     #007fff;
+  stroke-width:   2;
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  /*stroke-width: 2.2;*/   
+}
+
+.room-outline {
+  stroke: #ff7f00; /* orange */
+  stroke-width: 2.7; 
+  /*.lakeroom was 2.2 */
+}
+
+
+.selectedRoom {
+  fill:       #eee;
+  stroke:     #c00;
+  stroke-width:   2;
+}
+
+
+.booths {
+  fill: white; /* if none, then you have to click on the outline to enable */
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  stroke-width: 1.7;
+  /*stroke: hotpink; dodgerblue*/
+  stroke: #007fff; /* blue  #ff7f00 = orange */
+  /* .louis-booths had 2, .northwestern-a-booths had 2.7, #lake-interior had 1.7 */
+}
+
+/*.rotated-booth {stroke: hotpink;}*/
+
+.selectedBooth {
+    fill:       dodgerblue;
+    stroke:     #f0f;
+    stroke-width:   1.5;
+}
+
+#louis44-53 { stroke: #00ffff; } /* back wall row | y = 40.2 */
+#louis33-40 { stroke: #007fff; } /* highest row | y = 67 */
+#louis25-32 { stroke: #ff0098; } /* row_mid_high | y = 78.8 */
+#louis17-24 { stroke: #00ff00; } /* row_mid_low | y = 102.6 */
+#louis9-16  { stroke: #5f00bf; } /* row lowest | y = 114.4 */
+#louis1-7   { stroke: #7f007f; } /* front wall row | y = 142 */
+
+#table_43 { stroke: #ff0000; } /* top vertical right row red */
+#table_42 { stroke: #0000ff; } /* middle vertical right row blue */
+#table_41 { stroke: #00ff00; } /* bottom vertical right row green */
+#table_8  { stroke: #ff00ff; } /* solo vertical left row magenta */
+
+    </style>
   <!--
   <g display="inline">
   <title>img</title>
@@ -53,15 +121,14 @@
    <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_55" y2="291.39898" x2="463.19999" y1="291.39898" x1="427.34855"/>
    <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_56" y2="299.69382" x2="462.36623" y1="290.72185" x1="462.36623"/>
   </g>
- </g>
+ 
 
  
-  <g id="floor2-rooms" class="room" display="inline" > <!-- can't put function here sad -->
+  <g id="floor2-rooms" class="room" display="inline" >
   
 
 
-  <!-- ------------------------- LAKE ROOM ------------------------- -->
-
+  <!-- ***************  LAKE ROOM  *************** -->
 
   <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2" class="room room-outline" onclick="toggleActiveRoom(this.id)" />
   
@@ -86,7 +153,7 @@
   </g>
 
 
-  <!-- ------------------------- NORTHWESTERN ROOM ------------------------- -->
+  <!-- ***************  NORTHWESTERN ROOM  *************** -->
 
 <rect id="202ab_northwestern" x="15.8" y="93.2" height="135" width="66.6"  onclick="toggleActiveRoom(this.id)" />
 
@@ -95,7 +162,6 @@
   <title>Northwestern Room</title>
   <g id="northwestern-a-booths" class="booths">
    <!--image x="-11" y="81.98372" width="125.99993" height="67.23418" id="svg_1" xlink:href="http://i.imgur.com/I9TubHD.png"/-->
-  <!-- -->
    <a id="66"><rect id="table_66" x="22.283" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
    <a id="65"><rect id="table_65" x="44.12497" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
    <a id="64"><rect id="table_64" x="67.60138" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
@@ -104,7 +170,8 @@
 
    <a id="67"><rect id="table_67"  x="20" y="107" width="3.71462" height="8.17217" class="rotated-booth" onclick="toggleActive(this.id)"/> </a>
    <a id="68"><rect id="table_68"  x="20" y="119" width="3.71462" height="8.17217" class="rotated-booth" onclick="toggleActive(this.id)"/> </a>
-   <a id="69"><rect id="table_69"x="22.283" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
+
+   <a id="69"><rect id="table_69" x="22.283" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
    <a id="70"><rect id="table_70" x="44.71931" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
    <a id="71"><rect id="table_71" x="67.74996" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
   </g>
@@ -117,13 +184,7 @@
 
 
 
-
-
-
-
-
-
-  <!-- ------------------------- LOUIS ROOM ------------------------- -->
+  <!-- ***************  LOUIS ROOM *************** -->
   
   
   <rect id="205ab_louis" class="room room-outline" height="132.8" width="235.4" y="30" x="173.2"  onclick="toggleActiveRoom(this.id)" />
@@ -205,17 +266,11 @@
 
       <a id="41"><rect id="table_41" height="10.7" width="5.8" x="399" y="117" class="rotated-booth"  onclick="toggleActive(this.id)" /></a>
       
-      
-
-      
  
       <a id="8"><rect id="table_8" height="10.7" width="5.8" x="177" y="119" class="rotated-booth"  onclick="toggleActive(this.id)" /></a>
     </g>
     
   </g> <!-- /louis-booths -->
-
-
-
 
 
   <path id="female-br-2" class="bathroom female" d="m105.400002 259l56.799995 0l0 31.200012l-37.866997 0l-9.071999 -14.587006l-9.861 0l0 -16.613007l0 0l0 0z" />
