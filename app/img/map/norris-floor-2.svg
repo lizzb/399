@@ -1,0 +1,229 @@
+  <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" xlink:title="floor2" class="svg-content">
+  <!--
+  <g display="inline">
+  <title>img</title>
+  <image width="500" height="452" id="svg_1" xlink:href="http://www.norris.northwestern.edu/wp-content/uploads/2011/11/floorplan_web_second.png"/>
+  <rect id="svg_6" height="14" width="0" y="214.3" x="84" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#3f007f" fill="none"/>
+ </g>
+  -->
+  <!--  <a id="55" onclick="alert(this.id)"> -->
+
+
+ <g display="inline" class="norris-outline">
+  <path id="norris2outline" d="m484.097748 297.666656l-21.714752 0.02533l-0.381989 40.359009l-135.490997 0.050018l0.078003 60.768982l-172.58902 0.101013l-0.25499 27.10199l-43.010002 0.036011l-43.010803 0.036987l-0.020897 -153.26001l14.645897 0.072021l-0.041801 -44.854004l-66.708299 0.145996l0.1664 -198.416702l392.667509 -0.166599l0.289001 63.333302l74.945984 0l0.332855 204.7"/>
+ </g>
+
+<g id="norris_interior_2">
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_2" y2="298.59349" x2="104.26879" y1="310.1047" x1="66.99997"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_7" y2="299.4399" x2="103.85191" y1="258.98139" x1="103.85191"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_21" y2="276.16356" x2="113.6902" y1="276.16356" x1="103.68516"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_22" y2="291.99147" x2="124.02875" y1="275.90964" x1="112.60633"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_23" y2="291.39898" x2="380.24144" y1="291.39898" x1="123.195"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_24" y2="290.55257" x2="161.2142" y1="258.98139" x1="161.2142"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_25" y2="290.89114" x2="233.75082" y1="258.64283" x1="233.75082"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_26" y2="259.23531" x2="285.61033" y1="259.23531" x1="81.84079"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_27" y2="292.24539" x2="284.44308" y1="259.23531" x1="284.44308"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_28" y2="337.69774" x2="326.29754" y1="291.99147" x1="326.29754"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_29" y2="290.55257" x2="294.36475" y1="258.98139" x1="294.36475"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_30" y2="258.98139" x2="354.39505" y1="258.98139" x1="293.28087"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_31" y2="291.99147" x2="353.31118" y1="258.98139" x1="353.31118"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_32" y2="399.14728" x2="300.78466" y1="292.49932" x1="284.3597"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_33" y2="312.30537" x2="379.15756" y1="291.39898" x1="379.15756"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_34" y2="311.1204" x2="428.34906" y1="311.1204" x1="379.15756"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_35" y2="310.61255" x2="427.34855" y1="160.45898" x1="427.34855"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_36" y2="161.64396" x2="170.55225" y1="161.64396" x1="427.5153"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_37" y2="162.82893" x2="171.30263" y1="72.85529" x1="171.30263"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_38" y2="72.68601" x2="172.88676" y1="72.68601" x1="132.53305"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_39" y2="90.03746" x2="133.78369" y1="73.27849" x1="133.78369"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_40" y2="229.27231" x2="188.31121" y1="162.1518" x1="188.31121"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_41" y2="228.17197" x2="295.69876" y1="228.17197" x1="187.81095"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_42" y2="228.76447" x2="294.86501" y1="207.85808" x1="294.86501"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_43" y2="207.35023" x2="293.78112" y1="207.35023" x1="352.97768"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_44" y2="207.60416" x2="326.21416" y1="161.05147" x1="326.21416"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_45" y2="229.27231" x2="353.2278" y1="161.89788" x1="353.2278"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_46" y2="228.17197" x2="353.47792" y1="228.17197" x1="318.71038"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_47" y2="258.72747" x2="143.70536" y1="179.84182" x1="143.70536"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_48" y2="180.68823" x2="144.28899" y1="180.68823" x1="81.42392"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_49" y2="259.99708" x2="81.84079" y1="212.17478" x1="81.84079"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_50" y2="212.51335" x2="80.75691" y1="212.51335" x1="143.28848"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_51" y2="89.52962" x2="144.12224" y1="89.52962" x1="133.11668"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_52" y2="137.18263" x2="143.03835" y1="89.27569" x1="143.03835"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_53" y2="136.33622" x2="143.70536" y1="136.33622" x1="81.09041"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_54" y2="181.61928" x2="82.1743" y1="135.06661" x1="82.1743"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_55" y2="291.39898" x2="463.19999" y1="291.39898" x1="427.34855"/>
+   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_56" y2="299.69382" x2="462.36623" y1="290.72185" x1="462.36623"/>
+  </g>
+ </g>
+
+ 
+  <g id="floor2-rooms" class="room" display="inline" > <!-- can't put function here sad -->
+  
+
+
+  <!-- ------------------------- LAKE ROOM ------------------------- -->
+
+
+  <rect id="203_lake" x="15.8" y="30" height="62.8" width="117.2" class="room room-outline" onclick="toggleActiveRoom(this.id)" />
+  
+  <g id="lake-booths" class="booths">
+    <title>Lake Room</title>
+    
+    <!--rect id="table_54rot" height="25" width="55.1" y="1976.9" x="-923.5" stroke-width="7.7" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,510.98850834721515,235.56604734420384) " stroke-width="7.7"/-->
+    <a id="60">
+    <rect id="table_60" width="4.9" height="10.7" y="47" x="20"  class="rotated-booth" onclick="toggleActive(this.id)"/> </a>
+    <a id="55">
+    <rect id="table_55" height="4.9" width="10.7" y="35.1" x="106.3"  onclick="toggleActive(this.id)" /> </a>
+    <rect id="table_56" height="4.9" width="10.7" y="34.8" x="84.6"  onclick="toggleActive(this.id)" />
+    <rect id="table_57" height="4.9" width="10.7" y="34.8" x="60.5"  onclick="toggleActive(this.id)" />
+    <rect id="table_58" height="4.9" width="10.7" y="34.8" x="34.2"  onclick="toggleActive(this.id)" />
+    <!--rect id="table_59rot" height="25" width="55.1" y="1940.9" x="-1441.2" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,403.4439139031087,329.9646760208869) "  stroke-width="7.7" /-->
+    <rect id="table_59" width="4.9" height="10.7" y="64" x="20" class="rotated-booth" onclick="toggleActive(this.id)" />
+    <!--rect id="table_60rot"height="25" width="55.1" y="2025.9" x="-1439.5" transform="matrix(0,0.19666380661720267,-0.19482716115524115,0,420.00422557413077,346.6811025842007) " stroke-width="7.7" /-->
+    <rect id="table_54" width="4.9" height="10.7" y="54" x="121" class="rotated-booth"  onclick="toggleActive(this.id)" />
+    <rect id="table_61" height="4.9" width="10.7" y="83" x="39"  onclick="toggleActive(this.id)" />
+    <rect id="table_62" height="4.9" width="10.7" y="83" x="65.3"  onclick="toggleActive(this.id)" />
+    <rect id="table_63" height="4.9" width="10.7" y="83" x="91.6"  onclick="toggleActive(this.id)" />
+  </g>
+
+
+  <!-- ------------------------- NORTHWESTERN ROOM ------------------------- -->
+
+<rect id="202ab_northwestern" x="15.8" y="93.2" height="135" width="66.6"  onclick="toggleActiveRoom(this.id)" />
+
+  <g display="inline">
+  <rect id="northwestern-room_outline" class="room-outline" x="15.4481" y="92.75354" width="67.16035" height="47.54715"  onclick="toggleActiveRoom(this.id)" />
+  <title>Northwestern Room</title>
+  <g id="northwestern-a-booths" class="booths">
+   <!--image x="-11" y="81.98372" width="125.99993" height="67.23418" id="svg_1" xlink:href="http://i.imgur.com/I9TubHD.png"/-->
+  <!-- -->
+   <a id="66"><rect id="table_66" x="22.283" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
+   <a id="65"><rect id="table_65" x="44.12497" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
+   <a id="64"><rect id="table_64" x="67.60138" y="96.76533" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
+ <!--rect id="table_67rot" transform="matrix(0,0.14858483140013623,-0.14858483140013623,0,-26.349701351024308,55.183887911123094) "  x="351.29156" y="-330.76349" width="55.12025" height="25" />
+   <rect id="table_68rot" transform="matrix(0,0.14858483140013623,-0.14858483140013623,0,-13.719988414788096,67.81360084735928) "  x="351.29156" y="-245.76349" width="55.12025" height="25" /-->
+
+   <a id="67"><rect id="table_67"  x="20" y="107" width="3.71462" height="8.17217" class="rotated-booth" onclick="toggleActive(this.id)"/> </a>
+   <a id="68"><rect id="table_68"  x="20" y="119" width="3.71462" height="8.17217" class="rotated-booth" onclick="toggleActive(this.id)"/> </a>
+   <a id="69"><rect id="table_69"x="22.283" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
+   <a id="70"><rect id="table_70" x="44.71931" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
+   <a id="71"><rect id="table_71" x="67.74996" y="132.87145" width="8.17217" height="3.71462"  onclick="toggleActive(this.id)" /> </a>
+  </g>
+ </g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ------------------------- LOUIS ROOM ------------------------- -->
+  
+  
+  <rect id="205ab_louis" class="room room-outline" height="132.8" width="235.4" y="30" x="173.2"  onclick="toggleActiveRoom(this.id)" />
+  <title>Louis Room</title>
+  <g id="louis-booths" class="booths">
+  
+  <g id="louis1-7">
+     <a id="7"><rect id="table_7"  x="194.1" y="142" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="6"><rect id="table_6"  x="213.6" y="142" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="5"><rect id="table_5"  x="231"   y="142" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="4"><rect id="table_4"  x="292.2" y="142" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="3"><rect id="table_3"  x="311.4" y="142" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="2"><rect id="table_2"  x="330.9" y="142" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="1"><rect id="table_1"  x="351.7" y="142" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+    </g>
+    <g id="louis9-16">
+     <a id="9"><rect id="table_9"  x="210.5" y="114.4" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="10"><rect id="table_10" x="226.8" y="114.4" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="11"><rect id="table_11" x="248.9" y="114.4" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="12"><rect id="table_12" x="270"   y="114.4" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="13"><rect id="table_13" x="290.8" y="114.4" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="14"><rect id="table_14" x="311.6" y="114.4" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="15"><rect id="table_15" x="332.4" y="114.4" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="16"><rect id="table_16" x="350.2" y="114.4" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+    </g>
+    <g id="louis17-24">
+     <a id="24"><rect id="table_24" x="210.5" y="102.6" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="23"><rect id="table_23" x="226.8" y="102.6" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="22"><rect id="table_22" x="248.9" y="102.6" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="21"><rect id="table_21" x="270"   y="102.6" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="20"><rect id="table_20" x="290.8" y="102.6" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="19"><rect id="table_19" x="311.6" y="102.6" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="18"><rect id="table_18" x="332.4" y="102.6" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="17"><rect id="table_17" x="350.2" y="102.6" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+    </g>
+    <g id="louis25-32">
+     <a id="25"><rect  id="table_25" x="210.5" y="78.8" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="26"><rect  id="table_26" x="226.8" y="78.8" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="27"><rect  id="table_27" x="245.8" y="78.8" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="28"><rect  id="table_28" x="266.7" y="78.8" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="29"><rect  id="table_29" x="287.6" y="78.8" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="30"><rect  id="table_30" x="308.3" y="78.8" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="31"><rect  id="table_31" x="329.3" y="78.8" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+     <a id="32"><rect  id="table_32" x="350.2" y="78.8" width="10.7" height="5.8" onclick="toggleActive(this.id)"/> </a>
+    </g>
+    <g id="louis33-40">
+    <a id="40"><rect id="table_40" x="210.5" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="39"><rect id="table_39" x="226.8" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="38"><rect id="table_38" x="245.8" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="37"><rect id="table_37" x="266.7" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="36"><rect id="table_36" x="287.6" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="35"><rect id="table_35" x="308.3" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="34"><rect id="table_34" x="329.1" y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="33"><rect id="table_33" x="350"   y="67" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+    </g>
+    <g id="louis44-53">
+     <a id="53"><rect id="table_53" x="197"   y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="52"><rect id="table_52" x="217.9" y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="51"><rect id="table_51" x="237.3" y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="50"><rect id="table_50" x="258.2" y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="49"><rect id="table_49" x="279"   y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="48"><rect id="table_48" x="299.8" y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="47"><rect id="table_47" x="317.9" y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="46"><rect id="table_46" x="335.5" y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="45"><rect id="table_45" x="354.6" y="40.4" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+     <a id="44"><rect id="table_44" x="375.4" y="40.2" width="10.7" height="5.8"  onclick="toggleActive(this.id)" /> </a>
+    <!--
+      <rect id="table_43rot" x="810.1" y="-180.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,466.54258277105976,383.5777300915772) " />
+      
+      <rect id="table_42rot" x="810.1" y="-105.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,439.7510461075514,410.3692667550855) " />
+
+     <rect id="table_41rot" x="810.6" y="-35.6" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,413.1508775630682,437.35217153761886) " />
+ 
+     <rect id="table_8rot" x="228.1" y="-28.1" width="28" height="15.2" transform="matrix(0,-0.3827362380501184,0.3827362380501184,0,187.33649711349835,217.27883465880078) " />
+    -->
+     <a id="43"> <rect id="table_43" height="10.7" width="5.8" x="397" y="63" class="rotated-booth"  onclick="toggleActive(this.id)" /> </a><!-- red -->
+
+      <a id="42"> <rect id="table_42" height="10.7" width="5.8" x="399" y="90" class="rotated-booth"  onclick="toggleActive(this.id)" /></a>
+
+      <a id="41"><rect id="table_41" height="10.7" width="5.8" x="399" y="117" class="rotated-booth"  onclick="toggleActive(this.id)" /></a>
+      
+      
+
+      
+ 
+      <a id="8"><rect id="table_8" height="10.7" width="5.8" x="177" y="119" class="rotated-booth"  onclick="toggleActive(this.id)" /></a>
+    </g>
+    
+  </g> <!-- /louis-booths -->
+
+
+
+
+
+  <path id="female-br-2" class="bathroom female" d="m105.400002 259l56.799995 0l0 31.200012l-37.866997 0l-9.071999 -14.587006l-9.861 0l0 -16.613007l0 0l0 0z" />
+  <rect id="male-br-2" class="bathroom male" height="31.2" width="50" y="258.8" x="234.8" />
+  
+ </g>
+  
+  
+  
+  
+  </svg>
