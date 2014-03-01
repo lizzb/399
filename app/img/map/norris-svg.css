@@ -1,0 +1,106 @@
+
+.norris-outline {
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  stroke-width: 2;
+  stroke: #3f007f; /* dark purpley indigo */
+  fill: none;
+}
+
+.style1, .style2, .style3, .style4, .floor2interior
+{
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  fill: none;
+
+}
+
+.floor2interior {
+  stroke-width: 2;
+  stroke: #003f7f;
+}
+
+/* part of floor 1 interior */
+.style1 {
+      stroke-linecap: null;
+      stroke-linejoin: null;
+      stroke-width: 4;
+      stroke: #003f7f; 
+      fill: none;
+      }
+/* most of the rest of floor 1 interior */
+      .style2 {
+      stroke-linecap: null;
+      stroke-linejoin: null;
+      stroke-width: 2.7;
+      stroke: #003f7f; 
+      fill: none;
+      }
+
+.style3 {
+  stroke-width: 6;
+  stroke: #00007f;
+  }
+  /* only one of these... */
+  .style4 {
+      stroke-width: 2.7;
+      stroke: #00037f;
+    }
+
+.bathroom {fill: #7fff00;}
+.male {fill: lightblue;}
+.female{fill: mistyrose;}
+
+.room {
+  fill:  white; /*     none; /* blue */
+  stroke:     #007fff;
+  stroke-width:   2;
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  /*stroke-width: 2.2;*/   
+}
+
+.room-outline {
+  stroke: #ff7f00; /* orange */
+  stroke-width: 2.7; 
+  /*.lakeroom was 2.2 */
+}
+
+
+.selectedRoom {
+  fill:       #eee;
+  stroke:     #c00;
+  stroke-width:   2;
+}
+
+
+.booths {
+  fill: white; /* if none, then you have to click on the outline to enable */
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  stroke-width: 1.7;
+  /*stroke: hotpink; dodgerblue*/
+  stroke: #007fff; /* blue  #ff7f00 = orange */
+  /* .louis-booths had 2, .northwestern-a-booths had 2.7, #lake-interior had 1.7 */
+}
+
+/*.rotated-booth {stroke: hotpink;}*/
+
+.selectedBooth {
+    fill:       dodgerblue;
+    stroke:     #f0f;
+    stroke-width:   1.5;
+}
+
+
+#louis44-53 { stroke: #00ffff; } /* back wall row | y = 40.2 */
+#louis33-40 { stroke: #007fff; } /* highest row | y = 67 */
+#louis25-32 { stroke: #ff0098; } /* row_mid_high | y = 78.8 */
+#louis17-24 { stroke: #00ff00; } /* row_mid_low | y = 102.6 */
+#louis9-16  { stroke: #5f00bf; } /* row lowest | y = 114.4 */
+#louis1-7   { stroke: #7f007f; } /* front wall row | y = 142 */
+
+#table_43 { stroke: #ff0000; } /* top vertical right row red */
+#table_42 { stroke: #0000ff; } /* middle vertical right row blue */
+#table_41 { stroke: #00ff00; } /* bottom vertical right row green */
+#table_8  { stroke: #ff00ff; } /* solo vertical left row magenta */

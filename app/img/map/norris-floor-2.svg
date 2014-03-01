@@ -1,72 +1,6 @@
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
-    <style>
-
-.norris-outline {
-  stroke-linecap: null;
-  stroke-linejoin: null;
-  stroke-width: 2;
-  stroke: #3f007f; /* dark purpley indigo */
-  fill: none;
-}
-
-.bathroom {fill: #7fff00;}
-.male {fill: lightblue;}
-.female{fill: mistyrose;}
-
-.room {
-  fill:  white; /*     none; /* blue */
-  stroke:     #007fff;
-  stroke-width:   2;
-  stroke-linecap: null;
-  stroke-linejoin: null;
-  /*stroke-width: 2.2;*/   
-}
-
-.room-outline {
-  stroke: #ff7f00; /* orange */
-  stroke-width: 2.7; 
-  /*.lakeroom was 2.2 */
-}
-
-
-.selectedRoom {
-  fill:       #eee;
-  stroke:     #c00;
-  stroke-width:   2;
-}
-
-
-.booths {
-  fill: white; /* if none, then you have to click on the outline to enable */
-  stroke-linecap: null;
-  stroke-linejoin: null;
-  stroke-width: 1.7;
-  /*stroke: hotpink; dodgerblue*/
-  stroke: #007fff; /* blue  #ff7f00 = orange */
-  /* .louis-booths had 2, .northwestern-a-booths had 2.7, #lake-interior had 1.7 */
-}
-
-/*.rotated-booth {stroke: hotpink;}*/
-
-.selectedBooth {
-    fill:       dodgerblue;
-    stroke:     #f0f;
-    stroke-width:   1.5;
-}
-
-#louis44-53 { stroke: #00ffff; } /* back wall row | y = 40.2 */
-#louis33-40 { stroke: #007fff; } /* highest row | y = 67 */
-#louis25-32 { stroke: #ff0098; } /* row_mid_high | y = 78.8 */
-#louis17-24 { stroke: #00ff00; } /* row_mid_low | y = 102.6 */
-#louis9-16  { stroke: #5f00bf; } /* row lowest | y = 114.4 */
-#louis1-7   { stroke: #7f007f; } /* front wall row | y = 142 */
-
-#table_43 { stroke: #ff0000; } /* top vertical right row red */
-#table_42 { stroke: #0000ff; } /* middle vertical right row blue */
-#table_41 { stroke: #00ff00; } /* bottom vertical right row green */
-#table_8  { stroke: #ff00ff; } /* solo vertical left row magenta */
-
-    </style>
+<?xml-stylesheet type="text/css" href="norris-svg.css" ?>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480">
+    
   <!--
   <g display="inline">
   <title>img</title>
@@ -81,45 +15,45 @@
   <path id="norris2outline" d="m484.097748 297.666656l-21.714752 0.02533l-0.381989 40.359009l-135.490997 0.050018l0.078003 60.768982l-172.58902 0.101013l-0.25499 27.10199l-43.010002 0.036011l-43.010803 0.036987l-0.020897 -153.26001l14.645897 0.072021l-0.041801 -44.854004l-66.708299 0.145996l0.1664 -198.416702l392.667509 -0.166599l0.289001 63.333302l74.945984 0l0.332855 204.7"/>
  </g>
 
-<g id="norris_interior_2">
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_2" y2="298.59349" x2="104.26879" y1="310.1047" x1="66.99997"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_7" y2="299.4399" x2="103.85191" y1="258.98139" x1="103.85191"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_21" y2="276.16356" x2="113.6902" y1="276.16356" x1="103.68516"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_22" y2="291.99147" x2="124.02875" y1="275.90964" x1="112.60633"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_23" y2="291.39898" x2="380.24144" y1="291.39898" x1="123.195"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_24" y2="290.55257" x2="161.2142" y1="258.98139" x1="161.2142"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_25" y2="290.89114" x2="233.75082" y1="258.64283" x1="233.75082"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_26" y2="259.23531" x2="285.61033" y1="259.23531" x1="81.84079"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_27" y2="292.24539" x2="284.44308" y1="259.23531" x1="284.44308"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_28" y2="337.69774" x2="326.29754" y1="291.99147" x1="326.29754"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_29" y2="290.55257" x2="294.36475" y1="258.98139" x1="294.36475"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_30" y2="258.98139" x2="354.39505" y1="258.98139" x1="293.28087"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_31" y2="291.99147" x2="353.31118" y1="258.98139" x1="353.31118"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_32" y2="399.14728" x2="300.78466" y1="292.49932" x1="284.3597"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_33" y2="312.30537" x2="379.15756" y1="291.39898" x1="379.15756"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_34" y2="311.1204" x2="428.34906" y1="311.1204" x1="379.15756"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_35" y2="310.61255" x2="427.34855" y1="160.45898" x1="427.34855"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_36" y2="161.64396" x2="170.55225" y1="161.64396" x1="427.5153"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_37" y2="162.82893" x2="171.30263" y1="72.85529" x1="171.30263"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_38" y2="72.68601" x2="172.88676" y1="72.68601" x1="132.53305"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_39" y2="90.03746" x2="133.78369" y1="73.27849" x1="133.78369"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_40" y2="229.27231" x2="188.31121" y1="162.1518" x1="188.31121"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_41" y2="228.17197" x2="295.69876" y1="228.17197" x1="187.81095"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_42" y2="228.76447" x2="294.86501" y1="207.85808" x1="294.86501"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_43" y2="207.35023" x2="293.78112" y1="207.35023" x1="352.97768"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_44" y2="207.60416" x2="326.21416" y1="161.05147" x1="326.21416"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_45" y2="229.27231" x2="353.2278" y1="161.89788" x1="353.2278"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_46" y2="228.17197" x2="353.47792" y1="228.17197" x1="318.71038"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_47" y2="258.72747" x2="143.70536" y1="179.84182" x1="143.70536"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_48" y2="180.68823" x2="144.28899" y1="180.68823" x1="81.42392"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_49" y2="259.99708" x2="81.84079" y1="212.17478" x1="81.84079"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_50" y2="212.51335" x2="80.75691" y1="212.51335" x1="143.28848"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_51" y2="89.52962" x2="144.12224" y1="89.52962" x1="133.11668"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_52" y2="137.18263" x2="143.03835" y1="89.27569" x1="143.03835"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_53" y2="136.33622" x2="143.70536" y1="136.33622" x1="81.09041"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_54" y2="181.61928" x2="82.1743" y1="135.06661" x1="82.1743"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_55" y2="291.39898" x2="463.19999" y1="291.39898" x1="427.34855"/>
-   <line fill="none" stroke="#003f7f" stroke-width="2" stroke-linejoin="null" stroke-linecap="null" id="svg_56" y2="299.69382" x2="462.36623" y1="290.72185" x1="462.36623"/>
+<g id="norris_interior_2" class="floor2interior">
+   <line id="svg_2" y2="298.59349" x2="104.26879" y1="310.1047" x1="66.99997"/>
+   <line  id="svg_7" y2="299.4399" x2="103.85191" y1="258.98139" x1="103.85191"/>
+   <line  id="svg_21" y2="276.16356" x2="113.6902" y1="276.16356" x1="103.68516"/>
+   <line  id="svg_22" y2="291.99147" x2="124.02875" y1="275.90964" x1="112.60633"/>
+   <line  id="svg_23" y2="291.39898" x2="380.24144" y1="291.39898" x1="123.195"/>
+   <line  id="svg_24" y2="290.55257" x2="161.2142" y1="258.98139" x1="161.2142"/>
+   <line  id="svg_25" y2="290.89114" x2="233.75082" y1="258.64283" x1="233.75082"/>
+   <line  id="svg_26" y2="259.23531" x2="285.61033" y1="259.23531" x1="81.84079"/>
+   <line  id="svg_27" y2="292.24539" x2="284.44308" y1="259.23531" x1="284.44308"/>
+   <line  id="svg_28" y2="337.69774" x2="326.29754" y1="291.99147" x1="326.29754"/>
+   <line  id="svg_29" y2="290.55257" x2="294.36475" y1="258.98139" x1="294.36475"/>
+   <line  id="svg_30" y2="258.98139" x2="354.39505" y1="258.98139" x1="293.28087"/>
+   <line  id="svg_31" y2="291.99147" x2="353.31118" y1="258.98139" x1="353.31118"/>
+   <line  id="svg_32" y2="399.14728" x2="300.78466" y1="292.49932" x1="284.3597"/>
+   <line  id="svg_33" y2="312.30537" x2="379.15756" y1="291.39898" x1="379.15756"/>
+   <line  id="svg_34" y2="311.1204" x2="428.34906" y1="311.1204" x1="379.15756"/>
+   <line  id="svg_35" y2="310.61255" x2="427.34855" y1="160.45898" x1="427.34855"/>
+   <line  id="svg_36" y2="161.64396" x2="170.55225" y1="161.64396" x1="427.5153"/>
+   <line  id="svg_37" y2="162.82893" x2="171.30263" y1="72.85529" x1="171.30263"/>
+   <line  id="svg_38" y2="72.68601" x2="172.88676" y1="72.68601" x1="132.53305"/>
+   <line  id="svg_39" y2="90.03746" x2="133.78369" y1="73.27849" x1="133.78369"/>
+   <line  id="svg_40" y2="229.27231" x2="188.31121" y1="162.1518" x1="188.31121"/>
+   <line  id="svg_41" y2="228.17197" x2="295.69876" y1="228.17197" x1="187.81095"/>
+   <line  id="svg_42" y2="228.76447" x2="294.86501" y1="207.85808" x1="294.86501"/>
+   <line  id="svg_43" y2="207.35023" x2="293.78112" y1="207.35023" x1="352.97768"/>
+   <line  id="svg_44" y2="207.60416" x2="326.21416" y1="161.05147" x1="326.21416"/>
+   <line  id="svg_45" y2="229.27231" x2="353.2278" y1="161.89788" x1="353.2278"/>
+   <line  id="svg_46" y2="228.17197" x2="353.47792" y1="228.17197" x1="318.71038"/>
+   <line  id="svg_47" y2="258.72747" x2="143.70536" y1="179.84182" x1="143.70536"/>
+   <line  id="svg_48" y2="180.68823" x2="144.28899" y1="180.68823" x1="81.42392"/>
+   <line  id="svg_49" y2="259.99708" x2="81.84079" y1="212.17478" x1="81.84079"/>
+   <line  id="svg_50" y2="212.51335" x2="80.75691" y1="212.51335" x1="143.28848"/>
+   <line  id="svg_51" y2="89.52962" x2="144.12224" y1="89.52962" x1="133.11668"/>
+   <line  id="svg_52" y2="137.18263" x2="143.03835" y1="89.27569" x1="143.03835"/>
+   <line  id="svg_53" y2="136.33622" x2="143.70536" y1="136.33622" x1="81.09041"/>
+   <line  id="svg_54" y2="181.61928" x2="82.1743" y1="135.06661" x1="82.1743"/>
+   <line  id="svg_55" y2="291.39898" x2="463.19999" y1="291.39898" x1="427.34855"/>
+   <line  id="svg_56" y2="299.69382" x2="462.36623" y1="290.72185" x1="462.36623"/>
   </g>
  
 
