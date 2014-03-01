@@ -348,12 +348,218 @@ function toggleActive(svgID, tableID) {
 
     <br>
 
-    <!-- data="../img/map/norris-floor-1.svg" data="../img/map/norris-floor-2.svg" -->
+    <!-- <object id="floor1" type="image/svg+xml" data="norris-floor-1.svg" width="100%" height="100%" class="svg-content">
+  </object> data="../img/map/norris-floor-1.svg" data="../img/map/norris-floor-2.svg" -->
 
 <figure class="svg-container"> <!-- viewBox="0 0 768 576" -->
   <!--img svg="./img/map/norris-floor-1.svg" class="svg-content" /-->
-  <object id="floor1" type="image/svg+xml" data="norris-floor-1.svg" width="100%" height="100%" class="svg-content">
-  </object>
+  
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 480" class="svg-content">
+
+<style>
+
+.norris-outline {
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  stroke-width: 2;
+  stroke: #3f007f; /* dark purpley indigo */
+  fill: none;
+}
+
+.style1, .style2, .style3, .style4, .floor2interior
+{
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  fill: none;
+
+}
+
+.floor2interior {
+  stroke-width: 2;
+  stroke: #003f7f;
+}
+
+/* part of floor 1 interior */
+.style1 {
+      stroke-linecap: null;
+      stroke-linejoin: null;
+      stroke-width: 4;
+      stroke: #003f7f; 
+      fill: none;
+      }
+/* most of the rest of floor 1 interior */
+      .style2 {
+      stroke-linecap: null;
+      stroke-linejoin: null;
+      stroke-width: 2.7;
+      stroke: #003f7f; 
+      fill: none;
+      }
+
+.style3 {
+  stroke-width: 6;
+  stroke: #00007f;
+  }
+  /* only one of these... */
+  .style4 {
+      stroke-width: 2.7;
+      stroke: #00037f;
+    }
+
+.bathroom {fill: #7fff00;}
+.male {fill: lightblue;}
+.female{fill: mistyrose;}
+
+.room {
+  fill:  white; /*     none; /* blue */
+  stroke:     #007fff;
+  stroke-width:   2;
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  /*stroke-width: 2.2;*/   
+}
+
+.room-outline {
+  stroke: #ff7f00; /* orange */
+  stroke-width: 2.7; 
+  /*.lakeroom was 2.2 */
+}
+
+
+.selectedRoom {
+  fill:       #eee;
+  stroke:     #c00;
+  stroke-width:   2;
+}
+
+
+.booths {
+  fill: white; /* if none, then you have to click on the outline to enable */
+  stroke-linecap: null;
+  stroke-linejoin: null;
+  stroke-width: 1.7;
+  /*stroke: hotpink; dodgerblue*/
+  stroke: #007fff; /* blue  #ff7f00 = orange */
+  /* .louis-booths had 2, .northwestern-a-booths had 2.7, #lake-interior had 1.7 */
+}
+
+/*.rotated-booth {stroke: hotpink;}*/
+
+.selectedBooth {
+    fill:       dodgerblue;
+    stroke:     #f0f;
+    stroke-width:   1.5;
+}
+</style>
+   <!-- 
+<g display="inline">
+  <title>Original Image</title>
+  <image xlink:href="http://www.norris.northwestern.edu/wp-content/uploads/2010/03/floorplan_web__first_2013.jpg" id="svg_1" height="500" width="600" y="0" x="0"/>
+ </g>
+ -->
+ 
+ <g display="inline" class="norris-outline">
+  <path id="norris1outline" d="m472.40997 436.06396l-142.42197 -0.02698l-172.589 0.11301l-0.255 35.31396l-40.50999 -0.45895l-44.0108 -0.45901l-12.0209 0.07202l0.1459 -179.41901l-0.0418 -66.17201l-41.7083 0.164l0.1664 -201.93797l368.64652 -0.1863l0.31 86.84131l84.94595 -0.5l-0.66696 327.9" />
+ </g>
+
+
+
+  <g display="inline">
+  <title>Norris Floor 1 Interior</title>
+  <g id="svg_3">
+    <g class="style1">
+   <line id="svg_12" y2="323.98816" x2="331.76149" y1="436" x1="331.76149" />
+   <line id="svg_13" y2="325.70512" x2="477.21473" y1="325.70512" x1="329.98704" />
+   <line id="svg_14" y2="106.78916" x2="172.35719" y1="258.2201" x1="172.35719" />
+   <line id="svg_15" y2="257.72461" x2="255.46033" y1="257.72461" x1="170.38559" />
+   <line id="svg_18" y2="259.60741" x2="254.21164" y1="246.13023" x1="254.21164" />
+   <line id="svg_20" y2="246.13023" x2="252.21767" y1="246.13023" x1="309.41659" />
+   <line id="svg_21" y2="246.52661" x2="307.44498" y1="213.62642" x1="307.44498" />
+   <line id="svg_22" y2="215.21197" x2="341.35886" y1="215.21197" x1="307.05066" />
+   <line id="svg_25" y2="327.78612" x2="437.57093" y1="243.7519" x1="437.57093" />
+ </g>
+ <g class="style2">
+   <line id="svg_23" y2="253.87185" x2="340.17363" y1="213.23003" x1="340.17363" />
+   <line id="svg_24" y2="252.86882" x2="437.99298" y1="252.86882" x1="338.20203" />
+   <line id="svg_26" y2="245.33745" x2="473.062" y1="245.33745" x1="435.59933" />
+   <line id="svg_29" y2="128.00665" x2="341.36069" y1="128.00665" x1="171.79854" />
+   <line id="svg_30" y2="231.25877" x2="340.17363" y1="126.02471" x1="340.17363" />
+   <line id="svg_31" y2="289.73289" x2="276.68938" y1="289.73289" x1="60.6" />
+   <line id="svg_33" y2="256.8327" x2="149.32968" y1="256.8327" x1="106.34124" />
+   <line id="svg_34" y2="256.44002" x2="147.35063" y1="170.42015" x1="147.35063" />
+   <line id="svg_35" y2="171.21292" x2="149.3241" y1="171.21292" x1="107.52421" />
+ </g>
+   <line id="svg_27" y2="364.66877" x2="389.06944" y1="326.59696" x1="389.06944" class="style3"/>
+   <line id="svg_28" y2="361.87547" x2="385.91485" y1="361.87547" x1="444.27442" class="style3"/>
+   <line id="svg_32" y2="290.13849" x2="108.31285" y1="254.85076" x1="108.31285" class="style4"/>
+  </g>
+ </g>
+ 
+  <g id="floor1-rooms" class="room" display="inline">
+
+  <rect id="102_evans"     x="19"    y="24"  width="72"    height="62.7"  onclick="toggleActiveRoom(this.id)" />
+
+  <rect id="103_chicago"   x="91.7"  y="24"  width="80.7"  height="46.3"  onclick="toggleActiveRoom(this.id)" />
+  
+  <rect id="101b_wildcat" x="18.9" y="156.2" width="88.3"  height="69.4"  onclick="toggleActiveRoom(this.id)" />
+
+  <rect id="101ab_wildcat" x="18.9" y="86.8" width="88.3"  height="138.8"   onclick="toggleActiveRoom(this.id)"  />
+
+
+
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~  WILDCAT ROOM  ~~~~~~~~~~~~~~~~~~~~ -->
+
+
+  <title>Wildcat Room</title>
+  <!--image xlink:href="http://i.imgur.com/y1P9fKi.png" id="svg_1" height="91.24643" width="171" y="73.53768" x="-21.00001"/-->
+  <g id="wildcat-partitions">
+    <!-- stroke-width="2.7" x="19.4" y="87.1" width="87.6" height="72.6" -->
+    <rect id="101a_wildcat"  x="18.9" y="86.8"  width="88.3"  height="69.4" onclick="toggleActiveRoom(this.id)"/>
+      <g id="wildcat-a-booths" class="booths">
+        <a id="72"><rect id="table_72" x="77.3" y="146.6" width="12.5" height="5.7" onclick="toggleActive(this.id)" /> </a>
+        <a id="73"><rect id="table_73" x="53"   y="146.6" width="12.5" height="5.7" onclick="toggleActive(this.id)" /> </a>
+        <a id="74"><rect id="table_74" x="27.6" y="146.6" width="12.5" height="5.7" onclick="toggleActive(this.id)" /> </a>
+        
+        <!--rect id="table_76rot" transform="matrix(0,0.22684037191856943,-0.22684037191856943,0,488.2566391297564,316.52864096986764) " x="-929.8" y="2014.4" width="55.1" height="25" />
+         <rect id="table_75rot" transform="matrix(0,0.22684037191856943,-0.22684037191856943,0,509.57963755141134,337.85163939152255) "  x="-929.8" y="2108.4" width="55.1" height="25" stroke-width="7.7" /-->
+
+        <a id="75">
+           <rect id="table_75"  x="25.75" y="127" width="5.7" height="12.5" onclick="toggleActive(this.id)" class="rotated-booth"/>
+        </a>
+        <a id="76">
+         <rect id="table_76" x="25" y="106" width="5.7" height="12.5" onclick="toggleActive(this.id)" class="rotated-booth"/>
+        </a>
+        <a id="77"><rect id="table_77" x="28" y="91.7" width="12.5" height="5.7" onclick="toggleActive(this.id)" /> </a>
+        <a id="78"><rect id="table_78" x="54.3" y="91.7" width="12.5" height="5.7" onclick="toggleActive(this.id)" /> </a>
+        <a id="79"><rect id="table_79" x="82" y="91.7" width="12.5" height="5.7" onclick="toggleActive(this.id)" /> </a>
+      </g> <!--/ wildcat-a-booths -->
+
+  </g>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~  BIG TEN ROOM  ~~~~~~~~~~~~~~~~~~~~ -->
+
+  
+  <rect id="104_bigten"    x="172.4" y="24"  width="133.6" height="86.8"  onclick="toggleActiveRoom(this.id)" />
+    <g id="bigten-booths" class="booths">
+      <title>Big Ten Room</title>
+      <a id="84"><rect id="table_84" height="7.7" width="16.9" y="37.1" x="184.3"  onclick="toggleActive(this.id)" /> </a>
+      <a id="83"><rect id="table_83" height="7.7" width="16.9" y="37.1" x="229.5"  onclick="toggleActive(this.id)" /> </a>
+      <a id="82"><rect id="table_82" height="7.7" width="16.9" y="37.1" x="277.3"  onclick="toggleActive(this.id)" /> </a>
+      <a id="80"><rect id="table_80" height="7.7" width="16.9" y="75.6" x="218.2"  onclick="toggleActive(this.id)" /> </a>
+      <!--rect id="table_81rot" transform="matrix(0.20821781082233312,-0.22672609951737063,0.22672609951737063,0.20821781082233312,227.16585241749192,180.1290334120971) " height="25" width="55.1" y="-88.2" x="369.3" stroke-width="6.1"/-->
+      <a id="81"><rect id="table_81" width="7.7" height="16.9" transform="rotate(45 337 -20)" y="70" x="369.3" class="rotated-booth"  onclick="toggleActive(this.id)" /> </a>
+    </g> <!--/ bigten-booths -->
+    
+ </g> <!--/ floor1-rooms -->
+ 
+</svg>
+
+
+
+
+
+
 </figure>
 
 
