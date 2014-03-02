@@ -6,7 +6,7 @@
   Showing {{filteredList.length}} of {{companies.length}} total. <br>
 
   Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
-  Filter by: <i class="fa fa-filter"> </i>
+  <!--Filter by: <i class="fa fa-filter"> </i>
 
     <!--div id="status">Current filter: {{query}}</div-->
 
@@ -24,16 +24,16 @@ input type="checkbox" name="selectedPositions[]" value="{{p.name}}" ng-model="p.
 pretty sure its not the best form/practice but i dont caaaaareee right now
 -->
 
-<div class="form-group">
+<!--div class="form-group">
       <label ng-repeat="m in majors" class="checkbox-inline">
         <input type="checkbox" ng-click="includeMajor(m.name)"> 
         {{m.friendlyName}}
       </label>
     </div> <!--/form-group-->
 
-    <div class="form-group">
+    <!--div class="form-group">
       <label ng-repeat="p in positions" class="checkbox-inline">
-        <input type="checkbox" ng-click="includePosition(p.name)""> 
+        <input type="checkbox" ng-click="includePosition(p.name)"> 
         {{p.friendlyName}}
       </label>
     </div> <!--/form-group model vs data ng model?-->

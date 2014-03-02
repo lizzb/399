@@ -16,10 +16,11 @@ var idayControllers = angular.module('idayControllers', []);
 function AppController ($scope, $rootScope, $http) {
   // Load pages on startup
   //$http.get('/pages.json').success(function (data) {
-  $http.get('data/week7grid.json').success(function(data) {
+  $http.get('data/week8grid.json').success(function(data) {
     //$rootScope.pages = data;
     $rootScope.all_companies = data;
     console.log('data loaded');
+    $rootScope.filteredList = data; //filtered_companies = data;
     // We are also passing in $rootScope which all scopes inherit from.
     // We do this so this so that we can access the pages JSON data in our RouteController. 
   });
@@ -48,6 +49,9 @@ function AppController ($scope, $rootScope, $http) {
       { friendlyName: 'Mechanical', name: 'mech' },
       { friendlyName: 'Non-engineering', name: 'noneng' }
     ];
+
+    $rootScope.majorsIncluded = []; //$scope.majorsIncluded = [];
+    $rootScope.positionsIncluded = []; //$scope.positionsIncluded = [];
 }
 
 idayControllers.controller('LandingPageController', 
@@ -85,17 +89,22 @@ idayControllers.controller('CompanyListController', ['$scope','$rootScope', //'$
 
 //}]);
 
+// made these root scope temporarily... well not sure if temporary
+// but want settings on a diff page, or from the dropdown
 
-    $scope.majorsIncluded = [];
-    $scope.positionsIncluded = [];
 
-    $scope.includeMajor = function (color) {
+  //  $rootScope.majorsIncluded = []; //$scope.majorsIncluded = [];
+  //  $rootScope.positionsIncluded = []; //$scope.positionsIncluded = [];
+
+    //$scope.includeMajor = function (color) {
+    $rootScope.includeMajor = function (color) {
         var i = $scope.majorsIncluded.indexOf(color);
         if (i > -1) { $scope.majorsIncluded.splice(i, 1); } 
         else { $scope.majorsIncluded.push(color); }
     }
     
-     $scope.includePosition = function (color) {
+     //$scope.includePosition = function (color) {
+     $rootScope.includePosition = function (color) {
         var i = $scope.positionsIncluded.indexOf(color);
         if (i > -1) { $scope.positionsIncluded.splice(i, 1); } 
         else { $scope.positionsIncluded.push(color); }
@@ -107,13 +116,16 @@ $scope.userFilter = function (company) {
         var includedPositions= $scope.positionsIncluded;
         var includedMajors = $scope.majorsIncluded;
         
-        if($scope.majorsIncluded.length <= 0 && $scope.positionsIncluded.length <= 0)
+        //if($scope.majorsIncluded.length <= 0 && $scope.positionsIncluded.length <= 0)
+        if(includedMajors.length <= 0 && includedPositions.length <= 0)
             return company;
         
-        if($scope.positionsIncluded.length <= 0)
+        //if($scope.positionsIncluded.length <= 0)
+        if(includedPositions.length <= 0)
           includedPositions = ["fte","intern","coop","msphd"];
             
-        if($scope.majorsIncluded.length <= 0)
+        //if($scope.majorsIncluded.length <= 0)
+        if(includedMajors.length <= 0)
           includedMajors = ["am","bme","chem","civil","ce","cs","ee","enve","ie","made","matsci","mech","noneng"];
         
 
@@ -134,21 +146,21 @@ $scope.userFilter = function (company) {
         return;
     }
 
-
      // $filter('companyFilter')($rootScope.majors, $rootScope.positions);
  }]);   
 
 
 idayControllers.controller('CompanyDetailsController', ['$scope', '$routeParams', '$rootScope',
   function($scope, $routeParams, $rootScope){
-    angular.forEach($rootScope.companies, function(comp) {
-          if (comp.id == $routeParams.companyId) 
+    angular.forEach($rootScope.all_companies, function(comp) {
+          if (comp.id == $routeParams.companyId) //companyId???
           {
             $scope.company = comp;
           }    
         });
     $scope.majors = $rootScope.majors;
     $scope.jobs = $rootScope.positions; // pass from a diff scope??
+    // if its in rootscope its already accessible so this is redundant really
     // both jobs and positions work,
     // both are accessible from within companydetails
   }])
