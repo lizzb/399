@@ -29,7 +29,8 @@ represents an Angular directive named ngApp. This directive is used to flag the 
   <script src="js/filters.js"></script>
 
 </head>
-<body>
+<body ng-controller="AppController">
+<!-- http://andru.co/building-a-simple-single-page-application-using-angularjs#json -->
 
 
   <!-- Fixed navbar -->
@@ -155,7 +156,7 @@ dropdown-menu-left right
 <i class="fa fa-thumbs-down"></i-->
 
 
-
+<!-- Dynamic content -->
   <div ng-view></div>
 
 </div><!-- /.container -->

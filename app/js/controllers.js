@@ -6,36 +6,25 @@ var idayControllers = angular.module('idayControllers', []);
 
 // disable links to company details if not loaded yet...? how to handle
 
-idayControllers.controller('LandingPageController', 
-  ['$scope', 
-  function($scope) {
-    //$scope.phoneId = $routeParams.phoneId;
-  }]);
+// http://andru.co/building-a-simple-single-page-application-using-angularjs#json
+// We should only load the JSON file once, 
+// cache it to a variable 
+//and access the variable when we need the data. 
+// Let's use Angular's $http service to grab the JSON file. 
+// To use the $http service we will need to pass it as an argument to the AppController.
 
-/* 
-// Goal: load http only ONCE max - maybe even js array if thats okay? Vs json
-// load full list once, store it
-// store a currently filtered verison list of companies
-// and just pass the relevant item from the list of companies
-// to the scope of the details
-// pass the filtered list info relevant to the map to that as well
-
-// http://stackoverflow.com/questions/14857739/
-// angular-js-detailed-view-with-only-one-json
-
-// i think a factory service, or maybe just passing scope differently?
-// (stil dont understand scopes entirely)
-*/
-
-
-idayControllers.controller('CompanyListController', ['$scope', '$http', '$rootScope', //'$filter',
-  function($scope, $http, $rootScope){ //$filter) {
-
+function AppController ($scope, $rootScope, $http) {
+  // Load pages on startup
+  //$http.get('/pages.json').success(function (data) {
   $http.get('data/week7grid.json').success(function(data) {
-  $scope.companies = data;
-  $rootScope.companies = data;
+    //$rootScope.pages = data;
+    $rootScope.all_companies = data;
+    console.log('data loaded');
+    // We are also passing in $rootScope which all scopes inherit from.
+    // We do this so this so that we can access the pages JSON data in our RouteController. 
+  });
 
-  //$scope.positions = [
+    //$scope.positions = [
   $rootScope.positions = [ 
       { friendlyName: 'Full Time', name: 'fte'},
       { friendlyName: 'Intern', name: 'intern' },
@@ -59,8 +48,42 @@ idayControllers.controller('CompanyListController', ['$scope', '$http', '$rootSc
       { friendlyName: 'Mechanical', name: 'mech' },
       { friendlyName: 'Non-engineering', name: 'noneng' }
     ];
+}
 
-});
+idayControllers.controller('LandingPageController', 
+  ['$scope', 
+  function($scope) {
+    //$scope.phoneId = $routeParams.phoneId;
+  }]);
+
+/* 
+// Goal: load http only ONCE max - maybe even js array if thats okay? Vs json
+// load full list once, store it
+// store a currently filtered verison list of companies
+// and just pass the relevant item from the list of companies
+// to the scope of the details
+// pass the filtered list info relevant to the map to that as well
+
+// http://stackoverflow.com/questions/14857739/
+// angular-js-detailed-view-with-only-one-json
+
+// i think a factory service, or maybe just passing scope differently?
+// (stil dont understand scopes entirely)
+*/
+// idayControllers.controller('CompanyListController', ['$scope', '$http', '$rootScope', //'$filter',
+
+
+idayControllers.controller('CompanyListController', ['$scope','$rootScope', //'$filter',
+  function($scope, $rootScope){ //$filter) {
+
+ // $http.get('data/week7grid.json').success(function(data) {
+  //  one way to communicate between controllers using the $rootScope
+  $scope.companies = $rootScope.all_companies; //data;
+  //$rootScope.companies = data;
+
+
+
+//}]);
 
 
     $scope.majorsIncluded = [];

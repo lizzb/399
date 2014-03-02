@@ -6,6 +6,7 @@ var iday399App = angular.module('iday399App', [
   'ngRoute',
   'idayControllers',
   'idayFilters'
+  //'idayServices'
 ]);
 
 iday399App.config(['$routeProvider', //'$locationProvider'
@@ -22,6 +23,10 @@ iday399App.config(['$routeProvider', //'$locationProvider'
       when('/companies/:companyId', {
         templateUrl: 'views/company-details.html',
         controller: 'CompanyDetailsController'
+      }).
+      when('/map', {
+        templateUrl: 'views/floorplan.html', //.....
+        controller: 'CompanyListLocationController'
       }).
       when('/map/companies', { // /companies
         templateUrl: 'views/floorplan.html',
@@ -51,10 +56,12 @@ iday399App.config(['$routeProvider', //'$locationProvider'
         redirectTo: '/' //'/app/' // "home" page
       });
 
+
+  }]);
+
 // http://scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag
       // use the HTML5 History API
    // $locationProvider.html5Mode(true);
-  }]);
 
 // floorplan.html
 
