@@ -9,16 +9,18 @@ represents an Angular directive named ngApp. This directive is used to flag the 
 -->
 
 <html lang="en" ng-app="iday399App">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!-- important for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!-- important for mobile -->
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- http://scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag-->
   <base href="/399/app/">
 
-  <title> 399 Industry Day with AngularJS </title>
-  
+  <title>399 Industry Day with AngularJS</title>
+
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -29,14 +31,15 @@ represents an Angular directive named ngApp. This directive is used to flag the 
   <script src="js/filters.js"></script>
 
 </head>
+
 <body ng-controller="AppController">
-<!-- http://andru.co/building-a-simple-single-page-application-using-angularjs#json -->
+  <!-- http://andru.co/building-a-simple-single-page-application-using-angularjs#json -->
 
 
   <!-- Fixed navbar -->
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -51,22 +54,23 @@ represents an Angular directive named ngApp. This directive is used to flag the 
 
         http://jsbin.com/zoxezeyu/4/edit
         -->
-<a class="navbar-brand" href="#">Industry Day</a>
+        <a class="navbar-brand" href="#">Industry Day</a>
 
-         <a href="#/map/companies" class="navbar-brand right">
+        <a href="#/map/companies" class="navbar-brand right">
           <i class="fa fa-compass fa-lg"></i>
         </a>
 
-        <a href="#/companies" class="navbar-brand right">
+        <a href="#/companies" class="navbar-text right">
           <i class="fa fa-list"></i>
         </a>
 
-<a class=" navbar-right navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
-<i class="fa fa-cog"></i> <b class="caret"></b>
-       </a>   
-       
-        
-        
+        <a class=" navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
+          <i class="fa fa-cog"></i>
+          <b class="caret"></b>
+        </a>
+
+
+
 
         <!--ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
            <li role="presentation" class="dropdown-header">Dropdown header</li>
@@ -114,21 +118,21 @@ represents an Angular directive named ngApp. This directive is used to flag the 
           </ul>
         </a>
       </li-->
-    </div>
+      </div>
 
-    <!-- i want this to close once a selection has been made automatically!!! pull-right deprecated but using it anywayyy no just kidding i'm not cuz i cant get the dropdown to be small
+      <!-- i want this to close once a selection has been made automatically!!! pull-right deprecated but using it anywayyy no just kidding i'm not cuz i cant get the dropdown to be small
 dropdown-menu-left right
     -->
 
-<!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse ">
-      <ul class="nav navbar-nav">
-        <!--li><a href="#">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse ">
+        <ul class="nav navbar-nav">
+          <!--li><a href="#">
         <i class="fa fa-home"></i>
         Menu/Home
         </a>
       </li-->
-      <!--
+          <!--
       <li><a href="#/companies">
         <i class="fa fa-list"></i> Company List
       </a></li>
@@ -137,14 +141,18 @@ dropdown-menu-left right
         <i class="fa fa-location-arrow"></i> Layout/Map
       </a></li>
       -->
-      <li><a href="#favorites">
-        <i class="fa fa-star"></i> Favorites
-      </a></li>
-      
-      <li><a href="#/settings">
-        <i class="fa fa-cog"></i> Settings
-      </a></li>
-      <!--
+          <li>
+            <a href="#favorites">
+              <i class="fa fa-star"></i>Favorites
+            </a>
+          </li>
+
+          <li>
+            <a href="#/settings">
+              <i class="fa fa-cog"></i>Settings
+            </a>
+          </li>
+          <!--
       <li><a href="#recruiters">
         <i class="fa fa-users"></i> Recruiters
       </a></li>
@@ -152,75 +160,77 @@ dropdown-menu-left right
       Feedback Survey
       Layout/Map
       -->
-      <li><a href="#/credits">
-        <i class="fa fa-info"></i> About
-      </a></li>
-      
-      <li><a href="#/feedback">
-        <i class="fa fa-comments-o"></i> Feedback
-      </a></li>
+          <li>
+            <a href="#/credits">
+              <i class="fa fa-info"></i>About
+            </a>
+          </li>
+
+          <li>
+            <a href="#/feedback">
+              <i class="fa fa-comments-o"></i>Feedback
+            </a>
+          </li>
 
 
-</ul>
-</div><!--/.nav-collapse -->
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
 
 
-<ul class="nav navbar-nav navbar-user navbar-right">
-     <li class="dropdown settings-collapse">
-            
-<ul class="dropdown-menu">
+      <ul class="nav navbar-nav navbar-user navbar-right">
+        <li class="dropdown settings-collapse">
 
-Showing {{filteredList.length}} of {{all_companies.length}} total. <br>
+          <ul class="dropdown-menu">
 
-TODO: Add a reset button or check all or check none and maybe show badges by # of companies idk
-<br> figure out how to share the filtered list value across scopes, or do the filtering globally?
+            Showing {{filteredList.length}} of {{all_companies.length}} total.
+            <br>TODO: Add a reset button or check all or check none and maybe show badges by # of companies idk
+            <br>figure out how to share the filtered list value across scopes, or do the filtering globally? Filter by:
+            <i class="fa fa-filter"></i>
 
-Filter by: <i class="fa fa-filter"> </i>
+            <li class="divider"></li>
+            <li class="dropdown-header">Positions</li>
 
-<li class="divider"></li>
-<li class="dropdown-header">Positions</li>
-
-<! -- class="checkbox-inline" and label instead of li-->
+            <! -- class="checkbox-inline" and label instead of li-->
 
 
 
 
-    <div class="form-group">
-      <li ng-repeat="p in positions">
-        <input type="checkbox" ng-click="includePosition(p.name)"> 
-        {{p.friendlyName}}
-      </li>
-    </div> 
+            <div class="form-group">
+              <li ng-repeat="p in positions">
+                <input type="checkbox" ng-click="includePosition(p.name)">{{p.friendlyName}}
+              </li>
+            </div>
 
-    <li class="divider"></li>
-    <li class="dropdown-header">Majors</li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Majors</li>
 
-    <div class="form-group">
-      <li ng-repeat="m in majors">
-      <label>
-        <input type="checkbox" ng-click="includeMajor(m.name)"> 
-        {{m.friendlyName}} </label>
-      </li>
-    </div> <!--/form-group-->
+            <div class="form-group">
+              <li ng-repeat="m in majors">
+                <label>
+                  <input type="checkbox" ng-click="includeMajor(m.name)">{{m.friendlyName}}</label>
+              </li>
+            </div>
+            <!--/form-group-->
 
 
-    <!--li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+            <!--li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
     <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
     <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
     <li class="divider"></li>
   <li class="dropdown-header">Nav header</li>
     <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li-->
-</ul>
-                </li>
-            </ul>
+          </ul>
+        </li>
+      </ul>
 
 
-</div>
-</div>
-<div class="container">
+    </div>
+  </div>
+  <div class="container">
 
 
-<!--i class="fa fa-chevron-left"></i>
+    <!--i class="fa fa-chevron-left"></i>
   <i class="fa fa-chevron-right"></i-->
 
 
@@ -228,47 +238,48 @@ Filter by: <i class="fa fa-filter"> </i>
 
 
     <!-- home/landing/splash/idk -->
-<!--i class="fa fa-th"></i>
+    <!--i class="fa fa-th"></i>
   <i class="fa fa-th-large"></i-->
 
     <!-- companies -->
-          <!--i class="fa fa-briefcase"></i><br>
+    <!--i class="fa fa-briefcase"></i><br>
           <i class="fa fa-bars"></i>
           <i class="fa fa-list-ul"></i>
           <i class="fa fa-th-list"></i>
         -->
 
 
-        <!-- map-related -->
-          <!--i class="fa fa-map-marker"></i>
+    <!-- map-related -->
+    <!--i class="fa fa-map-marker"></i>
           <i class="fa fa-thumb-tack"></i-->
 
-            <!-- favorites/starred/bookmarked/pinned/whatever -->
-            <!--i class="fa fa-star-o"></i-->
-<!--i class="fa fa-flag-o"></i>  <i class="fa fa-flag"></i><br>
+    <!-- favorites/starred/bookmarked/pinned/whatever -->
+    <!--i class="fa fa-star-o"></i-->
+    <!--i class="fa fa-flag-o"></i>  <i class="fa fa-flag"></i><br>
           <i class="fa fa-heart-o"></i> <i class="fa fa-heart"></i>
           <i class="fa fa-bookmark-o"></i>  <i class="fa fa-bookmark"></i-->
 
-          <!-- settings -->
-<!--i class="fa fa-user"></i>
+    <!-- settings -->
+    <!--i class="fa fa-user"></i>
   <i class="fa fa-cogs"></i-->
 
     <!-- about/info/credits -->
-<!--i class="fa fa-question"></i>
+    <!--i class="fa fa-question"></i>
   <i class="fa fa-exclamation"></i-->
 
     <!-- feedback/survey -->
-<!--i class="fa fa-comments"></i>
+    <!--i class="fa fa-comments"></i>
 <i class="fa fa-thumbs-o-up"></i>
 <i class="fa fa-thumbs-o-down"></i>
 <i class="fa fa-thumbs-up"></i>
 <i class="fa fa-thumbs-down"></i-->
 
 
-<!-- Dynamic content -->
-  <div ng-view></div>
+    <!-- Dynamic content -->
+    <div ng-view></div>
 
-</div><!-- /.container -->
+  </div>
+  <!-- /.container -->
 
 
   <!-- Bootstrap core JavaScript
@@ -279,4 +290,5 @@ Filter by: <i class="fa fa-filter"> </i>
   <!--script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script-->
 
 </body>
+
 </html>
