@@ -71,6 +71,7 @@ pretty sure its not the best form/practice but i dont caaaaareee right now
     <ul class="companies">
 
       <li ng-repeat="company in filteredList = (companies | filter:userFilter | orderBy:sortType:asc)" class="thumbnail">
+ <i class="glyphicon glyphicon-star-empty listing-star"></i>
 
         <a href="#/companies/{{company.id}}">
           <img class="companies-list-square" ng-src="../app/img/logos/{{company.id}}-square.png">
@@ -87,6 +88,7 @@ pretty sure its not the best form/practice but i dont caaaaareee right now
 
 
           <div class="companies-list-info">
+
             <a href="#/companies/{{company.id}}">
               {{company.name}}
             </a>

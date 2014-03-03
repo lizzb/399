@@ -14,6 +14,25 @@ body {
   body { padding-top: 70px; } /* for fixed header */
 }
 
+.listing-star {
+float: left;
+color: #6633cc;
+padding: 4px;
+padding-top: 0px;
+}
+.details-directions, .details-star{
+  float: right;
+  font-size: 28px;
+  color: #6633cc; /*#330099 ffff00 */
+}
+
+.details-directions {margin-left: 10px;}
+
+.detailsPositions
+{
+  font-size: 15px;
+  padding-right:2px;
+}
       body { padding-top: 70px; } /* for fixed header */
       ul, menu, dir {
         display: block;
