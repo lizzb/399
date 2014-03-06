@@ -16,7 +16,7 @@ var idayControllers = angular.module('idayControllers', []);
 function AppController ($scope, $rootScope, $http) {
   // Load pages on startup
   //$http.get('/pages.json').success(function (data) {
-  $http.get('data/week8grid.json').success(function(data) {
+  $http.get('data/week9grid.json').success(function(data) {
     //$rootScope.pages = data;
     $rootScope.all_companies = data;
     console.log('data loaded');

@@ -77,14 +77,23 @@ pretty sure its not the best form/practice but i dont caaaaareee right now
           <img class="companies-list-square" ng-src="../app/img/logos/{{company.id}}-square.png">
         </a>
 
-
+        <div class="companyBoothLocation">
         <a href="#/map/{{company.id}}">
-              <span class="companyBoothLocation"> 
-                Booth: {{company.booth}} <Br>
-                Room: {{company.room}}
-                <i class="fa fa-compass fa-2x"></i>
+              <span> 
+               Floor {{company.floor}} <br>
+               {{company.room}} <br>
+               <!--Table {{company.booth}} <Br>-->
+               <span class="fa-stack">
+               <i class="fa fa-circle-o fa-stack-2x fa-2x"></i>
+               <i class="fa fa-location-arrow fa-stack-1x fa-lg"></i>
+
+               </span>
+               
+                
+
               </span>
             </a>
+            </div>
 
 
           <div class="companies-list-info">

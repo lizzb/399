@@ -57,6 +57,9 @@ margin: 8px;
 .companyBoothLocation
 {
   float: right;
+  font-size: 10pt;
+  line-height: 110%;
+  width: 80px;
 }
 
 /*.controls { float: left; display: inline;}*/
