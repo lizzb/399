@@ -57,11 +57,15 @@ margin: 8px;
 .companyBoothLocation
 {
   float: right;
-  font-size: 10pt;
-  line-height: 110%;
-  width: 80px;
+  width: 85px;
+  vertical-align: center; /* is this valid?? */
 }
 
+.room-floor-label{
+   font-size: 8.5pt;
+   line-height: 110%;
+
+}
 /*.controls { float: left; display: inline;}*/
 
 /* used to apply to selection dropdown *

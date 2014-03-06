@@ -31,6 +31,62 @@ represents an Angular directive named ngApp. This directive is used to flag the 
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
 
+  <script>
+// have added this in the floorplan html as well but its not loadingg
+function initialize()
+{
+    var labelshtml = "";
+    for(var i = 1; i <= 84; i++ )
+    {
+        var tableID = "'table_" + i + "'";
+        var floorID = "'floor1'";
+        if (i >= 72) floorID = "'floor2'";
+
+        var params = floorID + ', ' + tableID;
+
+        var tablehtml = '<label> <input type="checkbox" ';
+        tablehtml += 'onclick="toggleActive(' + params + ')" ';
+        //tablehtml += ')" ';
+        //tablehtml += 'table_' + i;
+        //tablehtml+= '/')" />' + i + 
+        tablehtml += ' /> ' + i + ' </label>';
+        labelshtml += tablehtml;
+    }
+    document.getElementById('tablecheckboxes').innerHTML = labelshtml;
+}
+
+function toggleActive(svgID, tableID) {
+
+    console.log('got into toggle active fx');
+    // Select the SVG element by its ID:
+    var svg = document.getElementById(svgID);
+    if(svg != null) // undefined? 
+    {
+        console.log('svg was not null');
+        // Select the SVG document:
+        var svgDoc = svg.getSVGDocument(); //  svg.contentDocument;
+        if(svgDoc != null)
+        {
+            console.log('svgdoc was not undefined');
+            // Select elements within the SVG document:
+            var svgElem = svgDoc.getElementById(tableID);
+            if(svgElem != null) //undefined?
+            {
+                console.log('svgElem was not null');
+                var boothclass = svgElem.getAttribute("class");
+                if (boothclass != "selectedBooth")
+                    svgElem.setAttribute("class", "selectedBooth");
+                else
+                    svgElem.setAttribute("class", "");
+
+            }
+        }
+    }
+}
+
+
+</script>
+
 </head>
 
 <body ng-controller="AppController">

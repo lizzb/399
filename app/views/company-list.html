@@ -79,19 +79,17 @@ pretty sure its not the best form/practice but i dont caaaaareee right now
 
         <div class="companyBoothLocation">
         <a href="#/map/{{company.id}}">
-              <span> 
-               Floor {{company.floor}} <br>
-               {{company.room}} <br>
+              <span class="room-floor-label"> 
+              <!-- Floor {{company.floor}} <br> -->
+               {{company.room}} [{{company.floor}}]<br>
                <!--Table {{company.booth}} <Br>-->
+               </span>
                <span class="fa-stack">
-               <i class="fa fa-circle-o fa-stack-2x fa-2x"></i>
-               <i class="fa fa-location-arrow fa-stack-1x fa-lg"></i>
-
+               <i class="fa fa-circle fa-stack-2x fa-2x"></i>
+               <i class="fa fa-location-arrow fa-inverse fa-stack-1x fa-lg"></i>
                </span>
                
-                
-
-              </span>
+              
             </a>
             </div>
 

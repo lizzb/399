@@ -1,11 +1,9 @@
 [
   {
     "id":"3m",
-    
-    
     "name":"3M Company",
     "description":"3M is a global innovation company that never stops inventing. Over the years, our innovations have improved daily life for hundreds of millions of people all over the world. We have made driving at night easier, made buildings safer, and made consumer electronics lighter, less energy-intensive and less harmful to the environment. We even helped put a man on the moon. Every day at 3M, one idea always leads to the next, igniting momentum to make progress possible around the world.",
-    "room":"Wildcat Room",
+    "room":"Wildcat",
     "floor":1,
     "booth":79,
     "am":false,
@@ -194,7 +192,7 @@
     
     "name":"AT&T",
     "description":"AT&T is bringing it all together for our customers, from revolutionary smartphones to next-generation TV services and sophisticated solutions for multi-national businesses.\n\n For more than a century, we have consistently provided innovative, reliable, high-quality products and services and excellent customer care. Today, our mission is to connect people with their world, everywhere they live and work, and do it better than anyone else. We're fulfilling this vision by creating new solutions for consumers and businesses and by driving innovation in the communications and entertainment industry.",
-    "room":"Wildcat Room",
+    "room":"Wildcat",
     "floor":1,
     "booth":74,
     "am":false,
@@ -325,8 +323,6 @@
   },
   {
     "id":"carsdotcom",
-    
-    
     "name":"Cars.com",
     "description":"Visited by more than 11 million car shoppers each month, Cars.com is the leading destination for online car shoppers, offering credible and easy-to-understand information from consumers and experts to help buyers formulate opinions on what to buy, where to buy and how much to pay for a car.\n\nWith comprehensive pricing information, dealer reviews, side-by-side comparison tools, photo galleries, videos, unbiased editorial content and a large selection of new- and used-car inventory, Cars.com puts car buyers in control of their shopping process with the information they need to make confident buying decisions.",
     "room":"Louis",
@@ -352,8 +348,6 @@
   },
   {
     "id":"chopper-trading",
-    
-    
     "name":"Chopper Trading",
     "description":"Chopper Trading is a technology-based proprietary trading firm that operates in a range of global markets and trades on several major exchanges. Founded in 2002, Chopper Trading is headquartered in Chicago and currently has offices in New York, London and Washington, D.C., among other locations.",
     "room":"Louis",
@@ -379,8 +373,6 @@
   },
   {
     "id":"chrylser-group",
-    
-    
     "name":"Chrylser Group LLC",
     "description":"Chrysler Group LLC, formed in 2009 to establish a global strategic alliance with Fiat S.p.A., produces Chrysler, Jeep, Dodge, Ram, SRT, FIAT and Mopar vehicles and products. With the resources, technology and worldwide distribution network required to compete on a global scale, the alliance builds on Chrysler Group�s culture of innovation, first established by Walter P. Chrysler in 1925, and Fiat�s complementary technology that dates back to its_ founding in 1899.",
     "room":"Louis",
@@ -406,8 +398,6 @@
   },
   {
     "id":"citadel",
-    
-    
     "name":"Citadel LLC",
     "description":"Across Citadel Asset Management and Citadel Securities, we are a leader in the world�s major markets. From innovative asset management strategies to market�making in options and equities, Citadel effectively deploys capital to convert opportunity into results. In every business relationship, Citadel strives to be a trusted partner. We move to wherever opportunity exists, bringing our clients and partners with us.",
     "room":"Louis",
@@ -433,8 +423,6 @@
   },
   {
     "id":"clarity",
-    
-    
     "name":"Clarity Solutions Group",
     "description":"Clarity is a data and analytics firm providing expert consulting solutions and ongoing support with an uncompromising focus on client success. Our clients trust us to produce innovative, value-driven solutions that leverage existing investments to quickly generate results. Our elite team of passionate professionals works with clients in a variety of industries throughout North America, transforming the way businesses think about, organize and use their data.\n\nWe offer the enterprise-level expertise of a systems integrator, the client-centric focus of a boutique data services provider, and the strategic business experience of a top-tier management consulting firm. Our two subsidiaries extend and augment those offerings. Clarity Resource Group provides expert staffing solutions whether they are short-term or contract-to-hire. Clarity Operations provides a full-suite of managed services offering ensuring our clients have ongoing support for their data and analytics solutions.",
     "room":"Louis",
@@ -599,7 +587,7 @@
     
     "name":"Discover Financial Services",
     "description":"When we introduced the first cash rewards credit card in 1986, we committed ourselves to meeting the needs of our card members with the best possible customer service - and we still stand by that commitment today. We're building our company by listening to consumers and developing products and programs that help them get the most for their money. Beyond credit cards, our banking and payments businesses offer rewarding products backed by that same commitment to high-quality service that we have had from the start.",
-    "room":"Wildcat Room",
+    "room":"Wildcat",
     "floor":1,
     "booth":78,
     "am":false,
@@ -761,7 +749,7 @@
     
     "name":"ExxonMobil",
     "description":"Over the last 125 years ExxonMobil has evolved from a regional marketer of kerosene in the U.S. to the largest publicly traded petroleum and petrochemical enterprise in the world. Today we operate in most of the world's countries and are best known by our familiar brand names: Exxon, Esso and Mobil. We make the products that drive modern transportation, power cities, lubricate industry and provide petrochemical building blocks that lead to thousands of consumer goods. ",
-    "room":"Wildcat Room",
+    "room":"Wildcat",
     "floor":1,
     "booth":76,
     "am":false,
@@ -788,7 +776,7 @@
     
     "name":"Facebook",
     "description":"Founded in 2004, Facebook�s mission is to give people the power to share and make the world more open and connected. People use Facebook to stay connected with friends and family, to discover what�s going on in the world, and to share and express what matters to them.",
-    "room":"Wildcat Room",
+    "room":"Wildcat",
     "floor":1,
     "booth":77,
     "am":false,
@@ -922,7 +910,7 @@
     
     
     "name":"GAF",
-    "description":"Founded in 1886, GAF has become North America�s largest manufacturer of commercial and residential roofing. Our success in growing the company to nearly $3 billion in sales has been based on our unique philosophy of: Helping property owners & architects to make their best and safest roofing choices, Helping supportive distributors and roofing contractors to build their businesses and avoid hassles",
+    "description":"Founded in 1886, GAF has become North America's largest manufacturer of commercial and residential roofing. Our success in growing the company to nearly $3 billion in sales has been based on our unique philosophy of: Helping property owners & architects to make their best and safest roofing choices, Helping supportive distributors and roofing contractors to build their businesses and avoid hassles",
     "room":"Big 10",
     "floor":1,
     "booth":83,
@@ -1004,7 +992,7 @@
     
     "name":"Goodyear Tire & Rubber Company",
     "description":"The Goodyear Tire & Rubber Company was founded in 1898 by 38-year-old Frank Seiberling.\n\nLooking back, the founding of The Goodyear Tire & Rubber Company in 1898 seems especially remarkable, for the beginning was anything but auspicious. The 38-year-old founder, Frank A. Seiberling, purchased the company�s first plant with a $3,500 down payment -- using money he borrowed from a brother-in-law Lucius C. Miles. The rubber and cotton that were the lifeblood of the industry had to be transported from halfway around the world, to a landlocked town that had only limited rail transportation. ",
-    "room":"Wildcat Room",
+    "room":"Wildcat",
     "floor":1,
     "booth":73,
     "am":false,
@@ -1462,7 +1450,7 @@
     
     
     "name":"Nielsen",
-    "description":"Whether you�re eyeing markets in the next town or across continents, we understand the importance of knowing what consumers watch and buy. That�s our passion and the very heart of our business.\n\nWe study consumers in more than 100 countries to give you the most complete view of trends and habits worldwide. And we�re constantly evolving, not only in terms of where we measure, or what we measure, but also in how our insights can help you drive profitable growth.",
+    "description":"Whether you're eyeing markets in the next town or across continents, we understand the importance of knowing what consumers watch and buy. That�s our passion and the very heart of our business.\n\nWe study consumers in more than 100 countries to give you the most complete view of trends and habits worldwide. And we�re constantly evolving, not only in terms of where we measure, or what we measure, but also in how our insights can help you drive profitable growth.",
     "room":"Lake",
     "floor":2,
     "booth":57,
@@ -1570,7 +1558,7 @@
     
     
     "name":"Outerwall/Redbox",
-    "description":"As the company behind well-loved brands like Redbox� and Coinstar� and the leader in automated retail, we're on a mission to create a better everyday. We transform empty spaces into exciting retail solutions that make life easier and less complicated for consumers � and more profitable for retailers. Powered by proven technologies and practices � and a great instinct about people �we're revolutionizing the way people shop and do business with a growing portfolio of products and services. ",
+    "description":"As the company behind well-loved brands like Redbox&reg; and Coinstar&reg; and the leader in automated retail, we're on a mission to create a better everyday. We transform empty spaces into exciting retail solutions that make life easier and less complicated for consumers &#8211 and more profitable for retailers. Powered by proven technologies and practices &#8212; and a great instinct about people &#8212; we're revolutionizing the way people shop and do business with a growing portfolio of products and services. ",
     "room":"Louis",
     "floor":2,
     "booth":19,
@@ -1597,7 +1585,7 @@
     
     
     "name":"P&G",
-    "description":"Companies like P&G are a force in the world. Our market capitalization is greater than the GDP of many countries, and we market our products in more than 180 countries. With this stature comes both responsibility and opportunity. Our responsibility is to be an ethical corporate citizen�but our opportunity is something far greater, and is embodied in our Purpose.\n\nWe will provide branded products and services of superior quality and value that improve the lives of the world�s consumers, now and for generations to come. As a result, consumers will reward us with leadership sales, profit and value creation, allowing our people, our shareholders and the communities in which we live and work to prosper.",
+    "description":"Companies like P&G are a force in the world. Our market capitalization is greater than the GDP of many countries, and we market our products in more than 180 countries. With this stature comes both responsibility and opportunity. Our responsibility is to be an ethical corporate citizen &#8212 but our opportunity is something far greater, and is embodied in our Purpose.\n\nWe will provide branded products and services of superior quality and value that improve the lives of the world�s consumers, now and for generations to come. As a result, consumers will reward us with leadership sales, profit and value creation, allowing our people, our shareholders and the communities in which we live and work to prosper.",
     "room":"Big 10",
     "floor":1,
     "booth":81,
@@ -1787,7 +1775,7 @@
     
     "name":"S&C Electric",
     "description":"",
-    "room":"Wildcat Room",
+    "room":"Wildcat",
     "floor":1,
     "booth":75,
     "am":false,
@@ -2056,8 +2044,8 @@
     
     
     "name":"United Airlines",
-    "description":"United is the world�s leading airline and is focused on being the airline customers want to fly, the airline employees want to work for and the airline shareholders want to invest in.\n\nUnited Airlines and United Express operate an average of 5,341 flights a day to more than 360 airports across six continents. In 2012, United and United Express carried more passenger traffic than any other airline in the world and operated nearly two million flights carrying 140 million customers. ",
-    "room":"Wildcat Room",
+    "description":"United is the world's leading airline and is focused on being the airline customers want to fly, the airline employees want to work for and the airline shareholders want to invest in.\n\nUnited Airlines and United Express operate an average of 5,341 flights a day to more than 360 airports across six continents. In 2012, United and United Express carried more passenger traffic than any other airline in the world and operated nearly two million flights carrying 140 million customers. ",
+    "room":"Wildcat",
     "floor":1,
     "booth":72,
     "am":false,
