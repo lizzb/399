@@ -33,7 +33,7 @@ iday399App.config(['$routeProvider', //'$locationProvider'
         controller: 'CompanyListLocationController'
       }).
       when('/map/:companyId', {
-        templateUrl: 'views/floorplan.html/#:companyId',
+        templateUrl: 'views/floorplan.html', //:companyId', // no #
         controller: 'CompanyLocationController'
         // want to actually link to the table number of hte company anchor
         // but DISPLAY the company name
