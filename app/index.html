@@ -123,19 +123,28 @@ function toggleActive(svgID, tableID) {
           <!--i class="glyphicon glyphicon-list"></i-->
         </a>
 
+        <!--
+        navigate to settings SEPARATE page
+        (filter controls/checkboxes)
+        need to fix double binding data
+        ie show already active filter checkboxes checked
+         -->
         <a href="#/settings" class="navbar-text right">
-          <i class="fa fa-cog"></i>
-          <!--i class="glyphicon glyphicon-cog"></i-->
+          <i class="fa fa-cog"></i>          
         </a>
 
-        <!--a class=" navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
+        <!--i class="glyphicon glyphicon-cog"></i-->
+
+
+        <!-- Settings (filter controls) dropdown -->
+        <!-- but way it was before,
+        couldnt see all options on phone screen
+        -->
+        <a class=" navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
           <i class="fa fa-cog"></i>
-          <!--i class="glyphicon glyphicon-cog"></i--
           <b class="caret"></b>
-        </a-->
-
-
-
+          <!-- shouldnt arrow automatically flip? -->
+        </a>
 
         <!--ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
            <li role="presentation" class="dropdown-header">Dropdown header</li>
@@ -183,9 +192,14 @@ function toggleActive(svgID, tableID) {
           </ul>
         </a>
       </li-->
+
+
       </div>
 
-      <!-- i want this to close once a selection has been made automatically!!! pull-right deprecated but using it anywayyy no just kidding i'm not cuz i cant get the dropdown to be small
+      <!-- i want this to close once a selection has been made automatically!!! pull-right deprecated but using it anywayyy
+
+      no just kidding i'm not
+      cuz i cant get the dropdown to be small
 dropdown-menu-left right
     -->
 
@@ -218,9 +232,11 @@ dropdown-menu-left right
             </a>
           </li>
           <!--
-      <li><a href="#recruiters">
+      <li>
+      <a href="#recruiters">
         <i class="fa fa-users"></i> Recruiters
-      </a></li>
+      </a>
+      </li>
       About/Thanks
       Feedback Survey
       Layout/Map
@@ -243,51 +259,104 @@ dropdown-menu-left right
       <!--/.nav-collapse -->
 
 
-      <!--ul class="nav navbar-nav navbar-user navbar-right">
-        <li class="dropdown settings-collapse">
-
-          <ul class="dropdown-menu">
-
-            Showing {{filteredList.length}} of {{all_companies.length}} total.
-            <br>TODO: Add a reset button or check all or check none and maybe show badges by # of companies idk
-            <br>figure out how to share the filtered list value across scopes, or do the filtering globally? Filter by:
-            <i class="fa fa-filter"></i>
-
-            <li class="divider"></li>
-            <li class="dropdown-header">Positions</li>
-
-            <! -- class="checkbox-inline" and label instead of li-->
+  <ul class="nav navbar-nav navbar-user navbar-right">
+    <li class="dropdown settings-collapse">
 
 
+<!-- TODO: nice slidey animation for choosing filters dropdown
 
-            <!--
-            <div class="form-group">
-              <li ng-repeat="p in positions">
-                <input type="checkbox" ng-click="includePosition(p.name)">{{p.friendlyName}}
-              </li>
-            </div>
+also close navigation dropdown automatically on selection, but NOT filter dropdown -->
 
-            <li class="divider"></li>
-            <li class="dropdown-header">Majors</li>
-
-            <div class="form-group">
-              <li ng-repeat="m in majors">
-                <label>
-                  <input type="checkbox" ng-click="includeMajor(m.name)">{{m.friendlyName}}</label>
-              </li>
-            </div>
-            <!--/form-group-->
-
-
-            <!--li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+      <ul class="dropdown-menu">
+                  <!--li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
     <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
     <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
     <li class="divider"></li>
   <li class="dropdown-header">Nav header</li>
     <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li-->
-          <!--</ul>
+
+        <!--Showing {{filteredList.length}} of {{all_companies.length}} total. <br>
+        {{filteredList.length}} of {{all_companies.length}} total companies. <br-->
+
+
+        <!--br>TODO: Check All, Check None, Reset, show result badges<br-->
+        
+
+
+        <!--Add a reset button or check all or check none and maybe show badges by # of companies idk
+        <br>figure out how to share the filtered list value across scopes, or do the filtering globally?-->
+        <i class="fa fa-filter fa-lg"></i>
+        Filter by:
+        
+
+        <li class="divider"></li>
+        <li class="dropdown-header">Positions</li>
+
+        <!-- class="checkbox-inline" and label instead of li-->
+        <!-- need to check on this syntax, looks okay but dont think it is right, can't remember where i got checkbox-inline from -->
+
+        <div class="form-group">
+          <checkbox-inline ng-repeat="p in positions">
+          <label>
+            <input type="checkbox" ng-click="includePosition(p.name)">
+            &nbsp;{{p.friendlyName}}
+            </label>
+          <!--/li-->
+        </div>
+
+        <li class="divider"></li>
+        <li class="dropdown-header">Majors</li>
+
+<!-- http://stackoverflow.com/questions/16829565/using-a-group-of-checkboxes-in-angularjs-->
+
+        <!--div class="form-group">
+        &nbsp; <!-- awkward lack of padding here... --
+        <label class="checkbox-inline btn btn-default" ng-repeat="m in majors">
+        <input type="checkbox" onclick="includeMajor(m.name)">
+        &nbsp;{{m.friendlyName}}&nbsp;&nbsp; |
+        </label>
+        </div>
+        <!--/form-group-->
+
+        <!--div class="form-group"> <!-- data-toggle="buttons"--
+        <label class="btn btn-default" ng-repeat="m in majors">
+        <input type="checkbox" onclick="includeMajor(m.name)">
+        {{m.friendlyName}}
+        </label>
+        </div>
+        <!--/form-group-->
+
+
+<!-- http://getbootstrap.com/javascript/#buttons
+        <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-default" ng-repeat="m in majors">
+        <input type="checkbox" onclick="includeMajor(m.name)">
+        {{m.friendlyName}}
+        </label>
+        </div>-->
+
+
+          <!--li ng-repeat="m in majors">
+            <label>
+              <input type="checkbox" ng-click="includeMajor(m.name)">{{m.friendlyName}}</label>
+          </li-->
+
+<!-- STILL MESSED UP
+TOGGLING A SETTING ON A PAGE OTHER THAN COMPANY LIST
+SEEMS TO MESS UP FILTERS?? -->
+        
+         <div class="form-group">
+          <checkbox-inline ng-repeat="m in majors">
+          <label>
+            <input type="checkbox" ng-click="includeMajor(m.name)">
+            &nbsp;{{m.friendlyName}}
+            </label>
+          <!--/li-->
+        </div>
+        <!--/form-group-->
+          </ul>
         </li>
-      </ul>-->
+      </ul>
 
 
     </div>
