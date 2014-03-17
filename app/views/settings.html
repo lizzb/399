@@ -1,3 +1,36 @@
 <div class="row">
-	setttinggsss
+
+            Showing {{filteredList.length}} of {{all_companies.length}} total.
+            <br>TODO: Add a reset button or check all or check none and maybe show badges by # of companies idk
+            <br>figure out how to share the filtered list value across scopes, or do the filtering globally? Filter by:
+            <i class="fa fa-filter"></i>
+
+            <li class="divider"></li>
+            <li class="dropdown-header">Positions</li>
+
+            <!-- class="checkbox-inline" and label instead of li-->
+
+
+
+              <div class="form-group">
+              <li ng-repeat="p in positions">
+                <input type="checkbox" ng-click="includePosition(p.name)">{{p.friendlyName}}
+              </li>
+            </div>
+
+            <li class="divider"></li>
+            <li class="dropdown-header">Majors</li>
+
+            <div class="form-group">
+              <li ng-repeat="m in majors">
+                <label>
+                  <input type="checkbox" ng-click="includeMajor(m.name)">{{m.friendlyName}}</label>
+              </li>
+            </div>
+            <!--/form-group-->
+
+
+
+
+
 	</div>

@@ -123,11 +123,16 @@ function toggleActive(svgID, tableID) {
           <!--i class="glyphicon glyphicon-list"></i-->
         </a>
 
-        <a class=" navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
+        <a href="#/settings" class="navbar-text right">
           <i class="fa fa-cog"></i>
           <!--i class="glyphicon glyphicon-cog"></i-->
-          <b class="caret"></b>
         </a>
+
+        <!--a class=" navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
+          <i class="fa fa-cog"></i>
+          <!--i class="glyphicon glyphicon-cog"></i--
+          <b class="caret"></b>
+        </a-->
 
 
 
@@ -238,7 +243,7 @@ dropdown-menu-left right
       <!--/.nav-collapse -->
 
 
-      <ul class="nav navbar-nav navbar-user navbar-right">
+      <!--ul class="nav navbar-nav navbar-user navbar-right">
         <li class="dropdown settings-collapse">
 
           <ul class="dropdown-menu">
@@ -255,7 +260,7 @@ dropdown-menu-left right
 
 
 
-
+            <!--
             <div class="form-group">
               <li ng-repeat="p in positions">
                 <input type="checkbox" ng-click="includePosition(p.name)">{{p.friendlyName}}
@@ -280,14 +285,13 @@ dropdown-menu-left right
     <li class="divider"></li>
   <li class="dropdown-header">Nav header</li>
     <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li-->
-          </ul>
+          <!--</ul>
         </li>
-      </ul>
+      </ul>-->
 
 
     </div>
   </div>
-  <div class="container">
 
 
     <!--i class="fa fa-chevron-left"></i>
@@ -334,6 +338,7 @@ dropdown-menu-left right
 <i class="fa fa-thumbs-up"></i>
 <i class="fa fa-thumbs-down"></i-->
 
+  <div class="container">
 
     <!-- Dynamic content -->
     <div ng-view></div>
