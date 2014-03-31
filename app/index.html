@@ -2,6 +2,8 @@
 
   <!-- http://scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag-->
 
+<!-- http://jsbin.com/zoxezeyu/4/edit -->
+
   <!-- http://andru.co/building-a-simple-single-page-application-using-angularjs#json -->
 
 
@@ -107,6 +109,7 @@ function toggleActive(svgID, tableID) {
   <!-- Fixed navbar -->
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
+
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -120,19 +123,30 @@ function toggleActive(svgID, tableID) {
         Icons to stay uncollapsed for easy/fast access:
         Companies/Company List
         Map
-
-        http://jsbin.com/zoxezeyu/4/edit
+        Settings? Favorites? Not sure
         -->
+
         <a class="navbar-brand" href="#">Industry Day</a>
 
+        <!-- ~~~~~ QUICK LINK ICONS ~~~~~  role="button" -->
+
         <!-- Quick Access Nav Icon - Map/Floorplan -->
-        <a href="#/map/companies" class="navbar-brand right">
-          <i class="fa fa-compass fa-lg"></i>
+        <a href="#/map/companies" class="navbar-brand right btn btn-default" >
+          <button type="button" class="btn btn-default"><i class="fa fa-compass fa-lg"></i></button>
+          <button type="button" class="navbar-toggle">hey </button>
         </a>
 
         <!-- Quick Access Nav Icon - Companies/Company List -->
         <a href="#/companies" class="navbar-text right">
           <i class="fa fa-list"></i>
+        </a>
+        
+        <!-- Settings (filter controls) dropdown -->
+
+        <a class="navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
+          <i class="fa fa-cog"></i>
+          <b class="caret"></b>
+          <!-- shouldnt arrow automatically flip? TODO -->
         </a>
 
         <!-- Quick Access Nav Icon - Filter settings -->
@@ -152,18 +166,14 @@ function toggleActive(svgID, tableID) {
         </a>
         -->
 
-        
-        <!-- Settings (filter controls) dropdown -->
-
-        <a class=" navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
-          <i class="fa fa-cog"></i>
-          <b class="caret"></b>
-          <!-- shouldnt arrow automatically flip? -->
-        </a>
+        <!-- ~~~~~ END QUICK LINK ICONS ~~~~~ -->
 
         <!-- bootstrap 3 dropdown attempts... -->
 
       </div>
+
+
+
 
       <!--
       i want this to automatically close once a selection has been!!!
@@ -177,15 +187,16 @@ function toggleActive(svgID, tableID) {
       <div class="collapse navbar-collapse ">
         <ul class="nav navbar-nav">
           <!--
-          <li><a href="#">
-            <i class="fa fa-home"></i>
-            Menu/Home
+          <li>
+            <a href="#">
+            this would also make sense as a square-ish icon reflecting tile layout on landing page
+            <i class="fa fa-home"></i> Menu/Home
             </a>
-          </li-->
+          </li>
+          -->
 
-          <!-- Feedback Survey -->
-      <!-- Layout/Map -->
           
+          <!-- Layout/Map -->
           <!--
           COULD redundantly list in drop down as well,
           but on expanded displays will show same icon twice...
@@ -215,30 +226,28 @@ function toggleActive(svgID, tableID) {
           
           <!-- Recruiters - pictures and contact info -->
           <!--
-      <li>
-      <a href="#recruiters">
-        <i class="fa fa-users"></i> Recruiters
-      </a>
-      </li>
-      -->
-      
-      
+          <li>
+          <a href="#recruiters">
+            <i class="fa fa-users"></i> Recruiters
+          </a>
+          </li>
+          -->
 
           <!-- About/Thanks -->
           <li>
             <a href="#/credits">
-              <i class="fa fa-info"></i>About 
+              <i class="fa fa-info"></i> About 
             </a>
           </li>
 
+          <!-- Feedback Survey -->
           <li>
             <a href="#/feedback">
-              <i class="fa fa-comments-o"></i>Feedback
+              <i class="fa fa-comments-o"></i> Feedback
             </a>
           </li>
 
-
-        </ul>
+        </ul> <!-- /nav navbar-nav -->
       </div>
       <!--/.nav-collapse -->
 
@@ -286,14 +295,14 @@ figure out how to share the filtered list value across scopes,
         <!--Showing {{filteredList.length}} of {{all_companies.length}} total. <br>
         {{filteredList.length}} of {{all_companies.length}} total companies. <br-->
 
-        <i class="fa fa-filter fa-lg"></i>
-        Filter by:       
-
-        <li class="divider"></li>
-        <li class="dropdown-header">Positions</li>
+        <i class="fa fa-filter fa-lg"></i> Filter by:       
 
         <!-- class="checkbox-inline" and label instead of li-->
         <!-- need to check on this syntax, looks okay but dont think it is right, can't remember where i got checkbox-inline from -->
+
+
+        <li class="divider"></li>
+        <li class="dropdown-header">Positions</li>
 
         <div class="form-group">
           <checkbox-inline ng-repeat="p in positions">
@@ -301,27 +310,24 @@ figure out how to share the filtered list value across scopes,
             <input type="checkbox" ng-click="includePosition(p.name)">
             &nbsp;{{p.friendlyName}}
             </label>
-        </div>
-        </li> <!--/li dropdown settings-collapse-->
+        </div> <!--/form-group-->
+
+
 
         <li class="divider"></li>
         <li class="dropdown-header">Majors</li>
-
-
-
-
         
          <div class="form-group"> <!-- data-toggle="buttons"-->
           <checkbox-inline ng-repeat="m in majors">
           <label>
             <input type="checkbox" ng-click="includeMajor(m.name)">
             &nbsp;{{m.friendlyName}}
-            </label> <!--/li-->
+            </label>
         </div> <!--/form-group-->
 
 
       </ul>
-
+      <!--</li> /li dropdown settings-collapse-->
     </div>
   </div>
 
@@ -339,8 +345,13 @@ figure out how to share the filtered list value across scopes,
     <div ng-view></div>
 
 
+
+
+
   </div>
   <!-- /.container -->
+
+
 
 
   <!-- Bootstrap core JavaScript
