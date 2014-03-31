@@ -45,6 +45,37 @@ ng-app attribute: an Angular directive used to flag the html element that Angula
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
 
+  <style>
+  .quicknav {
+    color: #428bca;
+    color: #777;
+    /*height: 20px;*/
+    /*padding: 15px 15px;*/
+    font-size: 18px;
+    
+    line-height: 18px; /* 20px */
+
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+background-color: transparent;
+border: 1px solid transparent;
+border-radius: 4px;
+/*line-height: 20px;*/
+
+/* button default */
+background-color: #fff;
+border-color: #ccc;
+
+/*.navbar-default */
+background-color: #f8f8f8;
+border-color: #e7e7e7;
+  }
+  </style>
+
   <script>
 // have added this in the floorplan html as well but its not loadingg
 function initialize()
@@ -107,7 +138,7 @@ function toggleActive(svgID, tableID) {
 
 
   <!-- Fixed navbar -->
-  <div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -128,22 +159,35 @@ function toggleActive(svgID, tableID) {
 
         <a class="navbar-brand" href="#">Industry Day</a>
 
-        <!-- ~~~~~ QUICK LINK ICONS ~~~~~  role="button" -->
+        
+
+        <!--
+        Add the .navbar-btn class to <button> elements not residing in a <form> to vertically center them in the navbar.
+        ike the standard button classes, .navbar-btn can be used on <a> and <input> elements. However, neither .navbar-btn nor the standard button classes should be used on <a> elements within .navbar-nav.
+        -->
+
+        <span class="navbar-right">
+        <!-- ~~~~~ QUICK LINK ICONS ~~~~~  role="button" 
+        <form class="navbar-form navbar-right" role="navigation">-->
 
         <!-- Quick Access Nav Icon - Map/Floorplan -->
-        <a href="#/map/companies" class="navbar-brand right btn btn-default" >
-          <button type="button" class="btn btn-default"><i class="fa fa-compass fa-lg"></i></button>
-          <button type="button" class="navbar-toggle">hey </button>
+        <!-- replace right with navbar-right, navbar-brand with navbar-link or navbar-text...but brand has right size...-->
+        <a href="#/map/companies" class="btn btn-default navbar-btn quicknav">
+          <i class="fa fa-compass fa-lg"></i>
         </a>
 
+        <!-- replace right with navbar-right -->
+
         <!-- Quick Access Nav Icon - Companies/Company List -->
-        <a href="#/companies" class="navbar-text right">
+        <a href="#/companies" class="btn btn-default navbar-btn quicknav"> 
+        
           <i class="fa fa-list"></i>
         </a>
         
         <!-- Settings (filter controls) dropdown -->
 
-        <a class="navbar-brand cursor settings-dropdown right " data-toggle="dropdown" data-target=".settings-collapse">
+        <a class="btn btn-default navbar-btn quicknav cursor settings-dropdown" data-toggle="dropdown" data-target=".settings-collapse">
+        <!-- replace right with navbar-right -->
           <i class="fa fa-cog"></i>
           <b class="caret"></b>
           <!-- shouldnt arrow automatically flip? TODO -->
@@ -165,11 +209,11 @@ function toggleActive(svgID, tableID) {
           <i class="fa fa-cogs"></i>    
         </a>
         -->
+      </span>
 
         <!-- ~~~~~ END QUICK LINK ICONS ~~~~~ -->
 
         <!-- bootstrap 3 dropdown attempts... -->
-
       </div>
 
 
