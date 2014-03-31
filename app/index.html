@@ -46,16 +46,18 @@ ng-app attribute: an Angular directive used to flag the html element that Angula
   <script src="js/filters.js"></script>
 
   <style>
+
   .quicknav {
+    color: #777; /* drop down toggle */
     color: #428bca;
-    color: #777;
+    
     /*height: 20px;*/
     /*padding: 15px 15px;*/
     font-size: 18px;
     
     line-height: 18px; /* 20px */
 
-    position: relative;
+    position: relative; /* drop down toggle */
     float: right;
     padding: 9px 10px;
     margin-top: 8px;
@@ -63,7 +65,8 @@ ng-app attribute: an Angular directive used to flag the html element that Angula
     margin-bottom: 8px;
 background-color: transparent;
 border: 1px solid transparent;
-border-radius: 4px;
+border-radius: 4px; /* drop down toggle */
+
 /*line-height: 20px;*/
 
 /* button default */
@@ -314,7 +317,7 @@ figure out how to share the filtered list value across scopes,
         or do the filtering globally?
 -->
 
-        <!--TODO: 
+        <!--TODO: fa-search
         Add buttons like
         Check All, 
         Check None, 
@@ -326,7 +329,7 @@ figure out how to share the filtered list value across scopes,
         
         filter by...
         industry
-        company size
+        company size fa-sort-amount-asc fa-sort-amount-desc
         locations?
 
         use checkboxes styled as buttons - pressed/selected or not
