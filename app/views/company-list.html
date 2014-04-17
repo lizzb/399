@@ -5,6 +5,8 @@
 
   Showing {{filteredList.length}} of {{companies.length}} total. <br>
 
+
+
   Search: <input ng-model="query"> <i class="fa fa-search"> </i> <br>
   <!--Filter by: <i class="fa fa-filter"> </i>
 
@@ -70,7 +72,7 @@ pretty sure its not the best form/practice but i dont caaaaareee right now
 
     <ul class="companies">
 
-      <li ng-repeat="company in filteredList = (companies | filter:userFilter | orderBy:sortType:asc)" class="thumbnail">
+      <li ng-repeat="company in filteredList = (companies | filter:userFilter | filter:query | orderBy:sortType:asc)" class="thumbnail">
  <i class="glyphicon glyphicon-star-empty listing-star"></i>
 
         <a href="#/companies/{{company.id}}">
