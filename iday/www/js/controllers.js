@@ -8,7 +8,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('CompanyDetailCtrl', function($scope, $stateParams, Companies) {
-  $scope.comp = Companies.get($stateParams.friendId);
+  $scope.company = Companies.get($stateParams.companyId); // this is BOOTH no jk
+  // where the syntax tab.(whatever) comes from
 })
 
 .controller('AccountCtrl', function($scope) {

@@ -55,7 +55,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
     .state('tab.company-detail', {
-      url: '/company/:friendId',
+      url: '/company/:companyId', //companyLoc', //companyId',
       views: {
         'tab-companies': {                    // onlya accessible if this is the start state...? not
           templateUrl: 'company-detail.html',//templates/
