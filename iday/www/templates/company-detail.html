@@ -7,5 +7,38 @@
 <ion-view title="{{company.name}}">
   <ion-content has-header="true" padding="true">
   Details for {{company.name}}
+
+  <h3 class="companyProfileHeading"> Company Profile </h3>
+
+  <img class="logo-wide" ng-src="../img/logos/{{company.id}}-wide.png">
+  <!-- 
+../iday/www/img/logos/{{company.id}}-wide.png
+  might be correct path when running through github but do a local server from www folder
+  -->
+
+  <h1 class="companyNameHeading"> {{company.name}} </h1>
+
+  <img class="logo-square right" ng-src="../img/logos/{{company.id}}-square.png">
+
+  <div class="majors">
+  <h3 class="majorsHeading"> Majors </h3>
+    <li ng-repeat="m in majors" ng-show="company[m.name]">{{m.friendlyName}} &nbsp;&nbsp; &nbsp; 
+    </li>
+</div>
+
+
+<div class="positions">
+  <h3 class="positionsHeading"> Positions </h3>
+    <span class="detailsPositions" ng-repeat="p in jobs">
+      <!--{{company[p.name] | checkmark }}--> {{p.friendlyName}} <!--&nbsp;&nbsp;-->
+    </span>
+
+</div>
+
+<div class="description">
+  <h3 class="detailsHeading"> Description </h3>
+    {{company.description}}
+</div>
+
   </ion-content>
 </ion-view>

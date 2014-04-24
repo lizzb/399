@@ -1,1 +1,64 @@
 /* Empty. Add your own CSS if you like */
+
+.companyProfileHeading {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.companyNameHeading {
+  color: #999;
+  font-size: 19px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgray;
+}
+.description { color: #666;}
+
+.detailsHeading, .positionsHeading, .majorsHeading {
+  color: indigo;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.left {float: left; display: inline-block;}
+.right {float: right; display: inline-block;}
+.companies-list-square {width: 35px;}
+
+.companyBoothLocation
+{
+  float: right;
+  width: 85px;
+  vertical-align: center; /* is this valid?? */
+}
+
+.room-floor-label{
+   font-size: 8.5pt;
+   line-height: 110%;
+}
+
+.logo-square {
+    width: 100px;
+}
+.logo-wide {
+  width: 270px;
+  max-width: 270px;
+}
+
+
+
+
+/* when a square logo is displayed next to company name on company grid list 
+.companies-list-square
+{
+  padding: 10px;
+  margin: 0px;
+  vertical-align: center;
+  max-width: 50px;
+  
+  float:left;
+  border:none;
+}*/
+/*height: 80px;*/
+  /*max-height: 80px;
+  max-width: 80px;*/ /* care about width in the listing not height, for cheaty non square items */
