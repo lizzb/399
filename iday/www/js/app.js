@@ -45,21 +45,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('tab.companies', {
+      url: '/companies',
       views: {
-        'tab-friends': {
-          templateUrl: 'tab-friends.html', //templates/
-          controller: 'FriendsCtrl'
+        'tab-companies': {
+          templateUrl: 'tab-companies.html', //templates/
+          controller: 'CompanyListCtrl'
         }
       }
     })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
+    .state('tab.company-detail', {
+      url: '/company/:friendId',
       views: {
-        'tab-friends': {
-          templateUrl: 'friend-detail.html',//templates/
-          controller: 'FriendDetailCtrl'
+        'tab-companies': {                    // onlya accessible if this is the start state...? not
+          templateUrl: 'company-detail.html',//templates/
+          controller: 'CompanyDetailCtrl'
         }
       }
     })
