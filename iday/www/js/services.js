@@ -1368,8 +1368,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"mta",
-    
-    
     "name":"Metro North Railroad",
     "description":"The Metropolitan Transportation Authority is North America's largest transportation network, serving a population of 15.1 million people in the 5,000-square-mile area fanning out from New York City through Long Island, southeastern New York State, and Connecticut. The MTA is continuing its rebuilding and improvement efforts through the 2010-2014 Capital Program and has committed significant resources to the first substantial expansion of the network in 60 years, including Long Island Rail Road access to Grand Central, the uptown segment of a full-length Second Avenue subway, and the extension of the number 7 line west from Times Square to the Javits Center.",
     "room":"Louis",

@@ -1,7 +1,9 @@
 // Ionic Starter App
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
+// angular.module is a global place 
+// for creating, registering and retrieving Angular modules
+// 'starter' is the name of this angular module example 
+// (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
@@ -28,7 +30,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('tab', {
       url: "/tab",
       abstract: true,
-      templateUrl: "templates/tabs.html"
+      templateUrl: "tabs.html" //templates/tabs.html
     })
 
     // Each tab has its own nav history stack:
@@ -37,27 +39,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/dash',
       views: {
         'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
+          templateUrl: 'tab-dash.html', //templates/
           controller: 'DashCtrl'
         }
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('tab.companies', {
+      url: '/companies',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
+        'tab-companies': {
+          templateUrl: 'tab-companies.html', //templates/
+          controller: 'CompanyListCtrl'
         }
       }
     })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
+    .state('tab.company-detail', {
+      url: '/company/:companyId', //companyLoc', //companyId',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'tab-companies': {                    // onlya accessible if this is the start state...? not
+          templateUrl: 'company-detail.html',//templates/
+          controller: 'CompanyDetailCtrl'
         }
       }
     })
@@ -66,7 +68,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/account',
       views: {
         'tab-account': {
-          templateUrl: 'templates/tab-account.html',
+          templateUrl: 'tab-account.html',//templates/
           controller: 'AccountCtrl'
         }
       }

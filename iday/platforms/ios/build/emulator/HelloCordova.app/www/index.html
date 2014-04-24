@@ -8,10 +8,6 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -40,3 +36,171 @@
     <ion-nav-view></ion-nav-view>
   </body>
 </html>
+
+
+<!-- because i'm still learning ionic, 
+putting all templates within this index.html file 
+to avoid having a bajillion files open -->
+
+
+<script id="tabs.html" type="text/ng-template">
+<ion-tabs class="tabs-icon-top">
+
+  <ion-tab title="Floorplan" icon="icon ion-map" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Companies" icon="icon ion-clipboard" href="#/tab/companies">
+    <ion-nav-view name="tab-companies"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Settings" icon="icon ion-levels" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
+</script>
+
+
+<script id="tab-dash.html" type="text/ng-template">
+<ion-view title="Dashboard / Career Fair Floorplan">
+  <ion-content class="has-header padding">
+    <h1>Dashboard [maybe floorplan later]</h1>
+  </ion-content>
+</ion-view>
+</script>
+
+
+<script id="tab-account.html" type="text/ng-template">
+<ion-view title="Filter Settings">
+  <ion-content class="has-header padding">
+    <h1>Filter and Search Settings</h1>
+  </ion-content>
+</ion-view>
+</script>
+
+<script id="tab-companies.html" type="text/ng-template">
+<ion-view title="Company List">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="comp in companies" type="item-text-wrap" href="#/tab/company/{{comp.id}}">
+      <a>
+          <img class="companies-list-square" src="http://placehold.it/100x100">
+        <!--/a-->
+        {{comp.name}}
+        <!--a href="#/tab/map/{{comp.id}}"-->
+        <span class="room-floor-label"> 
+               {{comp.room}} [{{comp.floor}}]<br>
+               </span>
+               </a>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+</script>
+
+
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+  -->
+<script id="company-detail.html" type="text/ng-template"> 
+<ion-view title="{{company.name}}">
+  <ion-content has-header="true" padding="true">
+  </ion-content>
+</ion-view>
+</script>
+
+
+
+
+
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ tabs.html ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- 
+  Create tabs with an icon and label, using the tabs-positive style. 
+  Each tab's child <ion-nav-view> directive will have its own 
+  navigation history that also transitions its views in and out.
+-->
+<!--
+<ion-tabs class="tabs-icon-top">
+
+
+  <!-- Pets Tab --
+  <ion-tab title="Dashboard" icon="icon ion-home" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+
+  <!-- Adopt Tab --
+  <ion-tab title="Friends" icon="icon ion-heart" href="#/tab/friends">
+    <ion-nav-view name="tab-friends"></ion-nav-view>
+  </ion-tab>
+
+
+  <!-- About Tab --
+  <ion-tab title="Account" icon="icon ion-gear-b" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>
+-->
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ friend-detail.html ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<!--
+<ion-view title="{{friend.name}}">
+  <ion-content has-header="true" padding="true">
+  </ion-content>
+</ion-view>
+-->
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ tab-friends.html ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--
+<ion-view title="Friends">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
+        {{friend.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+-->
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ tab-dash.html ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--
+<ion-view title="Dashboard">
+  <ion-content class="has-header padding">
+    <h1>Dash</h1>
+  </ion-content>
+</ion-view>
+-->
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ tab-account.html ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--
+<ion-view title="Account">
+  <ion-content class="has-header padding">
+    <h1>Account</h1>
+  </ion-content>
+</ion-view>
+-->
+
+
+

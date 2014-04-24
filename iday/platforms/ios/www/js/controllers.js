@@ -3,12 +3,13 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function($scope) {
 })
 
-.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
+.controller('CompanyListCtrl', function($scope, Companies) {
+  $scope.companies = Companies.all();
 })
 
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
+.controller('CompanyDetailCtrl', function($scope, $stateParams, Companies) {
+  $scope.company = Companies.get($stateParams.companyId); // this is BOOTH no jk
+  // where the syntax tab.(whatever) comes from
 })
 
 .controller('AccountCtrl', function($scope) {
