@@ -40,7 +40,7 @@
 
 <!-- because i'm still learning ionic, 
 putting all templates within this index.html file 
-to avoid having a bajillion files open -->
+to avoid having a bajillion files open --
 
 
 <script id="tabs.html" type="text/ng-template">
@@ -84,21 +84,18 @@ to avoid having a bajillion files open -->
   <ion-content class="has-header">
     <ion-list>
       <ion-item ng-repeat="comp in companies" type="item-text-wrap" href="#/tab/company/{{comp.id}}">
-      <a>
           <img class="companies-list-square" src="http://placehold.it/100x100">
-        <!--/a-->
         {{comp.name}}
-        <!--a href="#/tab/map/{{comp.id}}"-->
         <span class="room-floor-label"> 
                {{comp.room}} [{{comp.floor}}]<br>
                </span>
-               </a>
+      
 
       </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
-</script>
+</script>-->
 
 
 <!--
@@ -106,7 +103,7 @@ to avoid having a bajillion files open -->
   'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
-  -->
+  --
 <script id="company-detail.html" type="text/ng-template"> 
 <ion-view title="{{comp.name}}">
   <ion-content has-header="true" padding="true">
@@ -114,7 +111,7 @@ to avoid having a bajillion files open -->
 </ion-view>
 </script>
 
-
+-->
 
 
 

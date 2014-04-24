@@ -8,7 +8,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('CompanyDetailCtrl', function($scope, $stateParams, Companies) {
-  $scope.company = Companies.get($stateParams.companyId); // this is BOOTH no jk
+  $scope.company = Companies.get($stateParams.companyId); 
+  //($stateParams.companyId); 
+// problem with my get fx
+  // this is BOOTH no jk
   // where the syntax tab.(whatever) comes from
 })
 

@@ -4,37 +4,11 @@ angular.module('starter.services', [])
  * A simple example service that returns some data.
  */
 .factory('Companies', function() {
-  // Might use a resource here that returns a JSON array
 
-  /*
-  // FROM 399 ANGULAR ONLY APP
-  // Load pages on startup
-  //$http.get('/pages.json').success(function (data) {
-  $http.get('data/companyGrid.json').success(function(data) {
-    //$rootScope.pages = data;
-    $rootScope.all_companies = data;
-    console.log('data loaded');
-    $rootScope.filteredList = data; //filtered_companies = data;
-    // We are also passing in $rootScope which all scopes inherit from.
-    // We do this so this so that we can access the pages JSON data in our RouteController. 
-  });
-*/
-
-  // Some fake testing data
- /* var companies = [
-    { id: 0, name: 'Scruff McGruff' },
-    { id: 1, name: 'G.I. Joe' },
-    { id: 2, name: 'Miss Frizzle' },
-    { id: 3, name: 'Ash Ketchum' }
-  ];*/
-
-  // okay i know this is a hacky shortcut
-
-  // will figure out later if should load json, 
-  //have file external, maybe even in csv form...?
-
+//indx: 0,
   var companies = [
   {
+    idx: 0,
     "id":"3m",
     "name":"3M Company",
     "description":"3M is a global innovation company that never stops inventing. Over the years, our innovations have improved daily life for hundreds of millions of people all over the world. We have made driving at night easier, made buildings safer, and made consumer electronics lighter, less energy-intensive and less harmful to the environment. We even helped put a man on the moon. Every day at 3M, one idea always leads to the next, igniting momentum to make progress possible around the world.",
@@ -60,6 +34,7 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 1,
     "id":"accenture",
     "name":"Accenture",
     "description":"Accenture helps organizations assess how to maximize their performance and works with them to achieve their vision. We develop and implement technology to improve our clients� productivity and efficiency � and may run parts of their business. Ultimately, we enable our clients to become high-performance businesses and governments.",
@@ -85,9 +60,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 2,
     "id":"adage-tech",
-    
-    
     "name":"Adage Technologies",
     "description":"Adage Technologies, an award-winning Chicago web development firm, specializes in creating engaging custom websites, custom software and mobile solutions since its inception in 2001.",
     "room":"Louis",
@@ -112,9 +86,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 3,
     "id":"alcatel-lucent",
-    
-    
     "name":"Alcatel-Lucent",
     "description":"Alcatel-Lucent is at the forefront of global communications. We provide products and innovations in IP and cloud networking, as well as ultra-broadband fixed and wireless access. We serve service providers and their customers, as well as enterprises and institutions throughout the world. Alcatel-Lucent's Bell Labs, one of the world�s foremost technology research institutes, is responsible for countless breakthroughs that have shaped the networking and communications industry. ",
     "room":"Louis",
@@ -139,9 +112,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 4,
     "id":"allstate",
-    
-    
     "name":"Allstate Insurance",
     "description":"The Allstate Corporation is the largest publicly held personal lines property and casualty insurer in America. Allstate was founded in 1931 and became a publicly traded company in 1993. We are listed on the New York Stock Exchange under the trading symbol ALL. Allstate is widely known through the \"You're In Good Hands With Allstate �\" slogan. As of year-end 2012, Allstate had $126.9 billion in total assets. Allstate is reinventing protection and retirement to help approximately 16 million households insure what they have today and better prepare for tomorrow.",
     "room":"Lake",
@@ -166,9 +138,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 5,
     "id":"altec",
-    
-    
     "name":"Altec Inc.",
     "description":"Altec is a leading provider of products and services to the electric utility, telecommunications, tree care, lights and signs, and contractor markets. We deliver products and services in more than 100 countries throughout the world. Altec, Inc. is the holding company for Altec Industries, Global Rental, Altec NUECO, Altec Worldwide, Altec Capital, Altec Supply, and Altec Ventures, LLC.",
     "room":"Louis",
@@ -193,9 +164,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 6,
     "id":"ama",
-    
-    
     "name":"American Medical Association",
     "description":"As the nation's health care system continues to evolve, the AMA is dedicated to ensuring sustainable physician practices that result in better health outcomes for patients. This work is captured in the AMA's five-year strategic plan, which aims to ensure that enhancements to health care in the United States are physician-led, advance the physician-patient relationship, and ensure that health care costs can be prudently managed.",
     "room":"Louis",
@@ -220,6 +190,7 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 7,
     "id":"at-t",
     "name":"AT&T",
     "description":"AT&T is bringing it all together for our customers, from revolutionary smartphones to next-generation TV services and sophisticated solutions for multi-national businesses.\n\n For more than a century, we have consistently provided innovative, reliable, high-quality products and services and excellent customer care. Today, our mission is to connect people with their world, everywhere they live and work, and do it better than anyone else. We're fulfilling this vision by creating new solutions for consumers and businesses and by driving innovation in the communications and entertainment industry.",
@@ -245,6 +216,7 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 8,
     "id":"avantcredit",
     "name":"AvantCredit",
     "description":"Our team has over 25 years of combined experience giving online credit options. Our mission is to give affordable personal loans to responsible people who should not have to settle for an expensive payday loan or take hours out of their busy day to travel to a loan store or bank.",
@@ -270,9 +242,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 9,
     "id":"baxter",
-    
-    
     "name":"Baxter Healthcare Corporation",
     "description":"Baxter International Inc. (NYSE:BAX), through its subsidiaries, develops, manufactures and markets products that save and sustain the lives of people with hemophilia, immune disorders, infectious diseases, kidney disease, trauma, and other chronic and acute medical conditions. As a global, diversified healthcare company, Baxter applies a unique combination of expertise in medical devices, pharmaceuticals and biotechnology to create products that advance patient care worldwide. ",
     "room":"Big 10",
@@ -297,9 +268,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 10,
     "id":"bemis",
-    
-    
     "name":"Bemis Company",
     "description":"Established in 1858 in St. Louis, Missouri, as a manufacturer of machine sewn cotton bags for milled food and grain products, Bemis has played an influential role in the packaging industry ever since its founding. Now a global supplier of flexible packaging and pressure sensitive label materials headquartered in Neenah, Wisconsin, Bemis serves customers worldwide and produces packaging for products found in virtually every aisle of the grocery store. ",
     "room":"Louis",
@@ -324,9 +294,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 11,
     "id":"boeing",
-    
-    
     "name":"Boeing Company",
     "description":"Boeing is the world's leading aerospace company and the largest manufacturer of commercial jetliners and military aircraft combined. Additionally, Boeing designs and manufactures rotorcraft, electronic and defense systems, missiles, satellites, launch vehicles and advanced information and communication systems. As a major service provider to NASA, Boeing is the prime contractor for the International Space Station. The company also provides numerous military and commercial airline support services. Boeing provides products and support services to customers in 150 countries and is one of the largest U.S. exporters in terms of sales.",
     "room":"Louis",
@@ -351,6 +320,7 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 12,
     "id":"carsdotcom",
     "name":"Cars.com",
     "description":"Visited by more than 11 million car shoppers each month, Cars.com is the leading destination for online car shoppers, offering credible and easy-to-understand information from consumers and experts to help buyers formulate opinions on what to buy, where to buy and how much to pay for a car.\n\nWith comprehensive pricing information, dealer reviews, side-by-side comparison tools, photo galleries, videos, unbiased editorial content and a large selection of new- and used-car inventory, Cars.com puts car buyers in control of their shopping process with the information they need to make confident buying decisions.",
@@ -376,6 +346,7 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 13,
     "id":"chopper-trading",
     "name":"Chopper Trading",
     "description":"Chopper Trading is a technology-based proprietary trading firm that operates in a range of global markets and trades on several major exchanges. Founded in 2002, Chopper Trading is headquartered in Chicago and currently has offices in New York, London and Washington, D.C., among other locations.",
@@ -401,6 +372,7 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 14,
     "id":"chrylser-group",
     "name":"Chrylser Group LLC",
     "description":"Chrysler Group LLC, formed in 2009 to establish a global strategic alliance with Fiat S.p.A., produces Chrysler, Jeep, Dodge, Ram, SRT, FIAT and Mopar vehicles and products. With the resources, technology and worldwide distribution network required to compete on a global scale, the alliance builds on Chrysler Group�s culture of innovation, first established by Walter P. Chrysler in 1925, and Fiat�s complementary technology that dates back to its_ founding in 1899.",
@@ -426,6 +398,7 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 15,
     "id":"citadel",
     "name":"Citadel LLC",
     "description":"Across Citadel Asset Management and Citadel Securities, we are a leader in the world�s major markets. From innovative asset management strategies to market�making in options and equities, Citadel effectively deploys capital to convert opportunity into results. In every business relationship, Citadel strives to be a trusted partner. We move to wherever opportunity exists, bringing our clients and partners with us.",
@@ -451,6 +424,7 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 16,
     "id":"clarity",
     "name":"Clarity Solutions Group",
     "description":"Clarity is a data and analytics firm providing expert consulting solutions and ongoing support with an uncompromising focus on client success. Our clients trust us to produce innovative, value-driven solutions that leverage existing investments to quickly generate results. Our elite team of passionate professionals works with clients in a variety of industries throughout North America, transforming the way businesses think about, organize and use their data.\n\nWe offer the enterprise-level expertise of a systems integrator, the client-centric focus of a boutique data services provider, and the strategic business experience of a top-tier management consulting firm. Our two subsidiaries extend and augment those offerings. Clarity Resource Group provides expert staffing solutions whether they are short-term or contract-to-hire. Clarity Operations provides a full-suite of managed services offering ensuring our clients have ongoing support for their data and analytics solutions.",
@@ -476,9 +450,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 17,
     "id":"cme-group",
-    
-    
     "name":"CME Group",
     "description":"As the world's leading and most diverse derivatives marketplace, CME Group is where the world comes to manage risk. We offer the widest range of global benchmark products across all major asset classes. Helping businesses everywhere mitigate the myriad risks they face in today�s uncertain global economy allows them to operate more effectively, create more jobs, and pass benefits on to consumers.",
     "room":"Louis",
@@ -503,9 +476,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 18,
     "id":"com-ed",
-    
-    
     "name":"ComEd",
     "description":"Commonwealth Edison Company, perhaps better known as ComEd, is a unit of Chicago-based Exelon Corporation. Exelon is one of the nation's largest electric utilities, with approximately 5.4 million customers. ComEd provides service to approximately 3.8 million customers across Northern Illinois, or 70 percent of the state's population.\n\nComEd is an energy delivery company. We do not own power plants and we do not make electricity. We deliver electricity to your home or business. To do this, we manage more than 90,000 miles of powerlines in an 11,400-square-mile territory. Since 2001, we have invested more than $5 billion in our electrical transmission and distributions system to continue to provide customers like you with the quality service you expect and deserve.",
     "room":"Louis",
@@ -530,9 +502,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 19,
     "id":"continental",
-    
-    
     "name":"Continental Corporation",
     "description":"We are conscientious people who help others around the world fulfill their dreams of mobility. This also comprises the transport of persons, materials and information. We are aware that mobility and transport are fundamental to life, and want to help meet the high expectations in this regard.\n\nAs a responsible, leading company and the partner of choice, we invent, develop, produce and market indispensable technological solutions that shape in particular the four mega trends, including safety, environment, information and affordable cars.",
     "room":"Louis",
@@ -557,9 +528,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 20,
     "id":"deloitte",
-    
-    
     "name":"Deloitte Consulting",
     "description":"�Deloitte� is the brand under which tens of thousands of dedicated professionals in independent firms throughout the world collaborate to provide audit, consulting, financial advisory, risk management and tax services to selected clients. These firms are members of Deloitte Touche Tohmatsu Limited (DTTL), a UK private company limited by guarantee. ",
     "room":"Lake",
@@ -584,9 +554,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 21,
     "id":"denso",
-    
-    
     "name":"DENSO International America",
     "description":"DENSO is a global automotive supplier of advanced automotive technology, systems and components, heading toward an automotive society where cars put less drag on the environment and drivers have fewer worries about traffic accidents.\n\nDENSO's lead in developing this automotive society comes from anticipating the needs of automakers and closely partnering with customers right from the start.\n\nOur teams work quickly and diligently to manufacture products that show a commitment to safety and the environment, while at the same time punch up the level of driving comfort and convenience.",
     "room":"Louis",
@@ -611,9 +580,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 22,
     "id":"discover",
-    
-    
     "name":"Discover Financial Services",
     "description":"When we introduced the first cash rewards credit card in 1986, we committed ourselves to meeting the needs of our card members with the best possible customer service - and we still stand by that commitment today. We're building our company by listening to consumers and developing products and programs that help them get the most for their money. Beyond credit cards, our banking and payments businesses offer rewarding products backed by that same commitment to high-quality service that we have had from the start.",
     "room":"Wildcat",
@@ -638,9 +606,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 23,
     "id":"dmc-inc",
-    
-    
     "name":"DMC Inc",
     "description":"DMC offers high-caliber engineering and software development services for manufacturing, testing, and product development organizations in the Chicago area and throughout the world. Since 1996, we have been building mission-critical systems for top organizations.",
     "room":"Lake",
@@ -665,9 +632,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 24,
     "id":"dropbox",
-    
-    
     "name":"Dropbox",
     "description":"Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere, and share them easily. Any file you save to your Dropbox will automatically save to all your computers, your phone or iPad, and the Dropbox website. Dropbox also makes it easy to share with others. And if your computer melts down, you can restore all your files from the Dropbox website with a couple clicks. Dropbox has more than 200,000,000 users.",
     "room":"Lake",
@@ -692,9 +658,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 25,
     "id":"environ",
-    
-    
     "name":"ENVIRON International Corp",
     "description":"Since 1982, ENVIRON has worked with clients around the world to help resolve their most demanding environmental and human health issues. We combine resources across geographic boundaries and technical and scientific disciplines to provide clients with the best, most responsive teams�whether responding to existing challenges, evaluating opportunities to improve performance or seeking to reduce future liabilities. Clients benefit from our unique ability to bring clarity to issues at the intersection of science, business and policy.",
     "room":"Louis",
@@ -719,9 +684,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 26,
     "id":"epic",
-    
-    
     "name":"Epic",
     "description":"Epic makes software for mid-size and large medical groups, hospitals and integrated healthcare organizations � working with customers that include community hospitals, academic facilities, children's organizations, safety net providers and multi-hospital systems. Our integrated software spans clinical, access and revenue functions and extends into the home.",
     "room":"Louis",
@@ -746,9 +710,8 @@ angular.module('starter.services', [])
     "intern":false
   },
   {
+    idx: 27,
     "id":"etherios",
-    
-    
     "name":"Etherios, a Division of Digi International",
     "description":"At Etherios, our mission is to deliver industry leading cloud-based solutions. We love what we do. Etherios is comprised of passionate and driven individuals that are focused on delivering innovative solutions and customer success for our clients. We were born in the cloud. We work with organizations of all sizes and across a diverse range of industries to deliver best-in-class cloud based products and services. Our capabilities encompass advisory, salesforce.com, wireless design and M2M consulting services. Our combined product and services offering uniquely position us to be your end-to-end M2M cloud solution expert.",
     "room":"Louis",
@@ -773,9 +736,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 28,
     "id":"exxon-mobil",
-    
-    
     "name":"ExxonMobil",
     "description":"Over the last 125 years ExxonMobil has evolved from a regional marketer of kerosene in the U.S. to the largest publicly traded petroleum and petrochemical enterprise in the world. Today we operate in most of the world's countries and are best known by our familiar brand names: Exxon, Esso and Mobil. We make the products that drive modern transportation, power cities, lubricate industry and provide petrochemical building blocks that lead to thousands of consumer goods. ",
     "room":"Wildcat",
@@ -800,9 +762,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 29,
     "id":"facebook",
-    
-    
     "name":"Facebook",
     "description":"Founded in 2004, Facebook�s mission is to give people the power to share and make the world more open and connected. People use Facebook to stay connected with friends and family, to discover what�s going on in the world, and to share and express what matters to them.",
     "room":"Wildcat",
@@ -827,9 +788,8 @@ angular.module('starter.services', [])
     "intern":true
   },
   {
+    idx: 30,
     "id":"factset",
-    
-    
     "name":"FactSet Research Systems",
     "description":"FactSet consolidates all the tools you need to monitor global markets, public and private companies, and equity and fixed income portfolios in a single, intuitive interface.\n\nWith FactSet, you gain powerful analytics tailored to your workflow, the broadest scope of data available, and access to industry-leading client service. Our solutions are designed to fit seamlessly into your workflow, with a wide selection of customizable reports and charts that are relevant to your job function",
     "room":"Louis",
@@ -852,7 +812,8 @@ angular.module('starter.services', [])
     "fte":true,
     "coop":false,
     "intern":true
-  },
+  } ];
+  /*,
   {
     "id":"fenwal",
     
@@ -1447,8 +1408,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"mozilla",
-    
-    
     "name":"Mozilla",
     "description":"Our mission is to promote openness, innovation & opportunity on the Web.\n\nAt Mozilla, we�re a global community of technologists, thinkers and builders working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.",
     "room":"Northwestern",
@@ -2014,8 +1973,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"thoughtworks",
-    
-    
     "name":"Thoughtworks",
     "description":"A community of passionate individuals whose purpose is to revolutionize software design, creation and delivery, while advocating for positive social change.\n\nWherever we are in the world, ThoughtWorkers share the same cultural characteristics and imperatives. We come to work as ourselves. We enjoy each other�s company. We value honesty and transparency. Appearances and backgrounds aren�t important to us; ideas and doing the right thing are. We abhor and reject discrimination and inequality and promote diversity in all its forms. We proudly, passionately and actively strive to make both ThoughtWorks and our industry more reflective and inclusive of the society that we serve.",
     "room":"Lake",
@@ -2041,8 +1998,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"trading-tech",
-    
-    
     "name":"Trading Technologies",
     "description":"We distribute our software and solutions to end users through more than 100 firms, including 19 of the top 20 U.S. futures brokers. We're proud to have the world's premier investment banks, brokers, Futures Commission Merchants (FCMs), hedge funds, proprietary trading firms and other trading institutions as our customers.\n\nOur customers tell us they trust TT to help them succeed in the often turbulent world of trading because of our technology, our people and our ongoing drive to innovate. We can anticipate and deliver the innovations that traders need in large part because we are intimately familiar with what they do. ",
     "room":"Louis",
@@ -2068,8 +2023,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"united-airlines",
-    
-    
     "name":"United Airlines",
     "description":"United is the world's leading airline and is focused on being the airline customers want to fly, the airline employees want to work for and the airline shareholders want to invest in.\n\nUnited Airlines and United Express operate an average of 5,341 flights a day to more than 360 airports across six continents. In 2012, United and United Express carried more passenger traffic than any other airline in the world and operated nearly two million flights carrying 140 million customers. ",
     "room":"Wildcat",
@@ -2122,8 +2075,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"wrigley",
-    
-    
     "name":"Wm Wrigley Jr Company",
     "description":"Wrigley is a recognized leader in confections with a wide range of product offerings including gum, mints, hard and chewy candies, and lollipops. Wrigley's world-famous brands � including Extra�, Orbit�, Doublemint�, and 5� chewing gums, as well as confectionery brands Skittles�, Starburst�, Altoids� and Life Savers� � create simple pleasures for consumers every day. With operations in approximately 50 countries and distribution in more than 180 countries, Wrigley's brands bring smiles to faces around the globe. ",
     "room":"Louis",
@@ -2149,8 +2100,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"wms",
-    
-    
     "name":"WMS",
     "description":"WMS is a leading global innovator in the design, manufacture and distribution of electronic and digital gaming entertainment and gaming machines for the casino industry. The WMS core values of Passion, Integrity, Innovation, Quality and Respect create a deeply embedded Culture of Innovation that fuels the imagination and creativity of our development teams and drives innovation with a purpose.\n\nEnergized by a fervent focus on our Player Driven Innovation� approach to product development, we create imaginative and engaging game content enabled by advanced, groundbreaking technologies to deliver dynamic, transformative player entertainment experiences in the casino and online. The talented WMS team produces some of the world's most popular casino games, and creates new and differentiated gaming platforms that consistently set the industry standard.",
     "room":"Lake",
@@ -2176,8 +2125,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"wolverine-trading",
-    
-    
     "name":"Wolverine Trading, LLC",
     "description":"Wolverine is a diversified financial institution specializing in proprietary trading, asset management, order execution services, and technology solutions. We are recognized as a market leader in derivatives valuation, trading, and value-added order execution across global equity, options, and futures markets. Our focus on innovation, achievement, and integrity serves the interests of our clients and colleagues. Wolverine is headquartered in Chicago, with branch offices in New York, San Francisco, and London.",
     "room":"Louis",
@@ -2203,8 +2150,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"yahoo",
-    
-    
     "name":"Yahoo!",
     "description":"Yahoo is the world's largest start-up, which means that we move fast and always let our users lead the way. Founded in 1994 by two Stanford PhD candidates, we've grown into a company that helps you find what you're looking for on any Internet-connected device. Our employees are rewarded for curiosity and we celebrate explorers, relying on our passionate and transformative talent to do what's right for our users.\n\nAs a leader in global daily habits like email, entertainment, news and sports, we strive to inspire, delight and entertain. By infusing our products with beauty and personality driven by our users, every Yahoo experience feels made to order.",
     "room":"Louis",
@@ -2230,8 +2175,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"zebra-tech",
-    
-    
     "name":"Zebra Technologies Corporation",
     "description":"A global leader respected for innovation and reliability, Zebra provides enabling technologies that allow customers to take smarter actions.\n\nZebra's extensive portfolio of barcode, receipt, kiosk and RFID printers and supplies, as well as real-time location solutions give a digital voice to assets, people and transactions that provides greater visibility into mission-critical information.",
     "room":"Louis",
@@ -2257,8 +2200,6 @@ angular.module('starter.services', [])
   },
   {
     "id":"zs-associates",
-    
-    
     "name":"ZS Associates",
     "description":"ZS Associates is one of the world's largest business services firms specializing in transforming sales and marketing from an art to a science. We help clients gain market share at lower cost. We do so by creating data-driven strategies that they can implement rapidly and by taking on sales and marketing operations to make them more competitive. \n\nWith 20 offices around the world, we have worked with more than 700 companies in 70 countries across consumer products, energy, high-tech, insurance, medical products and services, pharmaceuticals and other industries.",
     "room":"Louis",
@@ -2282,7 +2223,35 @@ angular.module('starter.services', [])
     "coop":false,
     "intern":true
   }
-];
+];*/
+  // Might use a resource here that returns a JSON array
+
+  /*
+  // FROM 399 ANGULAR ONLY APP
+  // Load pages on startup
+  //$http.get('/pages.json').success(function (data) {
+  $http.get('data/companyGrid.json').success(function(data) {
+    //$rootScope.pages = data;
+    $rootScope.all_companies = data;
+    console.log('data loaded');
+    $rootScope.filteredList = data; //filtered_companies = data;
+    // We are also passing in $rootScope which all scopes inherit from.
+    // We do this so this so that we can access the pages JSON data in our RouteController. 
+  });
+*/
+
+  // Some fake testing data
+ /* var companies = [
+    { id: 0, name: 'Scruff McGruff' },
+    { id: 1, name: 'G.I. Joe' },
+    { id: 2, name: 'Miss Frizzle' },
+    { id: 3, name: 'Ash Ketchum' }
+  ];*/
+
+  // okay i know this is a hacky shortcut
+
+  // will figure out later if should load json, 
+  //have file external, maybe even in csv form...?
 
   return {
     all: function() {
@@ -2290,10 +2259,11 @@ angular.module('starter.services', [])
     },
     get: function(companyId) {
       // Simple index lookup
-      //return companies[companyId];
-      for (var i = Companies.length - 1; i >= 0; i--) {
+      return companies[companyId];
+
+      /*for (var i = Companies.length - 1; i >= 0; i--) {
           if (Companies[i]["companyId"] == companyId) return Companies[i];
-      };
+      };*/
     }
   }
 });

@@ -1,0 +1,9 @@
+<ion-view title="Company List">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="company in companies" type="item-text-wrap" href="#/tab/company/{{company.idx}}">
+        {{company.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

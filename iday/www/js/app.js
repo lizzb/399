@@ -1,5 +1,4 @@
 // Ionic Starter App
-
 // angular.module is a global place 
 // for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example 
@@ -30,7 +29,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('tab', {
       url: "/tab",
       abstract: true,
-      templateUrl: "tabs.html" //templates/tabs.html
+      templateUrl: 'templates/tabs.html', //tabs.html" //templates/tabs.html
     })
 
     // Each tab has its own nav history stack:
@@ -39,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/dash',
       views: {
         'tab-dash': {
-          templateUrl: 'tab-dash.html', //templates/
+          templateUrl: 'templates/tab-dash.html', //'tab-dash.html', //templates/
           controller: 'DashCtrl'
         }
       }
@@ -49,7 +48,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/companies',
       views: {
         'tab-companies': {
-          templateUrl: 'tab-companies.html', //templates/
+          templateUrl: 'templates/tab-companies.html', //'tab-companies.html', //templates/
           controller: 'CompanyListCtrl'
         }
       }
@@ -58,7 +57,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/company/:companyId', //companyLoc', //companyId',
       views: {
         'tab-companies': {                    // onlya accessible if this is the start state...? not
-          templateUrl: 'company-detail.html',//templates/
+          templateUrl: 'templates/company-detail.html', //'company-detail.html',//templates/
           controller: 'CompanyDetailCtrl'
         }
       }
@@ -68,7 +67,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/account',
       views: {
         'tab-account': {
-          templateUrl: 'tab-account.html',//templates/
+          templateUrl: 'templates/tabs.html', //'tab-account.html',//templates/
           controller: 'AccountCtrl'
         }
       }
