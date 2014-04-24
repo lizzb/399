@@ -84,7 +84,16 @@ to avoid having a bajillion files open -->
   <ion-content class="has-header">
     <ion-list>
       <ion-item ng-repeat="comp in companies" type="item-text-wrap" href="#/tab/company/{{comp.id}}">
+      <a>
+          <img class="companies-list-square" src="http://placehold.it/100x100">
+        </a>
         {{comp.name}}
+        <a href="#/tab/map/{{comp.id}}">
+        <span class="room-floor-label"> 
+               {{comp.room}} [{{comp.floor}}]<br>
+               </span>
+               </a>
+
       </ion-item>
     </ion-list>
   </ion-content>
