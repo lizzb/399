@@ -50,12 +50,12 @@ angular.module('idayIonic', ['ionic', 'idayIonic.controllers', 'idayIonic.servic
       }
     })
 
-    .state('tab.dash', {
-      url: '/dash',
+    .state('tab.map', {
+      url: '/map',
       views: {
-        'tab-dash': {
-          templateUrl: 'tab-dash.html',
-          controller: 'DashCtrl'
+        'tab-map': {
+          templateUrl: 'tab-map.html',
+          controller: 'MapCtrl'
         }
       }
     })

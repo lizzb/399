@@ -3,7 +3,7 @@ angular.module('idayIonic.controllers', ['ionic', 'ionic.contrib.frostedGlass'])
 // ---------------------------------------------------------------- //
 
 
-.controller('DashCtrl', function($scope) {})
+.controller('MapCtrl', function($scope) {})
 
 
 // ---------------------------------------------------------------- //
