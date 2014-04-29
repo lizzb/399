@@ -265,8 +265,8 @@ t1398355432
 s5977
 
 N/Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist
-c0000000053595E230000000000000A16
-t1398365731
+c00000000535EF8CD0000000000000A16
+t1398733005
 s2582
 
 N/Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Prefix.pch
@@ -459,11 +459,11 @@ t1398355448
 s45
 
 N/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app
-t1398365733
+t1398733008
 s1020
 
 N/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM
-t1398365706
+t1398732998
 s102
 
 N/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/Default-568h@2x~iphone.png
@@ -499,7 +499,7 @@ t1398355454
 s304196
 
 N/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/Info.plist
-t1398365732
+t1398733007
 s1294
 
 N/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/MainViewController.nib
@@ -775,9 +775,9 @@ t1396835123
 s482048
 
 N/usr/lib/system/libsystem_kernel.dylib
-c0000000053420333000000000007CCE0
-t1396835123
-s511200
+c0000000053570235000000000007CC70
+t1398211125
+s511088
 
 N/usr/lib/system/libsystem_m.dylib
 c000000005342033300000000000766C0
@@ -825,7 +825,7 @@ s5376604
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd40af7a49509b941^fed5f7a49509b941^---0#1#1#--18"Check dependencies36"731468F6-C8B6-4DB9-8190-D22B138F9E1E-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb70d834f300fb941^59a6834f300fb941^---0#1#1#--18"Check dependencies36"491ECD61-8FAD-4218-A6A4-C067769E95E4-
 
 CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o /Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s420048254.007852
@@ -1236,14 +1236,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy bu
 b64E5E66B-A9A7-4358-921C-E39E7BA2CEF0
 
 CGenerateDSYMFile /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-s420058533.470912
-e420058533.533584
+s420425808.662277
+e420425808.726993
 r1
 xGenerateDSYMFile
 x/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM
 x/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Generate /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM98"GenerateDSYMFile build/emulator/HelloCordova.app.dSYM build/emulator/HelloCordova.app/HelloCordovab4ab78a59509b941^d5e988a59509b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM/0000000000000000^673"GenerateDSYMFile build/emulator/HelloCordova.app.dSYM build/emulator/HelloCordova.app/HelloCordova    cd /Users/lizz/github-lizzb/399/iday/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/HelloCordova -o /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM36"EDD03CD8-2CB4-463A-B581-8B301FC81E88-
-bD8E9E0C8-6341-4EE3-B3B6-6F295E46735B
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Generate /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM98"GenerateDSYMFile build/emulator/HelloCordova.app.dSYM build/emulator/HelloCordova.app/HelloCordova80b6a950300fb941^0a2eba50300fb941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM/0000000000000000^673"GenerateDSYMFile build/emulator/HelloCordova.app.dSYM build/emulator/HelloCordova.app/HelloCordova    cd /Users/lizz/github-lizzb/399/iday/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/HelloCordova -o /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app.dSYM36"9EDAA7E1-BBCE-4576-8148-58400252087F-
+b5B9B1706-3A17-45E6-A104-E89BA3292CC2
 
 CLd /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/HelloCordova normal i386
 s420048254.342285
@@ -1329,28 +1329,28 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Link /U
 b64E5E66B-A9A7-4358-921C-E39E7BA2CEF0
 
 CPhaseScriptExecution Copy\ www\ directory /Users/lizz/github-lizzb/399/iday/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-s420058532.972598
-e420058533.457867
+s420425807.518769
+e420425808.655103
 r1
 xPhaseScriptExecution
 xCopy www directory
 x/Users/lizz/github-lizzb/399/iday/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
 o
-oreal	0m0.446s
-ouser	0m0.127s
-osys	0m0.205s
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'142"PhaseScriptExecution Copy\ www\ directory build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh6a85f9a49509b941^e67475a59509b941^-42"real	0m0.446suser	0m0.127ssys	0m0.205s3(21%IDEActivityLogMessage2@14"real	0m0.446s-420058533#1#14#-0#-----2@14"user	0m0.127s-420058533#15#14#-0#-----2@13"sys	0m0.205s-420058533#29#13#-0#-----0#0#1#--362"PhaseScriptExecution Copy\ www\ directory build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh    cd /Users/lizz/github-lizzb/399/iday/platforms/ios    /bin/sh -c /Users/lizz/github-lizzb/399/iday/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh36"5E48AFCA-3BAC-4F0F-82EF-998D178E777A-
-bD8E9E0C8-6341-4EE3-B3B6-6F295E46735B
+oreal	0m1.103s
+ouser	0m0.371s
+osys	0m0.598s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'142"PhaseScriptExecution Copy\ www\ directory build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh2367854f300fb941^d5b4a750300fb941^-42"real	0m1.103suser	0m0.371ssys	0m0.598s3(21%IDEActivityLogMessage2@14"real	0m1.103s-420425808#1#14#-0#-----2@14"user	0m0.371s-420425808#15#14#-0#-----2@13"sys	0m0.598s-420425808#29#13#-0#-----0#0#1#--362"PhaseScriptExecution Copy\ www\ directory build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh    cd /Users/lizz/github-lizzb/399/iday/platforms/ios    /bin/sh -c /Users/lizz/github-lizzb/399/iday/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh36"AB78FC03-26E1-4D25-9CB9-A6A58D9FDCA8-
+b5B9B1706-3A17-45E6-A104-E89BA3292CC2
 
 CProcessInfoPlistFile /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/Info.plist /Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist
-s420058532.967939
-e420058532.970541
+s420425807.514225
+e420425807.516938
 r1
 xProcessInfoPlistFile
 x/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/Info.plist
 x/Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Process /Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist100"ProcessInfoPlistFile build/emulator/HelloCordova.app/Info.plist HelloCordova/HelloCordova-Info.plist17f3f7a49509b941^488af8a49509b941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist0000000000000000^764"ProcessInfoPlistFile build/emulator/HelloCordova.app/Info.plist HelloCordova/HelloCordova-Info.plist    cd /Users/lizz/github-lizzb/399/iday/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-infoPlistUtility /Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist -genpkginfo /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/Info.plist36"5AFBC38C-7BF2-47AA-BC43-3F2B0D839EB6-
-bD8E9E0C8-6341-4EE3-B3B6-6F295E46735B
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Process /Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist100"ProcessInfoPlistFile build/emulator/HelloCordova.app/Info.plist HelloCordova/HelloCordova-Info.plist74ce834f300fb941^aed3844f300fb941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist0000000000000000^764"ProcessInfoPlistFile build/emulator/HelloCordova.app/Info.plist HelloCordova/HelloCordova-Info.plist    cd /Users/lizz/github-lizzb/399/iday/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-infoPlistUtility /Users/lizz/github-lizzb/399/iday/platforms/ios/HelloCordova/HelloCordova-Info.plist -genpkginfo /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app/Info.plist36"94ACCC8A-BF6F-4D90-A23B-FE9A2629BBD9-
+b5B9B1706-3A17-45E6-A104-E89BA3292CC2
 
 CProcessPCH /var/folders/1s/zlndz_c51tn0499x346j9tlr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-eumjcpayrnwrmzburlfnmcgsldql/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s420048253.562215
@@ -1368,11 +1368,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Precomp
 b64E5E66B-A9A7-4358-921C-E39E7BA2CEF0
 
 CTouch /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app
-s420058533.535199
-e420058533.546112
+s420425808.728363
+e420425808.733837
 r1
 xTouch
 x/Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Touch /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app37"Touch build/emulator/HelloCordova.app261d89a59509b941^00e58ba59509b941^---0#0#1#--433"Touch build/emulator/HelloCordova.app    cd /Users/lizz/github-lizzb/399/iday/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /usr/bin/touch -c /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app36"F6E1A006-8DF6-4196-8E36-AACD750476E7-
-bD8E9E0C8-6341-4EE3-B3B6-6F295E46735B
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Touch /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app37"Touch build/emulator/HelloCordova.app9c8cba50300fb941^66ddbb50300fb941^---0#0#1#--433"Touch build/emulator/HelloCordova.app    cd /Users/lizz/github-lizzb/399/iday/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /usr/bin/touch -c /Users/lizz/github-lizzb/399/iday/platforms/ios/build/emulator/HelloCordova.app36"49E749AF-3CB8-4997-9972-8C565F56F480-
+b5B9B1706-3A17-45E6-A104-E89BA3292CC2
 

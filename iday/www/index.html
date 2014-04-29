@@ -6,7 +6,10 @@
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!--
+    realized i want to start over with styling, look less like bootstrap
+    / what i did last term / more ionicy
+    <link href="css/style.css" rel="stylesheet"-->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -18,10 +21,25 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+    
+    <!-- will add filter later 
+
+and maybe this neato one
+  <script src="http://code.ionicframework.com/contrib/ionic-contrib-frosted-glass/ionic.contrib.frostedGlass.js"></script>
+
+    -->
+
   </head>
-  <body ng-app="starter" animation="slide-left-right-ios7">
+
+  <!-- NAME OF YOUR ANGULAR MODULE GOES HERE... make sure to change in defining controllers and services in thos js files and app.js  body ng-app="starter"-->
+  <body ng-app="idayIonic" animation="slide-left-right-ios7">
     <!-- 
       The nav bar that will be updated as we navigate between views.
+
+       difference between header bar like in Collection-Repeat: Early Preview<
+    <ion-header-bar class="bar-positive"> ...?
+
+    header is for something extra, like a search, i think. or button group?
     -->
     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
       <ion-nav-back-button class="button-icon icon ion-chevron-left">

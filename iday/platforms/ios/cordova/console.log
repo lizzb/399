@@ -12,3 +12,10 @@
 2014-04-24 13:55:48.704 HelloCordova[30511:70b] Resetting plugins due to page load.
 2014-04-24 13:55:49.088 HelloCordova[30511:70b] Finished load of: file:///Users/lizz/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BEEC8221-9EE2-40B5-8363-DC2ABC9072A3/HelloCordova.app/www/index.html#/tab/dash
 Terminating in response to SpringBoard's termination.
+2014-04-28 19:57:13.415 HelloCordova[7659:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-28 19:57:13.447 HelloCordova[7659:70b] Unlimited access to network resources
+2014-04-28 19:57:13.687 HelloCordova[7659:70b] [CDVTimer][statusbar] 79.217017ms
+2014-04-28 19:57:13.688 HelloCordova[7659:70b] [CDVTimer][TotalPluginStartup] 79.845011ms
+2014-04-28 19:57:13.852 HelloCordova[7659:70b] Resetting plugins due to page load.
+2014-04-28 19:57:14.319 HelloCordova[7659:70b] Finished load of: file:///Users/lizz/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BEEC8221-9EE2-40B5-8363-DC2ABC9072A3/HelloCordova.app/www/index.html
+Terminating in response to SpringBoard's termination.

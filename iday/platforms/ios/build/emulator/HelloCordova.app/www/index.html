@@ -6,7 +6,10 @@
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!--
+    realized i want to start over with styling, look less like bootstrap
+    / what i did last term / more ionicy
+    <link href="css/style.css" rel="stylesheet"-->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -18,10 +21,25 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+    
+    <!-- will add filter later 
+
+and maybe this neato one
+  <script src="http://code.ionicframework.com/contrib/ionic-contrib-frosted-glass/ionic.contrib.frostedGlass.js"></script>
+
+    -->
+
   </head>
-  <body ng-app="starter" animation="slide-left-right-ios7">
+
+  <!-- NAME OF YOUR ANGULAR MODULE GOES HERE... make sure to change in defining controllers and services in thos js files and app.js  body ng-app="starter"-->
+  <body ng-app="idayIonic" animation="slide-left-right-ios7">
     <!-- 
       The nav bar that will be updated as we navigate between views.
+
+       difference between header bar like in Collection-Repeat: Early Preview<
+    <ion-header-bar class="bar-positive"> ...?
+
+    header is for something extra, like a search, i think. or button group?
     -->
     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
       <ion-nav-back-button class="button-icon icon ion-chevron-left">
@@ -40,7 +58,7 @@
 
 <!-- because i'm still learning ionic, 
 putting all templates within this index.html file 
-to avoid having a bajillion files open -->
+to avoid having a bajillion files open --
 
 
 <script id="tabs.html" type="text/ng-template">
@@ -84,21 +102,18 @@ to avoid having a bajillion files open -->
   <ion-content class="has-header">
     <ion-list>
       <ion-item ng-repeat="comp in companies" type="item-text-wrap" href="#/tab/company/{{comp.id}}">
-      <a>
           <img class="companies-list-square" src="http://placehold.it/100x100">
-        <!--/a-->
         {{comp.name}}
-        <!--a href="#/tab/map/{{comp.id}}"-->
         <span class="room-floor-label"> 
                {{comp.room}} [{{comp.floor}}]<br>
                </span>
-               </a>
+      
 
       </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
-</script>
+</script>-->
 
 
 <!--
@@ -106,15 +121,15 @@ to avoid having a bajillion files open -->
   'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
-  -->
+  --
 <script id="company-detail.html" type="text/ng-template"> 
-<ion-view title="{{company.name}}">
+<ion-view title="{{comp.name}}">
   <ion-content has-header="true" padding="true">
   </ion-content>
 </ion-view>
 </script>
 
-
+-->
 
 
 

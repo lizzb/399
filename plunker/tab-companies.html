@@ -1,0 +1,33 @@
+<ion-view title="Companies at iDay">
+
+
+<ion-header-bar class="bar-positive">
+    <h1 class="title">3000 Contacts</h1>
+    <div class="button" ng-click="scrollBottom()">
+      Scroll To Bottom
+    </div>
+  </ion-header-bar>
+  <ion-header-bar class="bar-light bar-subheader">
+    <input type="search"
+      placeholder="Filter companies..."
+      ng-model="search"
+      ng-focus="searchFocused = true"
+      ng-blur="searchFocused = false"
+      ng-change="scrollTop()">
+    <button ng-if="search.length"
+      class="button button-icon ion-android-close input-button"
+      ng-click="clearSearch()">
+    </button>
+  </ion-header-bar>
+  
+  
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="c in companies" type="item-text-wrap" href="#/tab/company/{{c.idx}}">
+        {{c.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  
+</ion-view>
+

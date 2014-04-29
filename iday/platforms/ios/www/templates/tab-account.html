@@ -1,5 +1,78 @@
+<!-- <ion-view title="Account"> Filter Settings --
+  <ion-content class="has-header padding">
+    <h1>Account [Future Settings]</h1> <!-- <h1>Filter and Search Settings</h1> --
+  </ion-content>
+</ion-view> -->
+
+
 <ion-view title="Account">
   <ion-content class="has-header padding">
-    <h1>Account</h1>
+    <h1>Account &amp; Settings</h1>
+    
+    <!--Ionic prefers to use the <label> element for a checkbox item
+    in order to make the entire checkbox tappable.
+Checkboxes can also have colors assigned to them, 
+such as checkbox-assertive to assign the assertive color.
+
+
+<ul class="list">
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Flux Capacitor
+  </li>
+</ul>
+-->
+
+      
+
+    <div class="list">
+    
+      <div class="item item-divider">
+        Selected Majors: {{ data.selectedMajors }}
+      </div>
+
+      <div class="item item-divider">Majors</div>
+
+      <ion-radio ng-repeat="m in majors" ng-value="m.name" ng-model="data.selectedMajors">
+        {{ m.friendlyName }}
+      </ion-radio>
+
+
+
+      <div class="item item-divider">Positions </div> <!--  {{p}} -->
+
+
+      <ion-checkbox ng-repeat="p in positions" ng-model="p.selected" ng-checked="p.checked">
+        {{ p.friendlyName }}
+      </ion-checkbox>
+
+      <!--input type="checkbox" ng-click="includePosition(p.name)">{{p.friendlyName}} -->
+
+
+    </div>
+    
+    
+    
+        <!--div class="list">
+
+      <ion-checkbox ng-model="pushNotification.checked" ng-change="pushNotificationChange()">
+        Push Notifications
+      </ion-checkbox>
+
+      <div class="item"><pre ng-bind="pushNotification | json"></pre> 
+      </div>
+
+      <ion-checkbox ng-model="emailNotification" ng-true-value="Subscribed" ng-false-value="Unubscribed">
+        Newsletter
+      </ion-checkbox>
+
+      <div class="item"> <pre ng-bind="emailNotification | json"></pre> 
+      </div>
+    </div-->
+
   </ion-content>
 </ion-view>
+
+
