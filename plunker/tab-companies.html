@@ -1,7 +1,26 @@
 <ion-view title="Companies at iDay">
 
+<style>
+.company-list-logo
+{
+/*position: absolute;
+top: 10px;
+left: 10px;*/
+max-width: 65px; /*80px;*/
+max-height: 65px; /*80px;*/
 
-<ion-header-bar class="bar-positive">
+width: 100%;
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+float: left;
+padding-right: 10px;
+}
+</style>
+
+<!-- this will be ignored anyway becasue of the ion content below it -->
+<!--ion-header-bar class="bar-positive">
     <h1 class="title">3000 Contacts</h1>
     <div class="button" ng-click="scrollBottom()">
       Scroll To Bottom
@@ -18,13 +37,18 @@
       class="button button-icon ion-android-close input-button"
       ng-click="clearSearch()">
     </button>
-  </ion-header-bar>
+  </ion-header-bar-->
   
   
   <ion-content class="has-header">
     <ion-list>
       <ion-item ng-repeat="c in companies" type="item-text-wrap" href="#/tab/company/{{c.idx}}">
+      
+      <img class="item company-list-logo" src="http://lizzb.github.io/399/app/img/logos/{{c.nameId}}-square.png" />
+      <br>
+
         {{c.name}}
+        
       </ion-item>
     </ion-list>
   </ion-content>
