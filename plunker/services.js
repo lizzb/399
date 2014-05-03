@@ -6,6 +6,7 @@ angular.module('idayIonic.services', [])
 .factory('AllCompanies', function() {
   // Might use a resource here that returns a JSON array
   
+  /*
   var companies = [
     { 
     idx: 0, booth: 1, room: 'Louis', floor: 2,
@@ -40,7 +41,7 @@ angular.module('idayIonic.services', [])
     msphd: 0, fte: 0, coop: 0, intern: 0,
     description: "Established in 1858 in St. Louis, Missouri, as a manufacturer of machine sewn cotton bags for milled food and grain products, Bemis has played an influential role in the packaging industry ever since its founding. Now a global supplier of flexible packaging and pressure sensitive label materials headquartered in Neenah, Wisconsin, Bemis serves customers worldwide and produces packaging for products found in virtually every aisle of the grocery store. "
 }
-  ];
+  ];*/
   
   // booth might change, id shouldn't
 
@@ -64,10 +65,12 @@ angular.module('idayIonic.services', [])
 
   return {
     all: function() {
+      //return companiesWithQuotes;
       return companies;
     },
     get: function(companyIdx) {
       // Simple index lookup
+      //return companiesWithQuotes[Idx];
       return companies[companyIdx];
     }
   }
